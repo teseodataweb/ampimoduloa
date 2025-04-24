@@ -1,0 +1,1234 @@
+/***Miami Beach***/
+
+.header-sm{
+
+	display: none;
+
+}
+
+.ip-banner::before {
+
+    background: rgba(0,0,0,.05);
+
+}
+
+.ip-banner canvas {
+
+	height: 342px;
+
+	min-height: initial;
+
+}
+
+#inner-page-wrapper {
+
+	margin-bottom: 0;
+
+}
+
+	#inner-page-wrapper > .container {
+
+		width: 100%;
+
+		padding: 0;
+
+	}
+
+.custom-breadcrumbs {
+
+	position: absolute;
+
+    z-index: 4;
+
+    bottom: 100%;
+
+    left: 0;
+
+    width: 100%;
+
+    background: rgba(0,46,51,.7);
+
+    color: #fff;
+
+    text-transform: uppercase;
+
+    font-size: 11px;
+
+    font-weight: 300;
+
+    letter-spacing: 0.050em;
+
+    padding: 10px 0 7px;
+
+}
+
+	.custom-breadcrumbs p {
+
+		padding-top: 3px;
+
+	}
+
+.custom-breadcrumbs span{
+
+	font-size: 11px;
+
+	display: inline-block;
+
+}
+
+.custom-breadcrumbs .breadcrumb_last{
+
+	font-weight: 600;
+
+}
+
+.custom-breadcrumbs .container{
+
+	position: relative;
+
+    top: 0;
+
+    left: 0;
+
+    transform: translate(0%,0%);
+
+}
+
+#miamibeach-wrap {
+
+	position: relative;
+
+	background: url(../../images/miami-beach/bg-1.jpg) center 77.5% / 100% no-repeat;
+
+}
+
+	#miamibeach-wrap:before {
+
+		content: '';
+
+		position: absolute;
+
+		right: 0;
+
+		top: 0;
+
+		bottom: 0;
+
+		/*width: 230px;*/
+
+		/*width: 14.375%;*/
+
+		width: calc( (100vw - 1140px) / 2 );
+
+		background: #014046 url(../../images/miami-beach/bg-accent.jpg) center/cover no-repeat;
+
+	}
+
+	#miamibeach-wrap .container {
+
+		position: relative;
+
+	}
+
+	.miamibeach-content {
+
+		position: relative;
+
+		padding: 80px 0 89px;
+
+		overflow: hidden;
+
+	}
+
+		.miamibeach-back-link {
+
+			position: absolute;
+
+			right: 0;
+
+			width: 41.66666667%;
+
+			text-align: center;
+
+			z-index: 1;
+
+		}
+
+			.miamibeach-back-link a {
+
+				display: inline-block;
+
+				background: url(../../images/palm-2.png) left center no-repeat;
+
+				padding: 11px 27px 11px 36px;
+
+				font-family: 'Termina';
+
+				font-size: 14px;
+
+				letter-spacing: .025em;
+
+				line-height: 1.2;
+
+				color: #014046;
+
+				text-transform: uppercase;
+
+				font-weight: 700;
+
+			}
+
+		.miamibeach-text {
+
+			font-family: 'Spartan', sans-serif;
+
+			margin-left: -100px;
+
+			max-width: 682px;
+
+		}
+
+			.miamibeach-title {
+
+				position: relative;
+
+				margin-bottom: 62px;
+
+			}
+
+				.miamibeach-title .entry-title {
+
+					display: inline-block;
+
+				    font-size: 50px;
+
+				    line-height: 1.2;
+
+				    font-weight: 400;
+
+				    color: #014046;
+
+				    text-transform: uppercase;
+
+				    padding: 0 0 14px 101px;
+
+				    background: url(../../images/palms-2.png) left 8px no-repeat;
+
+				    background-size: 88px auto;
+
+				    font-family: 'Termina';
+
+				    position: relative;
+
+				}
+
+				.miamibeach-title .entry-title:after {
+
+					content: '';
+
+					position: absolute;
+
+				    left: 5px;
+
+				    right: 4px;
+
+					bottom: 0;
+
+					height: 3px;
+
+					background: #f7c1b9;
+
+				}
+
+			.miamibeach-text p {
+
+				font-size: 15px;
+
+				letter-spacing: .025em;
+
+				line-height: 25px;
+
+				color: #000;
+
+				margin: 25.5px 0;
+
+			}
+
+			.miamibeach-text p.highlight {
+
+				font-size: 23px;
+
+				color: #014046;
+
+				font-weight: 700;
+
+			}
+
+
+
+		.miamibeach-map-wrap {
+
+			position: relative;
+
+			max-width: 621px;
+
+		    margin-top: 70px;
+
+		    margin-left: -1px;
+
+		    margin-right: -163px;
+
+		    font-size: 0;
+
+		}
+
+			.miamibeach-map-canvas {
+
+				display: block;
+
+				width: 100%;
+
+			}
+
+			.miamibeach-map {
+
+				position: absolute;
+
+				top: 0;
+
+				left: 0;
+
+				width: 100%;
+
+			}
+
+				.miamibeach-map img[usemap] {
+
+					position: absolute;
+
+					top: 0;
+
+					left: 0;
+
+					z-index: 2;
+
+				}
+
+
+
+			.miamibeachmap-hovers {
+
+				position: absolute;
+
+				top: 0;
+
+				left: 0;
+
+			}
+
+				.miamibeachmap-hover {
+
+					position: absolute;
+
+				}
+
+					.miamibeachmap-hover img {
+
+						display: block;
+
+						opacity: 0;
+
+						transition: opacity .3s ease;
+
+					}
+
+						.miamibeachmap-hover.active > img {
+
+							opacity: 1;
+
+						}
+						
+						.miamibeachmap-hover.active a > img {
+
+							opacity: 0;
+
+						}
+						
+						.miamibeachmap-hover a:hover > img {
+
+							opacity: 1;
+
+						}
+
+					.miamibeachmap-hover i {
+
+						display: block;
+
+						position: absolute;						
+
+					}
+
+						.miamibeachmap-hover i:before,
+
+						.miamibeachmap-hover i:after {
+
+							content: '';
+
+							display: block;
+
+							width: 22px;
+
+							height: 27px;
+
+							transition: opacity .3s ease;
+
+						}
+
+						.miamibeachmap-hover i:before {
+
+							background: url(../../images/miami-beach/miamibeach-pin-default.png) center no-repeat;
+
+						}
+
+						.miamibeachmap-hover i:after {
+
+							position: absolute;
+
+							top: 0;
+
+							left: 0;
+
+							background: url(../../images/miami-beach/miamibeach-pin-hover.png) center no-repeat;
+
+							opacity: 0;
+
+						}
+
+						.miamibeachmap-hover.active i:before {
+
+							opacity: 0;
+
+						}
+
+						.miamibeachmap-hover.active i:after {
+
+							opacity: 1;
+
+						}
+
+
+
+					.miamibeachmap-hover span {
+
+						position: absolute;
+
+						font-family: 'Spartan';
+
+						font-size: 15px;
+
+						font-weight: 600;
+
+						letter-spacing: .025em;
+
+						line-height: 22px;
+
+						color: #fff;
+
+						text-shadow: rgb(3, 67, 73) 1px 0px 0px, rgb(3, 67, 73) 0.540302px 0.841471px 0px, rgb(3, 67, 73) -0.416147px 0.909297px 0px, rgb(3, 67, 73) -0.989992px 0.14112px 0px, rgb(3, 67, 73) -0.653644px -0.756802px 0px, rgb(3, 67, 73) 0.283662px -0.958924px 0px, rgb(3, 67, 73) 0.96017px -0.279415px 0px;
+
+						transform: translateZ(0);
+
+						-moz-transform: translateZ(0);
+
+						-webkit-transform: translateZ(0);
+
+						transition: all ease .4s;
+
+						-moz-transition: all ease .4s;
+
+						-webkit-transition: all ease .4s;
+
+					}
+
+						.miamibeachmap-hover span span:last-child {
+
+							    text-shadow: 3px 4px 5px rgba(0, 0, 0, 0);
+
+						}
+
+
+
+						.miamibeachmap-hover.active span span:last-child {
+
+							    text-shadow: 3px 4px 5px rgba(0, 0, 0, 1);
+
+						}
+
+
+
+				.miamibeachmap-hover.area-indian-creek {
+
+				    top: 79px;
+
+				    left: 282px;
+
+				}
+
+					.miamibeachmap-hover.area-indian-creek i {
+
+					    top: 15px;
+
+					    left: 17px;
+
+					}
+
+					.miamibeachmap-hover.area-indian-creek > span {
+
+					    top: 43px;
+
+					    left: -1px;
+						
+						z-index: 99;
+
+					}
+
+				.miamibeachmap-hover.area-miami-beach {
+
+				    top: 163px;
+
+				    left: 266px;
+
+				}
+
+				    .miamibeachmap-hover.area-miami-beach i {
+
+				        top: 258px;
+
+				        left: 77px;
+
+				    }
+
+				    .miamibeachmap-hover.area-miami-beach > span {
+
+				        top: 286px;
+
+				        left: 60px;
+						
+						z-index: 99;
+
+				    }
+
+				.miamibeachmap-hover.area-la-gorce-island {
+
+				    top: 269px;
+
+				    left: 332px;
+
+				}
+
+				    .miamibeachmap-hover.area-la-gorce-island i {
+
+				        top: -5px;
+
+				        left: 7px;
+
+				    }
+
+				    .miamibeachmap-hover.area-la-gorce-island > span {
+
+				        white-space: nowrap;
+
+				        text-align: center;
+
+				        top: -12px;
+
+				        left: -74px;
+						z-index: 99;
+				    }
+
+
+
+				.miamibeachmap-hover.area-allison-island {
+
+				    top: 266px;
+
+				    left: 369px;
+
+				}
+
+					.miamibeachmap-hover.area-allison-island i {
+
+					    top: -13px;
+
+					    left: -4px;
+
+					}
+
+					.miamibeachmap-hover.area-allison-island > span {
+
+					    top: -11px;
+
+					    white-space: nowrap;
+
+					    left: 80px;
+						
+						z-index: 99;
+
+					}
+
+					.miamibeachmap-hover.area-allison-island > span:before {
+
+						content: '';
+
+						position: absolute;
+
+						width: 50px;
+
+						height: 1px;
+
+						background: #f7c1b9;
+
+						top: 7px;
+
+						right: 100%;
+
+						margin-right: 11px;
+
+					}
+
+				.miamibeachmap-hover.area-aqua-island {
+
+				    top: 303px;
+
+				    left: 374px;
+
+				}
+
+					.miamibeachmap-hover.area-aqua-island i {
+
+					    top: -16px;
+
+					    left: -3px;
+
+					}
+
+					.miamibeachmap-hover.area-aqua-island > span {
+
+					    white-space: nowrap;
+
+					    top: -14px;
+
+					    left: 78px;
+						
+						z-index: 99;
+
+					}
+
+					.miamibeachmap-hover.area-aqua-island > span:before {
+
+					    content: '';
+
+					    position: absolute;
+
+					    width: 50px;
+
+					    height: 1px;
+
+					    background: #f7c1b9;
+
+					    top: 7px;
+
+					    right: 100%;
+
+					    margin-right: 9px;
+
+					}
+
+
+
+				.miamibeachmap-hover.area-sunset-island {
+
+				    top: 510px;
+
+				    left: 256px;
+
+				}
+
+				    .miamibeachmap-hover.area-sunset-island i {
+
+				        top: 5px;
+
+				        left: 7px;
+
+				    }
+
+				    .miamibeachmap-hover.area-sunset-island > span {
+
+				        top: -2px;
+
+				        left: -60px;
+
+				        text-align: center;
+						
+						z-index: 99;
+
+				    }
+
+
+
+				.miamibeachmap-hover.area-belle-island {
+
+				    top: 586px;
+
+				    left: 244px;
+
+				}
+
+				    .miamibeachmap-hover.area-belle-island i {
+
+				        top: -5px;
+
+				        left: 4px;
+
+				    }
+
+				    .miamibeachmap-hover.area-belle-island span {
+
+				        top: -2px;
+
+				        left: 14px;
+
+				        white-space: nowrap;
+						
+						z-index: 99;
+
+				    }
+
+				.miamibeachmap-hover.area-rivo-alto-island {
+
+				    top: 578px;
+
+				    left: 214px;
+
+				}
+
+				    .miamibeachmap-hover.area-rivo-alto-island i {
+
+				        top: 7px;
+
+				        left: 1px;
+
+				    }
+
+			        .miamibeachmap-hover.area-rivo-alto-island > span {
+
+			            top: 30px;
+
+			            left: -17px;
+
+			            white-space: nowrap;
+
+			            text-align: center;
+						
+						z-index: 99;
+
+			        }
+
+			     .miamibeachmap-hover.area-dilido-island {
+
+				    top: 570px;
+
+				    left: 195px;
+
+				}
+
+				    .miamibeachmap-hover.area-dilido-island i {
+
+				        top: -10px;
+
+				        left: -3px;
+
+				    }
+
+				    .miamibeachmap-hover.area-dilido-island > span {
+
+				        top: -8px;
+
+				        left: -96px;
+
+				        white-space: nowrap;
+						
+						z-index: 99;
+
+				    }
+
+
+
+				.miamibeachmap-hover.area-san-marino-island {
+
+				    top: 582px;
+
+				    left: 175px;
+
+				}
+
+				    .miamibeachmap-hover.area-san-marino-island i {
+
+				        top: 3px;
+
+				        left: -1px;
+
+				    }
+
+				    .miamibeachmap-hover.area-san-marino-island > span {
+
+				        white-space: nowrap;
+
+				        text-align: center;
+
+				        left: -86px;
+
+				        top: 4px;
+						
+						z-index: 99;
+
+				    }
+
+
+
+				.miamibeachmap-hover.area-hibiscus-island {
+
+				    top: 625px;
+
+				    left: 167px;
+
+				}
+
+				    .miamibeachmap-hover.area-hibiscus-island i {
+
+				        top: -5px;
+
+				        left: 7px;
+
+				    }
+
+
+
+				    .miamibeachmap-hover.area-hibiscus-island > span {
+
+				        top: 0;
+
+				        left: -96px;
+
+				        white-space: nowrap;
+						
+						z-index: 99;
+
+				    }
+
+
+
+				.miamibeachmap-hover.area-palm-island {
+
+				    top: 640px;
+
+				    left: 155px;
+
+				}
+
+				    .miamibeachmap-hover.area-palm-island i {
+
+				        top: 3px;
+
+				        left: 30px;
+
+				    }
+
+				    .miamibeachmap-hover.area-palm-island > span {
+
+				        top: 8px;
+
+				        left: -53px;
+
+				        white-space: nowrap;
+						
+						z-index: 99;
+
+				    }
+
+
+
+				.miamibeachmap-hover.area-star-island {
+
+				    top: 650px;
+
+				    left: 234px;
+
+				}
+
+				    .miamibeachmap-hover.area-star-island i {
+
+				        top: 1px;
+
+				        left: 2px;
+
+				    }
+
+				    .miamibeachmap-hover.area-star-island > span {
+
+				        white-space: nowrap;
+
+				        top: 23px;
+
+				        left: -9px;
+
+				        text-align: center;
+						
+						z-index: 99;
+
+				    }
+
+
+
+        .miamibeachmap-hover.area-rivo-alto-island > span span,
+
+        .miamibeachmap-hover.area-dilido-island > span span,
+
+        .miamibeachmap-hover.area-san-marino-island > span span,
+
+        .miamibeachmap-hover.area-hibiscus-island > span span,
+
+        .miamibeachmap-hover.area-palm-island > span span,
+
+        .miamibeachmap-hover.area-star-island > span span {
+
+            font-size: 12px;
+
+            line-height: 16px;
+
+        }
+		
+		.miamibeachmap-hover > span a:hover span {
+			text-shadow: rgb(3, 67, 73) 3px 4px 5px, rgb(3, 67, 73) 0.540302px 0.841471px 0px, rgb(3, 67, 73) -0.416147px 0.909297px 0px, rgb(3, 67, 73) -0.989992px 0.14112px 0px, rgb(3, 67, 73) -0.653644px -0.756802px 0px, rgb(3, 67, 73) 0.283662px -0.958924px 0px, rgb(3, 67, 73) 0.96017px -0.279415px 0px;
+		}
+		
+		
+.miamibeachmap-hover.area-indian-creek > span a img {
+    position: absolute;
+    z-index: -1;
+    top: -43px;
+    left: 1px;
+}
+
+.miamibeachmap-hover.area-indian-creek > span a i {
+	position: absolute;
+	top: -28px;
+	left: 18px;
+}
+
+.miamibeachmap-hover > span a:hover i:before {
+	background: url(../../images/miami-beach/miamibeach-pin-hover.png) center no-repeat !important; 
+}
+
+.miamibeachmap-hover.area-la-gorce-island > span a img {
+    position: absolute;
+    z-index: -1;
+    top: 12px;
+    left: 74px;
+}
+
+.miamibeachmap-hover.area-la-gorce-island > span a i {
+    position: absolute;
+    top: 7px;
+    left: 81px;
+}
+
+
+.miamibeachmap-hover.area-miami-beach > span a img {
+    position: absolute;
+    z-index: -1;
+    top: -286px;
+    left: -60px;
+}
+
+.miamibeachmap-hover.area-miami-beach > span a i {
+    position: absolute;
+    top: -29px;
+left: 17px;
+}
+
+.miamibeachmap-hover.area-allison-island > span a img {
+    position: absolute;
+    z-index: -1;
+    top: 9px;
+	left: -80px;
+}
+
+.miamibeachmap-hover.area-allison-island > span a i {
+    position: absolute;
+        top: -2px;
+    left: -84px;
+}
+
+.miamibeachmap-hover.area-aqua-island > span a img {
+    position: absolute;
+    z-index: -1;
+    top: 14px;
+	left: -78px;
+}
+
+.miamibeachmap-hover.area-aqua-island > span a i {
+	position: absolute;
+	top: -3px;
+	left: -81px;
+}
+
+.miamibeachmap-hover.area-sunset-island > span a img {
+    position: absolute;
+    z-index: -1;
+    top: 2px;
+left: 60px;
+}
+
+.miamibeachmap-hover.area-sunset-island > span a i {
+	position: absolute;
+	top: 7px;
+	left: 67px;
+}
+
+.miamibeachmap-hover.area-belle-island > span a img {
+    position: absolute;
+    z-index: -1;
+    top: 2px;
+left: -14px;
+}
+
+.miamibeachmap-hover.area-belle-island > span a i {
+	position: absolute;
+	top: -4px;
+left: -10px;
+}
+
+.miamibeachmap-hover.area-rivo-alto-island > span a img {
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+left: 17px;
+}
+
+.miamibeachmap-hover.area-rivo-alto-island > span a i {
+	position: absolute;
+	top: -24px;
+left: 18px;
+}
+
+.miamibeachmap-hover.area-dilido-island > span a img {
+    position: absolute;
+    z-index: -1;
+    top: 8px;
+	left: 96px;
+}
+
+.miamibeachmap-hover.area-dilido-island > span a i {
+	position: absolute;
+	top: -2px;
+left: 93px;
+}
+
+.miamibeachmap-hover.area-san-marino-island > span a img {
+    position: absolute;
+    z-index: -1;
+    top: -4px;
+left: 86px;
+}
+
+.miamibeachmap-hover.area-san-marino-island > span a i {
+	position: absolute;
+	top: -1px;
+left: 85px;
+}
+
+.miamibeachmap-hover.area-hibiscus-island > span a img {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+left: 97px;
+}
+
+.miamibeachmap-hover.area-hibiscus-island > span a i {
+	position: absolute;
+	top: -5px;
+left: 103px;
+}
+
+.miamibeachmap-hover.area-palm-island > span a img {
+    position: absolute;
+    z-index: -1;
+    top: -8px;
+left: 53px;
+}
+
+.miamibeachmap-hover.area-palm-island > span a i {
+	position: absolute;
+	top: -6px;
+left: 83px;
+}
+
+.miamibeachmap-hover.area-star-island > span a img {
+    position: absolute;
+    z-index: -1;
+    top: -23px;
+left: 9px;
+}
+
+.miamibeachmap-hover.area-star-island > span a i {
+	position: absolute;
+	top: -22px;
+left: 11px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1366px) {
+
+	.miamibeach-text {
+
+	    margin-left: -60px;
+
+	}
+
+	.miamibeach-map-wrap {
+
+		margin-right: -60px;
+
+	}
+
+	.miamibeachmap-hover.area-rivo-alto-island > span span,
+
+	.miamibeachmap-hover.area-dilido-island > span span,
+
+	.miamibeachmap-hover.area-san-marino-island > span span,
+
+	.miamibeachmap-hover.area-hibiscus-island > span span,
+
+	.miamibeachmap-hover.area-palm-island > span span,
+
+	.miamibeachmap-hover.area-star-island > span span {
+
+	    padding: 4px 0;
+
+	}
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+	.miamibeach-text {
+
+	    margin-left: -15px;
+
+	}
+
+	.miamibeach-map-wrap {
+
+		margin-right: -15px;
+
+	}
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+	.miamibeach-text {
+
+	    margin-left: 0;
+
+	}
+
+	.miamibeach-map-wrap {
+
+		margin-right: 0;
+
+	}
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+	#miamibeach-wrap:before {
+
+		width: calc( (100vw - 940px) / 2 );
+
+	}
+
+	.miamibeach-back-link a {
+
+		font-size: 12px;
+
+	}
+
+}
+
+@media only screen and (max-width: 991px) {
+
+	#miamibeach-wrap:before {
+
+		display: none;
+
+	}
+
+	.miamibeach-back-link {
+
+		position: relative;
+
+		width: 100%;
+
+		margin-bottom: 30px;
+
+		text-align: center;
+
+	}
+
+	.miamibeach-map-wrap {
+
+		margin: 0 auto;
+
+	}
+
+	.miamibeach-text{
+
+		text-align: center;
+
+	}
+	.miamibeach-back-link-mobile a {
+		padding: 15px 27px 15px 36px;
+		padding-right: 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	.miamibeach-title .entry-title {
+
+	    font-size: 26px;
+
+	    padding: 0 0 14px 60px;
+
+	    background-size: 55px auto;
+
+	    background-position: 0 4px;
+
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	
+	.miamibeach-back-link-mobile a{
+		padding: 20px 0 20px 36px;
+		font-size: 9px;
+	}
+}

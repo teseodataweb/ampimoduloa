@@ -1,0 +1,343 @@
+/***Online Presence***/
+
+.header-sm{
+	display: none;
+}
+.ip-banner{
+	overflow: hidden;
+}
+.ip-banner::before {
+    background: rgba(0,0,0,.05);
+}
+
+.ip-banner::after {
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:url(../../images/relocation/reloc-banner-fade.png) center top repeat-x;
+	background-size: cover;
+}
+.custom-breadcrumbs{
+	position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.050em;
+    padding: 10px 0;
+}
+.custom-breadcrumbs span{
+	font-size: 11px;
+	display: inline-block;
+}
+.custom-breadcrumbs .breadcrumb_last{
+	font-weight: 600;
+}
+.custom-breadcrumbs .container{
+	position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%,0%);
+}
+.custom-breadcrumbs .container:before{
+	content: '';
+    display: block;
+    background: rgba(0,46,51,.7);
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+    width: 100vw;
+}
+#breadcrumbs{
+	position: relative;
+	z-index: 2;
+}
+#op-wrap{
+	position: relative;
+    padding: 0 0 77px;
+}
+#op-wrap .custom-breadcrumbs{
+	display: none;
+}
+.op-wrapper{}
+.op-top{
+	background: url(../../images/online-presence/op-bg.png) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.op-top:after{
+	content: '';
+    display: block;
+    background: #014046;
+    position: absolute;
+    z-index: 0;
+    height: 140px;
+    width: 26.545vw;
+    right: 0;
+    bottom: 0;
+}
+.op-title{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 75px;
+    padding: 90px 0 0;
+}
+.op-title h1{
+	overflow: hidden;
+    text-align: right;
+}
+.op-title strong{
+	display: block;
+    font-size: 60px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.op-title span{
+	font-size: 28px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.150em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.op-title span:after{
+	content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+.op-container{
+	background:#fff;
+}
+.top-content{
+	background: #fff;
+    padding: 0 0 109px 65px;
+    margin: 0 -30px 0 -28px;
+}
+.op-text{
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 28px;
+	letter-spacing: 0.025em;
+	color:#000;
+}
+.op-text p{
+	margin: 28px 0 0;
+}
+.op-text p:first-child{
+	margin: 0 0 0;
+}
+.op-img{
+	margin: -31px -67px 0 -15px;
+    position: relative;
+    z-index: 5;
+}
+.op-img canvas{
+	display: block;
+	width: 100%;
+	height: auto;
+	background:url(../../images/online-presence/op-img.jpg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.op-logos{
+	position: relative;
+	background:url(../../images/online-presence/op-logos-bg.png) top center no-repeat #fff;
+	background-size: cover;
+	padding: 195px 0 0;
+}
+.op-logos .logos-wrapper{
+	background:#fff;
+	padding: 50px 60px;
+	position: relative;
+}
+.op-logos .logos-wrapper:before{
+	content:'';
+	display: block;
+	width: 57.153%;
+	height: 68px;
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	bottom: 100%;
+	background: #275c62;
+}
+.op-logos .logos-wrapper:after{
+	content:'';
+	display: block;
+	width: 80px;
+	position: absolute;
+	z-index: 0;
+	right: 100%;
+	bottom: 0;
+	top: -68px;
+	background: #014046;
+}
+.op-logos ul{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.op-logos li{
+	margin: 30px 13px;
+}
+.op-logos li a{
+	pointer-events: none;
+}
+.op-btns{
+	text-align: center;
+	font-size: 0;
+	margin: 60px 0 0;
+}
+.op-btns > div{
+	margin: 0 0 0 15px;
+	display: inline-block;vertical-align: middle;
+}
+.op-btns > div:first-child{
+	margin: 0 0 0 0;
+}
+.op-btns a{
+	font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #014046;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    display: inline-block;
+    padding: 22px 15px 22px 50px;
+    background: url(../../images/palm-2.png) 15px center no-repeat;
+    font-family: 'Termina';
+    transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+}
+.op-btns a:hover{
+	border: 2px solid #f5bbb3;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1366px) {
+	
+}
+
+@media only screen and (max-width: 1199px) {
+	.top-content {
+	    padding: 0 0 109px 20px;
+	    margin: 0 -30px 0 0;
+	}
+	.op-title {
+		padding: 60px 0 0;
+	    margin: 0 0 25px;
+	}
+	.op-title strong{
+		font-size: 47px;
+	}
+	.op-title span {
+	    font-size: 24px;
+	}
+	.op-img {
+	    margin: -31px -15px 0 -40px;
+	}
+	.op-text {
+	    font-size: 13px;
+	    line-height: 22px;
+	    letter-spacing: 0.000em;
+	}
+	.op-logos .logos-wrapper:after {
+	    width: 20px;
+	}
+	.op-logos li {
+	    margin: 30px 10px;
+	    max-width: 200px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.custom-breadcrumbs .container:before{
+		display: none;
+	}
+	.custom-breadcrumbs{
+		background: rgba(0,46,51,.7);
+	}
+	.top-content {
+	    padding: 0 0 40px;
+	    margin: 0 0 0 0;
+	    text-align: center;
+	}
+	.op-logos .logos-wrapper:before,
+	.op-logos .logos-wrapper:after,
+	.op-top:after{
+		display: none;
+	}
+	.op-title {
+	    justify-content: center;
+	}
+	.op-logos{
+		padding: 0 0 0;
+	}
+	.op-img {
+	    margin: 0 auto 0;
+	    width: 100%;
+	    max-width: 540px;
+	}
+	.op-logos .logos-wrapper {
+	    padding: 50px 10px;
+	}
+	.op-logos li {
+	    max-width: 300px;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+	.op-btns > div {
+	    margin: 20px 0 0;
+	    display: block;
+	}
+	.op-logos ul {
+	    flex-flow: column wrap;
+	    justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.op-title strong {
+	    font-size: 30px;
+	    background-size: 60px auto;
+	    padding: 0 0 0 68px;
+	}
+	.op-title span {
+	    font-size: 18px;
+	}
+}

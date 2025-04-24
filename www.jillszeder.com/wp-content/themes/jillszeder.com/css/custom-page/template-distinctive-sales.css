@@ -1,0 +1,464 @@
+/***Distinctive Sales***/
+
+.header-sm {
+    display: none;
+}
+
+.ip-banner {
+    overflow: hidden;
+}
+
+.ip-banner::before {
+    background: rgba(0, 0, 0, .05);
+}
+
+.ip-banner::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../images/relocation/reloc-banner-fade.png) center top repeat-x;
+    background-size: cover;
+}
+
+.custom-breadcrumbs {
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 46, 51, .7);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.050em;
+    padding: 10px 0;
+}
+
+.custom-breadcrumbs span {
+    font-size: 11px;
+    display: inline-block;
+}
+
+.custom-breadcrumbs .breadcrumb_last {
+    font-weight: 600;
+}
+
+.custom-breadcrumbs .container {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+}
+
+#breadcrumbs {
+    position: relative;
+    z-index: 2;
+}
+
+#ds-wrap {
+    position: relative;
+    padding: 0 0 80px;
+    background: url(../../images/distinctive-sales/ds-bg.jpg) center top no-repeat #fff;
+    background-size: 100% auto;
+}
+
+#ds-wrap:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../images/distinctive-sales/ds-accent.jpg) center bottom no-repeat;
+    background-size: 100% auto;
+}
+
+#ds-wrap .custom-breadcrumbs {
+    display: none;
+}
+
+.ds-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.ds-container {}
+
+.ds-container .ds-content {
+    background: #fff;
+}
+
+.ds-title {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 75px;
+    padding: 90px 0 0;
+}
+
+.ds-title h1 {
+    overflow: hidden;
+    text-align: right;
+}
+
+.ds-title strong {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+
+.ds-title span {
+    font-size: 28px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+
+.ds-title span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.ds-container {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    max-width: 1468px;
+    position: relative;
+}
+
+.ds-subtext {
+    font-size: 20px;
+    color: #000;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.025em;
+    text-align: center;
+    padding: 65px 0 0;
+}
+
+.ds-chart {}
+
+.ds-chart .chart-wrapper {
+    padding: 52px 158px 122px;
+    position: relative;
+    margin: 35px 0 0;
+}
+
+.ds-chart .chart-wrapper:before {
+    content: '';
+    display: block;
+    background: #014046;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    height: 100%;
+    width: 1px;
+    pointer-events: none;
+}
+
+.ds-chart .chart-single {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 42px 0 0;
+}
+
+.ds-chart .chart-single:first-child {
+    margin: 0 0 0;
+}
+
+.ds-chart .chart-single:nth-child(even) {
+    flex-flow: row-reverse wrap;
+}
+
+.ds-chart .chart-left {
+    width: 50%;
+}
+
+.ds-chart .chart-single .chart-content {
+    background: url(../../images/distinctive-sales/ds-chart-single.jpg) center center no-repeat;
+    background-size: cover;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #bde3de;
+    line-height: 28px;
+    max-width: 330px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    /*padding: 44px 15px 44px 44px;*/
+    /*padding: 44px;*/
+}
+
+.ds-chart .chart-single .chart-content canvas {
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ds-chart .chart-single:nth-child(even) .chart-content {
+    margin: 0 0 0 auto;
+}
+
+.ds-chart .chart-single .chart-feed {
+    margin: 23px 0 0;
+}
+
+.ds-chart .chart-single .chart-feed:first-child {
+    margin: 0 0 0;
+}
+
+.ds-chart .chart-single .chart-feed h3 {
+    font-family: 'Termina';
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.ds-chart .chart-single .chart-feed span {
+    display: block;
+    line-height: 1.3;
+    margin: 7px 0 0;
+}
+
+.ds-chart .chart-single .chart-right {
+    width: 50%;
+    /* padding: 35px 0 0;*/
+}
+
+.ds-chart .chart-single .chart-year {
+    /*font-size: 38px;*/
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    color: #014046;
+    background-image: url(../../images/distinctive-sales/ds-icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 42px auto;
+    position: relative;
+    padding: 0 0 0 96px;
+    position: relative;
+    left: -21px;
+}
+
+.ds-chart .chart-single:nth-child(even) .chart-year {
+    padding: 0 96px 0 0;
+    background-position: right center;
+    text-align: right;
+    left: 21px;
+}
+
+.ds-chart .chart-single .chart-year:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: calc(100% + 18px);
+    margin: auto 0;
+    width: 33px;
+    height: 3px;
+    background: #f7c1b9;
+}
+
+.ds-chart .chart-single:nth-child(even) .chart-year:before {
+    right: -51px;
+}
+
+.ds-btns {
+    font-size: 0;
+    text-align: center;
+    margin: 50px 0 0;
+}
+
+.ds-btns > div {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 50px;
+}
+
+.ds-btns > div:first-child {
+    margin: 0 0 0 0;
+}
+
+.ds-btns a {
+    display: inline-block;
+    margin: 0 0;
+    border: 2px solid rgba(245, 188, 180, 0);
+    color: #fff;
+    font-family: 'Termina';
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    padding: 15px 5px;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+}
+
+.ds-btns a:hover {
+    border: 2px solid rgba(245, 188, 180, 1);
+}
+
+.ds-btns a span {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../../images/palm-1.png) left center no-repeat;
+    background-size: 22px auto;
+    padding: 7px 0 7px 27px;
+}
+
+.addtoany_content {
+	display: none;
+}
+
+@media only screen and (max-width: 1440px) {}
+
+@media only screen and (max-width: 1366px) {}
+
+@media only screen and (max-width: 1199px) {
+    #ds-wrap {
+        padding: 0 0 30px;
+    }
+    .ds-title strong {
+        font-size: 50px;
+    }
+    .ds-title span {
+        font-size: 26px;
+    }
+    .ds-stats .stats-row .stats-desc {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .ds-chart .chart-wrapper {
+        padding: 52px 40px 122px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #ds-wrap {
+        padding: 0 0 30px;
+    }
+    #ds-wrap:after {
+        background-size: 100% 210px;
+    }
+    .ds-chart .chart-wrapper {
+        padding: 52px 0 0;
+    }
+    .ds-chart .chart-single .chart-year:before,
+    .ds-chart .chart-wrapper:before {
+        display: none;
+    }
+    .ds-chart .chart-single:nth-child(even),
+    .ds-chart .chart-single {
+        flex-flow: column-reverse wrap;
+        padding: 25px 0;
+        border: 1px solid #014046;
+        margin: 42px 0 0;
+    }
+    .ds-chart .chart-left {
+        width: 100%;
+    }
+    .ds-chart .chart-single .chart-right {
+        width: 100%;
+        padding: 0 0 0;
+    }
+    .ds-chart .chart-single:nth-child(even) .chart-content,
+    .ds-chart .chart-single .chart-content {
+        margin: 0 auto;
+    }
+    .ds-chart .chart-single .chart-year,
+    .ds-chart .chart-single:nth-child(even) .chart-year {
+        left: 0;
+        padding: 0 0 45px 0;
+        text-align: center;
+        background-position: center bottom;
+        margin: 0 0 25px;
+    }
+    .ds-btns > div {
+        display: block;
+        margin: 25px 0 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ds-title strong {
+        font-size: 32px;
+        padding: 0 0 0 70px;
+        background-size: 60px auto;
+    }
+    .ds-title span {
+        font-size: 24px;
+    }
+    #ds-wrap {
+        padding: 0 0 40px;
+    }
+    .ds-chart .chart-single .chart-feed h3 {
+        font-size: 14px;
+    }
+    .ds-chart .chart-single:nth-child(even) .chart-content,
+    .ds-chart .chart-single .chart-content {
+        text-align: center;
+        padding: 30px 10px;
+        font-size: 12px;
+        line-height: 24px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+/*
+    .ds-title strong {
+        font-size: 21px;
+        padding: 0 0 0 45px;
+        background-size: 35px auto;
+    }
+*/
+    .ds-title span {
+        font-size: 17px;
+    }
+    .ds-chart .chart-single:nth-child(even),
+    .ds-chart .chart-single {
+        padding: 25px 10px;
+    }
+
+    .ds-title strong{
+        font-size: 29px;
+    }
+}

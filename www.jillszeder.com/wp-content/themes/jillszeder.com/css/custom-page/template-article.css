@@ -1,0 +1,574 @@
+/*
+
+ * Template Name: Article
+
+ */
+
+ #inner-page-wrapper{
+ 	margin-bottom: 0;
+ }
+
+ #inner-page-wrapper > .container{
+ 	width: 100%;
+ 	padding: 0 0;
+ }
+
+ .custom-breadcrumbs{
+
+	position: absolute;
+
+    z-index: 4;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    background: rgba(0,46,51,.7);
+
+    color: #fff;
+
+    text-transform: uppercase;
+
+    font-size: 11px;
+
+    font-weight: 300;
+
+    letter-spacing: 0.050em;
+
+    padding: 10px 0;
+
+}
+
+.custom-breadcrumbs span{
+
+	font-size: 11px;
+
+	display: inline-block;
+
+}
+
+.custom-breadcrumbs .breadcrumb_last{
+
+	font-weight: 600;
+
+}
+
+.custom-breadcrumbs .container{
+
+	position: relative;
+
+    top: 0;
+
+    left: 0;
+
+    transform: translate(0%,0%);
+
+}
+
+#breadcrumbs{
+
+	position: relative;
+
+	z-index: 2;
+
+}
+
+#blogdet-wrap{
+	padding: 80px 0 140px;
+}
+.blogdet-title-wrap {
+	text-align: center;
+}
+.blogdet-title{
+	max-width: 890px;
+	margin: 0 auto 30px;
+	font-family: 'Termina';
+	font-size: 60px;
+	color: #014046;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0 0 0 98px;
+    background: url('../../images/palms-2.png') left center no-repeat;
+}
+.blogdet-pub{
+	font-size: 15px;
+	font-weight: 300;
+	color: #000;
+	line-height: 1.667;
+	margin: 0 0 10px;
+}
+.blogdet-content{}
+.blogdet-img{
+	position: relative;
+}
+.blogdet-img canvas{
+	display: block;
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 0;
+}
+.blogdet-img img{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.blogdet-desc{
+	margin: 60px 0 0;
+}
+.blogdet-desc .blogdet-box{
+	background: url(../../images/article/blogdet-bg_02.jpg) center center no-repeat #0d494f;
+	background-size: cover;
+	padding: 50px 40px 56px;
+	max-width: 458px;
+	float: right;
+	margin: 0 0 25px 5%;
+}
+.blogdet-desc .blogdet-box-inner{
+	overflow: hidden;
+	border-bottom: 4px solid #1e5f62;
+}
+.blogdet-desc .blogdet-quote{
+	width: 34px;
+	position: relative;
+}
+.blogdet-desc .blogdet-quote:before{
+	content:'';
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	left:calc(100% + 24px);
+	height: 4px;
+	width: 100vw;
+	background: #1e5f62;
+}
+.blogdet-desc .blogdet-box p{
+	font-size: 30px;
+	line-height: 1.333;
+	color: #fff;
+	font-weight: 600;
+	padding: 36px 0 40px;
+	margin: 0 0 0;
+	letter-spacing: 0em;
+}
+.blogdet-desc{
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 0.025em;
+	line-height: 1.667;
+}
+.blogdet-desc p{
+	margin: 20px 0 0;
+}
+.blogdet-desc p:nth-of-type(1){
+	margin: 0 0 0;
+}
+.blogdet-desc p.lg{
+	color: #014046;
+	font-size: 23px;
+	font-weight: 700;
+}
+.blogdet-desc p.hl{
+	color: #014046;
+	font-size: 18px;
+	font-weight: 700;
+}
+.blogdet-desc strong{
+	font-weight: 700;
+}
+.blogdet-share{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 64px 0 0;
+}
+.blogdet-share .blogdet-share-label{
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.020em;
+	color: #014046;
+}
+.blogdet-share a{
+	font-size: 26px;
+	margin: 0 0 0 38px;
+}
+.blogdet-share a:hover{
+	color: #f7c1b9;
+}
+.blogdet-subs{
+	margin: 170px auto 0;
+	max-width: 1470px;
+	background: url(../../images/article/blogdet-bg_03.jpg) center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 0 0 0 80px;
+	position: relative;
+	width: calc(100% - 30px);
+	padding-top: 40px;
+}
+.blogdet-subs:before{
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: 100%;
+	right: 0;
+	height: 62px;
+	width: 45.238%;
+	background: url(../../images/article/blogdet-accent.jpg) top center no-repeat;
+	background-size: cover;
+}
+.blogdet-subs-inner{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: flex-start;
+	min-height: 277px;
+}
+.blogdet-subs-left{}
+
+.blogdet-subs-title{}
+.blogdet-subs-title h2{
+    overflow: hidden;
+    text-align: right;
+}
+.blogdet-subs-title h2 strong{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-1.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.blogdet-subs-title h2 span{
+    font-size: 28px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.150em;
+    color: #fff;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.blogdet-subs-title h2 span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+.blogdet-subs-form{
+	margin: 0 0 0 100px;
+}
+.blogdet-subs-form .blog-nl-fields{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+.blogdet-subs-form .blog-nl-email input{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 382px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #fff;
+    border: 0px;
+    border-bottom: 2px solid #1c5c5f;
+    background: none;
+    height: 72px;
+    outline: 0;
+    line-height: 1.5;
+    padding: 0 0;
+}
+.blogdet-subs-form .blog-nl-submit{
+	margin: 0 0 0 15px;
+}
+.blogdet-subs-form .wpcf7 form .wpcf7-response-output{
+	color: #fff;
+}
+.blogdet-subs-form .blog-nl-submit input{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 205px;
+	width: 100%;
+	height: 62px;
+	border: 2px solid rgba(245,188,180,0);
+	color: #fff;
+	font-family: 'Termina';
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.025em;
+	text-transform: uppercase;
+	background: url(../../images/palm-1-hp.png) 25px center no-repeat;
+	background-size: 18px auto;
+	padding: 7px 15px 7px 58px;
+	outline: 0;
+	transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+}
+.blogdet-subs-form .blog-nl-submit input:hover {
+    border: 2px solid rgba(245,188,180,1);
+}
+.blogdet-rel{
+	padding: 108px 0 0;
+}
+.blogdet-rel-top{
+	 display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.blogdet-rel-title{
+	margin: 0 0 50px;
+}
+.blogdet-rel-title h2{
+    overflow: hidden;
+    text-align: right;
+}
+.blogdet-rel-title h2 strong{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.blogdet-rel-title h2 span{
+    font-size: 28px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.150em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.blogdet-rel-title h2 span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+.blogdet-rel-inner{}
+.blogdet-rel-inner .blogdet-rel-single{}
+.blogdet-rel-inner .blogdet-rel-single a{
+	display: block;
+	position: relative;
+}
+.blogdet-rel-inner .blogdet-rel-single a .blogdet-rel-img{
+	position: relative;
+}
+.blogdet-rel-inner .blogdet-rel-single a .blogdet-rel-img img{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+.blogdet-rel-inner .blogdet-rel-single a .blogdet-rel-img canvas{
+	display: block;
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 0;
+}
+.blogdet-rel-inner .blogdet-rel-single a .blogdet-rel-label{
+	font-size: 18px;
+	font-weight: 700;
+	color: #014046;
+	letter-spacing: 0.025em;
+	line-height: 1.389;
+	margin: 50px 0 0;
+}
+.blogdet-rel-inner .blogdet-rel-single a:hover .blogdet-rel-label {
+	opacity: .8;
+}
+
+/* Content Adjustments */
+.blogdet-desc img {
+    display: block;
+	width: 70%;
+    margin: auto;
+
+}
+
+.blogdet-desc ol, .blogdet-desc ul {
+    list-style-type: unset;
+	padding: revert;
+}
+
+.blogdet-desc ol > li, .blogdet-desc ul > li {
+    margin: auto;
+	padding-top: 10px;
+}
+
+.blogdet-desc .h2, .blogdet-desc h2 {
+	color: #014046;
+    font-size: 23px;
+    font-weight: 700;
+	margin: 15px 0 0;
+}
+
+.blogdet-desc .h3, .blogdet-desc h3 {
+    color: #014046;
+    font-size: 18px;
+    font-weight: 700;
+	margin: 20px 0 0;
+}
+
+.blogdet-desc a {
+    color: #014046;
+}
+
+@media only screen and (max-width: 1199px) {}
+@media only screen and (max-width: 991px) {
+	.blogdet-title{
+		font-size: 45px;
+		padding: 0;
+		background-image: none;
+	}
+	.blogdet-desc .blogdet-box{
+		float: none;
+		margin: 0 auto 30px;
+		max-width: 100%;
+		width: 458px;
+	}
+	.blogdet-subs{
+		padding: 0 15px;
+		background-attachment: scroll;
+	}
+	.blogdet-subs:before{
+		display: none;
+	}
+	.blogdet-subs-inner{
+		flex-flow: column wrap;
+		align-items: center;
+		justify-content: center;
+		padding: 30px 0;
+	}
+	.blogdet-subs-form .blog-nl-fields{
+		flex-flow: column wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.blogdet-subs-form .blog-nl-email{
+		width: 100%;
+		max-width: 350px;
+		margin: 0 auto;
+	}
+	.blogdet-subs-form .blog-nl-email input{
+		width: 100%;
+	}
+	.blogdet-subs-form{
+		margin: 30px 0 0;
+		width: 100%;
+	}
+	.blogdet-subs-form .blog-nl-submit{
+		margin: 20px 0 0;
+	}
+	.blogdet-rel-inner .blogdet-rel-single{
+		margin: 0 auto;
+		max-width: 360px;
+		padding: 30px 0 0;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.blogdet-title{
+		font-size: 36px;
+	}
+	.blogdet-subs-title h2 strong{
+	    font-size: 44px;
+	    padding: 0 0 0 68px;
+	    background: url(../../images/palms-1.png) left center no-repeat;
+	    background-size: 58px auto;
+	}
+	.blogdet-subs-title h2 span{
+	    font-size: 25px;
+	    letter-spacing: 0.030em;
+	}
+	.blogdet-rel-title h2 strong{
+		font-size: 44px;
+	    padding: 0 0 0 68px;
+	    background: url(../../images/palms-2.png) left center no-repeat;
+	    background-size: 58px auto;
+	}
+	.blogdet-rel-title h2 span{
+		font-size: 25px;
+	    letter-spacing: 0.030em;
+	}
+	.blogdet-desc img {
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 567px) {
+}
+@media only screen and (max-width: 480px) {
+	.blogdet-share .blogdet-share-label{
+		font-size: 16px;
+	}
+	.blogdet-share a{
+		font-size: 24px;
+		margin: 0 0 0 26px;
+	}
+	.blogdet-desc .blogdet-box{
+		padding: 40px 20px 46px;
+	}
+	.blogdet-desc .blogdet-box p{
+		font-size: 26px;
+	}
+	.blogdet-subs-title h2 strong{
+	    font-size: 27px;
+	    padding: 0 0 0 58px;
+	    background: url(../../images/palms-1.png) left center no-repeat;
+	    background-size: 48px auto;
+	}
+	.blogdet-subs-title h2 span{
+		font-size: 14px;
+	}
+	.blogdet-rel-title h2 strong{
+		font-size: 27px;
+	    padding: 0 0 0 58px;
+	    background: url(../../images/palms-2.png) left center no-repeat;
+	    background-size: 48px auto;
+	}
+	.blogdet-rel-title h2 span{
+		font-size: 14px;
+	}
+}

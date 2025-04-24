@@ -1,0 +1,38 @@
+.addReadMore {
+    height: 410px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 991px) {
+	.addReadMore {
+	    /*height: auto;*/
+	   	height: 400px;
+	}
+}
+
+.moreless-button {
+    display: block;
+    margin: 22px 0 0;
+    max-width: 190px;
+    border: 2px solid rgba(245,188,180,0);
+    color: #014046;
+    font-family: 'Termina';
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .025em;
+    text-transform: uppercase;
+    padding: 15px 5px;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    cursor: pointer;
+}
+
+.moreless-button span {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../../images/palm-2-hp.png) left center no-repeat;
+    background-size: 22px auto;
+    padding: 7px 0 7px 27px;
+}

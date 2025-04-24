@@ -1,0 +1,431 @@
+/***Neighborhood Guides***/
+
+.header-sm{
+	display: none;
+}
+.ip-banner{
+	overflow: hidden;
+}
+.ip-banner::before {
+    background: rgba(0,0,0,.05);
+}
+
+.ip-banner::after {
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:url(../../images/relocation/reloc-banner-fade.png) center top repeat-x;
+	background-size: cover;
+}
+.custom-breadcrumbs{
+	position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,46,51,.7);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.050em;
+    padding: 10px 0;
+}
+.custom-breadcrumbs span{
+	font-size: 11px;
+	display: inline-block;
+}
+.custom-breadcrumbs .breadcrumb_last{
+	font-weight: 600;
+}
+.custom-breadcrumbs .container{
+	position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%,0%);
+}
+#breadcrumbs{
+	position: relative;
+	z-index: 2;
+}
+#ng-wrap{
+	position: relative;
+    padding: 0 0 4.8125vw;
+    background:url(../../images/neighborhood-guides/ng-accent.jpg) center top no-repeat #fff;
+    background-size: 100% auto;
+}
+#ng-wrap .custom-breadcrumbs{
+	display: none;
+}
+.ng-wrapper{}
+.ng-title{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 4.6875vw;
+    padding: 5.625vw 0 0;
+}
+.ng-title h1{
+	overflow: hidden;
+    text-align: right;
+    padding: 0.3125vw 0 0;
+}
+.ng-title strong{
+	display: block;
+    font-size: 3.75vw;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 0 6.125vw;
+    background: url(../../images/palms-1.png) left center no-repeat;
+    background-size: 5.5vw auto;
+}
+.ng-title span{
+	font-size: 1.75vw;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    color: #fff;
+    display: inline-block;
+    margin: 0.625vw 0 0;
+    position: relative;
+}
+.ng-title span:after{
+	content: '';
+    display: block;
+    height: 0.1875vw;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+.ng-container{
+	width:91.75vw;
+    margin: 0 auto;
+}
+.ng-subtext{
+    color: #fff;
+    font-size: 0.9375vw;
+    letter-spacing: 0.025em;
+    line-height: 1.5625vw;
+    margin: 0 auto;
+    max-width: 55vw;
+    text-align: center;
+}
+.ng-logo{
+    width: 15.6875vw;
+    position: absolute;
+    pointer-events: none;
+    left: 8.3vw;
+    top: 10.7vw;
+}
+.ng-logo img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.ng-miami{
+    width: 13.3125vw;
+    position: absolute;
+    left: 29vw;
+    bottom: 24.4375vw;
+    pointer-events: none;
+}
+.ng-miami img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.ng-content{
+    min-height: 83.0625vw;
+    background:url(../../images/neighborhood-guides/ng-bg.png) center top no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 5.25vw 0 0;
+}
+.ng-content .ng-map{
+    width: 41.875vw;
+    top:6.25vw;
+    right: 3.125vw;
+    position: absolute;
+    z-index: 0;
+}
+.ng-content .ng-map .ng-map-main{
+    position: relative;
+}
+.ng-content .ng-map .ng-map-main > img{
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 0;
+}
+
+.ng-map-hovers{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+.ng-map-hovers .hover-single{
+    position: absolute;
+    opacity: 0;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+}
+.ng-map-hovers .hover-single.active{
+    opacity: 1;
+}
+.ng-map-hovers .hover-single img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.ng-map-hovers .bayharbour{
+    width: 9.625vw;
+    right: 1vw;
+    top: 19.86vw;
+}
+.ng-map-hovers .balharbour{
+    width: 7.75vw;
+    top: 18.93vw;
+    right: 1.4vw;
+}
+.ng-map-hovers .baypoint{
+    width: 6.125vw;
+    top: 31.13vw;
+    right: 11.26vw;
+}
+.ng-map-hovers .brickell{
+    width: 3.75vw;
+    right: 16.4vw;
+    bottom: 25.33vw;
+}
+.ng-map-hovers .coconutgrove{
+    width: 8.5vw;
+    right: 19.01vw;
+    bottom: 19.8vw;
+}
+.ng-map-hovers .coralgables{
+    width: 9.4375vw;
+    right: 24.8vw;
+    bottom: 4.34vw;
+}
+.ng-map-hovers .downtown{
+    width: 5.3125vw;
+    right: 15.1vw;
+    bottom: 27.6vw;
+}
+.ng-map-hovers .edgewater{
+    width: 5.5vw;
+    top: 32.74vw;
+    right: 13.2vw;
+}
+.ng-map-hovers .fisherisland{
+    width: 3.8125vw;
+    right: 8.07vw;
+    bottom: 25.52vw;
+}
+.ng-map-hovers .goldenbeach{
+    width: 5.125vw;
+    right: 2.2vw;
+    top: 6.1vw;
+}
+.ng-map-hovers .keybriscayne{
+    width: 6.4375vw;
+    right: 11vw;
+    bottom: 13.3vw;
+
+}
+.ng-map-hovers .miamibeach{
+    width: 7.8125vw;
+    right: 6.7vw;
+    top: 23.7vw;
+}
+.ng-map-hovers .pinecrest{
+    width: 9.8125vw;
+    bottom: 7.21vw;
+    left: 2.1vw;
+}
+.ng-map-hovers .poncedavis{
+    width: 4.6875vw;
+    left: 10.5vw;
+    bottom: 16vw;
+}
+.ng-map-hovers .southmiami{
+    width: 4.625vw;
+    left: 6.5vw;
+    bottom: 16.1vw;
+}
+.ng-map-hovers .sunnyisles{
+    width: 7.375vw;
+    right: 1.1vw;
+    top: 9.1vw;
+}
+.ng-map-hovers .surfside{
+    width: 4.1875vw;
+    right: 6vw;
+    top: 21.4vw;
+}
+.ng-map-hovers .uppereastside{
+    width: 5.9375vw;
+    top: 25.75vw;
+    right: 11.5vw;
+}
+
+.ng-btns{
+    position: absolute;
+    z-index: 5;
+    top: 0vw;
+    left: 0vw;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2.625vw 0 0 2.75vw;
+}
+
+.ng-btns.mobile {
+    display: none;
+}
+.ng-btns .btns-col{
+    margin: 0 0 0 1.25vw;
+}
+.ng-btns .btns-col:first-child{
+    margin: 0 0 0 0;
+}
+.ng-btns .btns-1{}
+.ng-btns .btns-2{}
+.ng-btns a{
+    display: block;
+    border-top: 1px solid #87b0ab;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    padding: 0 1.109vw 0 2.125vw;
+    background:url(../../images/neighborhood-guides/ng-pin.png) 0.3125vw center no-repeat;
+    background-size: 0.6875vw auto;
+    font-size: 0.875vw;
+    letter-spacing: 0.025em;
+    line-height: 2.3125vw;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+}
+.ng-btns a:first-child{
+    border-top: 1px solid transparent;
+}
+.ng-btns a.active,
+.ng-btns a:hover{
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(180deg, #f6bfb7, #ffd6ce, #f5bbb3 ) 1;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1366px) {
+	
+}
+
+@media only screen and (max-width: 1199px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+    .ng-miami,
+    .ng-logo,
+    .ng-content .ng-map .ng-map-main > img,
+    .ng-map-hovers{
+        display: none;
+    }
+    .ng-subtext {
+        font-size: 12px;
+        line-height: 1.6;
+        max-width: 90vw;
+    }
+    .ng-content{
+        background: none;
+        min-height: 0;
+        margin: 30px 0 0;
+    }
+    .ng-content .ng-map{
+        position: relative;
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+    .ng-btns{
+        position: relative;
+        background: #fff;
+        padding: 30px 0;
+    }
+    .ng-btns .btns-col {
+        margin: 0 0 0 0;
+        border-top: 1px solid #87b0ab;
+    }
+    .ng-btns .btns-col:first-child{
+     border-top: 0px solid #87b0ab;   
+    }
+    .ng-btns a {
+        padding: 0 20px 0 34px;
+        background: url(../../images/neighborhood-guides/ng-pin.png) 10px center no-repeat;
+        background-size: 10px auto;
+        font-size: 13px;
+        line-height: 37px;
+    }
+    .ng-title h1{
+        padding: 8px 0 0;
+    }
+    .ng-title strong {
+        font-size: 6.75vw;
+        padding: 0 0 0 10.125vw;
+        background-size: 8.5vw auto;
+    }
+    .ng-title span {
+        font-size: 4.75vw;
+    }
+    
+    .ng-btns.desktop {
+        display: none;
+    }
+    .ng-btns.mobile {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #ng-wrap {
+        background-size: 100% 300px;
+    }
+    .ng-btns .btns-col {
+        margin: 0;
+        width: 100%;
+        padding: 0 10px;
+        border-top: transparent;
+    }
+    
+    .ng-btns .btns-col.btns-2 a:first-child {
+        border-top: 1px solid #87b0ab;
+    }
+}

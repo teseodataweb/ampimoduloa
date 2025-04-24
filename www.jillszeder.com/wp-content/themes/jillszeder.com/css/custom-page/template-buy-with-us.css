@@ -1,0 +1,317 @@
+#inner-page-wrapper {
+    margin-bottom: 118px;
+    position: relative;
+    z-index: 1;
+}
+
+#inner-page-wrapper::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1082px;
+    background: url(../../images/about-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    opacity: .15;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+}
+
+div#inner-page-wrapper > .container {
+    width: 100%;
+    padding: 0;
+}
+
+.ip-banner canvas {
+    height: 342px;
+}
+
+.ip-banner::before {
+    background: rgba(0,0,0,.05);
+}
+
+.bread-holder {
+    margin: -30px 0 0;
+    background: rgba(0,46,51,.70);
+    padding: 8px 0 4px;
+}
+
+:is(p.yoast-breadcrumbs, p#breadcrumbs){
+    margin: 0 !important;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+:is(p.yoast-breadcrumbs, p#breadcrumbs)> span > span:first-child a {
+    font-weight: 400;
+}
+
+:is(p.yoast-breadcrumbs, p#breadcrumbs)> span > span:first-child{
+    padding-right: 10px;
+}
+
+span.breadcrumb_last {
+    padding-left: 8px;
+}
+
+#content-sidebar, #content-full {
+    margin: 0;
+}
+
+.media-wrapper .media-title {
+    margin: 38px 0 0;
+}
+
+.media-wrapper .media-title h2 strong {
+    font-size: 60px;
+    font-weight: 400 !important;
+}
+
+
+.media-wrapper .media-title h2 span {
+    margin: 0;
+    top: -13px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+
+.media-wrapper .media-title h2 span:after {
+    right: 125%;
+}
+
+.buy-top-descrip {
+    max-width: 872px;
+    margin: 0 auto;
+}
+
+.buy-top-descrip p{
+    color: #000000;
+    letter-spacing: 0.025em;
+    text-align: center;
+    font-weight: 500;
+    line-height: 23px !important;
+}
+
+.ip-about-welcome {
+    max-width: 1488px;
+    margin: 26px auto 0;
+    padding: 0 10px;
+    display: flex;
+    position: relative;
+}
+
+.ip-ab-left {
+    width: 49.32%;
+    /* height: 674px; */
+}
+
+.ip-ab-right {
+    width: 50.68%;
+    background: url(../../images/ip-abr-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 85px 0 0 -1px;
+    height: 590px;
+}
+
+.ip-abr-descrip {
+    max-width: 431px;
+    margin: 0 auto;
+    padding: 20px 0 0;
+}
+
+.ip-abr-descrip p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.025em;
+    line-height: 23.27px !important;
+}
+
+.ip-ab-left canvas{
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 674px;
+}
+
+.ip-ab-list a {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Termina';
+    color: #fff;
+    letter-spacing: 0.025em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    font-size: 14px;
+}
+
+.ip-ab-list a:hover{
+    opacity: .5;
+}
+
+.ip-about-button {
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    margin-top: 27px;
+}
+
+.ip-ab-list {	display: flex;	align-items: center;	padding: 10px;	border: 2px solid rgba(0,0,0,0);}.ip-ab-list:hover {	border: 2px solid #f6c0b8;}
+
+.ip-ab-list img {
+    margin-right: 12px;
+}
+
+
+.ip-about-button .ip-ab-list:last-child {
+    margin-left: 28px;
+}
+
+.ip-about-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.ip-ab-logo-inner {
+    width: 254px;
+    height: 254px;
+    background: rgba(1,64,70,.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.ip-ab-logo-inner img {
+    pointer-events: all;
+}
+
+@media only screen and (max-width: 1450px){
+    .ip-ab-logo-inner {
+        width: 180px;
+        height: 180px;
+    }
+
+    .ip-about-button {
+        margin-left: 122px;
+    }
+}
+
+@media only screen and (max-width: 1365px){
+    .ip-ab-logo-inner img {
+        max-width: 100px;
+        width: 100%;
+    }
+
+    .ip-ab-logo-inner {
+        width: 120px;
+        height: 120px;
+    }
+
+    .ip-about-button {
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+
+    .ip-abr-descrip {
+        max-width: 331px;
+    }
+
+    .ip-abr-descrip p {
+        font-size: 11px;
+    }
+
+    .ip-ab-list a {
+        font-size: 12px;
+    }
+    
+    .ip-about-button .ip-ab-list:last-child {
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 991px){
+    .ip-about-welcome {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ip-ab-left {
+        width: 100%;
+        max-width: 764px;
+        margin: 0 auto;
+    }
+
+    .ip-ab-left canvas {
+        height: 100%;
+    }
+
+    .ip-about-logo {
+        position: relative;
+    }
+
+    .ip-ab-right {
+        height: 100%;
+        width: 100%;
+        max-width: 764px;
+        margin: 22px auto;
+        padding: 0 0 30px;
+    }
+
+    .ip-abr-descrip {
+        max-width: 100%;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .ip-abr-descrip p {
+        font-size: 14px;
+    }
+
+    .ip-about-button {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .ip-ab-logo-inner {
+        width: 254px;
+        height: 254px;
+    }
+
+    .ip-ab-logo-inner img {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .ip-about-button .ip-ab-list:last-child {
+        margin-left: 0;
+    }
+
+    .ip-about-button {
+        flex-direction: column;
+    }
+}

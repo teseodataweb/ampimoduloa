@@ -1,0 +1,507 @@
+/***Videos***/
+
+.header-sm{
+	display: none;
+}
+.ip-banner::before {
+    background: rgba(0,0,0,.05);
+}
+
+.ip-banner::after {
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:url(../../images/relocation/reloc-banner-fade.png) center top repeat-x;
+	background-size: cover;
+}
+.custom-breadcrumbs{
+	position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,46,51,.7);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.050em;
+    padding: 10px 0;
+}
+.custom-breadcrumbs span{
+	font-size: 11px;
+	display: inline-block;
+}
+.custom-breadcrumbs .breadcrumb_last{
+	font-weight: 600;
+}
+.custom-breadcrumbs .container{
+	position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%,0%);
+}
+#vid-wrap{
+	position: relative;
+	padding: 75px 0 90px;
+}
+#inner-page-wrapper{
+	overflow: hidden;
+}
+#inner-page-wrapper:before {
+	content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 932px;
+    pointer-events: none;
+    background: url(../../images/videos/videos-accent.jpg) center top no-repeat;
+    background-size: cover;
+}
+#vid-wrap .custom-breadcrumbs{
+	display: none;
+}
+
+.vid-title{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+}
+.vid-title h1{
+	overflow: hidden;
+    text-align: right;
+    margin: 0 0 0;
+}
+.vid-title h1 strong {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-1.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.vid-title h1 span{
+    font-size: 28px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.150em;
+    color: #fff;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.vid-title h1 span:after{
+	content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.vid-mid{
+	color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 55px 0 72px;
+}
+.vid-mid .vid-text{
+	letter-spacing: 0.020em;
+}
+.vid-mid .vid-text h3{
+	font-size: 30px;
+    text-transform: uppercase;
+    margin: 0 0 26px;
+    color:#daeedf;
+}
+.vid-mid .vid-text .vid-views{
+	font-size: 24px;
+	font-weight: 600;
+	margin: 0 0 30px;
+}
+.vid-mid .vid-text .vid-desc{
+	letter-spacing: 0.050em;
+	line-height: 30px;
+	color:#d1d1d1;
+}
+.vid-mid .vid-btn{
+    max-width: 180px;
+    width: 100%;
+}
+.vid-mid .vid-btn a{
+	display: block;
+    margin: 0 auto;
+    border: 2px solid rgba(245,188,180,0);
+    color: #fff;
+    font-family: 'Termina';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    padding: 15px 5px;
+    text-align: center;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+}
+.vid-mid .vid-btn a:hover {
+    border: 2px solid rgba(245,188,180,1);
+}
+.vid-mid .vid-btn a span{
+	display: inline-block;
+    vertical-align: middle;
+    background: url(../../images/palm-1.png) left center no-repeat;
+    background-size: 22px auto;
+    padding: 7px 0 7px 27px;
+}
+
+.vid-top-btns{
+	position: relative;
+	margin: 0 0  33px;
+}
+.vid-top-btns ul{
+	font-size: 0;
+}
+.vid-top-btns li{
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	padding: 0 18px;
+}
+.vid-top-btns li:first-child{
+	padding-left: 0;
+}
+.vid-top-btns li:last-child{
+	padding-right: 0;
+}
+.vid-top-btns li:after{
+	content:'';
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto 0;
+	background: #3c6365;
+	width: 1px;
+	max-height: 30px;
+}
+
+.vid-top-btns li:first-child:after{
+	display: none;
+}
+
+.vid-top-btns a{
+	font-size: 18px;
+	font-weight: 600;
+	color:#456265;
+	text-transform: uppercase;
+	border: 2px solid rgba(247, 193, 185,0);
+	display: block;
+	line-height: 62px;
+	padding: 0 45px;
+	transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+}
+.vid-top-btns a.active,
+.vid-top-btns a:hover{
+	border: 2px solid rgba(247, 193, 185,1);
+	color:#fff;
+}
+.vid-main .vid-main-single a.aios-frame-container{
+	cursor: pointer;
+	pointer-events: auto;
+}
+.vid-main .vid-main-single .vid-main-img{
+	position: relative;
+}
+.vid-main-img canvas {
+    /*max-height: 500px;*/
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.vid-main .vid-main-single .vid-main-img:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+    opacity: 1;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+}
+.vid-main .vid-main-single:hover .vid-main-img:before{
+	opacity: 1;
+}
+.vid-main .vid-main-single .vid-main-img:after{
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:url(../../images/vid-main-play-rec.png) center center no-repeat rgba(0,0,0,.2);
+	background-size: 10% auto;
+	opacity: 1;
+	transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+}
+.vid-main .vid-main-single:hover .vid-main-img:after{
+	/*opacity: 0;*/
+}
+
+.vid-main-single iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*z-index: -1;*/
+	width: 100%;
+	height: 100%;
+}
+.active-frame iframe {
+    z-index: 999;
+}
+
+.vid-thumb, .yt-toggle-pane {
+    overflow: unset;
+    margin: 14px 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.vid-thumb .vid-thumb-single{
+	cursor: pointer;
+	width: calc(25% - 5px);
+	max-width: 274px;
+	margin: 40px 0 0;
+}
+.vid-thumb .vid-thumb-single .vid-thumb-img{
+	position: relative;
+}
+.vid-thumb .vid-thumb-single .vid-thumb-img:after{
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:url(../../images/vid-main-play-rec.png) center center no-repeat rgba(0,0,0,.2);
+	background-size: 24.088% auto;
+	opacity: 1;
+	transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+}
+/*
+.vid-thumb .vid-thumb-single:hover .vid-thumb-img:after{
+	opacity: 0;
+}
+*/
+.vid-thumb .vid-thumb-single canvas{
+	display: block;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.vid-thumb .vid-thumb-single .vid-thumb-add{
+	font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.020em;
+    text-align: center;
+    background: #fff;
+    padding: 19px 5px;
+    box-shadow: 7px 7px 20px rgba(0,0,0,.1);
+}
+
+.vid-pagination{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Termina';
+	margin: 80px 0 0;
+	position: relative;
+	z-index: 1;
+}
+.vid-pagination .vid-nav{
+	cursor: pointer;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+.vid-pagination .vid-nav.vid-prev:after{
+	content:'';
+	display:block;
+	width: 29px;
+	height: 1px;
+	background:#014046;
+	margin: 0 0 0 10px;
+	pointer-events: none;
+}
+.vid-pagination .vid-nav.vid-next:before{
+	content:'';
+	display:block;
+	width: 29px;
+	height: 1px;
+	background:#014046;
+	margin: 0 10px 0 0;
+	pointer-events: none;
+}
+.vid-pagination .vid-nav em{
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.240em;
+	color:#889596;
+	text-transform: uppercase;
+	font-style: normal;
+	transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+}
+.vid-pagination .vid-nav:hover em{
+	color:#014046;
+}
+.vid-pagination .vid-nav span{
+	font-size: 17px;
+	color:#014046;
+	margin: 0 10px;
+}
+
+.vid-page-num{
+	margin: 0 15px;
+	font-size: 0;
+}
+.vid-page-num a{
+	display: inline-block;
+	vertical-align: middle;
+	border: 2px solid rgba(122,154,157,0);
+	transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.025em;
+	color: #889596;
+	text-align: center;
+	padding: 6px 3px;
+	min-width: 30px;
+}
+.vid-page-num a.active,
+.vid-page-num a:hover{
+	border: 2px solid rgba(122,154,157,1);
+	color:#014046;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+@media only screen and (max-width: 1366px) {
+
+}
+@media only screen and (max-width: 1199px) {
+	.vid-thumb .vid-thumb-single .vid-thumb-add {
+	    font-size: 13px;
+	    letter-spacing: 0.000em;
+	    padding: 19px 3px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.vid-mid{
+		text-align: center;
+    	justify-content: center;
+	}
+	.vid-thumb .vid-thumb-single {
+	    width: calc((100% / 3) - 5px);
+	}
+	.vid-top-btns a {
+	    font-size: 15px;
+	    line-height: 55px;
+	    padding: 0 25px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.vid-top-btns li:after{
+		display: none;
+	}
+	.vid-top-btns li{
+		display: block;
+		padding: 20px 0 0;
+	}
+	.vid-top-btns li:first-child{
+		padding-top: 0;
+	}
+	.vid-top-btns a{
+		text-align: center;
+	}
+	.vid-thumb .vid-thumb-single {
+	    width: calc((100% / 2) - 5px);
+	    max-width: none;
+	}
+	.vid-pagination .vid-nav{
+		margin: 0 5px;
+	}
+	.vid-pagination .vid-nav.fp-prev{
+		order: 1;
+	}
+	.vid-pagination .vid-nav.fp-next{
+		order: 2;
+	}
+	.vid-page-num {
+	    order: 3;
+	    text-align: center;
+	    width: 100%;
+	    margin: 30px 0 0;
+	    padding: 0 10px;
+	}
+
+}
+@media only screen and (max-width: 480px) {
+	.vid-title h1 strong{
+		font-size: 48px;
+	}
+	.vid-title h1 span {
+	    font-size: 20px;
+	}
+	.vid-thumb .vid-thumb-single {
+	    width: 100%;
+	}
+	.vid-thumb {
+	    justify-content: center;
+	}
+}

@@ -1,0 +1,20 @@
+.vcard-container{
+	float: left;
+	padding: 15px 0px;
+}
+.vcard-container > a{
+	font-size: 15px;
+    border: 1px solid red;
+    padding: 5px;
+    color: red;
+}
+
+.vcard-container-no-float{
+	padding: 15px 0px;
+}
+.vcard-container-no-float > a{
+	font-size: 14px;
+    border: 1px solid red;
+    padding: 5px;
+    color: red;
+}

@@ -1,0 +1,1103 @@
+/***List With Us***/
+
+.header-sm{
+	display: none;
+}
+.ip-banner{
+	overflow: hidden;
+}
+.ip-banner::before {
+    background: rgba(0,0,0,.05);
+}
+
+.ip-banner::after {
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:url(../../images/relocation/reloc-banner-fade.png) center top repeat-x;
+	background-size: cover;
+}
+.custom-breadcrumbs{
+	position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,46,51,.7);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.050em;
+    padding: 10px 0;
+}
+.custom-breadcrumbs span{
+	font-size: 11px;
+	display: inline-block;
+}
+.custom-breadcrumbs .breadcrumb_last{
+	font-weight: 600;
+}
+.custom-breadcrumbs .container{
+	position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%,0%);
+}
+#breadcrumbs{
+	position: relative;
+	z-index: 2;
+}
+#lwu-wrap{
+	position: relative;
+    padding: 0 0 77px;
+}
+#lwu-wrap .custom-breadcrumbs{
+	display: none;
+}
+.lwu-wrapper{}
+.lwu-top{
+	background: url(../../images/list-with-us/lwu-top.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.lwu-title{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 75px;
+    padding: 90px 0 0;
+}
+.lwu-title h1{
+	overflow: hidden;
+    text-align: right;
+}
+.lwu-title strong{
+	display: block;
+    font-size: 60px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.lwu-title span{
+	font-size: 28px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.lwu-title span:after{
+	content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+.lwu-container{
+	width:calc(100% - 30px);
+	margin: 0 auto;
+	max-width: 1468px;
+	position: relative;
+}
+
+.lwu-subtext{
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 23px;
+	letter-spacing: 0.025em;
+	text-align: center;
+	margin: 0 0 80px;
+}
+.lwu-brand{
+	padding: 0 0 196px;
+}
+.lwu-brand .brand-wrapper{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.brand-wrapper .brand-left{
+	width: 48.978%;
+}
+.brand-wrapper .brand-photo{
+	background:url(../../images/list-with-us/lwu-photo-accent.jpg) center center no-repeat;
+	background-size: cover;
+	width: 89.152%;
+}
+.brand-wrapper .brand-photo canvas{
+	display: block;
+	width: 100%;
+	height: auto;
+	background:url(../../images/list-with-us/lwu-brand.jpg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+	top: 78px;
+	left: 78px;
+}
+.brand-wrapper .brand-right{
+	width: 51.022%;
+	padding: 0 0 0 62px;
+}
+.brand-wrapper .brand-title{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 43px;
+}
+.brand-wrapper .brand-title h2{
+	overflow: hidden;
+    text-align: right;
+}
+.brand-wrapper .brand-title strong{
+	display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.brand-wrapper .brand-title span{
+	font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.brand-wrapper .brand-title span:after{
+	content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.brand-wrapper .brand-text{
+	font-size: 18px;
+	font-weight: 300;
+    margin: 0 0 43px;
+    line-height: 30px;
+}
+.brand-wrapper .brand-cta{}
+.brand-wrapper .brand-cta a{
+	font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #014046;
+    text-transform: uppercase;
+    border: 2px solid rgba(245,188,180,0);
+    display: inline-block;
+    padding: 22px 20px 22px 58px;
+    background: url(../../images/palm-2.png) 20px center no-repeat;
+    font-family: 'Termina';
+    transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+}
+.brand-wrapper .brand-cta a:hover{
+	border: 2px solid rgba(245,188,180,1);
+}
+.lwu-team{
+	
+}
+.lwu-team .team-photo{
+	position: relative;
+	z-index: 0;
+}
+.lwu-team .team-photo canvas{
+	display: block;
+	width: 100%;
+	height: auto;
+	background:url(../../images/list-with-us/lwu-team.jpg) center center no-repeat;
+	background-size: cover;
+}
+.lwu-team .team-content{
+	position: relative;
+	z-index: 1;
+	background:url(../../images/list-with-us/lwu-big-accent.jpg) center center no-repeat;
+	background-size: cover;
+	width: calc(100% - 20px);
+	margin: -208px auto 0;
+	max-width: 1004px;
+	padding: 1px 15px 50px;
+	text-align: center;
+	color:#fff;
+}
+.lwu-logo{
+	background: rgba(1,64,70,.95);
+    margin: 0 auto;
+    max-width: 254px;
+    padding: 45px 46px;
+    box-shadow: 1px 1px 20px rgba(0,0,0,.2);
+}
+.lwu-logo img{
+	margin: 0 auto;
+}
+.lwu-team .lwu-logo{
+	margin: -150px auto 0;
+}
+.lwu-team .team-title{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0 30px;
+}
+.lwu-team .team-title h2{
+	overflow: hidden;
+    text-align: right;
+}
+.lwu-team .team-title strong{
+	display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 0 91px;
+    background: url(../../images/palms-1.png) left center no-repeat;
+    background-size: 81px auto;
+}
+.lwu-team .team-title span{
+	font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.150em;
+    color: #819da0;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.lwu-team .team-title span:after{
+	content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+.lwu-team .team-text{
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	margin: 0 0 20px;
+}
+.lwu-team .team-text span{
+	font-weight: 500;
+}
+
+.lwu-team .team-cta{
+	text-align: center;
+}
+.lwu-team .team-cta a{
+	display: inline-block;
+    margin: 0 auto;
+    border: 2px solid rgba(245,188,180,0);
+    color: #fff;
+    font-family: 'Termina';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    padding: 15px 5px;
+    text-align: center;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+}
+.lwu-team .team-cta a:hover{
+	border: 2px solid rgba(245,188,180,1);
+}
+.lwu-team .team-cta a span {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../../images/palm-1.png) left center no-repeat;
+    background-size: 22px auto;
+    padding: 7px 0 7px 27px;
+}
+.lwu-mid{
+	background:url(../../images/list-with-us/lwu-mid-bg.jpg) center top no-repeat;
+	background-size: 100% auto;
+	padding: 118px 0 0;
+}
+.lwu-legacy{
+	padding: 0 0 200px;
+}
+.lwu-legacy .legacy-wrapper{
+	display: flex;
+	flex-flow: row-reverse wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.legacy-wrapper .legacy-left{
+	width: 48.978%;
+}
+.legacy-wrapper .legacy-photo{
+	background:url(../../images/list-with-us/lwu-photo-accent.jpg) center center no-repeat;
+	background-size: cover;
+	width: 89.152%;
+	margin: 0 0 0 auto;
+}
+.legacy-wrapper .legacy-photo canvas{
+	display: block;
+	width: 100%;
+	height: auto;
+	background:url(../../images/list-with-us/lwu-legacy.jpg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+	top: 78px;
+	right: 78px;
+}
+.legacy-wrapper .legacy-right{
+	width: 51.022%;
+	padding: 0 62px 0 165px;
+}
+.legacy-wrapper .legacy-content{
+	padding: 65px 0 0;
+}
+.legacy-wrapper .legacy-title{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 43px;
+}
+.legacy-wrapper .legacy-title h2{
+	overflow: hidden;
+    text-align: right;
+}
+.legacy-wrapper .legacy-title strong{
+	display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.legacy-wrapper .legacy-title span{
+	font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.legacy-wrapper .legacy-title span:after{
+	content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.legacy-wrapper .legacy-text{
+	font-size: 15px;
+	font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.025em;
+    margin: 0 0 43px;
+}
+.legacy-wrapper .legacy-cta{}
+.legacy-wrapper .legacy-cta a{
+	font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #014046;
+    text-transform: uppercase;
+    border: 2px solid rgba(245,188,180,0);
+    display: inline-block;
+    padding: 22px 20px 22px 58px;
+    background: url(../../images/palm-2.png) 20px center no-repeat;
+    font-family: 'Termina';
+    transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+}
+.legacy-wrapper .legacy-cta a:hover{
+	border: 2px solid rgba(245,188,180,1);
+}
+
+.lwu-global{
+	
+}
+.global-wrapper{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: flex-end;
+	position: relative;
+	z-index: 0;
+}
+.global-wrapper .global-left{
+	width: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+.global-wrapper .global-photo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:url(../../images/list-with-us/lwu-global.jpg) center center no-repeat;
+	background-size: cover;
+}
+.global-wrapper .global-photo canvas{
+	display: none;
+}
+.global-wrapper .global-right{
+	width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+	background:url(../../images/list-with-us/lwu-big-accent.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 141px 15px;
+}
+.global-wrapper .global-content{
+	color:#fff;
+}
+.global-wrapper .global-title{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 53px;
+}
+.global-wrapper .global-title h2{
+	overflow: hidden;
+    text-align: right;
+}
+.global-wrapper .global-title strong{
+	display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 0 91px;
+    background: url(../../images/palms-1.png) left center no-repeat;
+    background-size: 81px auto;
+}
+.global-wrapper .global-title span{
+	font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    color: #819da0;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.global-wrapper .global-title span:after{
+	content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+.global-wrapper .global-text{
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 30px;
+	margin: 0 0 30px;
+}
+.global-wrapper .global-cta{}
+.global-wrapper .global-cta a{
+	display: inline-block;
+    margin: 0 auto;
+    border: 2px solid rgba(245,188,180,0);
+    color: #fff;
+    font-family: 'Termina';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    padding: 15px 5px;
+    text-align: center;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+}
+.global-wrapper .global-cta a span{
+	display: inline-block;
+    vertical-align: middle;
+    background: url(../../images/palm-1.png) left center no-repeat;
+    background-size: 22px auto;
+    padding: 7px 0 7px 27px;
+}
+.global-wrapper .global-cta a:hover{
+	border: 2px solid rgba(245,188,180,1);
+}
+.global-logo{
+	position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+.global-logo .lwu-logo{}
+.lwu-bottom{
+	background:url(../../images/list-with-us/lwu-bottom-bg.jpg) center top no-repeat;
+    background-size: 100% auto;
+    padding: 122px 0 0;
+}
+.lwu-marketing{
+	padding: 0 0 196px;
+}
+.lwu-marketing .marketing-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.marketing-wrapper .marketing-left{
+    width: 48.978%;
+}
+.marketing-wrapper .marketing-photo{
+    background:url(../../images/list-with-us/lwu-photo-accent.jpg) center center no-repeat;
+    background-size: cover;
+    width: 89.152%;
+}
+.marketing-wrapper .marketing-photo canvas{
+    display: block;
+    width: 100%;
+    height: auto;
+    background:url(../../images/list-with-us/lwu-marketing.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 78px;
+    left: 78px;
+}
+.marketing-wrapper .marketing-right{
+    width: 51.022%;
+    padding: 0 0 0 62px;
+}
+.marketing-wrapper .marketing-content{
+	padding: 120px 0 0;
+}
+.marketing-wrapper .marketing-title{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 43px;
+}
+.marketing-wrapper .marketing-title h2{
+    overflow: hidden;
+    text-align: right;
+}
+.marketing-wrapper .marketing-title strong{
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.marketing-wrapper .marketing-title span{
+    font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.marketing-wrapper .marketing-title span:after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.marketing-wrapper .marketing-text{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 43px;
+    line-height: 30px;
+}
+.marketing-wrapper .marketing-cta{}
+.marketing-wrapper .marketing-cta a{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #014046;
+    text-transform: uppercase;
+    border: 2px solid rgba(245,188,180,0);
+    display: inline-block;
+    padding: 22px 20px 22px 58px;
+    background: url(../../images/palm-2.png) 20px center no-repeat;
+    font-family: 'Termina';
+    transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+}
+.marketing-wrapper .marketing-cta a:hover{
+    border: 2px solid rgba(245,188,180,1);
+}
+.lwu-exceptional{
+    
+}
+.lwu-exceptional .exceptional-photo{
+    position: relative;
+    z-index: 0;
+}
+.lwu-exceptional .exceptional-photo canvas{
+    display: block;
+    width: 100%;
+    height: auto;
+    background:url(../../images/list-with-us/lwu-exceptional.jpg) center center no-repeat;
+    background-size: cover;
+}
+.lwu-exceptional .exceptional-content{
+    position: relative;
+    z-index: 1;
+    background:url(../../images/list-with-us/lwu-big-accent.jpg) center center no-repeat;
+    background-size: cover;
+    width: calc(100% - 20px);
+    margin: -208px auto 0;
+    max-width: 1004px;
+    padding: 1px 15px 50px;
+    text-align: center;
+    color:#fff;
+}
+.lwu-exceptional .lwu-logo{
+    margin: -150px auto 0;
+}
+.lwu-exceptional .exceptional-title{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0 30px;
+}
+.lwu-exceptional .exceptional-title h2{
+    overflow: hidden;
+    text-align: right;
+}
+.lwu-exceptional .exceptional-title strong{
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 0 91px;
+    background: url(../../images/palms-1.png) left center no-repeat;
+    background-size: 81px auto;
+}
+.lwu-exceptional .exceptional-title span{
+    font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.150em;
+    color: #819da0;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.lwu-exceptional .exceptional-title span:after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+.lwu-exceptional .exceptional-text{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0 0 20px;
+}
+.lwu-exceptional .exceptional-text span{
+    font-weight: 500;
+}
+
+.lwu-exceptional .exceptional-cta{
+    text-align: center;
+}
+.lwu-exceptional .exceptional-cta a{
+    display: inline-block;
+    margin: 0 auto;
+    border: 2px solid rgba(245,188,180,0);
+    color: #fff;
+    font-family: 'Termina';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    padding: 15px 5px;
+    text-align: center;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+}
+.lwu-exceptional .exceptional-cta a:hover{
+    border: 2px solid rgba(245,188,180,1);
+}
+.lwu-exceptional .exceptional-cta a span {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../../images/palm-1.png) left center no-repeat;
+    background-size: 22px auto;
+    padding: 7px 0 7px 27px;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1366px) {
+	.legacy-wrapper .legacy-right {
+	    padding: 0 62px 0 100px;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.brand-wrapper .brand-photo canvas {
+	    top: 40px;
+	    left: 40px;
+	}
+	.lwu-team .team-content {
+	    margin: -100px auto 0;
+	}
+	.legacy-wrapper .legacy-right {
+	    padding: 0 62px 0 15px;
+	}
+	.legacy-wrapper .legacy-photo canvas {
+	    top: 40px;
+	    right: 40px;
+	}
+
+	.marketing-wrapper .marketing-photo canvas {
+	    top: 40px;
+	    left: 40px;
+	}
+	.marketing-wrapper .marketing-right {
+	    padding: 0 0 0 30px;
+	}
+	.marketing-wrapper .marketing-title strong {
+	    font-size: 45px;
+	}
+	.marketing-wrapper .marketing-text {
+	    font-size: 15px;
+	}
+	.lwu-exceptional .exceptional-content {
+	    margin: -100px auto 0;
+	}
+	.global-logo .lwu-logo {
+	    transform: scale(.4);
+	    -moz-transform: scale(.4);
+	    -webkit-transform: scale(.4);
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.lwu-subtext{
+		padding: 0 15px;
+	}
+	.lwu-subtext br{
+		display: none;
+	}
+	.lwu-brand {
+	    padding: 0 0 45px;
+	}
+	.lwu-brand .brand-wrapper {
+	    flex-flow: column wrap;
+	    justify-content: center;
+	}
+	.brand-wrapper .brand-left {
+	    width: 100%;
+	    max-width: 500px;
+	    margin: 0 0 30px;
+	}
+	.brand-wrapper .brand-photo{
+		width: 100%;
+	}
+	.brand-wrapper .brand-photo canvas{
+		top: 0;
+		left: 0;
+		right:0;
+	}
+	.brand-wrapper .brand-right{
+		width:100%;
+		text-align: center;
+		    padding: 0 0 0 0;
+	}
+	.brand-wrapper .brand-title {
+	    align-items: center;
+	    justify-content: center;
+	}
+	.lwu-legacy {
+	    padding: 0 0 45px;
+	}
+	.lwu-legacy .legacy-wrapper {
+	    flex-flow: column wrap;
+	    justify-content: center;
+	}
+	.legacy-wrapper .legacy-left {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 0 30px;
+    }
+    .legacy-wrapper .legacy-photo{
+        width: 100%;
+    }
+    .legacy-wrapper .legacy-photo canvas{
+        top: 0;
+        left: 0;
+        right:0;
+    }
+    .legacy-wrapper .legacy-right{
+        width:100%;
+        text-align: center;
+            padding: 0 0 0 0;
+    }
+    .legacy-wrapper .legacy-title {
+        align-items: center;
+        justify-content: center;
+    }
+    .lwu-legacy .legacy-wrapper {
+	    flex-flow: column wrap;
+	    justify-content: center;
+	}
+	.lwu-marketing {
+	    padding: 0 0 45px;
+	}
+	.lwu-marketing .marketing-wrapper {
+	    flex-flow: column wrap;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.marketing-wrapper .marketing-content {
+	    padding: 0 0 0;
+	}
+	.marketing-wrapper .marketing-left {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 0 30px;
+    }
+    .marketing-wrapper .marketing-photo{
+        width: 100%;
+    }
+    .marketing-wrapper .marketing-photo canvas{
+        top: 0;
+        left: 0;
+        right:0;
+    }
+    .marketing-wrapper .marketing-right{
+        width:100%;
+        text-align: center;
+            padding: 0 0 0 0;
+    }
+    .marketing-wrapper .marketing-title {
+        align-items: center;
+        justify-content: center;
+    }
+    .lwu-exceptional .exceptional-content,
+    .lwu-team .team-content {
+	    margin: 170px auto 0;
+	    width:100%;
+	}
+	.global-logo{
+		display: none;
+	}
+	.global-wrapper {
+	    flex-flow: column wrap;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.global-wrapper .global-left{
+		position: relative;
+		z-index: 0;
+		width: 100%;
+		max-width: 650px;
+		margin: 0 0 30px;
+	}
+	.global-wrapper .global-photo{
+		position: relative;
+	}
+	.global-wrapper .global-photo canvas{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.global-wrapper .global-right{
+		width: 100%;
+		text-align: center;
+	}
+	.global-wrapper .global-title {
+	    justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.lwu-title strong {
+	    font-size: 50px;
+	}
+	.lwu-title span {
+	    font-size: 24px;
+	}
+	.lwu-team .team-title strong {
+	    font-size: 37px;
+	    padding: 0 0 0 75px;
+	    background-size: 70px auto;
+	}
+	.lwu-team .team-title span {
+	    font-size: 23px;
+	}
+	.marketing-wrapper .marketing-title strong {
+	    font-size: 43px;
+	}
+	.lwu-exceptional .exceptional-title strong {
+	    font-size: 35px;
+	    padding: 0 0 0 70px;
+	    background-size: 60px auto;
+	}
+	.lwu-exceptional .exceptional-title span {
+	    font-size: 20px;
+	    letter-spacing: 0.010em;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.lwu-title strong {
+	    font-size: 39px;
+	    padding: 0 0 0 65px;
+	    background-size: 55px auto;
+	}
+	.lwu-title span {
+	    font-size: 15px;
+	}
+	.brand-wrapper .brand-title strong {
+	    font-size: 40px;
+	    padding: 0 0 0 80px;
+	    background-size: 70px auto;
+	}
+	.lwu-team .team-title strong {
+	    font-size: 23px;
+	    padding: 0 0 0 60px;
+	    background-size: 50px auto;
+	}
+	.lwu-team .team-title span {
+	    font-size: 17px;
+	    letter-spacing: 0.010em;
+	}
+	.legacy-wrapper .legacy-title strong {
+	    font-size: 34px;
+	    padding: 0 0 0 70px;
+	    background-size: 60px auto;
+	}
+	.legacy-wrapper .legacy-title span {
+	    font-size: 22px;
+	}
+	.legacy-wrapper .legacy-cta a {
+	    font-size: 10px;
+	    padding: 22px 10px 22px 40px;
+	    background: url(../../images/palm-2.png) 10px center no-repeat;
+	}
+	.global-wrapper .global-title strong {
+	    font-size: 36px;
+	    padding: 0 0 0 60px;
+	    background-size: 50px auto;
+	}
+	.global-wrapper .global-title span {
+	    font-size: 20px;
+	}
+	.global-wrapper .global-text br{
+		display: none;
+	}
+	.global-wrapper .global-cta a {
+	    font-size: 12px;
+	}
+	.marketing-wrapper .marketing-title strong {
+	    font-size: 30px;
+	    padding: 0 0 0 50px;
+	    background-size: 45px auto;
+	}
+	.marketing-wrapper .marketing-title span {
+	    font-size: 20px;
+	}
+	.marketing-wrapper .marketing-text br{
+		display: none;
+	}
+	.lwu-exceptional .exceptional-title strong {
+	    font-size: 22px;
+	    padding: 0 0 0 50px;
+	    background-size: 45px auto;
+	}
+	.lwu-exceptional .exceptional-title span {
+	    font-size: 15px;
+	    letter-spacing: 0.010em;
+	}
+    .lwu-team .team-text br{
+        display: none;
+    }
+}

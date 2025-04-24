@@ -1,0 +1,496 @@
+/***Login***/
+
+.header-sm{
+	display: none;
+}
+.ip-banner::before {
+    background: rgba(0,0,0,.05);
+}
+
+.ip-banner::after {
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:url(../../images/relocation/reloc-banner-fade.png) center top repeat-x;
+	background-size: cover;
+}
+.custom-breadcrumbs{
+	position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,46,51,.7);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.050em;
+    padding: 10px 0;
+}
+.custom-breadcrumbs span{
+	font-size: 11px;
+	display: inline-block;
+}
+.custom-breadcrumbs .breadcrumb_last{
+	font-weight: 600;
+}
+.custom-breadcrumbs .container{
+	position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%,0%);
+}
+#signup-wrap{
+	position: relative;
+	padding: 102px 0 90px;
+}
+
+#signup-wrap:before{
+	content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 51.375%;
+    height: 536px;
+    background: url(../../images/signup/login-accent.jpg) left bottom;
+    background-size: cover;
+    pointer-events: none;
+}
+#signup-wrap:after{
+	content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    width: 60.813%;
+    height: 536px;
+    background: url(../../images/signup/login-bg.jpg) right bottom;
+    background-size: cover;
+    pointer-events: none;
+}
+
+.signup-content{
+	width: calc(100% - 30px);
+	max-width: 1310px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 4;
+}
+
+.idxsignup-content{
+	display: none;
+	position: relative;
+    z-index: 5;
+}
+
+#signup-wrap .custom-breadcrumbs{
+	display: none;
+}
+
+.signup-title{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: flex-start;
+	position: relative;
+	z-index: 1;
+    pointer-events: none;
+}
+.signup-title h1{
+	overflow: hidden;
+    text-align: right;
+    margin: 0 0 0;
+}
+.signup-title h1 strong {
+    display: block;
+    font-size: 54px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-1.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.signup-title h1 span{
+    font-size: 28px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.150em;
+    color: #fff;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.signup-title h1 span:after{
+	content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.signup-container{
+	margin: -100px auto 0;
+    max-width: 584px;
+    background: #fff;
+    border: 1px solid #d6dfdf;
+    padding: 48px 45px 2px;
+}
+.signup-container .signup-form-title{
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.signup-container .signup-form-title h2{
+	font-size: 28px;
+    text-transform: uppercase;
+    color: #014046;
+    border-bottom: 3px solid #f7c1b9;
+    padding: 0 0 30px;
+}
+.signup-container .signup-form-title h3{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 0.025em;
+    text-align: center;
+    line-height: 25px;
+    margin: 25px 0 0;
+}
+.signup-container .signup-form-title span{
+	font-weight: 600;
+}
+.signup-container .signup-form{
+	margin: 0 0 0;
+}
+.signup-container p{
+    font-size: 10px;
+    font-weight: 300;
+    color: #5b5b5b;
+    margin: 40px 0 0;
+    text-align: center;
+}
+.signup-container p a{
+    color: #5b5b5b;
+}
+.signup-container p a:hover{
+    color:#000;
+}
+.signup-container .signup-form form{}
+.signup-container .signup-dual-field{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 47px 0 0;
+}
+.signup-container .signup-dual-field > div{
+    width:calc(50% - 5px);
+    max-width: 237px;
+}
+
+.signup-container .signup-dual-field > div:first-child{
+    margin: 0 0 0;
+}
+.signup-container .signup-field label{}
+.signup-container .signup-field label{
+	font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    display: block;
+    color: #5b5b5b;
+}
+.signup-container .signup-form input[type="text"]{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border: 0px;
+    border-bottom: 1px solid #b5b5b5;
+    outline: 0;
+    padding: 0 0;
+    height: 33px;
+    color: #5b5b5b;
+    font-size: 13px;
+}
+
+.signup-container .signup-form input[type="checkbox"]{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #003437;
+    height: 14px;
+    width:14px;
+    background: #fff;
+    outline: 0;
+}
+
+.signup-container .signup-form input[type="checkbox"]:checked{
+	background:url(../../images/signup/signup-check.html) center center no-repeat #fff;
+}
+
+.signup-container .signup-keeplogin{
+	margin: 22px 0 0;
+}
+.signup-container .signup-keeplogin span{
+	margin: 0 0 0 8px;
+}
+.signup-container .signup-form input[type="submit"]{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 160px;
+    width: 100%;
+    height: 62px;
+    border: 2px solid #7a9a9d;
+    color: #014046;
+    font-family: 'Termina';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    background: url(../../images/palm-2.png) 25px center no-repeat;
+    background-size: 22px auto;
+    padding: 7px 0 7px 22px;
+    outline: 0;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+}
+.signup-container .signup-submit{
+	margin: 45px 0 0;
+}
+.signup-container .signup-submit input[type="submit"]:hover{
+	border: 2px solid #f5bcb4;
+}
+.signup-container .signup-reg{
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 25px;
+	letter-spacing: 0.025em;
+	color:#5b5b5b;
+	text-align: center;
+	margin: 40px 0 0;
+}
+.signup-container .signup-reg a{
+	color:#6d8fcf;
+}
+.signup-container .signup-reg a:hover{
+	color:#5b5b5b;
+}
+.signup-idxb{
+	text-align: center;
+	margin: 40px 0 0;
+}
+.signup-idxb a{
+	color:#6d8fcf;
+}
+.signup-idxb a:hover{
+	color:#5b5b5b;
+}
+#idx-unlocked-notification{
+    display: none;
+}
+#IDX-leadSignupContainer > .IDX-row > div{
+    width: 100% !important;
+    margin: 0 0 0 !important;
+}
+#IDX-leadSignupContainer .IDX-row > div{
+    padding: 0 0;
+}
+.IDX-wrapper-standard .IDX-panel-default>.IDX-panel-heading{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 0px #ddd;
+}
+.IDX-wrapper-standard .IDX-panel-default>.IDX-panel-heading h2{
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #014046;
+    border-bottom: 3px solid #f7c1b9;
+    padding: 0 0 30px;
+    font-weight: 600;
+}
+.IDX-wrapper-standard .IDX-panel-default>.IDX-panel-heading h2 span{
+    font-weight: 400;
+}
+.IDX-wrapper-standard .IDX-alert-info {
+    background-color: transparent;
+    border: 0px #bce8f1;
+    color: #000;
+    padding: 0 0 0;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.IDX-wrapper-standard .IDX-alert>p{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 0.025em;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 0 0;
+    font-weight: 500;
+}
+.IDX-wrapper-standard .IDX-panel-default{
+    border: 0px;
+    box-shadow: 0 0px 0px rgba(0,0,0,.05);
+}
+.IDX-wrapper-standard .IDX-panel-body{
+    padding: 0;
+    text-align: center;
+}
+.IDX-wrapper-standard #IDX-customRegistrationFields.IDX-row {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.IDX-wrapper-standard .IDX-row:after,
+.IDX-wrapper-standard .IDX-row:before{
+    display: none;
+}
+#IDX-main > div:nth-child(3){
+    display: none !important;
+}
+.IDX-wrapper-standard #IDX-customRegistrationFields.IDX-row > div{
+    margin: 47px 0 0;
+    width: calc(50% - 5px);
+    max-width: 237px;
+}
+.IDX-wrapper-standard #IDX-customRegistrationFields label {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    display: block;
+    color: #5b5b5b;
+    text-align: left;
+}
+.IDX-wrapper-standard #IDX-customRegistrationFields .IDX-form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border: 0px;
+    border-bottom: 1px solid #b5b5b5;
+    outline: 0;
+    padding: 0 0;
+    height: 33px;
+    color: #5b5b5b;
+    font-size: 13px;
+    box-shadow: 0px 0px 0px;
+}
+.IDX-wrapper-standard #IDX-signupFormActions{
+    margin: 23px 0 43px;
+}
+.IDX-wrapper-standard #IDX-signupFormActions #IDX-signupFormSubmitBtn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 160px;
+    width: 100%;
+    height: 62px;
+    border: 2px solid #7a9a9d;
+    color: #014046;
+    font-family: 'Termina';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    background: url(../../images/palm-2.png) 25px center no-repeat;
+    background-size: 22px auto;
+    padding: 7px 0 7px 22px;
+    outline: 0;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+}
+.IDX-wrapper-standard #IDX-signupFormActions #IDX-signupFormSubmitBtn:hover {
+    border: 2px solid #f5bcb4;
+}
+@media only screen and (max-width: 1440px) {
+	
+}
+@media only screen and (max-width: 1366px) {
+
+}
+@media only screen and (max-width: 1199px) {
+	.signup-container {
+	    max-width: 340px;
+	    padding: 48px 25px 42px;
+	}
+    .IDX-wrapper-standard #IDX-customRegistrationFields label{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 991px) {
+	#signup-wrap:before{
+		width: 100%;
+	}
+	#signup-wrap:after{
+		display: none;
+	}
+	.signup-title {
+	    justify-content: center;
+	    margin: 0 0 30px;
+	}
+	.signup-container{
+		margin: 0 auto 0;
+		max-width: 400px;
+	}
+    .signup-container .signup-dual-field{
+        margin: 30px 0 0;
+    }
+    .signup-container .signup-dual-field > div{
+        width: 100%;
+        margin: 30px 0 0;
+        max-width: none;
+    }
+}
+@media only screen and (max-width: 767px) {
+	.signup-title h1 strong{
+		font-size: 50px;
+	}
+	.signup-container .signup-form-title h2 {
+	    font-size: 25px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.IDX-wrapper-standard #IDX-customRegistrationFields.IDX-row > div {
+        margin: 20px 0 0;
+        width: 100%;
+        max-width: none;
+    }
+}

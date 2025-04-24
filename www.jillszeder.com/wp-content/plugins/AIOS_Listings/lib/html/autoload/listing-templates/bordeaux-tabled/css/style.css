@@ -1,0 +1,2503 @@
+/*******************************************************
+ *
+ * 8. AIOS Listings
+ *
+ *******************************************************/
+
+em{
+	font-style: normal !important;
+}
+ #content-listings img{
+ 	margin: 0
+ }
+.slick-arrow{
+	outline: none;
+}
+.listing-details-wrap input,
+.listing-details-wrap textarea,
+.listing-details-wrap select{
+	  -webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+   border-radius: 0;
+}
+.listing-details-wrap select{
+	padding-right: 25px;
+	background: url(../images/select-arrow.png) no-repeat center right #fff !important;
+}
+
+.aios-listings-page .attachment-post-thumbnail {
+	display:none;
+}
+
+#content .page-title { 
+	font-weight: 300;
+	    font-size: 30px;
+	    text-transform: uppercase;
+	    color: #ba1119;
+}
+
+.top-sort {
+	width: 100%;
+	float: right;
+	text-align: right;
+	padding-top: 5px;
+	margin-right: 0;
+	font-size: 0;
+}
+
+	.top-sort .sort-left,
+	.top-sort .sort-right  {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	.sort-sel {
+		width: 207px;
+		height: 20px;
+		border: 1px solid #d5d5d5;
+		color: #adadad;
+		line-height: 20px;
+		float: right;
+		font-size: 12px;
+	}
+
+
+	.top-sort span {
+		margin: 0 5px 0 15px;
+		display: inline-block;
+		font-size: 13px;
+		line-height: 20px;
+		vertical-align: top;
+		font-weight: 300;
+	}
+	.top-sort a {
+	    display: inline-block;
+	    vertical-align: top;
+	    margin: 0 5px;
+		width: 21px;
+		text-decoration: none;
+	}	
+		.top-sort a:hover{
+			text-decoration: none;
+		}
+		.top-sort a.grid-bttn{
+			font-size: 20px;
+			color: #b2b2b2;
+		}
+			.top-sort a.grid-bttn.active{
+				color: #666666;
+			}
+		.top-sort a.list-bttn{
+			font-size: 20px;
+			color: #b2b2b2;
+		}
+			.top-sort a.list-bttn.active{
+				color: #666666;
+			}
+		.top-sort a.tabled-bttn{
+			font-size: 20px;
+			color: #b2b2b2;
+		}
+			.top-sort a.tabled-bttn.active{
+				color: #666666;
+			}
+
+		.top-sort a em {
+			color: inherit;
+			
+		}
+
+/* ftb style */
+.ftb-listing-content {
+	margin: 30px 0 0 0;
+}
+		
+/*** Grid View ***/
+
+#content ul.grid {
+	margin: 30px 0 0 0;
+	float: left;
+	width: 100%;
+	display: none;
+}
+
+.grid li {
+    width: 31.3%;
+    float: left;
+    border: 1px solid #cccccc;
+    padding-bottom: 35px;
+    list-style-type: none;
+    margin: 0 0 30px 2.3%;
+}
+	.grid li.re-margin,
+	.grid li:first-child{
+		margin-left: 0;	
+		clear: both;
+	}
+	
+	.grid .prop-img-wrap {
+		position: relative;
+		width: 100%;
+		height: 157px;
+		/*overflow: hidden;*/
+	}
+		#content .grid .prop-img-wrap img{
+			width: 100%;
+			max-width: 100%;
+			margin: 0;
+		}
+	
+	.grid li img.main-img {max-width: 100%; float: left; margin: 0; width: 100%; height: 157px;}
+
+	.grid .prop-det {
+		width: 92%;
+		margin: 0 auto;
+		
+		font-size: 15px;
+		font-weight: 500;
+		color: #464646;
+
+	}
+		.grid .prop-det p{
+			font-weight: 300;
+			font-size: 15px;
+			color: #333333;
+			margin: 0 !important;
+		}
+
+		.grid  .prop-det .prop-title {
+			font-weight: 700;
+			font-size: 16px;
+			padding: 7px 0px 3px;
+			display: block;	
+		}
+
+			.grid  .prop-det .prop-title a {
+				text-decoration: none;
+				color: inherit;
+			}
+
+		.grid  .prop-det .sold {
+			font-weight: 300;
+			display: block;
+			line-height: 15px;
+		}
+
+		.grid  .prop-det .prop-price {
+			width: 100%;
+			float: left;
+			position: relative;
+			border-bottom: 1px solid #cccccc;
+			border-top: 1px solid #cccccc;
+			padding: 13px 0;
+			margin: 15px 0;
+			font-weight: 700;
+			font-size: 19px;
+			line-height: 19px;
+			color: #464646;
+			min-height: 51px;
+			text-align: center;
+		}
+
+
+			.grid .prop-det .prop-price .det-smi {
+				/* position: absolute;
+				top: 17%;
+				right: 5px; */
+				position: static;
+				margin-top: 7px;
+			}
+
+				.grid .prop-det .prop-price .det-smi img {
+					margin-left: 10px;
+				} 
+
+				.grid .det-baths {
+					margin-left: 15px;
+				}
+
+				.grid .det-sqft {
+					float: right;
+					border-left: 1px solid #cccccc;
+					text-align: right;
+					width: 49%;
+				}
+/*** Grid View ***/
+/*** List View ***/
+
+.list-wrapper {
+	border: 1px solid #ccc;
+	float: left;
+	margin-top: 30px;
+	display: none;
+	width: 100%;
+}
+	
+	ul.table-hdr {
+		width: 100%;
+		background: #ededed;
+		border-bottom: 1px solid #ccc;
+		margin: 0 !important;
+		padding: 12px 1.5%;
+	}
+
+		ul.table-hdr li {			
+			font-weight: 700;
+			font-size: 14px;
+			color: #464646;
+			
+		}
+
+		ul li.one, ul li div.prop-img {width: 27%; display: inline-block;}
+		ul li.two, ul li div.prop-add {width: 17%; display: inline-block; line-height: 19px;}
+		ul li.three, ul li div.list-price {width: 14%; display: inline-block;}
+		ul li.four, ul li div.beds {width: 7%; display: inline-block; text-align: center;} 
+		ul li.five, ul li div.baths {width: 7%; display: inline-block; text-align: center;}
+		ul li.six, ul li div.area {width: 12%; display: inline-block;}
+		ul li.seven, ul li div.sold-date {width: 12%; display: inline-block;}
+
+		ul li.two, ul li div.prop-add a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.list-wrapper .table-list .list-price p.list-price-sec{
+			margin: 0 !important;
+		}
+		div.list-price p{
+			font-weight: 700;
+		}
+	ul.table-list {
+		width: 100%;
+		margin: 0 auto !important;
+		padding: 0;
+	}
+
+		ul.table-list li {
+			width: 100%;
+			display: inline-block;			
+			font-size: 15px;
+			font-weight: 300;
+			color: #464646;
+			
+			border-bottom: 1px solid #ccc;
+			padding: 15px 1.5%;
+		}
+
+			ul.table-list li div {
+				vertical-align: top;
+				height: auto;
+			}
+
+				ul.table-list li div label {display: none; font-weight: 700;}
+
+			ul.table-list li div.prop-img {position: relative; overflow: hidden;}
+
+			ul.table-list li div .sold-icon,
+			ul.table-list li div .sale-icon,
+			ul.table-list li div .rent-icon,
+			ul.table-list li div .lease-icon,
+			ul.table-list li div .pending-icon,
+			ul.table-list li div .exclusive-icon {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 40%;
+			}
+
+			ul.table-list li img.main-img {
+				max-width: 98%;
+				height: auto;
+			}
+
+ul.list{
+	width: 100%;
+	float: left;
+	margin: 0 !important;
+	/*font-size: 0;*/
+	
+	color: #575757;
+}
+	ul.list li{
+		display: block;
+		width: 100%;		
+		padding: 30px 0;
+		border-top: 1px solid #cfcfcf;
+	}
+		ul.list li:first-child{
+			padding-top: 40px;
+			border: 0;
+		}
+
+		ul.list li .prop-img-wrap{
+			display: inline-block;
+			vertical-align: top;
+			width: 38.8%;
+			position: relative;
+		}
+		.property_type .prop-img-wrap img {
+		    width: 100%;
+		}
+			.property_type .prop-img-wrap .sold-icon{
+				width: 30% !important
+			}
+
+			.prop-img-wrap .sold-icon {
+				position: absolute;
+				z-index: 9;
+				top: -20px;
+				left: -20px;
+			}
+
+		 	#content-listings ul.list li .prop-img-wrap img.main-img{
+				width: 100%;
+				max-width: initial !important;
+				margin: 0;
+			}
+
+		ul.list li .prop-det{
+			width: 55.2%;
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 3%;
+		}
+		ul.list li .prop-det .prop-title{
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 24px;
+			float: left;
+			width: 65%;
+		}
+
+		ul.list li .prop-det .prop-title a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		ul.list li .prop-det p.list-price {
+			float: right;
+			width: 32%;
+			font-size: 24px;
+			color: #5d5d5d;
+			margin: 0 !important;
+			line-height: 27px !important;
+			font-weight: 700;
+			text-align: right;
+		}
+
+		ul.list .prop-det .prop-beds {
+			width: 100%;
+			float: left;
+			position: relative;
+			border-bottom: 1px solid #ececec;
+			border-top: 1px solid #ececec;
+			padding: 13px 10px;
+			margin: 20px 0 10px;
+			font-weight: 700;
+			font-size: 15px;
+			line-height: 19px;
+			color: #5d5d5d;
+		}
+
+			ul.list .prop-det .prop-beds em { 
+				font-size: 18px;
+				color: #bababa;
+			}
+
+			.prop-det .prop-beds .det-smi {
+				position: absolute;
+				top: 0;
+				right: 5px;
+			}
+
+				.prop-det .prop-beds .det-smi .a2a_kit_size_32 {
+					display: block;
+					top: 8px;
+					position: relative;
+				}
+
+				.prop-det .prop-beds .det-smi .a2a_kit_size_16 {
+					display: block;
+					top: 16px;
+					position: relative;
+				}
+
+
+				.prop-det .prop-beds .det-smi img {
+					margin-left: 10px;
+				} 
+
+				.prop-det .prop-beds .det-baths {
+					margin-left: 15px;
+					color: #5d5d5d;
+				}
+
+				.prop-det .prop-beds .border {display: inline-block; margin: 0 10px; color: #dadada; font-size: 28px;}
+
+				.prop-det .prop-beds .det-sqft {					
+					float: none;
+					color: #5d5d5d;
+					border-left: 1px solid #cccccc;
+					padding-left: 15px;
+					margin-left: 15px;
+				}
+
+		ul.list li p.prop-desc {
+			color: #5f5f5f;
+			font-weight: 300;
+			font-size: 13px;
+			line-height: 22px !important;
+			width: 100%;
+			float: left;
+			margin: 0 !important;
+			text-align: justify;
+		}
+
+		ul.list li .prop-det .view-details{
+				display: block;
+				width: 113px;
+				height: 29px;
+				background: #6a6a6a;
+				box-sizing: border-box;
+				font-size: 14px;
+				color: #fff;
+				text-transform: uppercase;
+				text-align: center;
+				padding: 3px 0;
+			    margin-top: 13px;
+			    float: left;
+			    line-height: 23px;
+			}
+
+				ul.list li .prop-det .view-details:hover {
+					opacity: 0.8;
+				}
+
+/*** List View ***/
+
+/** Pagination **/
+.page-nation{
+	float: left;
+	margin-top: 51px;
+	margin-bottom: 51px;
+}
+	.page-nation span{
+
+    width: 8px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: top;
+    font: normal 14px Arial;
+    margin: 0 10px;
+
+	}
+		.page-nation span.p-prev{
+			background: url(../images/prev.jpg) no-repeat 0 0 transparent;
+			margin-right: 10px;
+		}
+		.page-nation span.p-next{
+			background: url(../images/next.jpg) no-repeat 0 0 transparent;
+			margin-left: 10px;
+		}
+	.page-nation a{
+		display: inline-block;
+		vertical-align: top;
+		font: normal 14px Arial;
+	    margin: 0 10px;
+	}
+		.page-nation a.selected{
+			font: 700 14px Arial;
+			text-decoration: underline;
+		}
+/** Pagination **/
+
+/** Details Page **/
+#content .listing-details-wrap{
+    width: 100%;
+   	
+   	padding-bottom: 120px;
+
+
+}
+	#content .listing-details-wrap *{
+		outline: none;
+	}
+	.listing-details-wrap .pager{
+		display: block;
+		height: 20px;
+		position: relative;
+		width: 100%;		
+	}
+
+		#content .listing-details-wrap .pager.footer-pager {
+			margin-top: 60px;
+		}
+
+		#content .listing-details-wrap .pager a{
+			display: block;
+			color: #8f8f8f;
+			text-decoration: none;
+			font-size: 14px;
+			position: absolute;
+		}
+			#content .listing-details-wrap .pager a.pa-next{
+				right: 0;
+				top: 0;
+			}
+				#content .listing-details-wrap .pager a.pa-next em{
+					padding-left: 6px;
+					font-size: 10px;
+				}
+			#content .listing-details-wrap .pager a.pa-back{
+				
+			}
+				#content .listing-details-wrap .pager a.pa-back em{
+					padding-right: 6px;
+					font-size: 10px;
+				}
+	/** Listings Head **/
+	#content .listing-details-wrap .details-head{
+		width: 100%;
+		position: relative;
+		font-size: 0;
+		margin: 17px 0 20px;
+	}
+
+	#content .listing-details-wrap .with-sold{
+		margin: 17px 0 38px;
+	}	
+		#content .listing-details-wrap .details-head h1,
+		#content .listing-details-wrap .details-head h2{
+			width: 80%;
+			display: inline-block;
+			vertical-align: top;
+			margin: 0;
+			margin-top: 10px;
+			font-weight: 700;
+		}
+		#content .listing-details-wrap .details-head span.details-price{
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0; 
+			margin-top: 10px;
+			line-height: 31px;
+			display: inline-block;
+			vertical-align: top;
+			text-align: right;
+			font-weight: 700;
+			font-size: 26px;
+		}
+
+		#content .listing-details-wrap .details-head span.details-sold-price{
+			margin-top: 45px;
+			color: #990000
+
+		}
+
+		#content .listing-details-wrap .details-head span.sold-at-label{
+ 			font-weight: normal;
+    		font-size: 14px;
+		}
+
+		   
+
+	/** Listings Head **/
+	/** Listings Slideshow **/
+	#content .listing-details-wrap .photo-slideshow{
+		width: 100%;
+		position: relative;
+	}
+		#content .listing-details-wrap .photo-slideshow img{
+			display: block;
+			width: 100%;
+			height: auto;
+			max-width: 100%;
+		}
+		#content .listing-details-wrap .photo-slideshow .photo-list{
+			background-size: cover;
+		}
+		#content .listing-details-wrap .photo-slideshow .slick-prev{
+			position: absolute;
+			left: 15px;
+			top: 50%;
+			z-index: 99;
+			border: none;
+			margin-top: -30.5px;
+			cursor: pointer;
+		    background: transparent;
+		    font-size: 0;
+		    color: #fff;
+		    text-shadow: 2px 1px 4px #000;
+
+
+		}
+			#content .listing-details-wrap .photo-slideshow .slick-prev:after{
+				display: block;
+              	content: "\b0003";
+			    font-size: 60px;
+			    font-family: 'agentimage' !important;
+			    
+			}
+		#content .listing-details-wrap .photo-slideshow .slick-next{
+			width: 21px;
+			height: 61px;
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			z-index: 99;
+			border: none;
+			margin-top: -30.5px;
+			cursor: pointer;
+			font-size: 0;
+			background: transparent;
+			color: #fff;
+			text-shadow: -2px 1px 4px #000;
+
+		}
+			#content .listing-details-wrap .photo-slideshow .slick-next:after{
+				display: block;
+              	content: "\b0004";
+			    font-size: 60px;
+				font-family: 'agentimage' !important;
+
+			}
+		/** POP SLIDESHOW **/
+
+		.pop-gallery-wrap{
+			position: fixed;
+			left: 0;
+			top: -100%;
+			z-index: 9999;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.7);
+			opacity: 0;
+		}
+			.pop-container{
+				width: 100%;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				height: auto;
+				margin-top: -22%;
+			}
+		.pop-gallery-wrap .pop-gallery {
+			background: #fff;
+			width: 74%;
+			margin: 3% auto;
+			padding: 8px;
+			height: auto;
+		}
+			.pop-gallery-wrap .pop-gallery img{
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+				.pop-gallery-wrap .pop-gallery .photo-list{
+					background-size: cover;
+				}
+				.pop-gallery-wrap .slick-prev{
+					width: 21px;
+					height: 61px;
+					position: absolute;
+					left: 15px;
+					top: 50%;
+					z-index: 99;
+					border: none;
+					margin-top: -30.5px;
+					cursor: pointer;
+					background: transparent;
+					font-size: 0;
+					color: #fff;
+					text-shadow: 2px 1px 4px #000;
+				}
+					.pop-gallery-wrap .slick-prev:after{
+						display: block;
+						content: "\b0003";
+						font-size: 60px;
+						font-family: 'agentimage' !important;
+					}
+				.pop-gallery-wrap .slick-next{
+					width: 21px;
+					height: 61px;
+					position: absolute;
+					right: 15px;
+					top: 50%;
+					z-index: 99;
+					border: none;
+					margin-top: -30.5px;
+					cursor: pointer;
+					color: #fff;
+					background: transparent;
+					font-size: 0;
+				    text-shadow: -2px 1px 4px #000;
+				}
+					.pop-gallery-wrap .slick-next:after{
+						display: block;
+						content: "\b0004";
+						font-size: 60px;
+						font-family: 'agentimage' !important;
+					}
+				.pop-gallery-wrap .close-pop{
+					background: url(../images/close-bttn.png) no-repeat 0 0 transparent;
+					width: 46px;
+					height: 46px;
+					position: absolute;
+					right: 12%;
+					top: 4%;
+					cursor: pointer;
+					z-index: 99;			
+				}
+
+	/** Listings Slideshow **/
+	/** Propert Details **/
+	#content .listing-details-wrap .property-details{
+		width: 100%;
+		position: relative;
+	}	
+		#content .listing-details-wrap .property-details h1,
+		#content .listing-details-wrap .property-details h2{
+			font-weight: 700;
+			font-size: 18px;
+			color: #575757;
+		}
+
+		#content .listing-details-wrap .property-details .details-list{
+			width: 100%;
+			border-top: 1px solid #cfcfcf;
+			border-bottom: 1px solid #cfcfcf;
+			padding: 10px 0 6px;
+
+		}
+			#content .listing-details-wrap .property-details .details-list > div{
+				display: inline-block;
+				vertical-align: top;
+			}
+			#content .listing-details-wrap .property-details .details-list > div p{
+				margin: 0 !important;
+				color: #575757;
+			}
+
+			#content .listing-details-wrap .property-details .details-list .det-item {
+		        max-width: 170px;
+			    width: 100%;
+			}
+
+
+
+			#content .listing-details-wrap .property-details .details-list .det-specs{
+			    padding-bottom: 10px;	
+			}
+				#content .listing-details-wrap .property-details .details-list .det-specs span{
+					display: inline-block;
+					vertical-align: top;
+					font-size: 13px;
+					margin-top: 5px;
+				    /* margin-left: 11%; */
+					text-transform: uppercase;
+					color: #575757;
+					white-space: nowrap;
+					padding-top: 6px;
+				}
+					#content .listing-details-wrap .property-details .details-list .det-specs span strong{
+						font-weight: 700;
+						font-size: 18px;
+						display: inline-block;
+						padding-left: 3%;
+					}
+					#content .listing-details-wrap .property-details .details-list .det-specs span.d-beds{
+						margin-left: 0;
+						padding-left: 28px;
+						position: relative;
+					}
+						#content .listing-details-wrap .property-details .details-list .det-specs span.d-beds em {
+							padding-right: 15px;
+						    font-size: 15px;
+						    color: #bababa;
+						}
+					#content .listing-details-wrap .property-details .details-list .det-specs span.d-baths{
+						padding-left: 28px;
+						position: relative;
+					}
+						#content .listing-details-wrap .property-details .details-list .det-specs span.d-baths em {
+							padding-right: 15px;
+							font-size: 15px;
+						    color: #bababa;
+						}
+					#content .listing-details-wrap .property-details .details-list .det-specs span.d-cars{
+						padding-left: 28px;
+						position: relative;
+					}
+						#content .listing-details-wrap .property-details .details-list .det-specs span.d-cars em {
+							padding-right: 15px;
+							font-size: 15px;
+						    color: #bababa;
+						}
+					#content .listing-details-wrap .property-details .details-list .det-specs span.d-area{
+						padding-left: 28px;
+						position: relative;
+					}
+						#content .listing-details-wrap .property-details .details-list .det-specs span.d-area em {
+							padding-right: 15px;
+							font-size: 15px;
+						    color: #bababa;
+						}
+					#content .listing-details-wrap .property-details .details-list  span.det-year{
+						padding-left: 28px;
+						position: relative;
+   					}
+   						#content .listing-details-wrap .property-details .details-list span.det-year em {
+   							padding-right: 15px;
+   							font-size: 15px;
+						    color: #bababa;
+   						}
+					#content .listing-details-wrap .property-details .details-list  span.det-mls{
+						padding-left: 28px;
+						position: relative;
+   					}
+   						#content .listing-details-wrap .property-details .details-list  span.det-mls em {
+   							padding-right: 15px;
+   							font-size: 15px;
+						    color: #bababa;
+   						}
+					#content .listing-details-wrap .property-details .details-list  span.det-bldg{
+						padding-left: 28px;
+						position: relative;
+   					}
+   						#content .listing-details-wrap .property-details .details-list span.det-bldg em {
+   							padding-right: 15px;
+   							font-size: 15px;
+						    color: #bababa;
+   						}
+					#content .listing-details-wrap .property-details .details-list  span.det-lots{
+						padding-left: 28px;
+						position: relative;
+   					}
+   						#content .listing-details-wrap .property-details .details-list  span.det-lots em {
+   							padding-right: 15px;
+   							font-size: 15px;
+						    color: #bababa;
+   						}
+			#content .listing-details-wrap .property-details .details-list p{
+				color: #575757;
+				font-weight: normal;
+				font-size: 13px;
+				text-transform: uppercase;
+			    padding-bottom: 10px;
+			}
+			
+			#content .listing-details-wrap .property-details .details-list .det-specs p{
+				padding-top: 10px;
+			}
+			
+			#content .listing-details-wrap .property-details .details-list p strong{
+				font-weight: 700;
+				font-size: 18px;
+				text-transform: capitalize;
+				display: inline;
+				padding-left: 5
+			}
+			
+			#content .listing-details-wrap .property-details .details-list .det-column {
+				width:100%;
+			}
+			
+			#content .listing-details-wrap .property-details .details-list .det-label {
+				display:inline-block;
+			    width: 66px;
+				text-align:right;
+			}
+			#content .listing-details-wrap .property-details .details-list .det-type a{
+				font-weight: 700;
+				font-size: 18px;
+				text-transform: lowercase;
+			    display: inline-block;
+			}
+			
+			@media ( max-width:720px ) {
+			
+				#content .listing-details-wrap .property-details .details-list .det-column {
+					width:100%;
+					margin-left:0;
+					margin-right:0;
+				}
+				
+				#content .listing-details-wrap .property-details .details-list .det-label {
+					width:auto;
+					text-align:left;
+				}
+				
+			}
+
+	/** Propert Details **/
+	/** Propert  Description **/
+	#content .property-description{
+		width: 100%;
+		padding-top: 20px;
+		font-size: 0;
+	}
+		#content .property-description h1,
+		#content .property-description h2{
+			color: #575757;
+			font-weight: 700;
+			font-size: 18px;
+			padding: 5px 0 0;
+			margin: 0;
+		}
+		#content .property-description .property-det{
+			display: inline-block;
+			vertical-align: top;
+			width: 62%;
+		}
+
+		#content .property-description .property-det p{
+			margin: 0;
+			padding: 10.5px 0;
+			color: #5f5f5f;
+			font-size: 13px;
+			line-height: 24px;
+			text-align: justify;
+		}
+		
+		#content .property-description .prop-location {
+		    margin-bottom: 30px;
+		}
+
+		#content .property-description .prop-location h2{
+			padding: 0 !important;
+		}
+			#content .property-description .prop-location h3{
+				margin: 0 !important;
+				color: #5f5f5f;
+				font-weight: 700;
+				font-size: 15px;
+				padding-bottom: 23px;
+			}
+
+		#content .property-description .prop-cta{
+			width: 100%;
+			font-size: 0;
+			margin-top: 15px;
+		}
+			#content .property-description .prop-cta a{
+				display: inline-block;
+				vertical-align: top;
+				width: 24.2%;
+				height: 39px;
+				box-sizing: border-box;
+				border: 1px solid #cdcdcd;
+				text-align: center;
+				color: #6a6a6a;
+				font-size: 14px;
+				text-transform: uppercase;
+				line-height: 15px;
+				margin-left: 1%;
+				transition: all .25s ease-in-out;
+				-moz-transition: all .25s ease-in-out;
+				-webkit-transition: all .25s ease-in-out;
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 2px;
+                text-decoration: none;
+			}
+
+				#content .property-description .prop-cta a:after {
+					content: "";
+					height: 100%;
+					width: 0;
+					display: inline-block;
+					vertical-align: middle;
+				}		
+					#content .property-description .prop-cta span{
+						display: inline-block;
+						vertical-align: middle;
+					}	
+				#content .property-description .prop-cta a:hover{
+					background: #990000;
+					color: #fff;
+				}
+				#content .property-description .prop-cta a:first-child{
+					margin-left: 0;
+
+				}
+		/** Additional **/
+			#content .property-description .property-add-type{
+				display: inline-block;
+				vertical-align: top;
+				width: 35%;
+				margin-left: 3%;
+				border-left: 1px solid #d2d2d2;
+				padding-left: 4%;
+				padding-top: 9px;
+				box-sizing:border-box;
+			}
+				#content .property-description .property-add-type div{
+					display: block;
+					width: 100%;
+					border-top: 1px solid #d2d2d2;
+					padding: 14px 0;
+					position: relative;
+
+				}
+					#content .property-description .property-add-type div:first-child{
+						border-top: none;
+					}
+				#content .property-description .property-add-type p{
+					display: block;
+					color: #575757;
+					margin: 0;
+					padding: 0 11%;
+
+				}
+					#content .property-description .property-add-type span{
+						font-size: 13px;
+						display: block;
+						text-transform: uppercase;
+					}	
+						#content .property-description .property-add-type span em {
+							position: absolute;
+							top: 16px;
+							left: 0;
+							font-size: 15px;
+							color: #bababa;
+						}
+							#content .property-description em.ai-video{
+								font-size: 11px !important;
+							}
+						#content .property-description .property-add-type strong{
+							font-size: 18px;
+							display: block;
+						}
+							#content .property-description .property-add-type strong a{
+
+							}
+
+				#content .property-description .property-add-type .det-type  p{
+					
+				}
+				#content .property-description .property-add-type .det-status p{
+					
+				}
+				#content .property-description .property-add-type .det-features p{
+					
+				}
+				#content .property-description .property-add-type .det-virtual p{
+					
+				}
+				#content .property-description .property-add-type .det-website p{
+					
+				}
+				#content .property-description .property-add-type .det-others p{
+					
+				}
+		/** Additional **/
+
+	/** Propert  Description **/
+
+/** Details Page **/
+/** Mortage Calculator **/
+.pop-wrap{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/poptrans.png) repeat 0 0 transparent;
+	z-index: 9999;
+	display: none;
+	font-size: 0
+}
+
+	.single-listing #ui-datepicker-div {
+	    z-index: 99999 !important;
+	}
+
+.pop-outside{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/** Mortage Calculator **/
+.mortage-calculator{
+    width: 400px;
+    height: 84%;
+    background: #fff;
+    margin: 5% auto;
+    box-sizing: border-box;
+    position: relative;
+    max-height: 683px;
+    z-index: 200;
+}
+
+	.scroll-wrap {
+	    width: 100%;
+	    height: 100%;
+	    padding: 0 18px 20px;
+	    box-sizing: border-box;
+	    overflow-y: scroll;
+	}
+		.scroll-wrap br{
+			display: none;
+		}
+		.scroll-parent{
+			overflow-x: hidden; 				
+			overflow-y: scroll;    
+		}
+	.mortage-calculator .close{
+		background: url(../images/close-bttn.png) no-repeat 0 0 transparent;
+		width: 46px;
+		height: 46px;
+		position: absolute;
+		right: -17px;
+		top: -16px;
+		cursor: pointer;
+		z-index: 99;
+		opacity: 1;
+	}
+	.popup-wrap-mortage .mortage-calculator h1,
+	.popup-wrap-mortage .mortage-calculator h2{
+		color: #222222;
+		font-size: 31px !important;
+		border-bottom: 1px solid #afafaf;
+		font-weight: 700;
+	    padding-top: 18px;
+
+	}
+	.popup-wrap-mortage .mortage-calculator p{
+		color: #797979
+		font-size: 13px;
+		padding: 10px 0;
+	}
+	.popup-wrap-mortage .mortage-calculator .m-form{
+		width: 100%;
+	}
+		.popup-wrap-mortage .mortage-calculator .m-form span{
+			font-size: 11px;
+			color: #797979;
+			display: block;
+		}
+		.popup-wrap-mortage .mortage-calculator .m-form form input{
+			display: block;
+			width: 100%;
+			background: #fff;
+			height: 28px;
+			box-sizing: border-box;
+			color: #222222;
+			font-size: 13px;
+			padding: 4px 10px;
+			margin-top: 6px;
+			border: 1px solid #969696;
+		}
+		.popup-wrap-mortage .mortage-calculator .m-form form div input{
+	        width: 49.1%;
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 1.7%;
+		}
+			.popup-wrap-mortage .mortage-calculator .m-form form div input:first-child{
+				margin-left: 0;
+			}
+			.popup-wrap-mortage .mortage-calculator .m-form form div input[type="reset"]{
+				background: #747474;
+				height: 38px;
+				border: none;
+				color: #fff;
+
+				font-size: 20px;
+				font-weight: 700;
+				text-transform: uppercase;
+				cursor: pointer;
+				transition: all .25s ease-in-out;
+				-moz-transition: all .25s ease-in-out;
+				-webkit-transition: all .25s ease-in-out;
+
+			}
+				.popup-wrap-mortage .mortage-calculator .m-form form div input[type="reset"]:hover{
+					background: #2F2F2F;
+				}
+			.popup-wrap-mortage .mortage-calculator .m-form form div input[type="submit"]{
+				background: #444444;
+				height: 38px;
+				border: none;
+				color: #fff;
+
+				font-size: 20px;
+				font-weight: 700;
+				text-transform: uppercase;
+				cursor: pointer;
+				transition: all .25s ease-in-out;
+				-moz-transition: all .25s ease-in-out;
+				-webkit-transition: all .25s ease-in-out;
+
+			}
+				.popup-wrap-mortage .mortage-calculator .m-form form div input[type="submit"]:hover{
+					background: #990000;
+				}
+			.popup-wrap-mortage .mortage-calculator .m-form form div.form-sec{
+				width: 100%;
+				padding-top: 21px;
+			}
+				.popup-wrap-mortage .mortage-calculator .m-form form div.form-sec label{
+					width: 100%;
+					display: block;
+				}
+				.popup-wrap-mortage .mortage-calculator .m-form form div.form-sec input{
+					width: 100%;
+					margin-left: 0;
+					background: #dcdcdc;
+				}
+			.popup-wrap-mortage .mortage-calculator .m-form span.disclamer{
+				color: #808080;
+				font-size: 10px;
+				padding: 10px 0;
+			}
+
+/** Mortage Calculator **/
+/** Request More Information **/
+.request-more-info{
+    width: 400px;
+    height: 84%;
+    background: #fff;
+    margin: 3% auto;
+    box-sizing: border-box;
+    position: relative;
+    max-height: 683px;
+	z-index: 200;
+}
+	.request-more-info .close{
+		background: url(../images/close-bttn.png) no-repeat 0 0 transparent;
+		width: 46px;
+		height: 46px;
+		position: absolute;
+		right: -17px;
+		top: -16px;
+		cursor: pointer;
+		z-index: 99;
+		opacity: 1;
+
+	}
+	.popup-wrap-request .request-more-info h2{
+		color: #222222;
+		font-size: 26px !important;
+		border-bottom: 1px solid #afafaf;
+		font-weight: 700;
+	    padding-top: 18px;
+	}
+		.popup-wrap-request .request-more-info h3{
+			margin: 0 !important;
+			font-size: 16px;
+			padding-top: 20px;
+		}
+	.popup-wrap-request .request-more-info p{
+		color: #797979
+		font-size: 13px;
+		padding: 0;
+		margin: 0 !important;
+	}
+	.popup-wrap-request .request-more-info .m-form{
+		width: 100%;
+	}
+		.popup-wrap-request .request-more-info .m-form span{
+			font-size: 11px;
+			color: #797979;
+			display: block;
+		}
+		.popup-wrap-request .request-more-info .m-form input{
+			display: block;
+			width: 100%;
+			background: #fff;
+			height: 28px;
+			box-sizing: border-box;
+			color: #222222;
+			font-size: 13px;
+			padding: 7px 10px;
+			margin-top: 8px;
+			border: 1px solid #969696;
+		}
+			.popup-wrap-request .request-more-info .m-form div span{
+				display: inline-block;
+				vertical-align: top;
+				margin-left: 1%;
+				width: 32.6%;
+			}
+			.popup-wrap-request .request-more-info .m-form div input{
+				
+				display: block;
+				width: 100%;
+			}
+			.popup-wrap-request .request-more-info .m-form div span:first-child{
+				margin-left: 0;
+			}
+		.popup-wrap-request .request-more-info .m-form select{
+			display: block;
+			width: 100%;
+			background: #fff;
+			height: 28px;
+			box-sizing: border-box;
+			color: #222222;
+			font-size: 13px;
+			padding: 4px 10px;
+			margin-top: 8px;
+			border: 1px solid #969696;
+			    line-height: 20px;
+		   -webkit-appearance: none;
+		   -moz-appearance:    none;
+		   appearance:         none;			    
+		}
+		.popup-wrap-request .request-more-info .m-form textarea{
+			width: 100%;
+			background: #fff;
+			height: 135px;
+			box-sizing: border-box;
+			color: #222222;
+			font-size: 13px;
+			margin-top: 8px;
+			outline: none;
+			padding: 6px 10px;
+			border: 1px solid #969696
+		}
+		.popup-wrap-request .request-more-info .m-form input[type="submit"]{
+			background: #444444;
+			width: 176px;
+			height: 38px;
+			float: right;
+			clear: both;
+			color: #fff;
+			border: none;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 20px;
+			text-transform: uppercase;
+			cursor: pointer;
+			margin-bottom: 20px;
+		}
+	
+
+/** Request More Information **/
+/** Schedule Showing Popup **/
+.schedule-showing{
+    width: 400px;
+	height: 87%;
+    background: #fff;
+    margin: 3% auto;
+    box-sizing: border-box;
+    position: relative;
+    max-height: 683px;
+    z-index: 200;
+}
+	.schedule-showing .close{
+		background: url(../images/close-bttn.png) no-repeat 0 0 transparent;
+		width: 46px;
+		height: 46px;
+		position: absolute;
+		right: -17px;
+		top: -16px;
+		cursor: pointer;
+		z-index: 99;
+		opacity: 1;
+	}
+	.popup-wrap-schedule .schedule-showing h2{
+		color: #222222;
+		font-size: 29px !important;
+		border-bottom: 1px solid #afafaf;
+		font-weight: 700;
+	    padding-top: 18px;
+	}
+		.popup-wrap-schedule .schedule-showing h3{
+			margin: 0 !important;
+			font-size: 16px;
+			padding-top: 20px;
+		}
+	.popup-wrap-schedule .schedule-showing p{
+		color: #797979
+		font-size: 13px;
+		padding: 0;
+		margin: 0 !important;
+	}
+	.popup-wrap-schedule .schedule-showing .m-form{
+		width: 100%;
+		margin-top: 48px;
+	}
+		.popup-wrap-schedule .schedule-showing .m-form span{
+			font-size: 13px;
+			color: #222222;
+			display: block;
+			margin-top: 8px;
+		}
+		.popup-wrap-schedule .schedule-showing .m-form input{
+			display: block;
+			width: 100%;
+			background: #fff;
+			height: 28px;
+			box-sizing: border-box;
+			color: #222222;
+			font-size: 13px;
+			padding: 4px 10px;
+			margin-top: 8px;
+			border: 1px solid #969696;
+		}
+			.popup-wrap-schedule .schedule-showing .m-form div span{
+				display: inline-block;
+				vertical-align: top;
+				margin-left: 1%;
+				width: 49.4%;
+			}
+				.popup-wrap-schedule .schedule-showing .m-form div span:first-child{
+					margin-left: 0;
+				}
+			.popup-wrap-schedule .schedule-showing .m-form div input,
+			.popup-wrap-schedule .schedule-showing .m-form div select{
+				display: inline-block;
+				vertical-align: top;
+				width: 100%;
+			   -webkit-appearance: none;
+			   -moz-appearance:    none;
+			   appearance:         none;			    
+
+			}
+				
+			.popup-wrap-schedule .schedule-showing .m-form div select{
+				margin-left: 0;
+			}
+		.popup-wrap-schedule .schedule-showing .m-form select{
+			display: block;
+			width: 100%;
+			background: #fff;
+			height: 28px;
+			box-sizing: border-box;
+			color: #222222;
+			font-size: 13px;
+			padding: 4px 10px;
+			margin-top: 8px;
+			border: 1px solid #969696;
+		}
+		.popup-wrap-schedule .schedule-showing .m-form textarea{
+			width: 100%;
+			background: #fff;
+			height: 135px;
+			box-sizing: border-box;
+			color: #222222;
+			font-size: 13px;
+			margin-top: 8px;
+			outline: none;
+			padding: 6px 10px;
+			resize: none; 
+			border: 1px solid #969696;
+		}
+		.popup-wrap-schedule .schedule-showing .m-form input[type="submit"]{
+			background: #444444;
+			width: 176px;
+			height: 38px;
+			float: right;
+			clear: both;
+			color: #fff;
+			border: none;
+			font-weight: 700;
+			font-size: 20px;
+			text-transform: uppercase;
+			cursor: pointer;
+			margin-bottom: 20px;
+		}
+		.scroll-wrap  div.wpcf7-validation-errors {
+		    border: 2px solid #f7e700;
+		    font-size: 11px;
+		    margin: 30px 0 0;
+		    text-align: center;
+		    clear: both;
+		}
+		.scroll-wrap span.wpcf7-not-valid-tip {
+		    margin-top: 0 !important;
+		}	
+	.popup-wrap-schedule .schedule-showing .m-form input[type="date"]{
+		width:100%;
+	}
+
+	.popup-wrap-schedule .schedule-showing .m-form ::-webkit-inner-spin-button,
+	.popup-wrap-request .request-more-info .m-form ::-webkit-inner-spin-button { display: none; }	
+	.popup-wrap-schedule .schedule-showing .m-form ::-webkit-datetime-edit,
+	.popup-wrap-request .request-more-info .m-form ::-webkit-datetime-edit { padding: 12px; }	
+	.popup-wrap-schedule .schedule-showing .wpcf7-response-output,
+	.popup-wrap-request .request-more-info .wpcf7-response-output{
+		font-size: 12px;
+	    margin-top: 30px;
+	    margin-bottom: 15px;
+	}
+	
+	.popup-wrap-schedule .schedule-showing .wpcf7-response-output,
+	.popup-wrap-request .request-more-info .wpcf7-response-output {
+		width:100% !important;
+		position:relative;
+		clear:both;
+		text-align:center;
+	}
+/** Schedule Showing Popup **/
+/*google map*/
+#listing-map-canvas {
+	margin: 0;
+	padding: 0;
+	height: 223px;
+	width:100%;
+}
+
+/* AIOS Listings Search Form */
+
+.aios-listings-search-form {
+}
+
+.aios-listings-search-form .field{
+	width:32.52%;
+	float:left;
+	margin-left:1.14%;
+	margin-bottom:4px;
+}
+
+.aios-listings-search-form .field.left{
+	margin-left:0;
+}
+
+.aios-listings-search-form .field input[type='text'],
+.aios-listings-search-form .field select {
+	width:100%;
+	padding:6px;
+}
+
+.aios-listings-search-form .control {
+	clear:both;
+	padding-top:20px;
+}
+
+.aios-listings-search-form  ::-webkit-input-placeholder {
+	color: #000;
+	opacity:1;
+}
+
+.aios-listings-search-form  :-moz-placeholder {
+	color: #000;
+	opacity:1;
+}
+
+.aios-listings-search-form  ::-moz-placeholder { 
+	color: #000;
+	opacity:1;
+}
+
+.aios-listings-search-form  :-ms-input-placeholder {  
+	color: #000;
+	opacity:1;
+}
+
+.aios-listing-form-hidden-title {
+    display: none;
+}
+
+/* Sold Ribbon */
+.grid .prop-img-wrap .sold-icon,
+.grid .prop-img-wrap .sale-icon,
+.grid .prop-img-wrap .rent-icon,
+.grid .prop-img-wrap .lease-icon,
+.grid .prop-img-wrap .pending-icon,
+.grid .prop-img-wrap .exclusive-icon {
+    position: absolute;
+    z-index: 9;
+    top: -1px;
+    left: -1px;
+    max-width: 88px!important;
+}
+
+.prop-img-wrap .sold-icon,
+.prop-img-wrap .sale-icon,
+.prop-img-wrap .rent-icon,
+.prop-img-wrap .lease-icon,
+.prop-img-wrap .pending-icon,
+.prop-img-wrap .exclusive-icon {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0px;
+    width: 30%!important;
+}
+
+/*add to any */
+#pop-light .det-smi .addtoany_shortcode{
+	z-index: 999999;
+    position: relative;
+}
+
+#pop-light .loading{
+	background: url( '../images/ring-alt.gif' ) no-repeat center center #fff;
+	width: 81%;
+	margin: 4% auto;
+    min-height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -40.5%;
+
+}
+.popup-wrap{
+	width: 81%;
+	margin: 4% auto;
+    position: relative;
+    min-height: 400px;
+
+}
+.popup-holder {
+    opacity: 0;
+    min-height: 400px;
+    background: #fff;
+    position: relative;
+    height: auto;
+    padding: 0.5%;
+    z-index: 500;
+    width: 100%;
+     -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+   
+}
+
+
+.listing.type-listing  .addtoany_share_save_container.addtoany_content_bottom {
+    display: none;
+}
+
+
+
+/*test*/
+ul li.sold-hidden, ul li div.sold-hidden {width: 29%;}
+
+
+/*** Property Pop-Up ***/
+
+.property-pop {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: fixed;	
+	left: 0;
+	top: 0;
+	display: none;
+	z-index: 9999;
+	background:  rgba(0, 0, 0, 0.8);
+	overflow-y: scroll;
+
+}
+
+.close-pop {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    z-index: 9999;
+	background: url(../images/close-bttn.png) no-repeat 0 0 transparent;
+
+}
+	.pop-bg{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0
+
+	}
+	
+	.pop-slideshow {
+		width: 72%;
+		height: inherit;
+		display: inline-block;
+		vertical-align: top;
+
+	}
+
+		.photo-slideshow div{
+			background-size: cover;
+		}
+		/*.pop-slideshow .right-border {
+			position: absolute;
+			right: 1%;
+			top: 1.5%;	
+			height: 97%;
+			width: 26%;
+			border: 1px solid #e5e5e5;			
+		}	*/	
+		.pop-slideshow img {max-width: 100%; width: 100%;}
+
+		/** Listings Slideshow **/
+
+		.pop-slideshow .photo-slideshow{
+			width: 100%;
+			position: relative;
+			height: inherit;
+		}
+			.pop-slideshow .photo-slideshow img{
+				display: block;
+				width: 100%;
+				height: auto;
+			    min-height: 565px;
+			}
+			.pop-slideshow .photo-slideshow .photo-list{
+				background-size: cover;
+			}
+			
+			.pop-slideshow .photo-slideshow .slick-prev{
+				width: 52px;
+				height: 52px;
+				position: absolute;
+				left: 15px;
+				top: 50%;
+				background: url(../images/arrow-prev.png) no-repeat 0 0 transparent;
+				z-index: 99;
+				border: none;
+				text-indent: -999em;
+				margin-top: -30.5px;
+				cursor: pointer;
+			}
+			
+			.pop-slideshow .photo-slideshow .slick-next{
+				width: 52px;
+				height: 52px;
+				position: absolute;
+				right: 15px;
+				top: 50%;
+				background: url(../images/arrow-next.png) no-repeat 0 0 transparent;
+				z-index: 99;
+				border: none;
+				text-indent: -999em;
+				margin-top: -30.5px;
+				cursor: pointer;
+			}
+				.slick-next:before,
+				.slick-prev:before{
+					font-size: 0 !important;
+				}
+
+
+	.pop-details {
+		width: 27%;		
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 1%;
+		border: 1px solid #e7e7e7;
+		position: relative;	
+		height: inherit;
+		padding-bottom: 11px;
+		min-height: 565px;
+		float: right;	
+	}
+
+		.pop-details .trans {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+	.pop-details .prop-det {
+		width: 90%;
+		padding-top: 15px;
+		margin: 0 auto;
+	}
+
+	.pop-details .prop-det .prop-title {
+		color: #5f5f5f;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 24px;
+		margin-bottom:7px;
+		display:block;
+		line-height: 1.5em;
+   		height: auto;
+
+	}
+
+	.pop-details .prop-det .prop-title-truncate{
+		overflow: hidden;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 3;
+	    -webkit-box-orient: vertical;
+	    -o-text-overflow: ellipsis;
+  		-ms-text-overflow: ellipsis;
+ 		text-overflow: ellipsis;
+	}
+
+
+	.pop-details .prop-det .sold {
+		font-size: 16px;
+		color: #727272;
+		margin-bottom:11px;
+		display:block;
+	}
+
+	.pop-details .prop-det .prop-price {
+		font-size: 30px;
+		color: #464646;
+		border-top:1px solid #ececec;
+		border-bottom:1px solid #ececec;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		display:block;
+	}
+	
+	.pop-details .prop-det .prop-pr {
+		border-bottom:1px solid #ececec;
+		padding-top: 11px;
+		padding-bottom: 13px;
+		display:block;
+		font-size:14px;
+		line-height:21px;
+	}
+	
+	.pop-details .prop-det .prop-pr * {
+		vertical-align:middle;
+		display:inline-block;
+	    margin: 0 5px;
+	}
+
+	.pop-details .prop-det .prop-pr em {
+	    font-size: 18px;
+	    color: #bababa;
+	}
+
+	.pop-details .prop-det .border {
+		display: inline-block; 
+		border-left:1px solid #dadada;
+		height:21px;
+		margin:0 10px;
+	}
+
+	.pop-details .prop-det .det-sqft {float: none;}
+
+	.pop-details .description {
+		color: #727272;
+		font-size: 16px;
+		
+		font-weight: 300;
+		width: 100%;
+		float: left;
+		margin-top: 6px;
+		line-height: 22px;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		height: 140px;
+		padding-right: 11px;
+	}
+
+	.pop-details .description img {
+	    display: none;
+	}
+
+	.property-pop .det-smi {
+		position: relative;
+		padding: 10px 0;
+		clear: both;
+	}
+
+		.property-pop .det-smi .a2a_kit a:first-child {
+			padding-left: 0;
+		}
+
+		.property-pop .det-smi img {
+			width: 16px;
+		} 
+
+		.pop-slideshow .addtoany_shortcode .a2a_kit a:first-child {
+		    padding-left: 0;
+		}
+
+/* Map Details Popup */
+
+.listing-info  .listing-title {
+	padding: 2px 0;
+}
+
+.listing-info .listing-content {
+	position: relative;
+}
+
+.listing-info .listing-content .listing-photo {
+	float: left;
+	width: 36%;
+}
+
+.listing-info .listing-content .listing-photo img {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 102.65px;
+}
+
+.listing-info .listing-content .listing-info {
+	float: right;
+	width: 60%;
+	padding: 10px 0;
+}
+
+.listing-info .listing-content .listing-info > div {
+    padding: 2px 0;
+}
+
+.single-listing h1.entry-title {
+	display: none;
+}
+
+.descript-map img {
+    display: block;
+    width: 100%;
+}
+.descript-map textarea{
+	display: none;
+}
+
+/*******************************************************
+ *
+ * 9. Custom CSS
+ *
+ *******************************************************/
+
+
+
+/*******************************************************
+ *
+ * 10. Mobile styles
+ *
+ *******************************************************/
+@media only screen and (max-width: 1199px) {
+	.grid .prop-det .prop-price .det-smi{
+		position: static;
+		margin: 12px auto;
+	}
+	.grid  .prop-det .prop-price{
+	}
+}
+@media only screen and (max-width: 1100px) {
+
+	#content .listing-details-wrap .details-head  h1{
+	    width: 70%;
+	}
+
+	#content .listing-details-wrap .property-details .details-list .det-item {
+    	max-width: 145px;
+	}
+}
+@media only screen and (max-width: 1050px) {
+
+	#content .property-description .prop-cta a{
+	    font-size: 10px;
+	    text-decoration: none !important;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	#content .property-description .prop-cta a{
+		font-size: 12px;
+	}
+	#content-sidebar .hfeed{
+		padding: 0 !important;
+	}
+	.pop-wrap{
+	    -webkit-overflow-scrolling: touch;
+	    overflow-x: hidden;
+	    overflow-y: scroll;
+	}
+	#content .listing-details-wrap .property-details .details-list .det-column{
+		padding-bottom: 0;
+	}
+	/*** IP Template ***/
+	#content .property-description{
+		padding-top: 0;
+	}
+		#content .listing-details-wrap .details-head span.details-price{
+			display: block;
+			position: static;
+			width: 100%;
+			text-align: center;
+			margin: 0;
+		}
+
+	.grid li.re-margin, .grid li:first-child{
+		clear: none;
+		float: left !important;
+	}
+	.mortage-calculator, 
+	.schedule-showing,
+	.request-more-info{
+        height: 68%;
+	}
+	.pop-gallery-wrap .close-pop{
+		right: 11%;
+		top: 1%;		
+	}
+
+	#content .listing-details-wrap .property-details .details-list .det-item {
+   		 max-width: 155px;
+	}
+
+
+	#content .listing-details-wrap .details-head  h1{
+		width: 100%;
+		text-align: center;
+	}
+	/** Property Page **/
+	#content .top-sort {
+		text-align: left;
+	}
+
+
+		#content .top-sort .sort-left {
+		    width: 30%;
+		}
+
+			#content .top-sort .sort-left a {
+			    transform: scale(1.2);
+			    margin: 0 5px;
+			}
+
+		#content .top-sort .sort-right {
+			width: 68%;
+			text-align: right;
+		}
+
+	/** Deatils Page Responsive **/
+	#content .listing-details-wrap{
+		width: 100%;
+	}
+		#content .popup-wrap-schedule .schedule-showing .m-form input,
+		#content .popup-wrap-request .request-more-info .m-form input{
+			width: 100%;
+			max-width: 100%;
+		}
+		#content .popup-wrap-schedule .schedule-showing .m-form div span,
+		#content .popup-wrap-request .request-more-info .m-form div span{
+			width: 48.7%;
+		}
+		#content .popup-wrap-schedule .schedule-showing .m-form textarea,
+		#content .popup-wrap-request .request-more-info .m-form textarea{
+			width: 100%;
+			max-width: 100%;
+		}
+		#content .listing-details-wrap .property-description .prop-cta{
+			text-align: center;
+		}
+
+	/*** AIOS Listings ***/
+	.popup-wrap-schedule .schedule-showing .wpcf7-response-output, .popup-wrap-request .request-more-info .wpcf7-response-output{
+		margin-top: 0;
+	}
+	#content .property-pop {width: 100%;}
+
+	#content .pop-slideshow {
+		width: 100%;
+		float: left;
+	}
+
+		.pop-slideshow img {max-width: 100%;}
+
+	#content .pop-details {
+		width: 100%;
+		height: auto;
+		border: 1px solid #e7e7e7;
+		position: relative;
+		padding-bottom: 70px
+	}
+	/*** AIOS Listings ***/
+	.pop-slideshow .photo-slideshow img{
+		min-height: 100px;
+	}
+
+	.popup-holder{
+		-webkit-overflow-scrolling: touch;
+		overflow-x: hidden;
+		overflow-y: scroll;
+
+	}
+	.property-pop {
+		width: 100%;
+		-webkit-overflow-scrolling: touch;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	} 
+
+	.pop-slideshow {
+		width: 100%;
+		height: auto;
+	}
+
+		.pop-slideshow img {max-width: 100%;}		
+
+	.pop-details {
+		width: 100%;
+		height: auto;
+		margin: 10px 0;
+		border: 1px solid #e7e7e7;
+		position: relative;
+		padding-bottom: 70px
+	}
+
+	.pop-slideshow .right-border {display: none;}
+
+	.property-pop .det-smi {
+	    position: relative;
+	    bottom: 0;
+	    z-index: 99;
+	    right: 0;
+	    text-align: center;
+	    padding: 11px 0 0;
+	}
+	#content .grid li {
+		width: 48%;
+		float: left;
+		border: 1px solid #e7e7e7;
+		padding-bottom: 10px;
+		list-style-type: none;
+		margin: 0 2% 30px 0;
+	}
+
+	.prop-det .prop-beds .det-smi {
+		position: relative;
+	}
+	
+	.prop-det .prop-beds .det-smi .a2a_kit_size_32 {
+		display: block;
+		top: 7px;
+		position: relative;
+	}
+
+	.prop-det .prop-beds .det-smi .a2a_kit_size_16 {
+		display: block;
+		top: 4px;
+		position: relative;
+	}
+
+
+}
+
+@media only screen and (max-width: 700px) {
+	#content .property-description .prop-cta a{
+	    font-size: 11px;
+	}
+	/*** AIOS Listings ***/
+
+	#content .popup-wrap-mortage .mortage-calculator .m-form form div input {
+       width: 49.3%;
+    }
+    #content .popup-wrap-mortage .mortage-calculator .m-form form div input[type="submit"]{
+    	font-size: 17px;
+    }
+    #content .popup-wrap-mortage .mortage-calculator .m-form form div input[type="reset"]{
+    	font-size: 17px;
+    }
+    #content .listing-details-wrap .details-head span.details-price{
+    	font-size: 15px;
+    	 top: 12px;
+    }
+
+	#content ul.list li .prop-det .prop-title {
+		width: 100%;
+		display: block;
+		margin: 10px 0;
+		float: none;
+	}
+
+	#content ul.list li .prop-det p.list-price {
+		display: block;
+		width: 100%;
+		text-align: left;
+		float: none;
+	}
+	#content .grid li{
+	    width: 100%;
+	}
+
+	/*** Sold Table Layout ***/ 
+
+	ul.table-hdr li, ul.table-list li {
+		font-size: 13px;
+	}
+
+	#content .listing-details-wrap .property-details .details-list{
+		text-align: center;
+	    padding: 0 0 10px;
+	}
+		#content .property-description .property-det{
+			width: 100%;
+		}
+		#content .property-description .property-add-type{
+			width: 100%;
+			padding-left: 0;
+			margin-left: 0;
+			border-left: none;
+		}
+		#content .property-description .property-add-type p{
+		       padding: 0 28px;	
+		}
+
+	/*** AIOS Listings ***/
+
+	.grid li {
+		width: 48%;
+		float: left;
+		border: 1px solid #e7e7e7;
+		padding-bottom: 10px;
+		list-style-type: none;
+		margin: 0 2% 30px 0;
+	}
+	.pop-details{
+		padding-bottom: 20px;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+.list-wrapper{
+    margin-bottom: 30px;
+}
+#content .property-description .prop-cta a {
+    font-size: 10px;
+}
+/*** Sold Table Layout ***/
+
+	.table-hdr {display: none;}
+
+	.table-list li div {
+		width: 100%;
+		display: block;
+		font-size: 14px;
+	}
+
+		ul li div.prop-img {
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+		}
+
+			#content-listings ul.table-list li img.main-img {
+				width: 100%;
+				max-width: initial !important;
+				margin: 0;
+			}
+
+		ul li div.prop-add, ul li div.list-price, ul li div.beds, ul li div.baths, ul li div.area, ul li div.sold-date {
+			width: 100%;
+			display: block;
+			text-align: center;
+		}
+
+		ul li div p.list-price, ul.table-list li div label {
+			display: inline-block; 
+			margin: 0 !important;
+			width: 30%;
+			text-align: right;			
+
+		}
+		ul.table-list li div span, ul.table-list .list-price-sec{
+			display: inline-block;
+			vertical-align: top;
+			width: 68%;
+			text-align: left;
+			padding-left: 2%;
+
+		}
+			ul.table-list  .list-price-sec span{
+				width: 100%;
+				padding-left: 0;
+			}
+}
+@media only screen and (max-width: 640px) {
+
+	/*** AIOS Listings ***/
+	.sort-sel {
+	    width: 100px;
+	}
+	.grid li {
+		width: 98%;
+		float: left;
+		border: 1px solid #e7e7e7;
+		padding-bottom: 10px;
+		list-style-type: none;
+		margin: 0 1% 30px 0;
+	}
+
+		.grid .prop-img-wrap {height: auto;}
+
+		.grid li img.main-img {height: auto;}
+
+	.list li {
+		width: 98%;
+		float: left;
+		padding-bottom: 10px;
+		list-style-type: none;
+		margin: 0 1% 30px 0;
+	}
+
+		ul.list li .prop-img-wrap, ul.list li .prop-det {
+			width: 100%;
+			margin: 0 !important;
+		}
+	ul.list .prop-det .prop-beds{
+		text-align: center;
+	}
+	.prop-det .prop-beds .det-smi{
+		text-align: center;
+		position: relative;
+		top: 0;
+		left: 0;
+		display: block;
+		margin-top: 8px;
+	}
+	#content .listing-details-wrap .property-details .details-list .det-specs span{
+		text-align: left;
+	}
+	#content .listing-details-wrap .property-details .details-list .det-item{
+
+		padding: 0 15px;
+		width: auto;
+	}
+	#content ul.list li .prop-det .prop-title{
+		text-align: center;
+	}
+	#content ul.list li .prop-det p.list-price{
+		text-align: center;
+	}
+	#content .listing-details-wrap .property-details .details-list .det-item{
+		display: block;
+		width: 100%;
+		max-width: 100%;
+	}
+	.pop-details .prop-det .prop-title{
+	    font-size: 17px;
+	}
+	#content .popup-wrap-schedule .schedule-showing .m-form div span{
+	    width: 48.7%;
+	}
+	#content .popup-wrap-request .request-more-info .m-form div span{
+	    width: 32.56%;
+	}
+	.mortage-calculator, .schedule-showing, .request-more-info {
+	    height: 96%;
+        width: 90%;
+	}
+	
+}
+
+@media only screen and (max-width: 500px) {
+	.table-list li div.beds{
+		display: none;
+	}
+	.table-list li div.baths{
+		display: none;
+	}
+	.table-list li div.area{
+		display: none;
+	}
+
+	/*** AIOS Listings ***/
+	/** Details Page Responsve **/
+	#content .request-more-info{
+		width: 92%;
+	}
+	#content .mortage-calculator{
+		width: 92%;
+	}
+	#content .schedule-showing{
+		width: 92%;
+	}
+		#content .listing-details-wrap .property-description .prop-cta a{
+			width: 100%;
+			margin-left: 0;
+			margin-top: 5px;
+		    padding: 11px 0;
+		}
+
+		#content .listing-details-wrap .property-details .details-list .det-area{
+			margin-left: 0;
+		}
+	#content ul.list li .prop-img-wrap{
+		width: 100%;
+	}
+		#content ul.list li .prop-img-wrap img{
+			display: block;
+			width: 100%;
+			height: auto;
+			max-width: 100%;
+		}
+		#content ul.list li .prop-det{
+			width: 100%;
+			padding-top: 20px;
+			margin-left: 0;
+			overflow: hidden;
+		}
+			#content ul.list li .prop-det .prp-det{
+				text-align: center;
+			}
+			.list .prop-img-wrap .sold-icon,
+			.list .prop-img-wrap .sale-icon,
+			.list .prop-img-wrap .rent-icon,
+			.list .prop-img-wrap .lease-icon,
+			.list .prop-img-wrap .pending-icon,
+			.list .prop-img-wrap .exclusive-icon{
+			    width: auto !important;
+			    height: auto !important;				
+			}
+	/** Details Page Responsve **/
+	#content .grid li {
+	    width: 100%;
+		float: left;
+		border: 1px solid #e7e7e7;
+		padding-bottom: 10px;
+		list-style-type: none;
+		margin: 0 1% 30px 0;
+	}
+	.top-sort a{
+		width: 16px;
+		height: 16px;
+	    background-size: 99% !important;
+	}
+	#content .top-sort .sort-left a{
+	       margin: 0 3px;
+	       font-size: 15px;
+	}
+	#content .popup-wrap-mortage .mortage-calculator .m-form form div input {
+	    width: 49%;
+	}
+	#content .listing-details-wrap .details-head h1{
+		width: 100%;
+		text-align: center;
+		display: block;
+	}
+	#content .listing-details-wrap .details-head span.details-price {
+	    display: block;
+	    width: 100%;
+	    position: relative;
+	    text-align: center;
+	    top: 0;
+	    margin: 0;
+	}
+	.popup-wrap-mortage .mortage-calculator .m-form form div input[type="submit"]{
+	    font-size: 17px;
+	}
+	.popup-wrap-request .request-more-info .m-form input[type="date"]{
+		width: 100%;
+	}
+}
+
+
+@media only screen and (max-width:470px) {
+
+	.aios-listings-search-form .field{ 
+		width:100%;
+		margin-left:0;
+		float:none;
+	}
+	#content .popup-wrap-mortage .mortage-calculator .m-form form div input {
+	    width: 48.56%;
+	}
+
+}

@@ -1,0 +1,1121 @@
+/***Global Connections***/
+
+.header-sm{
+	display: none;
+}
+.ip-banner{
+	overflow: hidden;
+}
+.ip-banner::before {
+    background: rgba(0,0,0,.05);
+}
+
+.ip-banner::after {
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:url(../../images/relocation/reloc-banner-fade.png) center top repeat-x;
+	background-size: cover;
+}
+.custom-breadcrumbs{
+	position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,46,51,.7);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.050em;
+    padding: 10px 0;
+}
+.custom-breadcrumbs span{
+	font-size: 11px;
+	display: inline-block;
+}
+.custom-breadcrumbs .breadcrumb_last{
+	font-weight: 600;
+}
+.custom-breadcrumbs .container{
+	position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%,0%);
+}
+#breadcrumbs{
+	position: relative;
+	z-index: 2;
+}
+#gc-wrap{
+	position: relative;
+    padding: 0 0 77px;
+    background:url(../../images/global-connections/gc-bg.jpg) center top no-repeat #fff;
+    background-size: 100% auto;
+}
+#gc-wrap .custom-breadcrumbs{
+	display: none;
+}
+.gc-title{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 75px;
+    padding: 90px 0 0;
+}
+.gc-title h1{
+	overflow: hidden;
+    text-align: right;
+}
+.gc-title strong{
+	display: block;
+    font-size: 60px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.gc-title span{
+	font-size: 28px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.gc-title span:after{
+	content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+.gc-container{
+	width:calc(100% - 30px);
+	margin: 0 auto;
+	max-width: 1468px;
+	position: relative;
+}
+
+.gc-subtext{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 0.025em;
+    text-align: center;
+    margin: 0 auto 80px;
+    max-width: 880px;
+}
+
+.gc-map{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 811px;
+}
+.gc-stats{
+    margin: 25px 0 0;
+}
+.gc-stats .stats-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.gc-stats .stats-single{
+    width:calc(100% / 3);
+    text-align: center;
+    font-size: 18px;
+    color:#929292;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    line-height: 25px;
+    border-left: 1px solid #dfdfdf;
+    position: relative;
+    padding: 30px 0;
+}
+.gc-stats .stats-single:first-child{
+    border-left: 0px solid #dfdfdf;
+}
+.gc-stats .stats-single:before{
+    content:'';
+    display: block;
+    width: 3px;
+    height: 38px;
+    background:#a4c2ac;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    pointer-events: none;
+}
+.gc-stats .stats-single:first-child:before{
+    display: none;
+}
+.gc-stats .stats-num{
+    color:#014046;
+    font-size: 50px;
+    margin: 0 0 30px;
+}
+
+.gc-intntnl{
+    position: relative;
+    margin: 75px 0 0;
+}
+.intntnl-wrapper{
+    background:url(../../images/global-connections/gc-big-accent.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 80px 0 185px;
+}
+.intntnl-wrapper .intntnl-title{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.intntnl-wrapper .intntnl-title h2{
+    overflow: hidden;
+    text-align: right;
+}
+.intntnl-wrapper .intntnl-title strong{
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-1.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.intntnl-wrapper .intntnl-title span{
+    color:#819da0;
+    font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.intntnl-wrapper .intntnl-title span:after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.intntnl-wrapper .intntnl-content{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    line-height: 25px;
+    padding: 0 15px;
+    margin: 40px auto 0;
+    max-width: 1075px;
+}
+.intntnl-wrapper .intntnl-content:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.intntnl-wrapper .intntnl-content img{
+    float: right;
+    margin: 0 0 0 55px;
+}
+
+.gc-team{
+    position: relative;
+    z-index: 1;
+    margin: -88px 0 0;
+}
+.gc-team .team-wrapper{
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: calc(100% - 43px);
+}
+.gc-team .slick-slide{
+    margin: 0 9px;
+}
+.gc-team .team-wrapper ul{
+    margin: 0 -9px;
+}
+.gc-team .team-wrapper li{}
+.gc-team .team-single{
+    text-align: center;
+}
+.gc-team .team-single a{}
+.gc-team .team-single a .team-state{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.025em;
+    margin: 0 0 20px;
+    display: none;
+}
+.gc-team .team-single a .team-img{}
+.gc-team .team-single a canvas{
+    display: block;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+.gc-team .team-single a .team-name{
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.025em;
+    line-height: 25px;
+    padding: 20px 0 0;
+}
+
+.gc-team .team-navs{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 53px 0 0;
+}
+.gc-team .team-navs .nav-div{
+    width: 1px;
+    height: 57px;
+    background:#e2e2e2;
+    margin: 0 28px;
+}
+.gc-team .team-navs .team-nav{
+    cursor: pointer;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.gc-team .team-navs .team-nav.team-prev:after{
+    content:'';
+    display:block;
+    width: 29px;
+    height: 1px;
+    background:#014046;
+    margin: 0 0 0 10px;
+    pointer-events: none;
+}
+.gc-team .team-navs .team-nav.team-next:before{
+    content:'';
+    display:block;
+    width: 29px;
+    height: 1px;
+    background:#014046;
+    margin: 0 10px 0 0;
+    pointer-events: none;
+}
+.gc-team .team-navs .team-nav em{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.240em;
+    color:#889596;
+    text-transform: uppercase;
+    font-style: normal;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+}
+.gc-team .team-navs .team-nav:hover em{
+    color:#014046;
+}
+.gc-team .team-navs .team-nav span{
+    font-size: 17px;
+    color:#014046;
+    margin: 0 10px;
+}
+
+.gc-team .team-locations {
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    line-height: 25px;
+    text-align: center;
+    color: #000;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 85px 0 50px;
+}
+
+.gc-hamptons{
+    margin: 95px 0 0;
+    overflow: hidden;
+}
+.gc-hamptons .hamptons-wrapper{
+    padding: 0 240px 0 0;
+    position: relative;
+}
+.gc-hamptons .hamptons-wrapper:before{
+    content: '';
+    display: block;
+    width: 78px;
+    height: 69.404%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: url(../../images/global-connections/gc-hamptons-accent.jpg) center center no-repeat;
+    background-size: 100% 100%;
+}
+.gc-hamptons .hamptons-wrapper:after{
+    content: '';
+    display: block;
+    width: 651px;
+    height: 78px;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background: #316469;
+}
+.gc-hamptons .hamptons-title{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 0 50px;
+}
+.gc-hamptons .hamptons-title h2{
+    overflow: hidden;
+    text-align: right;
+}
+.gc-hamptons .hamptons-title strong{
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.gc-hamptons .hamptons-title span{
+    font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.gc-hamptons .hamptons-title span:after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.gc-hamptons .hamptons-content {
+    padding: 60px 252px 0 170px;
+    background: url(../../images/global-connections/gc-hamptons-map.png) top right no-repeat;
+}
+
+.gc-hamptons .hamptons-devices{}
+.gc-hamptons .hamptons-text{
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.025em;
+    margin: 40px 0 0;
+}
+
+.gc-expansive{
+    background: url(../../images/global-connections/gc-map-bg.jpg) center top no-repeat #fff;
+    background-size: 100% auto;
+    position: relative;
+    padding: 122px 0 0;
+}
+.gc-expansive .expansive-wrapper{}
+.gc-expansive .expansive-title{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 50px;
+}
+.gc-expansive .expansive-title h2{
+    overflow: hidden;
+    text-align: right;
+}
+.gc-expansive .expansive-title strong{
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.gc-expansive .expansive-title span{
+    font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.gc-expansive .expansive-title span:after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.gc-expansive .expansive-text{
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    line-height: 25px;
+    text-align: center;
+    color: #000;
+    margin: 0 auto;
+    max-width: 945px;
+}
+
+.gc-expansive .expansive-partners{
+    margin: 50px auto 30px;
+    max-width: 1088px;
+}
+.gc-expansive .expansive-partners canvas{
+    background:url(../../images/global-connections/gc-partners.png) center center no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.gc-property{
+    margin: 137px 0 0;
+    overflow: hidden;
+}
+.gc-property .property-wrapper{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 170px 163px 0;
+}
+.gc-property .property-wrapper:after{
+    content:'';
+    display: block;
+    width: 652px;
+    height: 80px;
+    background:#316469;
+    position: absolute;
+    z-index: 0;
+    top:0;
+    right: 0;
+}
+.gc-property .property-wrapper:before{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: url(../../images/global-connections/gc-hamptons-accent.jpg) center center no-repeat;
+    background-size: 100% 100%;
+}
+.gc-property .property-content{
+    max-width: 525px;
+}
+.gc-property .property-title{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 50px;
+}
+.gc-property .property-title h2{
+    overflow: hidden;
+    text-align: right;
+}
+.gc-property .property-title strong{
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.gc-property .property-title span{
+    font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.gc-property .property-title span:after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+.gc-property .property-text{
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    line-height: 25px;
+    color:#000000;
+}
+.gc-property .property-device{}
+
+.gc-sm{
+    background: url(../../images/global-connections/gc-map-bg.jpg) center top no-repeat #fff;
+    background-size: 100% auto;
+    position: relative;
+    padding: 122px 0 0;
+}
+.gc-sm .sm-wrapper{
+    background: url(../../images/global-connections/gc-big-accent.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 80px 163px 78px;
+}
+.gc-sm .sm-title{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 50px;
+}
+.gc-sm .sm-title h2{
+    overflow: hidden;
+    text-align: right;
+}
+.gc-sm .sm-title strong{
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-1.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.gc-sm .sm-title span{
+    font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.gc-sm .sm-title span:after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.gc-sm .sm-text{
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.025em;
+    font-weight: 300;
+    line-height: 25px;
+    max-width: 950px;
+}
+.gc-sm .sm-stats{
+    color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 55px 0 0;
+}
+.gc-sm .sm-stats-single{}
+.gc-sm .sm-num{
+    border-bottom: 1px solid #1d4a4c;
+    padding: 0 0 25px;
+    margin: 0 0 18px;
+}
+.gc-sm .sm-num span{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.gc-sm .sm-num em{
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.350em;
+    margin: 10px 0 0;
+}
+.gc-sm .sm-desc{
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    line-height: 25px;
+}
+.gc-sm .sm-links{
+    font-size: 0;
+    text-align: center;
+    margin: 28px 0 0;
+    pointer-events: none;
+}
+.gc-sm .sm-links a{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 22px;
+    color:#fff;
+    margin: 0 0 0 26px;
+}
+.gc-sm .sm-links a:first-child{
+    margin: 0 0 0 0;
+}
+.gc-sm .sm-links a:hover{
+    color:#316469;
+}
+.gc-homes{
+    margin: 120px 0 0;
+}
+.gc-homes .homes-wrapper{
+    padding: 126px 167px 0 150px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.gc-homes .homes-wrapper:before{
+    content: '';
+    display: block;
+    width: 652px;
+    height: 80px;
+    background: #316469;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+.gc-homes .homes-wrapper:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: calc(100% - 30px);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: url(../../images/global-connections/gc-hamptons-accent.jpg) center center no-repeat;
+    background-size: 100% 100%;
+}
+.gc-homes .homes-mags{}
+.gc-homes .homes-mags img{}
+.gc-homes .homes-content{}
+.gc-homes .homes-title{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 50px;
+}
+.gc-homes .homes-title h2{
+    overflow: hidden;
+    text-align: right;
+}
+.gc-homes .homes-title strong{
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.gc-homes .homes-title span{
+    font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.gc-homes .homes-title span:after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+.gc-homes .homes-text{
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.025em;
+    color: #000;
+    max-width: 665px;
+}
+.gc-homes .homes-text p{
+    margin: 25px 0 0;
+}
+.gc-homes .homes-text p:first-child{
+    margin: 0 0 0;
+}
+
+@media only screen and (max-width: 1440px) {
+	.gc-hamptons .hamptons-wrapper {
+        padding: 0 160px 0 0;
+    }
+    .gc-property .property-wrapper {
+        padding: 170px 163px 0 90px;
+    }
+    .gc-sm .sm-wrapper {
+        padding: 80px 100px 78px;
+    }
+    .gc-homes .homes-wrapper {
+        padding: 126px 85px 0 150px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+	.gc-team .slick-slide {
+        margin: 0 5px;
+    }
+    .gc-property .property-device {
+        max-width: 530px;
+    }
+    .gc-homes .homes-mags {
+        max-width: 380px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+	.gc-stats .stats-single{
+        font-size: 14px;
+    }
+    .gc-stats .stats-num{
+        font-size: 45px;
+    }
+    .gc-team .team-single a .team-state {
+        font-size: 13px;
+        letter-spacing: 0em;
+    }
+    .gc-team .team-single a .team-name {
+        font-size: 13px;
+        line-height: 21px;
+    }
+    .gc-hamptons .hamptons-wrapper {
+        padding: 0 50px 0 0;
+    }
+    .gc-hamptons .hamptons-wrapper:after {
+        width: 380px;
+        height: 50px;
+    }
+    .gc-hamptons .hamptons-wrapper:before{
+        width: 50px;
+    }
+    .gc-hamptons .hamptons-content {
+        padding: 60px 280px 0 100px;
+        background-size: 260px auto;
+    }
+    .gc-hamptons .hamptons-devices {
+        max-width: 400px;
+    }
+    .gc-property .property-wrapper {
+        padding: 170px 100px 0 30px;
+    }
+    .gc-property .property-wrapper:before{
+        width: 50px;
+    }
+    .gc-property .property-wrapper:after {
+        height: 50px;
+    }
+    .gc-property .property-device {
+        max-width: 300px;
+    }
+    .gc-sm .sm-wrapper {
+        padding: 80px 30px 78px;
+    }
+    .gc-sm .sm-stats {
+        justify-content: space-between;
+    }
+    .gc-sm .sm-num span {
+        font-size: 45px;
+    }
+    .gc-sm .sm-num em {
+        font-size: 16px;
+        letter-spacing: 0.200em;
+    }
+    .gc-homes .homes-wrapper {
+        padding: 126px 30px 0 80px;
+    }
+    .gc-homes .homes-wrapper:before {
+        height: 50px;
+    }
+    .gc-homes .homes-wrapper:after {
+        width: 50px;
+    }
+    .gc-homes .homes-mags {
+        max-width: 330px;
+    }
+    .gc-homes .homes-title strong {
+        font-size: 31px;
+        padding: 0 0 0 65px;
+        background-size: 55px auto;
+    }
+    .gc-homes .homes-title span {
+        font-size: 22px;
+    }
+    .gc-homes .homes-text {
+        max-width: 490px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+	.gc-stats .stats-single {
+        font-size: 12px;
+    }
+    .gc-stats .stats-num {
+        font-size: 30px;
+        margin: 0 0 10px;
+    }
+    .intntnl-wrapper .intntnl-content{
+        text-align: center;
+    }
+    .intntnl-wrapper .intntnl-content img {
+        float: none;
+        margin: 0 auto 30px;
+    }
+    .gc-hamptons .hamptons-wrapper:before,
+    .gc-hamptons .hamptons-wrapper:after{
+        display: none;
+    }
+    .gc-hamptons .hamptons-wrapper {
+        padding: 0 0 0 0;
+    }
+    .gc-hamptons .hamptons-title {
+        justify-content: center;
+    }
+    .gc-hamptons .hamptons-content {
+        padding: 370px 0 0 0;
+        background: url(../../images/global-connections/gc-hamptons-map.png) top center no-repeat;
+        background-size: 200px auto;
+        text-align: center;
+    }
+    .gc-hamptons .hamptons-devices {
+        max-width: 380px;
+        margin: 0 auto;
+    }
+    .gc-property .property-wrapper {
+        padding: 0 0 0 0;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .gc-property .property-wrapper:before,
+    .gc-property .property-wrapper:after{
+        display: none;
+    }
+    .gc-property .property-content {
+        max-width: none;
+        text-align: center;
+    }
+    .gc-property .property-title {
+        justify-content: center;
+    }
+    .gc-property .property-device {
+        margin: 40px 0 0;
+    }
+    .gc-sm .sm-stats {
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+    .gc-sm .sm-stats-single {
+        margin: 40px 0 0;
+    }
+    .gc-sm .sm-stats-single:first-child {
+        margin: 0 0 0;
+    }
+    .gc-homes .homes-wrapper {
+        padding: 0 0 0 0;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .gc-homes .homes-wrapper:before,
+    .gc-homes .homes-wrapper:after{
+        display: none;
+    }
+    .gc-homes .homes-content {
+        margin: 40px 0 0;
+        text-align: center;
+    }
+    .gc-homes .homes-title {
+        justify-content: center;
+    }
+    .gc-homes .homes-text {
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+	.gc-stats .stats-single {
+        font-size: 12px;
+        width: 100%;
+        border-left: 0px solid #dfdfdf;
+        border-top: 1px solid #dfdfdf;
+    }
+    .gc-stats .stats-single:first-child{
+        border-top: 0px solid #dfdfdf;
+    }
+    .gc-stats .stats-single:before{
+        display: none;
+    }
+    .intntnl-wrapper .intntnl-title strong {
+        font-size: 34px;
+        padding: 0 0 0 70px;
+        background-size: 60px auto;
+    }
+    .intntnl-wrapper .intntnl-title span {
+        font-size: 20px;
+    }
+    .gc-hamptons .hamptons-title strong {
+        font-size: 45px;
+    }
+    .gc-expansive .expansive-title strong {
+        font-size: 31px;
+        padding: 0 0 0 60px;
+        background-size: 50px auto;
+    }
+    .gc-expansive .expansive-title span {
+        font-size: 23px;
+    }
+    .gc-sm .sm-wrapper {
+        padding: 80px 15px 78px;
+    }
+    .gc-sm .sm-title strong {
+        font-size: 36px;
+        padding: 0 0 0 80px;
+        background-size: 70px auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+	.gc-title strong {
+        font-size: 42px;
+        padding: 0 0 0 70px;
+        background-size: 60px auto;
+    }
+    .gc-title span {
+        font-size: 20px;
+    }
+    .intntnl-wrapper .intntnl-title strong {
+        font-size: 22px;
+        padding: 0 0 0 50px;
+        background-size: 40px auto;
+    }
+    .intntnl-wrapper .intntnl-title span {
+        font-size: 16px;
+    }
+    .gc-team .team-navs {
+        margin: 53px -15px 0;
+    }
+    .gc-team .team-navs .nav-div {
+        margin: 0 5px;
+    }
+    .gc-team .team-navs .team-nav.team-next:before,
+    .gc-team .team-navs .team-nav.team-prev:after {
+        width: 15px;
+    }
+    .gc-hamptons .hamptons-title strong {
+        font-size: 31px;
+        padding: 0 0 0 55px;
+        background-size: 45px auto;
+    }
+    .gc-hamptons .hamptons-title span {
+        font-size: 14px;
+    }
+    .gc-expansive .expansive-title strong {
+        font-size: 19px;
+        padding: 0 0 0 40px;
+        background-size: 30px auto;
+    }
+    .gc-expansive .expansive-title span {
+        font-size: 16px;
+    }
+    .gc-property .property-title strong {
+        font-size: 31px;
+        padding: 0 0 0 60px;
+        background-size: 50px auto;
+    }
+    .gc-property .property-title span {
+        font-size: 19px;
+    }
+    .gc-sm .sm-title strong {
+        font-size: 22px;
+        padding: 0 0 0 45px;
+        background-size: 35px auto;
+    }
+    .gc-homes .homes-title strong {
+        font-size: 19px;
+        padding: 0 0 0 40px;
+        background-size: 30px auto;
+    }
+    .gc-homes .homes-title span {
+        font-size: 15px;
+    }
+}

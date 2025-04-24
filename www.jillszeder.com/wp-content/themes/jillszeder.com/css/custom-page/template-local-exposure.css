@@ -1,0 +1,1298 @@
+/***Local Exposure***/
+
+.header-sm{
+	display: none;
+}
+.ip-banner::before {
+    background: rgba(0,0,0,.05);
+}
+
+.ip-banner::after {
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:url(../../images/relocation/reloc-banner-fade.png) center top repeat-x;
+	background-size: cover;
+}
+.custom-breadcrumbs{
+	position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,46,51,.7);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.050em;
+    padding: 10px 0;
+}
+.custom-breadcrumbs span{
+	font-size: 11px;
+	display: inline-block;
+}
+.custom-breadcrumbs .breadcrumb_last{
+	font-weight: 600;
+}
+.custom-breadcrumbs .container{
+	position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%,0%);
+}
+#le-wrap{
+	position: relative;
+    padding: 0 0 77px;
+}
+#le-wrap .custom-breadcrumbs{
+	display: none;
+}
+.le-wrapper{}
+.le-title{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 35px;
+    padding: 90px 0 0;
+}
+.le-title h1{
+	overflow: hidden;
+    text-align: right;
+}
+.le-title strong{
+	display: block;
+    font-size: 60px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.le-title span{
+	font-size: 28px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.150em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.le-title span:after{
+	content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.le-container{
+	width: calc(100% - 30px);
+	max-width: 1468px;
+	margin: 0 auto;
+}
+
+.le-homes{
+    background: url(../../images/local-exposure/le-bg.jpg) center top no-repeat #fff;
+    background-size: cover;
+}
+.le-homes .homes-wrapper{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.le-homes .homes-left{
+	width: 37.193%;
+}
+.le-homes .homes-mag{
+	width: 77.839%;
+	background: #063237;
+	position: relative;
+	pointer-events: none;
+}
+.le-homes .mag-1{
+	position: relative;
+	z-index: 0;
+	top: 86px;
+	left: 14.824%;
+}
+.le-homes .mag-1 canvas{
+	background:url(../../images/local-exposure/le-mag-1.jpg);
+	display: block;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+}
+.le-homes .mag-2{
+	position: absolute;
+	z-index: 1;
+	top: 40.472%;
+	left: 31.765%;
+	width: 100%;
+}
+.le-homes .mag-2 canvas{
+	background:url(../../images/local-exposure/le-mag-2.jpg);
+	display: block;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+}
+.le-homes .homes-right{
+	width: 62.807%;
+	padding: 0 148px 0 75px;
+}
+.le-homes .homes-title{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 0 0 50px;
+	padding: 90px 0 0;
+}
+.le-homes .homes-title h2{
+	overflow: hidden;
+    text-align: right;
+}
+.le-homes .homes-title strong{
+	display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.le-homes .homes-title span{
+	font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.150em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.le-homes .homes-title span:after{
+	content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.le-homes .homes-text{
+	font-size: 16px;
+	letter-spacing: 0.025em;
+	line-height: 25px;
+	margin: 0 0 46px;
+	padding: 0 40px 0 0;
+}
+.le-homes .homes-text strong{}
+.le-homes .homes-list{
+	padding: 0 0 40px;
+}
+.le-homes .homes-list ul{
+	list-style: disc;
+    margin: 0 0 0 15px;
+}
+.le-homes .homes-list li{
+	font-size: 15px;
+    letter-spacing: 0.025em;
+    line-height: 25px;
+    margin: 30px 0 0;
+    padding: 0 40px 0 15px;
+}
+.le-homes .homes-list li:first-child{
+	margin: 0 0 0;
+}
+.le-homes .homes-list li span{
+	font-weight: 700;
+	color:#0e4a4f;
+	text-transform: uppercase;
+}
+.le-miami{
+	position: relative;
+	background: url(../../images/local-exposure/le-miami-bg.jpg) right 98% no-repeat;
+	background-size: 96.5% auto;
+	margin: 90px 0 0;
+	overflow: unset !important;
+    z-index: 1;
+}
+.le-miami .miami-wrapper{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.le-miami .miami-left{
+	width: 50.136%;
+	padding: 0 0 0 164px;
+}
+.le-miami .miami-title{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 120px 0 50px;
+}
+.le-miami .miami-title h2{
+	overflow: hidden;
+    text-align: right;
+}
+.le-miami .miami-title strong{
+	display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.le-miami .miami-title span{
+	font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.150em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.le-miami .miami-title span:after{
+	content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.le-miami .miami-text{
+	font-size: 16px;
+    letter-spacing: 0.025em;
+    line-height: 25px;
+    padding: 0 55px 0 0;
+}
+.le-miami .miami-right{
+	width: 49.864%;
+}
+.le-miami .miami-mags{
+	position: relative;
+	pointer-events: none;
+}
+.le-miami .miami-mags:after{
+	content:'';
+	display: block;
+	width: 100%;
+	background:#0d494f;
+	position: absolute;
+	z-index: 0;
+	top: 22%;
+	height: 55.185%;
+}
+.le-miami .mag-1{
+	width: 65.847%;
+	margin: 0 auto 0 0;
+	position: relative;
+	z-index: 2;
+	left: 2.049%;
+}
+.le-miami .mag-1 canvas{
+	background:url(../../images/local-exposure/le-mag-4.png) center center no-repeat;
+	background-size: cover;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.le-miami .mag-2{
+	width: 62.568%;
+	right: 4.098%;
+	top: 15%;
+	position: absolute;
+	z-index: 1;
+}
+.le-miami .mag-2 canvas{
+	background:url(../../images/local-exposure/le-mag-3.png) center center no-repeat;
+	background-size: cover;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.le-expansive{
+	background:url(../../images/local-exposure/le-expansive-bg.jpg) top center no-repeat #fff;
+	background-size: 100% auto;
+	padding: 1px 0;
+}
+.le-expansive .expansive-title{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 120px 0 50px;
+}
+.le-expansive .expansive-title h2{
+	overflow: hidden;
+    text-align: right;
+}
+.le-expansive .expansive-title strong{
+	display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.le-expansive .expansive-title span{
+	font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.150em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.le-expansive .expansive-title span:after{
+	content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.le-expansive .expansive-text{
+	text-align: center;
+	font-size: 15px;
+	letter-spacing: 0.025em;
+	line-height: 25px;
+}
+
+.le-expansive .expansive-text p{
+	/*margin: 0 -3px;*/
+}
+
+.le-expansive .expansive-img{
+	width: calc(100% - 30px);
+	margin: 55px auto 0;
+	max-width: 1088px;
+}
+.le-expansive .expansive-img canvas{
+	display: block;
+	width: 100%;
+	height: auto;
+	background: url(../../images/local-exposure/le-expansive-map.png) center center no-repeat;
+	background-size: cover;
+}
+
+.expansive-coldwell{
+	text-align: center;
+	font-size: 15px;
+	letter-spacing: 0.025em;
+	line-height: 25px;
+	margin: 70px 0 0;
+}
+.expansive-coldwell p{
+	margin: 0 -15px;
+}
+
+.le-industry{
+	position: relative;
+	/*margin: 35px 0 0;*/
+	margin: 70px 0;
+}
+.le-industry:before{
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: calc(100% - 30px);
+	max-width: 1468px;
+	margin: 0 auto;
+	min-height: 526px;
+	background:url(../../images/local-exposure/le-industry-accent.jpg) center center no-repeat;
+	background-size: cover;
+}
+.le-industry .industry-wrapper{
+	position: relative;
+	z-index: 1;
+	padding: 80px 0 0;
+}
+.le-industry .industry-title{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 0px 0 50px;
+}
+.le-industry .industry-title h2{
+	overflow: hidden;
+    text-align: right;
+}
+.le-industry .industry-title strong{
+	display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-1.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.le-industry .industry-title span{
+	font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.150em;
+    color: #819da0;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.le-industry .industry-title span:after{
+	content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.le-industry .industry-text{
+	font-size: 15px;
+	letter-spacing: 0.025em;
+	line-height: 25px;
+	text-align: center;
+	color:#fff;
+}
+
+.le-industry .industry-content{
+	width: calc(100% - 20px);
+	margin: 70px auto 0;
+	max-width: 1352px;
+	background:#fff;
+}
+
+.industry-content .industry-row{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 120px 0 0;
+}
+.industry-row > div{
+	background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto 85px;
+    padding: 115px 0 0;
+    text-align: center;
+    width: calc((100% / 3) - 135px);
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 300;
+}
+.industry-row .industry-1{
+	background-image:url(../../images/local-exposure/le-industry-logo-1.png);
+}
+.industry-row .industry-2{
+	background-image:url(../../images/local-exposure/le-industry-logo-2.png);
+}
+.industry-row .industry-3{
+	background-image:url(../../images/local-exposure/le-industry-logo-3.png);
+}.industry-row .industry-1:hover{	background-image:url(../../images/local-exposure/le-industry-logo-1-hv.png);}.industry-row .industry-2:hover{	background-image:url(../../images/local-exposure/le-industry-logo-2-hv.png);}.industry-row .industry-3:hover{	background-image:url(../../images/local-exposure/le-industry-logo-3-hv.png);}
+.industry-row .divider{
+	width: 47px;
+	height: 4px;
+	background: #f7c1b9;
+	margin: 23px auto;
+}
+.industry-row h3{
+	font-family: 'Termina';
+	text-transform: uppercase;
+	color:#024147;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.le-sm {
+	display: block;
+	margin-top: 100px;
+}
+
+.le-container{
+	width:calc(100% - 30px);
+	margin: 0 auto;
+	max-width: 1468px;
+	position: relative;
+}
+
+.le-sm .sm-wrapper{
+    background: url(../../images/global-connections/gc-big-accent.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 80px 163px 78px;
+}
+.le-sm .sm-title{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 50px;
+}
+.le-sm .sm-title h2{
+    overflow: hidden;
+    text-align: right;
+}
+.le-sm .sm-title strong{
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-1.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.le-sm .sm-title span{
+    font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.le-sm .sm-title span:after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.le-sm .sm-text{
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.025em;
+    font-weight: 300;
+    line-height: 25px;
+    max-width: 950px;
+}
+.le-sm .sm-stats{
+    color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 55px 0 0;
+}
+.le-sm .sm-stats-single{}
+.le-sm .sm-num{
+    border-bottom: 1px solid #1d4a4c;
+    padding: 0 0 25px;
+    margin: 0 0 18px;
+}
+.le-sm .sm-num span{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.le-sm .sm-num em{
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.350em;
+    margin: 10px 0 0;
+}
+.le-sm .sm-desc{
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    line-height: 25px;
+}
+.le-sm .sm-links{
+    font-size: 0;
+    text-align: center;
+    margin: 28px 0 0;
+    pointer-events: none;
+}
+.le-sm .sm-links a{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 22px;
+    color:#fff;
+    margin: 0 0 0 26px;
+}
+.le-sm .sm-links a:first-child{
+    margin: 0 0 0 0;
+}
+.le-sm .sm-links a:hover{
+    color:#316469;
+}
+
+
+.le-mobile{
+	position: relative;
+	margin: 100px 0 0;
+}
+.le-mobile .mobile-wrapper{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	position: relative;
+	z-index: 1;
+}
+.le-mobile .mobile-left{
+	width: 39.033%;
+	position: relative;
+	z-index: 1;
+	padding: 0 0 40px 0;
+}
+.le-mobile .mobile-left:before{
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../../images/local-exposure/le-mobile-accent.jpg) center center no-repeat;
+	background-size: cover;
+}
+.le-mobile .mobile-img{
+	margin: 0 0 0 44px;
+	background: #fff;
+	padding: 58px 0 65px 15px;
+	position: relative;
+	z-index: 1;
+}
+.le-mobile .mobile-img img{
+	margin: 0 0 0 auto;
+}
+.le-mobile .mobile-right{
+	width: 60.967%;
+	position: relative;
+	z-index: 1;
+}
+.le-mobile .mobile-content{
+	padding: 0 0 0 81px;
+}
+.le-mobile .mobile-title{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 0 0 50px;
+}
+.le-mobile .mobile-title h2{
+	overflow: hidden;
+    text-align: right;
+}
+.le-mobile .mobile-title strong{
+	display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.le-mobile .mobile-title span{
+	font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.150em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.le-mobile .mobile-title span:after{
+	content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+.le-mobile .mobile-text{
+	font-size: 16px;
+	letter-spacing: 0.025em;
+	line-height: 25px;
+	padding: 0 155px 0 0;
+	margin: 0 0 50px;
+}
+.le-mobile .mobile-list{
+	padding: 0 155px 0 0;
+}
+.le-mobile .mobile-list ul{
+	list-style: disc;
+    margin: 0 0 0 15px;
+}
+.le-mobile .mobile-list li{
+	font-size: 15px;
+	letter-spacing: 0.025em;
+	line-height: 25px;
+	margin: 28px 0 0;
+	padding: 0 0 0 10px;
+}
+.le-mobile .mobile-list li:first-child{
+	margin: 0 0 0;
+}
+.le-btns{
+	font-size: 0;
+	text-align: center;
+	margin: 30px 0 0;
+}
+.le-btns > div{
+	margin: 0 0 0 15px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.le-btns > div:first-child{
+	margin: 0 0 0 0;
+}
+
+.le-btns a{
+	font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #014046;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    display: inline-block;
+    padding: 22px 10px 22px 58px;
+    background: url(../../images/palm-2.png) 20px center no-repeat;
+    font-family: 'Termina';
+    transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+}
+.le-btns a:hover{
+	border: 2px solid #f5bbb3;
+}
+
+
+/*logos*/
+.op-logos{
+	position: relative;
+	/*background:#fff;*/
+	background-size: cover;
+	/*padding: 195px 0 0;*/
+}
+.op-logos .logos-wrapper{
+	/*background:#fff;*/
+	padding: 10px 60px;
+	position: relative;
+}
+.op-logos ul{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.op-logos li{
+	margin: 30px 13px;
+}
+
+
+
+/*Property listings*/
+.le-property-listings{
+	/*position: relative;
+	background: url(../../images/local-exposure/property-listings-bg.jpg) right 98% no-repeat;
+	background-size: 96.5% auto;
+	margin: 90px 0 0;
+	overflow: unset !important;
+    z-index: 1;*/
+    position: relative;
+    background: url(../../images/local-exposure/property-listings-bg.jpg) left 98% no-repeat;
+    background-size: 93.6% auto;
+    /*margin: 90px 0 0;*/
+    margin: 90px 0 150px;
+    overflow: unset !important;
+    z-index: 1;
+    padding-bottom: 50px;
+}
+.le-property-listings .property-listings-wrapper{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.le-property-listings .property-listings-left{
+	width: 50.136%;
+	padding: 0 0 0 164px;
+}
+.le-property-listings .property-listings-title{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 120px 0 50px;
+}
+.le-property-listings .property-listings-title h2{
+	overflow: hidden;
+    text-align: right;
+}
+.le-property-listings .property-listings-title strong{
+	display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.le-property-listings .property-listings-title span{
+	font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.150em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.le-property-listings .property-listings-title span:after{
+	content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.le-property-listings .property-listings-text{
+	font-size: 16px;
+    letter-spacing: 0.025em;
+    line-height: 25px;
+    padding: 0 55px 0 0;
+}
+.le-property-listings .property-listings-right{
+	width: 49.864%;
+}
+.le-property-listings .property-listings-mags{
+	position: relative;
+	pointer-events: none;
+}
+.le-property-listings .property-listings-mags:after{
+	content:'';
+	display: block;
+	width: 100%;
+	background:#0d494f;
+	position: absolute;
+	z-index: 0;
+	top: 22%;
+	height: 55.185%;
+}
+.le-property-listings .property-listings-mag-1{
+	width: 55.847%;
+    margin: 0 auto 0 0;
+    position: relative;
+    z-index: 2;
+    left: 11.049%;
+}
+.le-property-listings .property-listings-mag-1 canvas{
+	/*background:url(../../images/local-exposure/le-mag-4.png) center center no-repeat;*/
+	background:url(../../images/local-exposure/propert-listings-mag-1.jpg);
+	background-size: cover;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.le-property-listings .property-listings-mag-2{
+	/*width: 62.568%;
+	right: 4.098%;
+	top: 15%;
+	position: absolute;
+	z-index: 1;*/
+
+	width: 70%;
+    right: 4.098%;
+    top: 12%;
+    position: absolute;
+    z-index: 1;
+}
+.le-property-listings .property-listings-mag-2 canvas{
+	/*background:url(../../images/local-exposure/le-mag-3.png) center center no-repeat;*/
+	background:url(../../images/local-exposure/propert-listings-mag-2.png);
+	background-size: cover;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+@media only screen and (max-width: 1440px) {
+	.le-homes .homes-right {
+	    padding: 0 110px 0 75px;
+	}
+
+	.le-sm .sm-wrapper {
+        padding: 80px 100px 78px;
+    }
+
+    .le-property-listings{
+    	background-size: 99% auto;
+    }
+}
+@media only screen and (max-width: 1366px) {
+	.le-homes .homes-right {
+	    padding: 0 80px 0 75px;
+	}
+	.le-miami .miami-left {
+	    padding: 0 0 0 100px;
+	}
+	.le-property-listings .property-listings-left {
+	    padding: 0 0 0 100px;
+	}
+	.le-property-listings{
+		background-size: 99% auto;
+	}
+}
+@media only screen and (max-width: 1199px) {
+	.le-homes .homes-title strong {
+	    font-size: 31px;
+	    padding: 0 0 0 60px;
+	    background-size: 55px auto;
+	}
+	.le-homes .homes-title span {
+	    font-size: 20px;
+	}
+	.le-homes .homes-list li {
+	    padding: 0 0 0 15px;
+	}
+	.le-miami .miami-left {
+	    padding: 0 0 0 30px;
+	}
+	.le-property-listings .property-listings-left {
+	    padding: 0 0 0 30px;
+	}
+	.industry-row > div {
+	    width: calc((100% / 3) - 20px);
+	}
+
+	.le-sm .sm-wrapper {
+        padding: 80px 30px 78px;
+    }
+    .le-sm .sm-stats {
+        justify-content: space-between;
+    }
+    .le-sm .sm-num span {
+        font-size: 45px;
+    }
+    .le-sm .sm-num em {
+        font-size: 16px;
+        letter-spacing: 0.200em;
+    }
+
+	.le-mobile .mobile-text {
+	    padding: 0 0 0 0;
+	}
+	.le-mobile .mobile-list {
+	    padding: 0 0 0 0;
+	}
+
+	.op-logos li {
+	    margin: 30px 10px;
+	    max-width: 200px;
+	}
+}
+@media only screen and (max-width: 991px) {
+
+	.le-sm .sm-stats {
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+    .le-sm .sm-stats-single {
+        margin: 40px 0 0;
+    }
+    .le-sm .sm-stats-single:first-child {
+        margin: 0 0 0;
+    }
+
+	.le-homes .homes-wrapper {
+	    flex-flow: column wrap;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.le-homes .homes-left {
+	    width: 100%;
+	    max-width: 425px;
+	}
+	.le-homes .homes-right {
+	    padding: 0;
+	    width: 100%;
+	    margin: 110px 0 0;
+	}
+	.le-homes .homes-text {
+	    padding: 0 0 0 0;
+	}
+	.le-miami .miami-wrapper {
+	    flex-flow: column-reverse wrap;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.le-miami .miami-title {
+	    justify-content: center;
+	}
+	.le-miami .miami-left {
+	    padding: 0 0 0 0;
+	    width: 100%;
+	    text-align: center;
+	}
+	.le-miami .miami-text{
+		padding: 0 0 0 0;
+	}
+	.le-miami .miami-right {
+	    width: 100%;
+	    max-width: 732px;
+	}
+	.le-property-listings .property-listings-wrapper {
+	    flex-flow: column-reverse wrap;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.le-property-listings .property-listings-title {
+	    justify-content: center;
+	    padding-top: 70px;
+	}
+	.le-property-listings .property-listings-left {
+	    padding: 0 0 0 0;
+	    width: 100%;
+	    text-align: center;
+	}
+	.le-property-listings .property-listings-text{
+		padding: 0 0 0 0;
+	}
+	.le-property-listings .property-listings-right {
+	    width: 100%;
+	    max-width: 732px;
+	}
+	.industry-content .industry-row {
+	    flex-flow: column wrap;
+	    align-items: center;
+	    justify-content: center;
+	    padding: 120px 0 0;
+	}
+	.industry-row > div {
+	    width: calc(100% - 20px);
+	    margin: 30px 0 0;
+	}
+	.industry-row > div:first-child{
+		margin: 0 0 0;
+	}
+	.le-mobile .mobile-wrapper {
+	    flex-flow: column wrap;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.le-mobile .mobile-left {
+	    width: 100%;
+	    max-width: 573px;
+	}
+	.le-mobile .mobile-right {
+	    width: 100%;
+	    margin: 30px 0 0;
+	}
+	.le-mobile .mobile-content {
+	    padding: 0 0 0 0;
+	}
+	.le-btns > div {
+	    margin: 20px 0 0;
+	    display: block;
+	}
+
+	.op-logos .logos-wrapper {
+	    padding: 50px 10px;
+	}
+	.op-logos li {
+	    max-width: 110px;
+	    margin: 30px 5px;
+	}
+	.le-mobile .mobile-title,
+	.le-homes .homes-title{
+		justify-content: center;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.le-homes .homes-title strong {
+	    font-size: 30px;
+	}
+	.le-homes .homes-title span {
+	    font-size: 17px;
+	}
+	.le-expansive .expansive-title strong {
+	    font-size: 45px;
+	}
+	.expansive-coldwell p {
+	    margin: 0 0;
+	}
+	.le-industry .industry-title strong {
+	    font-size: 27px;
+	    padding: 0 0 0 60px;
+	    background-size: 55px auto;
+	}
+	.le-industry .industry-title span {
+	    font-size: 18px;
+	}
+	.le-industry .industry-text{
+		padding: 0 10px;
+	}
+	.le-industry .industry-text br{
+		display: none;
+	}
+
+	.le-sm .sm-wrapper {
+        padding: 80px 15px 78px;
+    }
+    .le-sm .sm-title strong {
+        font-size: 36px;
+        padding: 0 0 0 80px;
+        background-size: 70px auto;
+    }
+
+	.le-mobile .mobile-title {
+	    justify-content: center;
+	}
+	.op-logos ul {
+	    flex-flow: column wrap;
+	    justify-content: center;
+	}
+    .le-title strong {
+        font-size: 45px;
+    }
+    
+    .le-title span {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 480px) {
+	.le-title strong {
+	    font-size: 30px;
+	    padding: 0 0 0 65px;
+	    background: url(../../images/palms-2.png) left center no-repeat;
+	    background-size: 60px auto;
+	}
+	.le-title span {
+	    font-size: 18px;
+	}
+	.le-homes .homes-title {
+	    justify-content: center;
+	}
+	.le-homes .homes-title strong {
+	    font-size: 18px;
+	    padding: 0 0 0 45px;
+	    background-size: 35px auto;
+	}
+	.le-homes .homes-title span {
+	    font-size: 13px;
+	}
+	.le-miami .miami-title {
+	    margin: 50px 0 50px;
+	}
+	.le-property-listings .property-listings-title {
+	    margin: 50px 0 50px;
+	}
+	.le-property-listings .property-listings-title strong{
+		font-size: 32px;
+        background-size: 60px auto;
+        padding: 0 0 0 70px;
+	}
+	.le-property-listings .property-listings-title span{
+		font-size: 20px;
+	}
+	.le-expansive .expansive-title strong {
+	    font-size: 32px;
+        background-size: 60px auto;
+        padding: 0 0 0 70px;
+	}
+	.le-expansive .expansive-title span {
+	    font-size: 20px;
+	}
+	.le-industry .industry-title strong {
+	    font-size: 18px;
+	    padding: 0 0 0 40px;
+	    background-size: 35px auto;
+	}
+	.le-industry .industry-title span {
+	    font-size: 13px;
+	}
+
+	.le-sm .sm-title strong {
+        font-size: 22px;
+        padding: 0 0 0 45px;
+        background-size: 35px auto;
+    }
+
+	.le-mobile .mobile-title strong {
+	    font-size: 40px;
+	    padding: 0 0 0 70px;
+	    background-size: 65px auto;
+	}
+	.le-mobile .mobile-title span {
+	    font-size: 20px;
+	}
+	.le-btns a {
+		padding: 22px 10px 22px 45px;
+		font-size: 13px;
+	    background: url(../../images/palm-2.png) 10px center no-repeat;
+	}
+}

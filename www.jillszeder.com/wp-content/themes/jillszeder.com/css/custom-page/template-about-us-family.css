@@ -1,0 +1,995 @@
+/***About Us - Family***/
+
+
+
+.header-sm{
+
+	display: none;
+
+}
+
+.ip-banner{
+
+	overflow: hidden;
+
+}
+
+.ip-banner::before {
+
+    background: rgba(0,0,0,.05);
+
+}
+
+
+
+.ip-banner::after {
+
+	content:'';
+
+	display: block;
+
+	position: absolute;
+
+	z-index: 2;
+
+	top: 0;
+
+	left: 0;
+
+	width: 100%;
+
+	height: 100%;
+
+	background:url(../../images/relocation/reloc-banner-fade.png) center top repeat-x;
+
+	background-size: cover;
+
+}
+
+.custom-breadcrumbs{
+
+	position: absolute;
+
+    z-index: 4;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    background: rgba(0,46,51,.7);
+
+    color: #fff;
+
+    text-transform: uppercase;
+
+    font-size: 11px;
+
+    font-weight: 300;
+
+    letter-spacing: 0.050em;
+
+    padding: 10px 0;
+
+}
+
+.custom-breadcrumbs span{
+
+	font-size: 11px;
+
+	display: inline-block;
+
+}
+
+.custom-breadcrumbs .breadcrumb_last{
+
+	font-weight: 600;
+
+}
+
+.custom-breadcrumbs .container{
+
+	position: relative;
+
+    top: 0;
+
+    left: 0;
+
+    transform: translate(0%,0%);
+
+}
+
+#breadcrumbs{
+
+	position: relative;
+
+	z-index: 2;
+
+}
+.page-template-template-about-us-family #inner-page-wrapper > .container {
+    width: 100%;
+    padding: 0;
+}
+.page-template-template-about-us-family .mh-wrapper {
+    justify-content: center;
+}
+.page-template-template-about-us-family .mh-navs {
+    width: 80%;
+}
+.page-template-template-about-us-family .mh-contact {
+    padding: 0 0 0 96px;
+}
+#abt-wrap{
+
+	position: relative;
+
+    padding: 0 0 77px;
+
+    background:url(../../images/about-us/abt-bg.jpg) center top no-repeat #fff;
+
+    background-size: 100% auto;
+
+}
+
+#abt-wrap .custom-breadcrumbs{
+
+	display: none;
+
+}
+
+.abt-wrapper{}
+
+.abt-title{
+
+	display: flex;
+
+    flex-flow: row wrap;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 0 75px;
+
+    padding: 90px 0 0;
+
+}
+
+.abt-title h1{
+
+	overflow: hidden;
+
+    text-align: right;
+
+}
+
+.abt-title strong{
+
+	display: block;
+
+    font-size: 60px;
+
+    font-weight: 400;
+
+    color: #014046;
+
+    text-transform: uppercase;
+
+    padding: 0 0 0 98px;
+
+    background: url(../../images/palms-2.png) left center no-repeat;
+
+    background-size: 88px auto;
+
+}
+
+.abt-title span{
+
+	font-size: 28px;
+
+    line-height: 1.5;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.010em;
+
+    color: #014046;
+
+    display: inline-block;
+
+    margin: 10px 0 0;
+
+    position: relative;
+
+}
+
+.abt-title span:after{
+
+	content: '';
+
+    display: block;
+
+    height: 3px;
+
+    width: 100vw;
+
+    position: absolute;
+
+    right: 105%;
+
+    top: 0;
+
+    bottom: 0;
+
+    margin: auto 0;
+
+    background: #f7c1b9;
+
+}
+
+.abt-container{
+
+	width:calc(100% - 30px);
+
+	margin: 0 auto;
+
+	max-width: 1468px;
+
+	position: relative;
+
+}
+
+
+
+.abt-team{
+
+    
+
+}
+
+.team-inner {
+    display: block;
+    max-width: 1470px;
+    margin: 0 auto;
+    position: relative;
+}
+    
+    .team-inner.group {
+        display: flex;
+    }
+    
+    .team-inner .section-title {
+        font-size: 36px;
+        color: #014046;
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 55px;
+    }
+
+.team-wrapper{
+
+    display: flex;
+
+    flex-flow: row wrap;
+
+    align-items: flex-start;
+
+    justify-content: flex-end;
+
+    position: relative;
+
+    z-index: 0;
+
+}
+
+.team-wrapper .team-left{
+
+    width: 50%;
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    height: 100%;
+
+}
+
+.team-wrapper .team-photo{
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background:url(../../images/about-us/abt-team.jpg) center center no-repeat;
+
+    background-size: cover;
+
+}
+
+.team-wrapper .team-photo canvas{
+
+    display: none;
+
+}
+
+.team-wrapper .team-right{
+
+    width: 50%;
+
+    display: flex;
+
+    flex-flow: row wrap;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:url(../../images/about-us/abt-big-accent.jpg) center center no-repeat;
+
+    background-size: cover;
+
+    padding: 156px 15px 156px 85px;
+
+}
+
+.team-wrapper .team-content{
+
+    color:#fff;
+
+}
+
+.team-wrapper .team-content ul{}
+
+.team-wrapper .team-content li{
+
+    margin: 60px 0 0;
+
+    font-size: 40px;
+
+    font-weight: 300;
+
+    text-transform: uppercase;
+
+}
+
+.team-wrapper .team-content li:first-child{
+
+    margin: 0 0 0;
+
+}
+
+.team-wrapper .team-content span{
+
+    font-weight: 400;
+
+}
+
+.abt-logo {
+
+    background: rgba(1,64,70,.95);
+
+    margin: 0 auto;
+
+    max-width: 215px;
+
+    padding: 38px 39px;
+
+    box-shadow: 1px 1px 20px rgba(0,0,0,.2);
+
+}
+
+.team-logo{
+
+    position: absolute;
+
+    z-index: 1;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-flow: row wrap;
+
+    align-items: center;
+
+    justify-content: center;
+
+    pointer-events: none;
+
+}
+
+.team-logo .abt-logo{}
+
+
+
+.abt-text{
+
+    margin: 50px 0 0;
+
+}
+
+.text-single{
+
+    font-size: 15px;
+
+    line-height: 26px;
+
+    letter-spacing: 0.025em;
+
+    text-align: center;
+
+    margin: 30px -10px 0;
+
+}
+
+.text-single:first-child{
+
+    margin: 0 -10px 0;
+
+}
+
+.text-single.hl{
+
+    font-size: 18px;
+
+    color:#014046;
+
+    font-weight: 700;
+
+}
+
+.text-single.h2{
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+}
+
+
+
+.abt-btns{
+
+    margin: 50px 0 0;
+
+}
+
+.btns-wrapper{
+
+    display: flex;
+
+    flex-flow: row wrap;
+
+    align-items: center;
+
+    /*justify-content: space-evenly;*/
+    justify-content: center;
+
+}
+
+.btns-wrapper > div{margin: 0 40px;}
+
+.btns-wrapper > div:first-child{
+
+    margin: 0 0 0;
+
+}
+
+.btns-wrapper a{
+
+    display: inline-block;
+
+    margin: 0 0;
+
+    border: 2px solid rgba(245,188,180,0);
+
+    color: #014046;
+
+    font-family: 'Termina';
+
+    text-align: center;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.025em;
+
+    text-transform: uppercase;
+
+    padding: 15px 5px;
+
+    transition: all ease .4s;
+
+    -moz-transition: all ease .4s;
+
+    -webkit-transition: all ease .4s;
+
+}
+
+.btns-wrapper a span{
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+    background: url(../../images/palm-2.png) left center no-repeat;
+
+    background-size: 20px auto;
+
+    padding: 7px 0 7px 27px;
+
+}
+
+.btns-wrapper a:hover{
+
+    border: 2px solid rgba(245,188,180,1);
+
+}
+
+.our-family {
+    margin: 95px 0;
+    display: block;
+    position: relative;
+    z-index: 9;
+}
+    
+    .family-top,
+    .family-bottom {
+        display: flex;
+        justify-content: center;
+    }
+
+        .family-top {
+            margin-bottom: 35px;
+        }
+
+        .our-team .team-wrap {
+            /*padding: 0 20%;*/
+            font-size: 0;
+        }
+
+        .team-item {
+            padding: 0 12px;
+            max-width: 300px;
+            display: inline-block;
+            width: 20%;
+            vertical-align: top;
+        }
+
+            .our-team .team-wrap .team-item {
+                width: 20%;
+                margin-bottom: 35px;
+            }
+
+            .team-item .agent-img {
+                display: block;
+            }
+
+                .team-item .agent-img canvas {
+                    width: 100%;
+                    display: block;
+                    height: auto;
+                    background-size: cover;
+                }
+
+            .team-item .agent-details {
+                display: block;
+                padding: 23px 5px;
+                text-align: center;
+                font-family: 'Spartan', sans-serif;
+                font-weight: 300;
+                font-size: 0.688vw;
+                letter-spacing: .025em;
+                background: url(../../images/team/agent-details-bg.jpg) top center / cover;
+                position: relative;
+            }
+
+                .team-item .agent-details .agent-desc {
+                    transition: all .3s ease-in-out;
+                    -webkit-transition: all .3s ease-in-out;
+                    -moz-transition: all .3s ease-in-out;
+                    -webkit-backface-visibility: hidden;
+                }
+
+                .team-item .agent-details span,
+                .team-item .agent-details a {
+                    display: block;
+                    color: #fff;
+                }
+
+                    .team-item .agent-details .agent-name {
+                        font-size: 1.125vw;
+                        line-height: 1;
+                        font-family: 'Termina', sans-serif;
+                        font-weight: 400;
+                    }
+
+                        .team-item .agent-details .agent-name.small {
+                            font-size: 0.938vw;
+                            line-height: 1.125vw;
+                        }
+
+                    .team-item .agent-details .agent-position {
+                        text-transform: uppercase;
+                        margin: 10px 0 15px;
+                    }
+
+                    .team-item .agent-details a {
+                        font-size: 0.750vw;
+                        line-height: 16.82px;
+                    }
+
+                .team-item .agent-details .agent-hover {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 0;
+                    visibility: hidden;
+                    z-index: 9;
+                    color: #fff;
+                    font-size: 1.438vw;
+                    text-transform: uppercase;
+                    letter-spacing: .025em;
+                    font-family: 'Termina', sans-serif;
+                    flex-direction: column;
+                    padding: 0 10px;
+                    transition: all .3s ease-in-out;
+                    -webkit-transition: all .3s ease-in-out;
+                    -moz-transition: all .3s ease-in-out;
+                    -webkit-backface-visibility: hidden;
+                }
+
+                    .team-item .agent-details .agent-hover > div {
+                        align-items: flex-start;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .team-item .agent-details .agent-hover span {                       
+                        font-size: 1vw;
+                        text-transform: none;
+                        position: relative;
+                        padding-left: 40px;
+                        margin-top: 12px;
+                        text-align: left;
+                    }
+
+                        .team-item .agent-details .agent-hover span:before {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            margin-top: -1px;
+                            width: 32px;
+                            height: 2px;
+                            background: #d8aea8;
+                        }
+
+                    .team-item .agent-details .agent-desc.active {
+                        opacity: 0;
+                        pointer-events: none;
+                    }
+                    .team-item .agent-details .agent-hover.hovered {
+                        opacity: 1;                     
+                        visibility: visible;
+                    }
+
+.our-team {
+    display: block;
+    position: relative;
+    z-index: 9;
+}
+
+.addtoany_content {
+    display: none;
+}
+
+@media only screen and (min-width: 1600px) {
+    .team-item .agent-details {
+        font-size: 11px;
+    }
+
+    .team-item .agent-details .agent-name {
+        font-size: 18px;
+    }
+
+    .team-item .agent-details a {
+        font-size: 12px;
+    }
+
+    .team-item .agent-details .agent-name.small {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1440px) {
+
+	
+
+}
+
+
+
+@media only screen and (max-width: 1366px) {
+
+	
+
+}
+
+
+
+@media only screen and (max-width: 1199px) {
+
+	.abt-title strong{
+
+        font-size: 50px;
+
+    }
+
+    .abt-title span {
+
+        font-size: 26px;
+
+    }
+
+    .abt-stats .stats-row .stats-desc{
+
+        font-size: 15px;
+
+        line-height: 22px;
+
+    }
+
+    .team-wrapper .team-right {
+
+        padding: 120px 15px 120px 85px;
+
+    }
+
+    .team-wrapper .team-content li {
+
+        margin: 30px 0 0;
+
+        font-size: 24px;
+
+    }
+
+    .team-logo .abt-logo {
+
+        transform: scale(.7);
+
+        -webkit-transform: scale(.7);
+
+        -moz-transform: scale(.7);
+
+    }
+
+    /*.team-item .agent-details .agent-hover.hovered {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .team-item .agent-details .agent-desc.active {
+         opacity: 1; 
+         pointer-events: auto; 
+    }*/
+
+}
+
+
+
+@media only screen and (max-width: 991px) {
+
+	.team-logo{
+
+        display: none;
+
+    }
+
+    .team-wrapper{
+
+        flex-flow: column wrap;
+
+    }
+
+    .team-wrapper .team-left{
+
+        width: 100%;
+
+        position: relative;
+
+    }
+
+    .team-wrapper .team-photo{
+
+        position: relative;
+
+    }
+
+    .team-wrapper .team-photo canvas{
+
+        display: block;
+
+        width: 100%;
+
+        height: auto;
+
+    }
+
+    .team-wrapper .team-right{
+
+        width: 100%;
+
+        padding: 50px 10px;
+
+        text-align: center;
+
+    }
+
+    .btns-wrapper {
+
+        flex-flow: row wrap;
+
+        align-items: center;
+
+        justify-content: center;
+
+    }
+
+    .btns-wrapper > div{
+
+        margin: 20px 0 0;
+
+    }
+
+    .text-single{
+
+        margin: 30px 0 0;
+
+    }
+
+    .text-single:first-child {
+
+        margin: 0 0 0;
+
+    }
+
+    .abt-title strong {
+
+        font-size: 47px;
+
+        padding: 0 0 0 80px;
+
+        background-size: 70px auto;
+
+    }
+
+    .team-inner.group {
+        flex-direction: column;
+    }
+
+        .top-wrap .team-photo,
+        .top-wrap .team-text{
+            width: 100%;
+        }
+
+            .top-wrap .team-text {
+                padding: 20% 5%;
+                text-align: center;
+                display: block;
+            }
+
+                .top-wrap .team-text .text-wrap div {
+                    font-size: 4vw;
+                }
+
+        .top-wrap img.team-logo {
+            top: 54%;
+            width: 25%;
+        }
+
+    .family-top, .family-bottom {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    .family-bottom{
+        text-align: center;
+    }
+
+        .family-top {
+            margin-bottom: 0;
+        }
+
+        .team-item  {
+            width: 100%;
+            vertical-align: top;
+            margin: 0 auto 30px;
+            max-width: 276px;
+        }
+
+            .team-item .agent-details {
+                font-size: 11px;
+            }
+
+            .team-item .agent-details .agent-name {
+                font-size: 18px;
+            }
+
+            .team-item .agent-details a {
+                font-size: 12px;
+            }
+
+    .our-team .team-wrap {
+        padding: 0 5%;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+        .our-team .team-wrap .team-item {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .team-item .agent-details .agent-name.small {
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+    .team-item .agent-details .agent-hover {
+        font-size: 23.55px;
+    }
+
+        .team-item .agent-details .agent-hover span {
+            font-size: 18px;
+        }
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+	.team-wrapper .team-content li {
+
+        margin: 15px 0 0;
+
+        font-size: 20px;
+
+    }
+
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+	
+
+}

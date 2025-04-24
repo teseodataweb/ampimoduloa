@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.hs-scripts.com	TRUE	/	FALSE	1999999999	__cf_bm	QUBxN_6qvO4oh30O9vUttT0bfggqVl9Xv1r39CH.3Yg-1745529587-1.0.1.1-zCbY1TxwgO3xvkK9eEYNYimp5fhGB29iael1fNAtcOMPTu8snbam8s6w76vJ_Q6trcX9fxdwR9sEzto0gyM2DCHVXAYuIMyaDLlXUosaKTY
+js.hs-scripts.com	TRUE	/	FALSE	1999999999	SameSite	None
+cdn.maptiler.com	TRUE	/	FALSE	1999999999	_cfuvid	y6979oJQxQN2P1_1UuD_KncaAroMui6ZtF5cspdVUAY-1745529608215-0.0.1.1-604800000
+maptiler.com	TRUE	/	FALSE	1999999999	SameSite	None
+www.jillszeder.com	TRUE	/	FALSE	1999999999	PHPSESSID	nesf0jrol8ifgi29cu89qrfdhf
+

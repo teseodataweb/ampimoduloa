@@ -1,0 +1,1566 @@
+/***Luxury Condo Details***/
+
+.header-sm{
+	display: none;
+}
+.ip-banner::before {
+    background: rgba(0,0,0,.05);
+}
+
+iframe{
+	max-width: 100%;
+}
+
+.ip-banner::after {
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:url(../../images/relocation/reloc-banner-fade.png) center top repeat-x;
+	background-size: cover;
+}
+.custom-breadcrumbs{
+	position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,46,51,.7);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.050em;
+    padding: 10px 0;
+}
+.custom-breadcrumbs span{
+	font-size: 11px;
+	display: inline-block;
+}
+.custom-breadcrumbs .breadcrumb_last{
+	font-weight: 600;
+}
+.custom-breadcrumbs .container{
+	position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%,0%);
+}
+#lcd-wrap{
+	position: relative;
+    padding: 85px 0 77px;
+    background: url(../../images/luxury-condo-details/lcd-bg.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#lcd-wrap:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 0;
+    width: 14.375vw;
+    height: 939px;
+    background: url(../../images/luxury-condo-details/lcd-accent.jpg) center center no-repeat;
+    background-size: cover;
+}
+#lcd-wrap .custom-breadcrumbs{
+	display: none;
+}
+
+.lcd-top{
+	position: relative;
+    z-index: 3;
+}
+.lcd-top-l {
+    width: 44.812%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5% 0 5.3%;
+}
+
+.lcd-title h1{
+	overflow: hidden;
+	text-align: right;
+	margin: 0 0 0;
+}
+.lcd-title h1 strong{
+	display: block;
+    font-size: 54px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 0 91px;
+    background: url(../../images/palms-1.png) left 6px no-repeat;
+    background-size: 81px auto;
+    text-align: left;
+}
+
+.lcd-wrapper{
+	position: relative;
+	margin: 0 auto;
+	width: calc(100% - 30px);
+	max-width: 1472px;
+}
+
+.lcd-top{
+	position: relative;
+	padding: 0 0 125px;
+}
+.lcd-content{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.lcd-content .lcd-l{
+	width: 57.812%;
+}
+.lcd-desc{
+	padding: 0 0 0 60px;
+	color:#014046;
+}
+.lcd-desc h1{
+    text-align: left;
+    padding: 0 0 0 95px;
+    color: #014046;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 87px auto;
+    font-size: 45px;
+    text-transform: uppercase;
+    padding: 0 0 0 100px;
+    display: inline-block;
+    position: relative;
+}
+.lcd-desc h1:after{
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #f7c1b9;
+}
+.lcd-desc .lcd-highlight{
+	font-size: 23px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.025em;
+    margin: 92px 0 0;
+    padding: 0 100px 0 0;
+}
+.lcd-desc .lcd-text{
+	margin: 27px 0 0;
+	padding: 0 100px 0 0;
+}
+.lcd-desc .lcd-text p{
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: 0.025em;
+	margin: 25px 0 0;
+}
+.lcd-desc .lcd-text p:nth-of-type(1){
+	margin: 0 0 0;
+}
+.lcd-share{
+	font-size: 0;
+	margin: 68px 0 0;
+}
+.lcd-share > div{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 22px;
+	margin: 0 0 0 32px;
+}
+.lcd-share > div:first-child{
+	margin: 0 0 0 0;
+	font-size: 18px;
+	letter-spacing: 0.020em;
+	font-weight: 700;
+	color:#014046;
+}
+.lcd-share a:hover{
+	color: #000;
+}
+.lcd-content .lcd-r{
+	width: 42.188%;
+    position: relative;
+    margin: -15px 0 0;
+}
+.lcd-content .lcd-page-links a {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    color: #014046;
+    text-transform: uppercase;
+    border: 2px solid rgba(245, 187, 179, 0%);
+    display: block;
+    width: calc(100% - 20px);
+    max-width: 400px;
+    padding: 22px 0 22px 48px;
+    background: url(../../images/palm-2-hp.png) 10px center no-repeat;
+    background-size: 30px auto;
+    transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+}
+.lcd-content .lcd-page-links a:hover {
+    border: 2px solid #f5bbb3;
+}
+.lcd-info{
+	background: #014046;
+	color:#fff;
+	padding: 85px 70px 74px;
+	margin: 20px 0 0;
+}
+.lcd-info h3{
+	font-family: 'Termina';
+    font-size: 30px;
+    letter-spacing: 0.020em;
+    text-transform: uppercase;
+}
+.lcd-rates{
+	margin: 60px 0 0;
+	border-bottom:1px solid rgba(255,255,255,.1);
+	padding: 0 0 50px;
+}
+.lcd-rates.average{
+    display: none;
+}
+.lcd-rates > div{
+	font-weight: 300;
+	font-size: 18px;
+	letter-spacing: 0.025em;
+	margin: 33px 0 0;
+}
+.lcd-rates > div:first-child{
+	margin: 0 0 0;
+}
+.lcd-rates span{
+	color:#f7c1b9;
+	font-weight: 400;
+	display: inline-block;
+	padding: 0 15px 0 0;
+}
+.lcd-available{
+	padding: 50px 0 40px;
+}
+.lcd-available .available-single{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 26px 0 0;
+}
+.lcd-available .available-single:first-child{
+	margin: 0 0 0;
+}
+.lcd-available .available-single span{
+	font-family: 'Termina';
+	font-size: 60px;
+	font-weight: 300;
+	letter-spacing: 0.025em;
+	color:#f7c1b9;
+}
+.lcd-available .available-single > div{
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 0.025em;
+	text-transform: uppercase;
+	padding: 0 0 0 15px;
+}
+.lcd-content .lcd-page-cta a {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid rgba(255,255,255,0);
+    display: block;
+    width: calc(100% - 20px);
+    max-width: 420px;
+    padding: 22px 0 22px 48px;
+    background: url(../../images/palm-1-hp.png) 10px center no-repeat;
+    background-size: 22px auto;
+    transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+}
+.lcd-content .lcd-page-cta a:hover {
+    border: 2px solid #f5bbb3;
+}
+.exclusive-section{
+	margin: 0 0 60px;
+	overflow: hidden;
+}
+#exclusive-panel{
+	margin: 40px 0 0;
+}
+#exclusive-panel ul{
+	font-size: 0;
+	margin: 0 -1px;
+}
+#exclusive-panel li{
+	padding: 0 1px;
+}
+#exclusive-panel .lcd-el-single{}
+#exclusive-panel .lcd-el-single a{
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+#exclusive-panel .lcd-el-single a .lcd-el-img{
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+}
+#exclusive-panel .lcd-el-single a canvas{
+	display: block;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    transform:scale(1);
+    -moz-transform:scale(1);
+    -webkit-transform:scale(1);
+    filter:grayscale(0);
+    -webkit-filter:grayscale(0);
+	transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+}
+#exclusive-panel .lcd-el-single a:hover canvas{
+    transform:scale(1.3);
+    -moz-transform:scale(1.3);
+    -webkit-transform:scale(1.3);
+    filter:grayscale(1);
+    -webkit-filter:grayscale(1);
+}
+#exclusive-panel .lcd-el-single a .lcd-el-status{
+	position: absolute;
+	z-index: 1;
+	top: 10px;
+	right: 10px;
+	opacity: 1;
+	font-size: 13px;
+	background: #014046;
+	color: #fff;
+	padding: 10px;
+	text-transform: uppercase;
+	transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+}
+#exclusive-panel .lcd-el-single a:hover .lcd-el-status{
+	opacity: 0;
+}
+#exclusive-panel .lcd-el-single a .lcd-el-mid{
+	position: absolute;
+	z-index: 2;
+	bottom: -85px;
+	left: 0;
+	width: 100%;
+	min-height: 0%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+	transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+}
+#exclusive-panel .lcd-el-single a:hover .lcd-el-mid{
+	bottom: 0;
+	min-height: 100%;
+}
+#exclusive-panel .lcd-el-single a .lcd-el-det{
+	width: 100%;
+}
+#exclusive-panel .lcd-el-single a .lcd-el-info{
+	color:#fff;
+	background:rgba(0,0,0,.8);
+	text-align: center;
+	margin: 0 auto;
+	width: calc(100% - 30px);
+	font-size: 15px;
+	padding: 20px 10px;
+}
+#exclusive-panel .lcd-el-single a .lcd-el-add{
+	text-transform: uppercase;
+	margin: 0 0 15px;
+}
+#exclusive-panel .lcd-el-single a .lcd-el-price{
+	font-size: 25px;
+	margin: 0 0 15px;
+}
+#exclusive-panel .lcd-el-single a .lcd-el-bb{
+    opacity: 0;
+	transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+}
+#exclusive-panel .lcd-el-single a:hover .lcd-el-bb{
+	opacity: 1;
+}
+#exclusive-panel .lcd-el-single a .lcd-el-bb span{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 3px;
+}
+#exclusive-panel .lcd-el-single a .lcd-el-vd{
+	margin: 0 auto;
+    background: #014046;
+    max-width: 250px;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0;
+	transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+}
+#exclusive-panel .lcd-el-single a:hover .lcd-el-vd{
+	opacity: 1;
+}
+#exclusive-panel .lcd-el-single a .lcd-el-vd:after{
+	content: '';
+	display: block;
+	height: 1px;
+	width: calc(100% - 30px);
+	background: #fff;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
+	margin: auto;
+}
+#exclusive-panel .lcd-el-single a .lcd-el-vd span{
+	background: #014046;
+	position: relative;
+	z-index: 1;
+	padding: 0 10px;
+}
+.lcd-el-navs{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: flex-end;
+}
+.lcd-el-navs .lcd-el-navs-wrap{
+	background: #014046;
+	color: #fff;
+	padding: 20px;
+}
+.lcd-el-navs .lcd-el-dots{
+	display: inline-block;
+	vertical-align: middle;
+}
+.lcd-el-navs .lcd-el-dots ul{}
+.lcd-el-navs .lcd-el-dots li{
+	display: inline-block;
+	vertical-align: middle;
+	border-left: 1px solid #fff;
+	padding: 10px;
+}
+.lcd-el-navs .lcd-el-dots li:first-child{
+	border-left: 0px solid #fff;
+	padding-left:0;
+}
+.lcd-el-navs .lcd-el-dots li:last-child{
+	padding-right:0;
+}
+.lcd-el-navs .lcd-el-dots li button{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 0px;
+	background: none;
+	padding: 0;
+}
+.lcd-el-navs .lcd-el-dots li button:hover{
+	color:#f5bcb4;
+}
+.lcd-el-navs .lcd-el-dots li.slick-active button{
+	color:#f5bcb4;
+	pointer-events: none;
+}
+.lcd-el-navs .lcd-el-next{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 0 20px;
+	cursor: pointer;
+}
+.lcd-el-navs .lcd-el-next:hover{
+	color:#f5bcb4;
+}
+.lcd-el-navs .lcd-el-next strong{
+	display: inline-block;
+	vertical-align: middle;
+}
+.lcd-el-navs .lcd-el-next i{
+	display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0 0 0 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.lcd-el-navs .lcd-el-next:hover i{
+	color:#f5bcb4;
+	border: 1px solid #f5bcb4;
+}
+
+.lcd-listing-tabs{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    color:#014046;
+}
+.lcd-listing-tabs .lcd-name{
+	font-size: 30px;
+	text-transform: uppercase;
+	width: 40%;
+}
+.exclusive-section .lcd-listing-tabs .lcd-name{
+	width: 100%
+}
+.lcd-listing-tabs .lcd-tabs{
+	font-size: 0;
+}
+.lcd-listing-tabs .lcd-tabs > div{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 15px;
+	position: relative;
+}
+.lcd-listing-tabs .lcd-tabs > div:after{
+	content:'';
+	display: block;
+	width: 1px;
+	height: 29px;
+	background: #c0c9ca;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+}
+.lcd-listing-tabs .lcd-tabs > div:first-child{
+	padding-left: 0px;
+}
+.lcd-listing-tabs .lcd-tabs > div:first-child:after{
+	display: none;
+}
+.lcd-listing-tabs .lcd-tabs > div:last-child{
+	padding-right: 0px;
+}
+
+.lcd-listing-tabs .lcd-tabs span{
+	border: 2px solid;
+    border-image: linear-gradient(rgba(246,192,184,0), rgb(254,216,208,0), rgba(246,192,184,0)) 1;
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 167px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #91abae;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.lcd-listing-tabs .lcd-tabs span.active,
+.lcd-listing-tabs .lcd-tabs span:hover{
+	border-image: linear-gradient(rgba(246,192,184,1), rgb(254,216,208,1), rgba(246,192,184,1)) 1;
+	color:#014046;
+}
+
+.lcd-panels{
+	margin: 40px 0 0;
+}
+
+.lcd-list{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+}
+.lcd-list .lcd-prop{
+	width: 25%;
+    margin: 1px 0 0;
+    padding: 0 0.5px;
+}
+.lcd-list .lcd-prop a{
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.lcd-list .lcd-prop a .lcd-img{
+	position: relative;
+	z-index: 0;
+}
+.lcd-list .lcd-prop a .lcd-img:before{
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:url(../../images/fl-fade.png) center bottom repeat-x;
+	background-size: cover;
+	pointer-events: none;
+	opacity: 1;
+	transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+	-moz-transition: all ease .4s;
+}
+.lcd-list .lcd-prop a:hover .lcd-img:before{
+	opacity: 0;
+}
+.lcd-list .lcd-prop a .lcd-img:after{
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:url(../../images/fl-hover.png) center bottom repeat-x;
+	background-size: cover;
+	pointer-events: none;
+	opacity: 0;
+	transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+	-moz-transition: all ease .4s;
+}
+
+.lcd-list .lcd-prop a:hover .lcd-img:after{
+	opacity: 1;
+}
+
+.lcd-list .lcd-prop a .lcd-img canvas{
+	display: block;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+}
+.lcd-list .lcd-prop a .lcd-heart{
+	position: absolute;
+	z-index: 3;
+	pointer-events: none;
+	top: 0;
+	right: 0;
+	padding: 25px 27px 0 0;
+	opacity: 0;
+}
+.lcd-list .lcd-prop a .lcd-heart span{
+	color:#fff;
+	font-size: 24px;
+}
+.lcd-list .lcd-prop a .lcd-det{
+	position: absolute;
+    z-index: 2;
+    bottom: -65px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    padding: 0 15px 15px;
+	text-transform: uppercase;
+	pointer-events: none;
+	transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+	-moz-transition: all ease .4s;
+}
+.lcd-list .lcd-prop a:hover .lcd-det{
+	bottom: 0;
+}
+.lcd-list .lcd-prop a .lcd-name{
+	font-size: 11px;
+    letter-spacing: 0.100em;
+    margin: 0 0 20px;
+}
+.lcd-list .lcd-prop a .lcd-add-price{
+	font-size: 11px;
+	margin: 0 0 12px;
+	letter-spacing: 0.000em;
+}
+.lcd-list .lcd-prop a .lcd-add-price em{
+	font-style: normal;
+    margin: 0 2px;
+}
+.lcd-list .lcd-prop a .lcd-bb-ex{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+	transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+	-moz-transition: all ease .4s;
+}
+.lcd-list .lcd-prop a:hover .lcd-bb-ex{
+	opacity: 1;
+}
+.lcd-list .lcd-prop a .lcd-bb{
+	width: calc(100% - 145px);
+    border-top: 1px solid rgba(255,255,255,.3);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 0 0 0;
+    font-size: 9px;
+    font-weight: 300;
+}
+.lcd-list .lcd-prop a .lcd-bb > div{}
+.lcd-list .lcd-prop a .lcd-ex {
+    width: 135px;
+    text-align: center;
+    background: #002e33;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+.lcd-list .lcd-prop a .lcd-ex span{
+	background: url(../../images/palm-1-hp.png) left center no-repeat;
+	background-size: 22px auto;
+    display: inline-block;
+    padding: 24px 0 24px 34px;
+}
+.lcd-panels{}
+.lcd-panels .lcd-panel-single{
+	display: none;
+}
+.lcd-panels .lcd-panel-single.active{
+	display: block;
+}
+
+
+/****Pagination*****/
+.lcd-pagination{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Termina';
+	margin: 50px 0 0;
+}
+.lcd-pagination .lcd-nav{
+	cursor: pointer;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+.lcd-pagination .lcd-nav.lcd-prev:after{
+	content:'';
+	display:block;
+	width: 29px;
+	height: 1px;
+	background:#014046;
+	margin: 0 0 0 10px;
+	pointer-events: none;
+}
+.lcd-pagination .lcd-nav.lcd-next:before{
+	content:'';
+	display:block;
+	width: 29px;
+	height: 1px;
+	background:#014046;
+	margin: 0 10px 0 0;
+	pointer-events: none;
+}
+.lcd-pagination .lcd-nav em{
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.240em;
+	color:#889596;
+	text-transform: uppercase;
+	font-style: normal;
+	transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+}
+.lcd-pagination .lcd-nav:hover em{
+	color:#014046;
+}
+.lcd-pagination .lcd-nav span{
+	font-size: 17px;
+	color:#014046;
+	margin: 0 10px;
+}
+
+.lcd-page-num{
+	margin: 0 15px;
+	font-size: 0;
+}
+.lcd-page-num a{
+	display: inline-block;
+	vertical-align: middle;
+	border: 2px solid rgba(122,154,157,0);
+	transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.025em;
+	color: #889596;
+	text-align: center;
+	padding: 6px 3px;
+	min-width: 30px;
+}
+.lcd-page-num a.active,
+.lcd-page-num a:hover{
+	border: 2px solid rgba(122,154,157,1);
+	color:#014046;
+}
+
+
+/*PopUp Form*/
+.IDX-form-group input, .IDX-controls textarea{
+    width: 100%;
+    height: 62px;
+    margin: 0 0px 20px;
+    border: none;
+    border-bottom: 2px solid rgba(27, 27, 27, 0.46);
+    background: transparent;
+    font-size: 15px;
+    letter-spacing: .15em;
+    color: #4b4b4b;
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'News Cycle';
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 0;
+    font-family: inherit;
+}
+.IDX-controls textarea{
+    height: 74px;
+    padding-top: 20px;
+    resize: none;
+    width: 100%;
+}
+.luxury-condos-template-default .aiosp-wrap .aiosp-container .aios-popup-body{
+    max-width: 600px !important;
+    width: 100%;
+    padding: 48px 45px 42px !important;
+}
+/* #IDX-submitBtn, #IDX-resetBtn {
+    width: 88%;
+    height: 71px;
+    font-size: 12px;
+    letter-spacing: .58em;
+    text-transform: uppercase;
+    font-family: 'Prata', serif;
+    margin-left: 17px;
+    padding-top: 5px;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    border-top: 1px solid #656565;
+    border-bottom: 1px solid #656565;
+    border-left: 1px solid #28c3d4;
+    border-right: 1px solid #28c3d4;
+    background: #fff;
+    color: #2b2b2b;
+} */
+#IDX-submitBtn, #IDX-resetBtn {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 255px;
+	width: 100%;
+	height: 62px;
+	border: 2px solid #7a9a9d;
+	color: #014046;
+	font-family: 'Termina';
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.025em;
+	text-transform: uppercase;
+	background: url(../../images/palm-2-hp.png) 20px center no-repeat #fff;
+	/* background-size: auto; */
+	background-size: 22px auto;
+	padding: 7px 0 7px 22px;
+	outline: 0;
+	transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+}
+#IDX-submitBtn:hover, #IDX-resetBtn:hover{/* 
+    border-top: 1px solid #014046 !important;
+    border-bottom: 1px solid #014046 !important;
+    text-decoration: none !important;
+    color: #fff !important;
+    background: #014046 !important; */
+    background: url(../../images/palm-1-hp.png) 20px center no-repeat #014046;
+    background-size: 22px auto;
+    border: 2px solid #014046;
+    color:#fff;
+}
+.wpcf7-response-output{
+	clear: both;
+}
+/* .single form.wpcf7-form h2 {
+    font-family: 'Prata', serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #014046;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 8px;
+    padding-bottom: 29px;
+} */#request-info {	text-align: center;}
+	#request-info form div {
+		text-align: left;
+	}
+	#request-info form div.wpcf7-response-output {
+		text-align: center;
+		padding: 10px;
+		line-height: 1.4;
+	}
+	#notify-me-new-listing {
+		text-align: center;
+	}
+	#notify-me-new-listing form div {
+		text-align: left;
+	}
+	#notify-me-new-listing form div.wpcf7-response-output{
+		text-align: center;
+		padding: 10px;
+		line-height: 1.4;
+	}
+	#request-market-report-updates {
+		text-align: center;
+	}
+	#request-market-report-updates form div{
+		text-align: left;
+	}
+	#request-market-report-updates form div.wpcf7-response-output{
+		text-align: center;
+		padding: 10px;
+		line-height: 1.4;
+	}
+	.luxury-title-wrap {
+		text-align: center !important;
+	}
+	.single form.wpcf7-form h2 {
+		font-size: 24px;
+		text-transform: uppercase;
+		color: #014046;
+		border-bottom: 3px solid #f7c1b9;
+		padding: 5px 0 30px;
+		font-weight: 400;
+		width: auto !important;
+		font-family: 'Spartan', sans-serif;
+		display: inline-block;
+		margin: 0 auto 60px !important;
+		text-align: center;
+		float: none;
+	}
+	.single form.wpcf7-form h2 span {
+		font-weight: 600;
+	}
+	#request-info form div label {
+		color: #000;
+	}
+/*EasyPagination*/
+.easyPaginateNav.ip-fp-pagination {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Termina';
+    width: 100% !important;
+}
+.ip-fp-pagi-inner {
+    background: #014046;
+    min-width: 488px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 47px 15px;
+}
+.ip-fp-pagi-inner a.prev,
+.ip-fp-pagi-inner a.next {
+    cursor: pointer;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.240em;
+    color: #889596;
+    text-transform: uppercase;
+    font-style: normal;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+}
+.easyPaginateNav a.page {
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid rgba(136, 149, 150,0);
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #889596;
+    text-align: center;
+    padding: 6px 3px;
+    min-width: 30px;
+}
+.easyPaginateNav a.page.current {
+    border: 2px solid rgba(136, 149, 150,1);
+    color: #fff;
+}
+.easyPaginateNav  a.prev:after,
+.easyPaginateNav a.next:before {
+    content: '';
+    display: block;
+    width: 29px;
+    height: 1px;
+    background: #fff;
+    margin: 0 0 0 10px;
+    pointer-events: none;
+    margin: 0 10px;
+}
+
+/*Tab CSS*/
+        .lcd-info-wrap {
+            margin-bottom: 40px;
+            padding-right: 40px;
+        }
+
+        .lcd-info-tab {
+            margin-bottom: 40px;
+            font-size: 0;
+            text-align: left;
+            background: rgb(255,255,255);
+            border: 1px solid #dadada;
+            background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
+            background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(235,235,235,1) 100%);
+            background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(235,235,235,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb',GradientType=0 );
+			display: flex;
+			justify-content: space-between;
+        }
+
+        .lcd-info-tab .lcd-info-tab-col {
+            display: inline-block;
+            vertical-align: middle;
+			width: 100%;
+			text-align: center;
+        }
+
+            .lcd-info-tab .lcd-info-tab-col a {
+                display: block;
+                font-size: 16px;
+                color: #4b4b4b;
+                letter-spacing: .060em;
+                padding: 18px 25px;
+                border-right: 1px solid #dadada;
+
+                transition: 400ms ease;
+                -webkit-transition: 400ms ease;
+                -moz-transition: 400ms ease;
+                -o-transition: 400ms ease;
+            }
+
+            .lcd-info-tab .lcd-info-tab-col a:hover,
+            .lcd-info-tab .lcd-info-tab-col a.active {
+                background-color: #003f45;
+                color: #fff;
+            }
+.lcd-desc_cs {
+    /*font-family: 'Poppins', sans-serif;*/
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    line-height: 1.875;
+    color: #000;
+    margin-top: 21px;
+    display: none;
+}
+.lcd-info-body img{
+    max-height: 300px;
+    max-width: 300px;
+    margin: auto;
+    display: block;
+}
+.lcd-info-body .lcd-desc_cs{
+	line-height: 25px;
+}
+
+.lcd-info-body .lcd-desc_cs.active{display: block;}
+
+.lcd-desc_cs p {
+    line-height: inherit !important;
+    margin: 10px 0 !important;
+}
+
+.lcd-desc_cs ul {
+    margin-left: 40px;
+    /*list-style-type: disc;*/
+    list-style: none;
+}
+	.lcd-desc_cs ul li {
+		position: relative;
+		line-height: 1.875;
+	}
+		.lcd-desc_cs ul li:before {
+		    content: '';
+		    position: relative;
+		    display: inline-block;
+		    vertical-align: top;
+		    margin-left: -16px;
+		    margin-right: 11px;
+		    top: 13px;
+		    border-radius: 50%;
+		    width: 5px;
+		    height: 5px;
+		    background: #4c4c4c;
+		}
+
+.lcd-slider-wrap {
+    margin: 35px 0 0 -66px;
+    position: relative;
+}
+
+.exclusive-section h2.sc-no-listing,
+.lcd-panels h2.sc-no-listing {
+    display: inline-block;
+    line-height: 1;
+    margin: 5px;
+    font-family: 'Termina';
+    font-size: 27px;
+    color: #014046;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.addReadMore {
+	height: 395px;
+	overflow: hidden;
+}
+
+.single-luxury-condos .lcd-info-body .readmore-btn div {
+	display: block;
+	margin: 22px 0 0;
+	max-width: 190px;
+	border: 2px solid rgba(245,188,180,0);
+	color: #014046;
+	font-family: 'Termina';
+	text-align: center;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: .025em;
+	text-transform: uppercase;
+	padding: 15px 5px;
+	transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+	cursor: pointer;
+}
+
+.single-luxury-condos .lcd-info-body .readmore-btn div span {
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../../images/palm-2-hp.png) left center no-repeat;
+	background-size: 22px auto;
+	padding: 7px 0 7px 27px;
+}
+
+@media only screen and (max-width: 1440px) {
+	.lcd-info {
+	    padding: 85px 55px 74px;
+	}
+	.lcd-list .lcd-prop a .lcd-det {
+	    padding: 0 10px 15px;
+	}
+}
+@media only screen and (max-width: 1366px) {
+	#lcd-wrap:before {
+	    width: 10.375vw;
+	}
+	.lcd-desc {
+	    padding: 0 0 0 30px;
+	}
+	.lcd-desc h1 {
+	    background-size: 80px auto;
+	    font-size: 40px;
+	    padding: 0 0 0 90px;
+	}
+	.lcd-desc .lcd-text,
+	.lcd-desc .lcd-highlight {
+	    padding: 0 40px 0 0;
+	}
+	.lcd-info {
+	    padding: 85px 40px 74px;
+	}
+	.lcd-list .lcd-prop a .lcd-add-price {
+	    font-size: 10px;
+	}
+	.lcd-desc_cs{
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width: 1199px) {
+	#lcd-wrap{
+	    background: url(../../images/luxury-condo-details/lcd-bg.jpg) center center no-repeat;
+	    background-size: 100% auto;
+	    background-attachment: scroll;
+	}
+	.lcd-desc {
+	    padding: 0 0 0 0;
+	}
+	.lcd-desc h1 {
+	    background-size: 60px auto;
+	    font-size: 30px;
+	    padding: 0 0 0 70px;
+	}
+	.lcd-desc .lcd-highlight {
+	    font-size: 20px;
+	    line-height: 21px;
+	}
+	.lcd-btns a {
+	    max-width: 290px;
+	    font-size: 13px;
+	}
+
+	.lcd-content .lcd-page-links a{
+		font-size: 10px;
+	}
+	.lcd-info {
+	    padding: 85px 25px 74px;
+	}
+
+	.lcd-info h3 {
+	    font-size: 22px;
+	    letter-spacing: 0.000em;
+	}
+	.lcd-rates > div {
+	    font-size: 15px;
+	    letter-spacing: 0.00em;
+	    margin: 20px 0 0;
+	}
+	.lcd-content .lcd-page-cta a {
+	    font-size: 11px;
+	    padding: 22px 0 22px 48px;
+	}
+	.lcd-listing-tabs .lcd-tabs > div {
+	    padding: 0 10px;
+	}
+	.lcd-listing-tabs .lcd-tabs span {
+	    min-width: 140px;
+	    font-size: 16px;
+	    line-height: 50px;
+	}
+	.lcd-list .lcd-prop a .lcd-ex {
+	    width: 90px;
+	    font-size: 8px;
+	    font-weight: 500;
+	    letter-spacing: 0.00em;
+	}
+	.lcd-list .lcd-prop a .lcd-ex span {
+	    background-size: 14px auto;
+	    padding: 24px 0 24px 15px;
+	}
+	.lcd-list .lcd-prop a .lcd-bb {
+	    width: calc(100% - 100px);
+	    font-size: 6px;
+	}
+	.lcd-info-tab .lcd-info-tab-col a{
+		padding: 18px 12px;
+		font-size: 15px;
+		letter-spacing: .000em;
+	}
+	.lcd-info-body .lcd-desc_cs{
+		line-height: 1.5;
+	}
+
+	.lcd-content .lcd-r .lcd-page-links {
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 991px) {
+	#lcd-wrap:before{
+		display: none;
+	}
+	.lcd-content {
+	    flex-flow: column wrap;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.lcd-content .lcd-l{
+		width: 100%;
+	}
+	.lcd-desc {
+	    text-align: center;
+	}
+	.lcd-desc .lcd-text,
+	.lcd-desc .lcd-highlight {
+	    padding: 0 0 0 0;
+	}
+	.lcd-content .lcd-r{
+		width: 100%;
+		top: 0;
+		margin: 30px 0 0;
+	}
+
+		.lcd-content .lcd-r .lcd-page-links {
+			width: 100%;
+		}
+	.lcd-info {
+	    max-width: 620px;
+		margin: 20px auto 0;
+		text-align: center;
+	}
+	.lcd-rates>div {
+		font-size: 18px;
+		letter-spacing: 0.025em;
+	}
+	.lcd-share > div {
+	    margin: 0 10px 0;
+	}
+	.lcd-share > div:first-child {
+	    margin: 0 0 10px 0;
+	    width: 100%;
+	}
+	.lcd-listing-tabs {
+	    flex-flow: column wrap;
+	}
+	.lcd-listing-tabs .lcd-name {
+	    margin: 0 0 60px;
+	    width: 100%;
+	    text-align: center;
+	}
+	.lcd-list .lcd-prop {
+	    width: calc((100% / 2) - 1px);
+	}
+	.lcd-list .lcd-prop a .lcd-bb {
+	    font-size: 9px;
+	}
+
+	.lcd-info-wrap{padding-right: 0;}
+
+	.lcd-listing-tabs .lcd-tabs span {
+	    height: 50px;
+	    min-width: initial;
+	    padding: 0 15px;
+	}
+	.ip-fp-pagi-inner {
+	    min-width: 0;
+	}
+
+	.comm-mobile-bottom {
+	    text-align: center;
+	    color: #014046;
+	    padding-bottom: 30px;
+	}
+
+	.comm-mobile-bottom .lcd-share {
+		margin: 0;
+	}
+
+	.lcd-page-cta{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 20px 0 0;
+	}
+	.lcd-content .lcd-page-cta a{
+		width: auto;
+		max-width: 100%;
+		padding: 15px 0 15px 48px;
+	}
+	.lcd-desc_cs ul {
+		text-align: left;
+	}
+	.lcd-desc_cs ul li:before {
+		top: 10px;
+	}
+
+	.lcd-content .lcd-page-links a {
+		width: 100%;
+		padding-right: 20px;
+	}
+
+}
+@media only screen and (max-width: 767px) {
+	.lcd-desc h1 {
+	    background-size: 80px auto;
+	    font-size: 25px;
+		padding-left: 0;
+		padding-top: 50px;
+		background-position: top center;
+		text-align: center;
+	}
+	.lcd-desc .lcd-highlight {
+	    font-size: 18px;
+	    line-height: 19px;
+	    margin: 60px 0 0;
+	}
+	.lcd-info {
+	    padding: 85px 10px 74px;
+	}
+	.lcd-rates span {
+	    padding: 0 5px 0 0;
+	}
+	.lcd-pagination .lcd-nav{
+		margin: 0 5px;
+	}
+	.lcd-pagination .lcd-nav.fp-prev{
+		order: 1;
+	}
+	.lcd-pagination .lcd-nav.fp-next{
+		order: 2;
+	}
+	.lcd-page-num {
+	    order: 3;
+	    text-align: center;
+	    width: 100%;
+	    margin: 30px 0 0;
+	    padding: 0 10px;
+	}
+	.lcd-desc .lcd-text p {
+	    font-size: 14px;
+	    line-height: 23px;
+	}
+	/* .lcd-content .lcd-page-cta a{
+		width: 100%;
+	} */
+	.lcd-listing-tabs .lcd-tabs > div{
+		/*margin: 20px auto 0;
+		display: block;
+		min-width: 140px;
+		padding: 0 0 0;*/
+	}
+	.lcd-listing-tabs .lcd-tabs > div:after{
+		/*display: none;*/
+	}
+	.lcd-listing-tabs .lcd-tabs > div:first-child {
+	    /*margin: 0 auto 0;*/
+	}
+	.lcd-listing-tabs .lcd-name {
+	    text-align: center;
+	}
+	.lcd-list {
+	    align-items: center;
+	    justify-content: center;
+	}
+	.lcd-list .lcd-prop {
+	    width: 100%;
+	    max-width: 488px;
+	    padding: 2px;
+	}
+
+	.lcd-info-tab .lcd-info-tab-col{
+		display: block;
+	}
+
+	.easyPaginateNav a.prev:after, .easyPaginateNav a.next:before {
+		margin: 0 5px;
+		width: 15px;
+	}
+	.ip-fp-pagi-inner {
+	    max-width: 100%;
+	    width: 484px;
+	}
+	.easyPaginateNav.ip-fp-pagination {
+		padding: 0 2px;
+	}
+	.ip-fp-pagi-inner > span:first-child,
+	.ip-fp-pagi-inner > span:last-child{
+		width: 50%;
+		order: -1;
+		margin-bottom: 30px;
+	}
+	.ip-fp-pagi-inner a.prev{
+		justify-content: flex-end;
+	}
+	.ip-fp-pagi-inner a.next{
+		justify-content: flex-start;
+	}
+}
+@media only screen and (max-width: 480px) {
+	
+	.lcd-desc h1 {
+	    font-size: 23px;
+	}
+	.lcd-rates > div {
+	    /* font-size: 14px; */
+	    margin: 10px 0 0;
+	    line-height: 1.5;
+	}
+	.lcd-rates span{
+		display: block;
+	}
+	.lcd-content .lcd-page-cta a{
+		font-size: 10px;
+		background-position: left center;
+		padding: 15px 0 15px 25px;
+	}
+	.lcd-info h3 {
+	    text-align: center;
+	}
+	.lcd-listing-tabs .lcd-tabs {
+		width: 100%;
+		text-align: center;
+	}
+		.lcd-listing-tabs .lcd-tabs span {
+		    padding: 0 5px;
+		    font-size: 13px;
+		    letter-spacing: 0;
+		}
+
+	.ip-fp-pagi-inner a.prev, .ip-fp-pagi-inner a.next {
+	    letter-spacing: 0.04em;
+	    font-size: 13px;
+	}
+
+	#IDX-submitBtn, #IDX-resetBtn{
+		font-size: 12px;
+	}
+}

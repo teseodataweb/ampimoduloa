@@ -1,0 +1,447 @@
+/***Relocation***/
+
+.header-sm{
+	display: none;
+}
+.ip-banner::before {
+    background: rgba(0,0,0,.05);
+}
+
+.ip-banner::after {
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:url(../../images/relocation/reloc-banner-fade.png) center top repeat-x;
+	background-size: cover;
+}
+.custom-breadcrumbs{
+	position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,46,51,.7);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.050em;
+    padding: 10px 0;
+}
+.custom-breadcrumbs span{
+	font-size: 11px;
+	display: inline-block;
+}
+.custom-breadcrumbs .breadcrumb_last{
+	font-weight: 600;
+}
+.custom-breadcrumbs .container{
+	position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%,0%);
+}
+#reloc-wrap .custom-breadcrumbs{
+	display: none;
+}
+#reloc-content{
+	background:url(../../images/relocation/reloc-bg.jpg) center top no-repeat;
+	background-size: cover;
+	color:#fff;
+	padding: 76px 0 0;
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: 0.025em;
+	font-weight: 300;
+	overflow: hidden;
+}
+#content-full {
+    margin-top: 0px;
+}
+
+#reloc-content .reloc-title{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 0 0 73px;
+}
+#reloc-content h1{
+    font-size: 60px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    background: url(../../images/palms-1.png) left center no-repeat;
+    background-size: 88px auto;
+    padding: 0 0 0 108px;
+    margin: 0 0 0;
+    font-family: 'Termina';
+    line-height: 1;
+}
+
+.reloc-txt h3{
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 0.020em;
+	margin: 0 0 35px;
+}
+
+.reloc-txt p{
+	margin: 19px 0;
+}
+.reloc-txt ul{
+	margin: 25px 0 0;
+}
+.reloc-txt li{
+	margin: 19px 0;
+    padding: 0 0 0 40px;
+    background: url(../../images/palm-1.png) left top no-repeat;
+    background-size: 20px auto;
+}
+
+.testi-wrapper .testi-title h2 strong{
+    font-size: 60px;
+    color: #fff;
+    background: url(../../images/palms-1.png) left center no-repeat;
+    background-size: 88px auto;
+    line-height: 1;
+}
+
+.testi-wrapper .testi-title h2 span{
+	color: #fff;
+}
+.testi-wrapper .testi-title h2 span:after{
+	background:#fff;
+}
+
+#reloc-content .testi-wrapper .testi-slide ul{
+	margin: 0 -6px 0;
+}
+
+#reloc-testi{
+	margin: 55px 0 -170px;
+	overflow: unset;
+}
+.testi-wrapper .testi-slide{
+	background:#fff;
+	padding: 70px 0;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, .1);
+}
+.testi-wrapper .testi-single{
+	color:#000;
+	background:#fff;
+	padding: 0 0 0;
+}
+.testi-wrapper .testi-text {
+    padding: 0 100px;
+}
+.testi-navs{
+	margin: 0 0 0;
+	background:#fff;
+	padding: 0 0 40px;
+	box-shadow: 10px 20px 15px rgba(0, 0, 0, .1);
+}
+.testi-navs .testi-nav{
+	display: none;
+}
+
+.testi-wrapper .slick-initialized .slick-slide {
+    margin: 0 0;
+}
+
+.testi-wrapper .slick-initialized .slick-slide:nth-child(odd){
+	border-left: 1px solid #d9e3e3;
+	border-right: 1px solid #d9e3e3;
+}
+
+.footer-git{
+	display: none;
+}
+.reloc-form-top{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 0 0 53px;
+}
+#reloc-form{
+	background:url(../../images/relocation/reloc-form-bg.jpg) center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	padding: 278px 0 0;
+}
+#reloc-form:before{
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:#fff;
+	opacity: .85;
+}
+.reloc-form-wrapper{
+	position: relative;
+	z-index: 1;
+}
+.reloc-form-title{}
+
+.reloc-form-title h2{
+	overflow: hidden;
+    text-align: right;
+}
+.reloc-form-title h2 strong{
+	display: block;
+    font-size: 60px;
+    font-weight: 400;
+    color: #014046;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-2.png) left center no-repeat;
+    background-size: 87px auto;
+    line-height: 1;
+}
+.reloc-form-title h2 span{
+	font-size: 28px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.150em;
+    color: #014046;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.reloc-form-title h2 span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.reloc-form-wrapper p{
+	font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.025em;
+    color: #000;
+    text-align: center;
+    padding: 0 90px;
+}
+.reloc-fillup{
+	margin: 55px 0 0;
+}
+.reloc-fillup .wpcf7 form .wpcf7-response-output{
+	color:#000;
+}
+.reloc-fillup ::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+.reloc-fillup ::-moz-placeholder {
+	text-transform: uppercase;
+}
+.reloc-fillup :-ms-input-placeholder {
+  text-transform: uppercase;
+}
+.reloc-fillup :-moz-placeholder {
+  text-transform: uppercase;
+}
+
+.reloc-fillup  .wpcf7-form-control-wrap{
+	display: block;
+}
+
+.reloc-fields{}
+.reloc-fields .reloc-field{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.reloc-fields .reloc-field > div{
+	width: calc((100% / 3) - 5px);
+    max-width: 298px;
+}
+.reloc-fields .reloc-field input{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    color: #000;
+    border: 0px;
+    border-bottom: 1px solid #b5b5b5;
+    background: none;
+    padding: 0 0;
+    font-size: 14px;
+    letter-spacing: 0.025em;
+    outline: 0;
+    height: 72px;
+    line-height: 1.4;
+}
+.reloc-fields .reloc-textarea{
+	margin: 50px 0 0;
+}
+.reloc-fields .reloc-textarea textarea{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    color: #000;
+    border: 0px;
+    border-bottom: 1px solid #b5b5b5;
+    background: none;
+    padding: 0 0;
+    font-size: 14px;
+    letter-spacing: 0.025em;
+    outline: 0;
+    resize: none;
+    height: 106px;
+}
+.reloc-fields .reloc-btns{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 67px 0 0;
+}
+.reloc-fields .reloc-btns > div{
+	margin: 0 10px;
+    width: 50%;
+    max-width: 160px;
+}
+.reloc-fields .reloc-btns input{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 160px;
+    width: 100%;
+    height: 62px;
+    border: 2px solid rgba(245,188,180,0);
+    color: #014046;
+    font-family: 'Termina';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    background: url(../../images/palm-2.png) 25px center no-repeat;
+    background-size: 22px auto;
+    padding: 7px 0 7px 22px;
+    outline: 0;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+}
+.reloc-fields .reloc-btns input:hover{
+	border: 2px solid rgba(245,188,180,1);
+}
+
+
+.reloc-disclaimer{
+	text-align: center;
+	color:#000;
+	font-size: 12px;
+	font-style: italic;
+	margin: 30px 0 0;
+	padding: 0 0 86px;
+	font-weight: 400;
+}
+.reloc-disclaimer strong{
+	font-weight: 700;
+}
+
+@media only screen and (max-width: 1199px) {
+	.testi-wrapper .testi-text {
+	    padding: 0 40px;
+	}
+	#reloc-form{
+		background-attachment: scroll;
+	}
+}
+@media only screen and (max-width: 991px) {
+	#reloc-content .testi-wrapper .testi-slide ul {
+	    margin: 0 0 0;
+	}
+	.testi-wrapper .slick-initialized .slick-slide:nth-child(odd) {
+	    border-left: 0px solid #d9e3e3;
+	    border-right: 0px solid #d9e3e3;
+	}
+	.testi-navs{
+		max-width: 100%;
+	}
+	.reloc-form-wrapper p {
+	    padding: 0 20px;
+	}
+	.testi-wrapper .testi-title h2 strong {
+	    font-size: 50px;
+	    background-size: 80px auto;
+	    padding: 0 0 0 90px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	#reloc-content h1{
+		font-size:45px;
+		background-size: 60px auto;
+		padding: 0 0 0 65px;
+	}
+	.testi-wrapper .testi-title h2 strong {
+	    font-size: 50px;
+	    background-size: 75px auto;
+	}
+}
+@media only screen and (max-width: 480px) {
+	#reloc-content h1{
+		font-size: 26px;
+	}
+	.testi-wrapper .testi-title h2 strong{
+		font-size: 32px;
+	    background-size: 55px auto;
+	    padding: 0 0 0 65px;
+	}
+	.testi-wrapper .testi-title h2 span {
+	    font-size: 16px;
+	}
+	.testi-wrapper .testi-text {
+	    padding: 0 15px;
+	}
+	.reloc-form-title h2 strong {
+	    font-size: 36px;
+	    padding: 0 0 0 70px;
+	    background-size: 60px auto;
+	}
+	.reloc-form-title h2 span{
+		font-size: 18px;
+	}
+	.reloc-form-wrapper p {
+	    padding: 0 0;
+	}
+	.reloc-fields .reloc-field > div {
+	    width: 100%;
+	    max-width: none;
+	    margin: 15px 0 0;
+	}
+
+	.reloc-fields .reloc-field > div:first-child{
+		margin: 0 0 0;
+	}
+	.reloc-fields .reloc-btns > div{
+		margin: 5px 10px;
+	    width: 100%;
+	}
+}

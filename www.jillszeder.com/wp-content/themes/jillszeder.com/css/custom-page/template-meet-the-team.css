@@ -1,0 +1,505 @@
+/*** Meet The TEam ***/
+
+.header-sm{
+	display: none;
+}
+.ip-banner::before {
+    background: rgba(0,0,0,.05);
+}
+
+.ip-banner::after {
+	content:'';
+	display: block;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:url(../../images/relocation/reloc-banner-fade.png) center top repeat-x;
+	background-size: cover;
+}
+.custom-breadcrumbs{
+	position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,46,51,.7);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.050em;
+    padding: 10px 0;
+}
+.custom-breadcrumbs span{
+	font-size: 11px;
+	display: inline-block;
+}
+.custom-breadcrumbs .breadcrumb_last{
+	font-weight: 600;
+}
+.custom-breadcrumbs .container{
+	position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%,0%);
+}
+#ip-team-content .custom-breadcrumbs{
+	display: none;
+}
+#content-full {
+	margin-top: 0;
+}
+#ip-team-content {
+	position: relative;
+	padding: 80px 0;
+	font-family: 'Termina', sans-serif;
+}
+#ip-team-content::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 1082px;
+	max-height: 100%;
+	top: 0;
+	background: url(../../images/team/team-bg.jpg) no-repeat center top / 100% auto;
+}
+#ip-team-content::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #ffffff;
+	opacity: 0.85;
+}
+#ip-team-content > .container {
+	position: relative;
+	z-index: 3;
+}
+.ip-team-title {
+	display: flex;
+	justify-content: center;
+}
+	.ip-team-title h1 {
+		overflow: hidden;
+	}
+		.ip-team-title strong {
+			display: block;
+			font-family: 'Termina', sans-serif;
+		    font-size: 60px;
+		    font-weight: 400;
+		    color: #014046;
+		    text-transform: uppercase;
+		    padding: 0 0 0 98px;
+		    background: url(../../images/palms-2.png) left center no-repeat;
+		    background-size: 88px auto;
+		    text-align: left;
+		    line-height: 1;
+		}
+		.ip-team-title span {
+			font-size: 28px;
+		    line-height: 1;
+		    text-transform: uppercase;
+		    letter-spacing: 0.150em;
+		    color: #014046;
+		    display: inline-block;
+		    margin: 18px 0 0 127px;
+		    font-weight: 400;
+		    position: relative;
+		    font-family: 'Spartan', sans-serif;
+		}
+		.ip-team-title span:after {
+		    content: '';
+		    display: block;
+		    height: 3px;
+		    width: 100vw;
+		    position: absolute;
+		    right: 109%;
+		    top: 9px;
+		    background: #f7c1b9;
+		}
+
+.team-inner {
+	display: block;
+	max-width: 1470px;
+	margin: 0 auto;
+	position: relative;
+}
+	
+	.team-inner.group {
+		display: flex;
+	}
+	
+	.team-inner .section-title {
+		font-size: 36px;
+		color: #014046;
+		text-transform: uppercase;
+		display: block;
+		text-align: center;
+		line-height: 1;
+		margin-bottom: 55px;
+	}
+
+.top-wrap {
+	padding: 0 15px;
+	margin-top: 65px;
+	display: block;
+	position: relative;
+	z-index: 9;
+}
+
+	.top-wrap .team-photo {
+		display: flex;
+		width: 50%;
+	}
+
+		.top-wrap .team-photo img {
+			width: 100%;
+		}
+
+	.top-wrap .team-text {
+		display: flex;
+		width: 50%;
+		padding-left: 10%;
+		align-items: center;
+		background: url(../../images/team/top-right-bg.jpg) top center / cover;
+	}
+
+		.top-wrap .team-text .text-wrap div  {
+			font-size: 2.500vw;
+			color: #fff;
+			text-transform: uppercase;
+			padding: 2vw 0;
+		}
+
+			.top-wrap .team-text .text-wrap div span {
+				font-weight: 300;
+			}
+
+	.top-wrap img.team-logo {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 5;
+	}
+.team-text {
+    margin: 60px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.team-text .text-single.hl {
+    font-size: 15px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+
+    color: #000000;
+    /*letter-spacing: 0.025em;*/
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-weight: 600;
+    line-height: 23px !important;
+}
+.our-family {
+	margin: 95px 0;
+	display: block;
+	position: relative;
+	z-index: 9;
+}
+	
+	.family-top,
+	.family-bottom {
+		display: flex;
+		justify-content: center;
+	}
+
+		.family-top {
+			margin-bottom: 35px;
+		}
+
+		.our-team .team-wrap {
+			padding: 0 20%;
+			font-size: 0;
+		}
+
+		.team-item {
+			padding: 0 12px;
+			max-width: 300px;
+			display: inline-block;
+			width: 20%;
+			vertical-align: top;
+		}
+
+			.our-team .team-wrap .team-item {
+				width: 33.33%;
+				margin-bottom: 35px;
+			}
+
+			.team-item .agent-img {
+				display: block;
+			}
+
+				.team-item .agent-img canvas {
+					width: 100%;
+					display: block;
+					height: auto;
+					background-size: cover;
+				}
+
+			.team-item .agent-details {
+				display: block;
+				padding: 23px 5px;
+				text-align: center;
+				font-family: 'Spartan', sans-serif;
+				font-weight: 300;
+				font-size: 0.688vw;
+				letter-spacing: .025em;
+				background: url(../../images/team/agent-details-bg.jpg) top center / cover;
+				position: relative;
+			}
+
+				.team-item .agent-details .agent-desc {
+					transition: all .3s ease-in-out;
+					-webkit-transition: all .3s ease-in-out;
+					-moz-transition: all .3s ease-in-out;
+					-webkit-backface-visibility: hidden;
+				}
+
+				.team-item .agent-details span,
+				.team-item .agent-details a {
+					display: block;
+					color: #fff;
+				}
+
+					.team-item .agent-details .agent-name {
+						font-size: 1.125vw;
+						line-height: 1;
+						font-family: 'Termina', sans-serif;
+						font-weight: 400;
+					}
+
+						.team-item .agent-details .agent-name.small {
+							font-size: 0.938vw;
+							line-height: 1.125vw;
+						}
+
+					.team-item .agent-details .agent-position {
+						text-transform: uppercase;
+						margin: 10px 0 15px;
+					}
+
+					.team-item .agent-details a {
+						font-size: 0.750vw;
+						line-height: 16.82px;
+					}
+
+				.team-item .agent-details .agent-hover {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					left: 0;
+					top: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					opacity: 0;
+					visibility: hidden;
+					z-index: 9;
+					color: #fff;
+					font-size: 1.438vw;
+					text-transform: uppercase;
+					letter-spacing: .025em;
+					font-family: 'Termina', sans-serif;
+					flex-direction: column;
+					padding: 0 10px;
+					transition: all .3s ease-in-out;
+					-webkit-transition: all .3s ease-in-out;
+					-moz-transition: all .3s ease-in-out;
+					-webkit-backface-visibility: hidden;
+				}
+
+					.team-item .agent-details .agent-hover > div {
+						align-items: flex-start;
+					    display: flex;
+					    flex-direction: column;
+					}
+
+					.team-item .agent-details .agent-hover span {						
+						font-size: 1vw;
+						text-transform: none;
+						position: relative;
+						padding-left: 40px;
+						margin-top: 12px;
+						text-align: left;
+					}
+
+						.team-item .agent-details .agent-hover span:before {
+							content: '';
+							position: absolute;
+							left: 0;
+							top: 50%;
+							margin-top: -1px;
+							width: 32px;
+							height: 2px;
+							background: #d8aea8;
+						}
+
+					.team-item .agent-details .agent-desc.active {
+					    opacity: 0;
+					    pointer-events: none;
+					}
+					.team-item .agent-details .agent-hover.hovered {
+					    opacity: 1;						
+						visibility: visible;
+					}
+
+.our-team {
+	display: block;
+	position: relative;
+	z-index: 9;
+}
+
+@media only screen and (min-width: 1600px) {
+	.team-item .agent-details {
+		font-size: 11px;
+	}
+
+	.team-item .agent-details .agent-name {
+		font-size: 18px;
+	}
+
+	.team-item .agent-details a {
+		font-size: 12px;
+	}
+
+	.team-item .agent-details .agent-name.small {
+		font-size: 15px;
+		line-height: 18px;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+
+	.top-wrap .team-text {
+		padding-left: 12%;
+	}
+
+	.team-item .agent-details .agent-hover.hovered {
+	    opacity: 0;
+	    visibility: hidden;
+	    pointer-events: none;
+	}
+	.team-item .agent-details .agent-desc.active {
+	     opacity: 1; 
+	     pointer-events: auto; 
+	}
+	
+}
+@media only screen and (max-width: 991px) {
+
+	.team-inner.group {
+		flex-direction: column;
+	}
+
+		.top-wrap .team-photo,
+		.top-wrap .team-text{
+			width: 100%;
+		}
+
+			.top-wrap .team-text {
+				padding: 20% 5%;
+				text-align: center;
+				display: block;
+			}
+
+				.top-wrap .team-text .text-wrap div {
+					font-size: 4vw;
+				}
+
+		.top-wrap img.team-logo {
+			top: 54%;
+			width: 25%;
+		}
+
+	.family-top, .family-bottom {
+		flex-direction: column;
+		padding: 0 5%;
+	}
+	.family-bottom{
+		text-align: center;
+	}
+
+		.family-top {
+			margin-bottom: 0;
+		}
+
+		.team-item	{
+			width: 100%;
+		    vertical-align: top;
+		    margin: 0 auto 30px;
+		    max-width: 276px;
+		}
+
+			.team-item .agent-details {
+				font-size: 11px;
+			}
+
+			.team-item .agent-details .agent-name {
+				font-size: 18px;
+			}
+
+			.team-item .agent-details a {
+				font-size: 12px;
+			}
+
+	.our-team .team-wrap {
+		padding: 0 5%;
+		text-align: center;
+		flex-direction: column;
+		display: flex;
+	}
+
+		.our-team .team-wrap .team-item {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+
+		.team-item .agent-details .agent-name.small {
+			font-size: 15px;
+			line-height: 18px;
+		}
+
+	.team-item .agent-details .agent-hover {
+		font-size: 23.55px;
+	}
+
+		.team-item .agent-details .agent-hover span {
+			font-size: 18px;
+		}
+	
+}
+@media only screen and (max-width: 767px) {
+
+	
+}
+@media only screen and (max-width: 480px) {
+	.ip-team-title strong {
+	    padding: 0 0 0 70px;
+	    background: url(../../images/palms-2.png) left center no-repeat;
+	    background-size: 60px auto;
+	}
+	.ip-team-title span {
+	    font-size: 23px;
+	}
+}

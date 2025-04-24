@@ -1,0 +1,608 @@
+/***Schedule***/
+
+.header-sm{
+    display: none;
+}
+.ip-banner::before {
+    background: rgba(0,0,0,.05);
+}
+
+.ip-banner::after {
+    content:'';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:url(../../images/relocation/reloc-banner-fade.png) center top repeat-x;
+    background-size: cover;
+}
+.custom-breadcrumbs{
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,46,51,.7);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.050em;
+    padding: 10px 0;
+}
+.custom-breadcrumbs span{
+    font-size: 11px;
+    display: inline-block;
+}
+.custom-breadcrumbs .breadcrumb_last{
+    font-weight: 600;
+}
+.custom-breadcrumbs .container{
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%,0%);
+}
+#sched-wrap{
+    position: relative;
+    padding: 102px 0 90px;
+}
+
+#sched-wrap:before{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 51.375%;
+    height: 536px;
+    background: url(../../images/signup/login-accent.jpg) left bottom;
+    background-size: cover;
+    pointer-events: none;
+}
+#sched-wrap:after{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    width: 60.813%;
+    height: 536px;
+    background: url(../../images/signup/login-bg.jpg) right bottom;
+    background-size: cover;
+    pointer-events: none;
+}
+
+.sched-content{
+    width: calc(100% - 30px);
+    max-width: 1310px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 4;
+}
+
+.idxsignup-content{
+    display: none;
+    position: relative;
+    z-index: 5;
+}
+
+#sched-wrap .custom-breadcrumbs{
+    display: none;
+}
+
+.sched-title{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+}
+.sched-title h1{
+    overflow: hidden;
+    text-align: right;
+    margin: 0 0 0;
+}
+.sched-title h1 strong {
+    display: block;
+    font-size: 54px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 0 98px;
+    background: url(../../images/palms-1.png) left center no-repeat;
+    background-size: 88px auto;
+}
+.sched-title h1 span{
+    font-size: 28px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.150em;
+    color: #fff;
+    display: inline-block;
+    margin: 10px 0 0;
+    position: relative;
+}
+.sched-title h1 span:after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #f7c1b9;
+}
+
+.sched-container{
+    margin: 58px auto 0;
+    max-width: 884px;
+    background: #fff;
+    border: 1px solid #d6dfdf;
+    padding: 48px 45px 30px;
+}
+.sched-container .sched-form-title{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sched-container .sched-form-title h2{
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #014046;
+    border-bottom: 3px solid #f7c1b9;
+    padding: 0 0 30px;
+}
+.sched-container .sched-form-title h3{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 0.025em;
+    text-align: center;
+    line-height: 25px;
+    margin: 25px 0 0;
+}
+.sched-container .sched-form-title span{
+    font-weight: 600;
+}
+.sched-container .sched-form{
+    margin: 0 0 0;
+}
+.sched-container p{
+    font-size: 10px;
+    font-weight: 300;
+    color: #5b5b5b;
+    margin: 40px 0 0;
+    text-align: center;
+}
+.sched-container p a{
+    color: #5b5b5b;
+}
+.sched-container p a:hover{
+    color:#000;
+}
+.sched-container .sched-form form{}
+.sched-container .sched-dual-field{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 47px 0 0;
+}
+.sched-container .sched-dual-field > div{
+    width:calc(50% - 5px);
+    max-width: 237px;
+}
+
+.sched-container .sched-dual-field > div:first-child{
+    margin: 0 0 0;
+}
+.sched-container .sched-field label{}
+.sched-container .sched-field label{
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    display: block;
+    color: #5b5b5b;
+}
+.sched-container .sched-form input[type="text"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border: 0px;
+    border-bottom: 1px solid #b5b5b5;
+    outline: 0;
+    padding: 0 0;
+    height: 33px;
+    color: #5b5b5b;
+    font-size: 13px;
+}
+
+.sched-container .sched-form input[type="checkbox"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #003437;
+    height: 14px;
+    width:14px;
+    background: #fff;
+    outline: 0;
+}
+
+.sched-container .sched-form input[type="checkbox"]:checked{
+    background:url(../../images/signup/signup-check.html) center center no-repeat #fff;
+}
+
+.sched-container .sched-keeplogin{
+    margin: 22px 0 0;
+}
+.sched-container .sched-keeplogin span{
+    margin: 0 0 0 8px;
+}
+.sched-container .sched-form input[type="submit"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 160px;
+    width: 100%;
+    height: 62px;
+    border: 2px solid #7a9a9d;
+    color: #014046;
+    font-family: 'Termina';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    background: url(../../images/palm-2.png) 25px center no-repeat;
+    background-size: 22px auto;
+    padding: 7px 0 7px 22px;
+    outline: 0;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+}
+.sched-container .sched-submit{
+    margin: 45px 0 0;
+}
+.sched-container .sched-submit input[type="submit"]:hover{
+    border: 2px solid #f5bcb4;
+}
+.sched-container .sched-reg{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.025em;
+    color:#5b5b5b;
+    text-align: center;
+    margin: 40px 0 0;
+}
+.sched-container .sched-reg a{
+    color:#6d8fcf;
+}
+.sched-container .sched-reg a:hover{
+    color:#5b5b5b;
+}
+.sched-idxb{
+    text-align: center;
+    margin: 40px 0 0;
+}
+.sched-idxb a{
+    color:#6d8fcf;
+}
+.sched-idxb a:hover{
+    color:#5b5b5b;
+}
+#IDX-main{
+    padding: 0 0;
+}
+#idx-unlocked-notification,
+#IDX-scheduleshowingMissingPropertyAlert{
+    display: none;
+}
+#IDX-scheduleshowingContainer > .IDX-row > div{
+    width: 100% !important;
+    margin: 0 0 0 !important;
+}
+.IDX-wrapper-standard #IDX-scheduleshowingContainer{
+    text-align: center;
+}
+.IDX-wrapper-standard h2#IDX-scheduleshowingHeader{
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #014046;
+    padding: 0 0 30px;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+}
+.IDX-wrapper-standard h2#IDX-scheduleshowingHeader:after{
+    content:'';
+    display: block;
+    position: absolute;
+    width: calc(100% - 30px);
+    max-width: 248px;
+    height: 3px;
+    background:#f7c1b9;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+.IDX-wrapper-standard h2#IDX-scheduleshowingHeader span{
+    font-weight: 400;
+}
+.IDX-wrapper-standard .IDX-alert-info {
+    background-color: transparent;
+    border: 0px #bce8f1;
+    color: #000;
+    padding: 0 0 0;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.IDX-wrapper-standard .IDX-alert>p{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 0.025em;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 0 0;
+    font-weight: 500;
+}
+.IDX-wrapper-standard .IDX-panel-default{
+    border: 0px;
+    box-shadow: 0 0px 0px rgba(0,0,0,.05);
+}
+.IDX-wrapper-standard .IDX-panel-body{
+    padding: 0;
+    text-align: center;
+}
+.IDX-wrapper-standard hr{
+    display: none;
+}
+.IDX-wrapper-standard #IDX-scheduleshowingFormText.IDX-well{
+    padding: 16px 55px 0;
+    border: 0px solid #e3e3e3;
+    background: none;
+    font-size: 12px;
+    letter-spacing: 0.025em;
+    line-height: 25px;
+    color: #000;
+    text-transform: uppercase;
+    box-shadow: inset 0 0px 0px rgba(0,0,0,.05);
+}
+.IDX-wrapper-standard #IDX-customRegistrationFields.IDX-row {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.IDX-wrapper-standard .IDX-row:after,
+.IDX-wrapper-standard .IDX-row:before{
+    /*display: none;*/
+}
+#IDX-main > div:nth-child(4){
+    display: none !important;
+}
+#IDX-message-group{
+    clear:both;
+}
+.IDX-wrapper-standard #IDX-customRegistrationFields.IDX-row > div{
+    margin: 47px 0 0;
+    width: calc(50% - 5px);
+    max-width: 237px;
+}
+.IDX-wrapper-standard #IDX-scheduleshowingContactForm label {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    display: block;
+    color: #5b5b5b;
+    text-align: left;
+    padding: 55px 0 0;
+}
+.IDX-wrapper-standard .IDX-row.IDX-customRegistrationFields{
+    /*margin-left:0;
+    margin-right:0;*/
+}
+.IDX-wrapper-standard #IDX-scheduleshowingContactForm .IDX-form-group {
+    margin-bottom: 0;
+}
+.IDX-wrapper-standard #IDX-scheduleshowingContactForm .IDX-form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border: 0px;
+    border-bottom: 1px solid #b5b5b5;
+    outline: 0;
+    padding: 0 0;
+    height: 33px;
+    color: #5b5b5b;
+    font-size: 13px;
+    box-shadow: 0px 0px 0px;
+}
+.IDX-wrapper-standard #IDX-scheduleshowingContactForm select.IDX-form-control{
+    background: url(../../images/schedule/dd-arrow.png) right center no-repeat;
+}
+.IDX-wrapper-standard #IDX-scheduleshowingContactForm textarea.IDX-form-control{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    height: 65px;
+    resize: none;
+    padding: 15px 0 0;
+}
+.IDX-wrapper-standard #IDX-signupFormActions{
+    margin: 23px 0 43px;
+}
+.IDX-wrapper-standard #IDX-scheduleshowingFormActions{
+    margin: 58px 0 0;
+}
+.IDX-wrapper-standard #IDX-scheduleshowingFormActions #IDX-submitBtn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    margin: 0 auto 0 0;
+    text-align: center;
+    max-width: 260px;
+    width: 100%;
+    height: 62px;
+    border: 2px solid #7a9a9d;
+    color: #014046;
+    font-family: 'Termina';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    background: url(../../images/palm-2.png) 25px center no-repeat;
+    background-size: 22px auto;
+    padding: 7px 0 7px 22px;
+    outline: 0;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+}
+.IDX-wrapper-standard #IDX-scheduleshowingFormActions #IDX-submitBtn:hover {
+    border: 2px solid #f5bcb4;
+}
+
+.IDX-wrapper-standard #IDX-scheduleshowingFormActions #IDX-resetBtn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    margin: 0 0 0 auto;
+    text-align: center;
+    max-width: 260px;
+    width: 100%;
+    height: 62px;
+    border: 2px solid #7a9a9d;
+    color: #014046;
+    font-family: 'Termina';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    background: url(../../images/palm-2.png) 25px center no-repeat;
+    background-size: 22px auto;
+    padding: 7px 0 7px 22px;
+    outline: 0;
+    transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+}
+.IDX-wrapper-standard #IDX-scheduleshowingFormActions #IDX-resetBtn:hover {
+    border: 2px solid #f5bcb4;
+}
+@media only screen and (max-width: 1440px) {
+    
+}
+@media only screen and (max-width: 1366px) {
+
+}
+@media only screen and (max-width: 1199px) {
+    .sched-title h1 strong {
+        font-size: 50px;
+    }
+    .sched-container {
+        /*max-width: 340px;
+        padding: 48px 25px 42px;*/
+    }
+}
+@media only screen and (max-width: 991px) {
+    #sched-wrap:before{
+        width: 100%;
+    }
+    #sched-wrap:after{
+        display: none;
+    }
+    .sched-title {
+        justify-content: center;
+        margin: 0 0 30px;
+    }
+    .sched-container{}
+    .sched-container .sched-dual-field{
+        margin: 30px 0 0;
+    }
+    .sched-container .sched-dual-field > div{
+        width: 100%;
+        margin: 30px 0 0;
+        max-width: none;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .sched-container {
+        padding: 48px 20px 30px;
+    }
+    .sched-title h1 strong{
+        font-size: 50px;
+    }
+    .sched-container .sched-form-title h2 {
+        font-size: 25px;
+    }
+    .IDX-wrapper-standard #IDX-scheduleshowingFormText.IDX-well {
+        padding: 16px 0 0;
+    }
+    .IDX-wrapper-standard #IDX-scheduleshowingContactForm label{
+        font-size: 13px;
+    }
+    .page-template-template-schedule .IDX-wrapper-standard #IDX-previousPage > div {
+        padding: 5px 15px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .IDX-wrapper-standard #IDX-scheduleshowingContactForm label{
+        padding: 10px 0 0;
+    }
+    .IDX-wrapper-standard #IDX-scheduleshowingContactForm label[for] {
+        padding: 35px 0 0;
+    }
+    .IDX-wrapper-standard #IDX-scheduleshowingFormActions #IDX-resetBtn,
+    .IDX-wrapper-standard #IDX-scheduleshowingFormActions #IDX-submitBtn{
+        margin: 10px auto;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .sched-title h1 strong {
+        font-size: 30px;
+        padding: 0 0 0 70px;
+        background-size: 60px auto;
+    }
+    .sched-title h1 span {
+        font-size: 18px;
+    }
+    .IDX-wrapper-standard h2#IDX-scheduleshowingHeader {
+        font-size: 17px;
+    }
+    .IDX-wrapper-standard #IDX-customRegistrationFields.IDX-row > div {
+        margin: 20px 0 0;
+        width: 100%;
+        max-width: none;
+    }
+}
