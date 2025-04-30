@@ -451,7 +451,7 @@
 .le-industry .industry-wrapper{
 	position: relative;
 	z-index: 1;
-	padding: 80px 0 0;
+	padding: 8px 0 0;
 }
 .le-industry .industry-title{
 	display: flex;
