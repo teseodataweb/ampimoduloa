@@ -441,7 +441,6 @@
   }
   .about-wrapper .about-title h2 {
     padding: 0 0 0 85px;
-    background: url(images/palms-2.png) left center no-repeat;
     background-size: 75px auto;
     font-size: 45px;
   }
@@ -1062,7 +1061,6 @@
   .media-wrapper .media-title h2 strong {
     font-size: 37px;
     padding: 0 0 0 65px;
-    background: url(images/palms-2.png) left center no-repeat;
     background-size: 55px auto;
   }
   .media-slide .media-single > a {
