@@ -954,6 +954,39 @@
         width: 26px;
         background: #fff;
       }
+      .mobile-nav.is-active {
+        left: 0;
+        opacity: 1;}
+        .mobile-nav.active {
+          left: 0 !important;
+          opacity: 1 !important;
+          display: flex !important;
+          transition: left 0.3s ease, opacity 0.3s ease;
+        }
+
+        body.menu-open {
+          overflow: hidden;
+        }
+        .mobile-nav .sub-menu,
+        .mobile-nav .sub-menu li,
+        .mobile-nav .sub-menu li a {
+          pointer-events: auto !important;
+          z-index: 10 !important;
+          position: relative;
+        }
+      .mobile-nav.is-active {
+        left: 0;
+        opacity: 1;}
+        .mobile-nav.active {
+          left: 0 !important;
+          opacity: 1 !important;
+          display: flex !important;
+          transition: left 0.3s ease, opacity 0.3s ease;
+        }
+
+        body.menu-open {
+          overflow: hidden;
+        }
       .fh-contact li div span:first-child {
         margin: 0;
       }
@@ -1027,6 +1060,12 @@
         position: absolute;
         top: 12px;
         right: 12px;
+        cursor: pointer;
+        z-index: 10;
+        cursor: pointer;
+        z-index: 10;
+        cursor: pointer;
+        z-index: 10;
       }
       #hp-top {
         position: relative;
@@ -3202,14 +3241,14 @@
                       id="menu-item-5009"
                       class="mobile-only menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-5009"
                     >
-                      <a href="../index.html" data-title="Home">Home</a>
+                      <a href="../index.html" data-title="Home">INICIO</a>
                     </li>
                     <li
                       id="menu-item-3371"
                       class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3371"
                     >
                       <a
-                        href="../buy-with-us/index.html"
+                        href="#"
                         aria-current="page"
                         data-title="Buyers"
                         >GUÍAS Y RECURSOS</a
@@ -3220,10 +3259,10 @@
                           class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item menu-item-1716"
                         >
                           <a
-                            href="../buy-with-us/index.html"
+                            href="../distinctive-sales/index.html"
                             aria-current="page"
                             data-title="Buy with us"
-                            >GUÍA PARA COMPRADORES</a
+                            >PREGUNTAS FRECUENTES</a
                           >
                         </li>
                         <li
@@ -3231,9 +3270,9 @@
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"
                         >
                           <a
-                            href="../neighborhood-guides/index.html"
+                            href="../testimonials/index.html"
                             data-title="Neighborhood Guides"
-                            >GUÍA PARA VENDEDORES</a
+                            >EVENTOS</a
                           >
                         </li>
                         <li
@@ -3241,9 +3280,9 @@
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319"
                         >
                           <a
-                            href="../relocation/index.html"
+                            href="#"
                             data-title="Relocation"
-                            >INVERSIONISTAS Y RETIRADOS</a
+                            >CONVENIOS</a
                           >
                         </li>
                       </ul>
@@ -3253,23 +3292,56 @@
                       class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3453"
                     >
                       <a
-                        href="/list-with-us/index.html"
+                        href="../list-with-us/index.html"
                         data-title="Sellers"
-                        >CÓMO AFILIARSE</a
+                        >ÚNETE</a
                       >
                     </li>
                     <li
-                      id="menu-item-68"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-68"
+                    id="menu-item-3371"
+                    class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3371"
+                  >
+                    <a
+                      href="#"
+                      aria-current="page"
+                      data-title="Buyers"
+                      >NOSOTROS</a
                     >
-                      <a href="index.html" data-title="About Us">ACERCA DE</a>
-                    </li>
-                    <li
-                      id="menu-item-69"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-69"
-                    >
-                      <a href="#" data-title="In The Media">BLOG</a>
-                    </li>
+                    <ul class="sub-menu">
+                      <li
+                        id="menu-item-1716"
+                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item menu-item-1716"
+                      >
+                        <a
+                          href="#"
+                          aria-current="page"
+                          data-title="Buy with us"
+                          >ACERCA DE</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-1717"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"
+                      >
+                        <a
+                          href="../about-us/team/index.html"
+                          data-title="Neighborhood Guides"
+                          >COMITÉ</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-3319"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319"
+                      >
+                        <a
+                          href="../sellers/global-connections/index.html"
+                          data-title="Relocation"
+                          >FLEX</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                   
                     <li
                       id="menu-item-70"
                       class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"
@@ -3277,7 +3349,7 @@
                       <a
                         href="../contact-us/index.html"
                         data-title="Contact Us"
-                        >Contacto</a
+                        >CONTACTO</a
                       >
                     </li>
                   </ul>
@@ -3536,13 +3608,13 @@
                   <li
                     class="mobile-only menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-5009"
                   >
-                    <a href="../index.html" data-title="Home">Home</a>
+                    <a href="../index.html" data-title="Home">INICIO</a>
                   </li>
                   <li
                     class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3371"
                   >
                     <a
-                      href="../buy-with-us/index.html"
+                      href="#"
                       aria-current="page"
                       data-title="Buyers"
                       >GUÍAS Y RECURSOS</a
@@ -3552,28 +3624,28 @@
                         class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item menu-item-1716"
                       >
                         <a
-                          href="../buy-with-us/index.html"
+                          href="../distinctive-sales/index.html"
                           aria-current="page"
                           data-title="Buy with us"
-                          >Guía para compradores</a
+                          >PREGUNTAS FRECUENTES</a
                         >
                       </li>
                       <li
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"
                       >
                         <a
-                          href="../neighborhood-guides/index.html"
+                          href="../testimonials/index.html"
                           data-title="Neighborhood Guides"
-                          >Guía para Vendedores</a
+                          >EVENTOS</a
                         >
                       </li>
                       <li
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319"
                       >
                         <a
-                          href="../relocation/index.html"
+                          href="#"
                           data-title="Relocation"
-                          >Inversionistas y Retirados</a
+                          >CONVENIOS</a
                         >
                       </li>
                     </ul>
@@ -3582,30 +3654,57 @@
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3453"
                   >
                     <a
-                      href="/list-with-us/index.html"
+                      href="../list-with-us/index.html"
                       data-title="Sellers"
-                      >CÓMO AFILIARSE</a
+                      >ÚNETE</a
                     >
                   </li>
                   <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-68"
+                  class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3371"
+                >
+                  <a
+                    href="#"
+                    aria-current="page"
+                    data-title="Buyers"
+                    >NOSOTROS</a
                   >
-                    <a href="index.html" data-title="About Us">ACERCA DE</a>
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-69"
-                  >
-                    <a
-                      href="../in-the-media/index.html"
-                      data-title="In The Media"
-                      >BLOG</a
+                  <ul class="sub-menu">
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item menu-item-1716"
                     >
-                  </li>
+                      <a
+                        href="#"
+                        aria-current="page"
+                        data-title="Buy with us"
+                        >ACERCA DE</a
+                      >
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"
+                    >
+                      <a
+                        href="../about-us/team/index.html"
+                        data-title="Neighborhood Guides"
+                        >COMITÉ</a
+                      >
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319"
+                    >
+                      <a
+                        href="../sellers/global-connections/index.html"
+                        data-title="Relocation"
+                        >FLEX</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                  
                   <li
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"
                   >
                     <a href="../contact-us/index.html" data-title="Contact Us"
-                      >Contacto</a
+                      >CONTACTO</a
                     >
                   </li>
                 </ul>
@@ -3647,13 +3746,13 @@
                 <li
                   class="mobile-only menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-5009"
                 >
-                  <a href="../index.html" data-title="Home">Home</a>
+                  <a href="../index.html" data-title="Home">INICIO</a>
                 </li>
                 <li
                   class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3371"
                 >
                   <a
-                    href="../buy-with-us/index.htmll"
+                    href="#"
                     aria-current="page"
                     data-title="Buyers"
                     >GUÍAS Y RECURSOS</a
@@ -3663,28 +3762,28 @@
                       class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item menu-item-1716"
                     >
                       <a
-                        href="../buy-with-us/index.html"
+                        href="../distinctive-sales/index.html"
                         aria-current="page"
                         data-title="Buy with us"
-                        >GUÍA PARA COMPRADORES</a
+                        >PREGUNTAS FRECUENTES</a
                       >
                     </li>
                     <li
                       class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"
                     >
                       <a
-                        href="../neighborhood-guides/index.html"
+                        href="../testimonials/index.html"
                         data-title="Neighborhood Guides"
-                        >GUÍA PARA VENDEDORES</a
+                        >EVENTOS</a
                       >
                     </li>
                     <li
                       class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319"
                     >
                       <a
-                        href="../relocation/index.html"
+                        href="#"
                         data-title="Relocation"
-                        >INVERSIONISTAS Y RETIRADOS</a
+                        >CONVENIOS</a
                       >
                     </li>
                   </ul>
@@ -3693,26 +3792,58 @@
                   class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3453"
                 >
                   <a
-                    href="/list-with-us/index.html"
+                    href="../list-with-us/index.html"
                     data-title="Sellers"
-                    >CÓMO AFILIARSE</a
+                    >ÚNETE</a
                   >
                 </li>
                 <li
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-68"
+                  class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3371"
                 >
-                  <a href="index.html" data-title="About Us">ACERCA DE</a>
+                  <a
+                    href="#"
+                    aria-current="page"
+                    data-title="Buyers"
+                    >NOSOTROS</a
+                  >
+                  <ul class="sub-menu">
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item menu-item-1716"
+                    >
+                      <a
+                        href="#"
+                        aria-current="page"
+                        data-title="Buy with us"
+                        >ACERCA DE</a
+                      >
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"
+                    >
+                      <a
+                        href="../about-us/team/index.html"
+                        data-title="Neighborhood Guides"
+                        >COMITÉ
+                        </a
+                      >
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319"
+                    >
+                      <a
+                        href="../sellers/global-connections/index.html"
+                        data-title="Relocation"
+                        >FLEX</a
+                      >
+                    </li>
+                  </ul>
                 </li>
-                <li
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-69"
-                >
-                  <a href="#" data-title="In The Media">BLOG</a>
-                </li>
+                
                 <li
                   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"
                 >
                   <a href="../contact-us/index.html" data-title="Contact Us"
-                    >Contacto</a
+                    >CONTACTO</a
                   >
                 </li>
               </ul>

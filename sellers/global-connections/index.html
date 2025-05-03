@@ -955,6 +955,26 @@
         width: 26px;
         background: #fff;
       }
+      .mobile-nav.is-active {
+        left: 0;
+        opacity: 1;}
+        .mobile-nav.active {
+          left: 0 !important;
+          opacity: 1 !important;
+          display: flex !important;
+          transition: left 0.3s ease, opacity 0.3s ease;
+        }
+
+        body.menu-open {
+          overflow: hidden;
+        }
+        .mobile-nav .sub-menu,
+        .mobile-nav .sub-menu li,
+        .mobile-nav .sub-menu li a {
+          pointer-events: auto !important;
+          z-index: 10 !important;
+          position: relative;
+        }
       .fh-contact li div span:first-child {
         margin: 0;
       }
@@ -1028,6 +1048,11 @@
         position: absolute;
         top: 12px;
         right: 12px;
+        cursor: pointer;
+        z-index: 10;
+        
+        cursor: pointer;
+        z-index: 10;
       }
       #hp-top {
         position: relative;
@@ -3131,341 +3156,11 @@
       aria-hidden="true"
       data-acsb-hidden="true"
     >
-      <header class="header">
-        <div class="main-header">
-          <div class="container">
-            <div class="mh-wrapper">
-              <div class="logo">
-                <a
-                  href="../index.html"
-                  class="site-name"
-                  data-acsb-clickable="true"
-                  data-acsb-navigable="true"
-                  data-acsb-now-navigable="true"
-                  data-custom-button-processed="true"
-                >
-                  <div class="textwidget custom-html-widget">
-                    <!-- <img src="https://www.jillszeder.com/wp-content/themes/jillszeder.com/images/logo.png" alt="Jills Zeder Group" class="img-responsive" width="189" height="192" role="presentation"/> -->
-                    <span
-                      class="acsb-sr-only"
-                      data-acsb-sr-only="true"
-                      data-acsb-force-visible="true"
-                      data-acsb-sr-only-position="after"
-                      aria-hidden="false"
-                      data-acsb-hidden="false"
-                      ><img
-                        src="../../wp-content/themes/jillszeder.com/images/logoblanco.webp"
-                        alt="Logo AMPI Riviera Nayarit"
-                        class="img-responsive"
-                        width="189"
-                        height="192"
-                    /></span>
-                  </div>
-                </a>
-              </div>
-
-              <div class="mh-navs">
-                <nav class="navigation">
-                  <div class="menu-main-navigation-container">
-                    <ul id="nav" class="menu">
-                      <li
-                        id="menu-item-5009"
-                        class="mobile-only menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-5009"
-                      >
-                        <a href="index.html" data-title="Home">Home</a>
-                      </li>
-                      <li
-                        id="menu-item-3371"
-                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3371"
-                      >
-                        <a
-                          href="../../buy-with-us/index.html"
-                          aria-current="page"
-                          data-title="Buyers"
-                        >
-                          GUÍAS Y RECURSOS
-                        </a>
-
-                        <ul class="sub-menu">
-                          <li
-                            id="menu-item-1716"
-                            class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item menu-item-1716"
-                          >
-                            <a
-                              href="../../buy-with-us/index.html"
-                              aria-current="page"
-                              data-title="Buy with us"
-                              >GUÍA PARA COMPRADORES</a
-                            >
-                          </li>
-                          <li
-                            id="menu-item-1717"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"
-                          >
-                            <a
-                              href="../neighborhood-guides/index.html"
-                              data-title="Neighborhood Guides"
-                              >GUÍA PARA VENDEDORES</a
-                            >
-                          </li>
-                          <li
-                            id="menu-item-3319"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319"
-                          >
-                            <a
-                              href="../relocation/index.html"
-                              data-title="Relocation"
-                              >INVERSIONISTAS Y RETIRADOS</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li
-                        id="menu-item-3453"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3453"
-                      >
-                        <a href="/list-with-us/index.html" data-title="Sellers"
-                          >CÓMO AFILIARSE</a
-                        >
-                      </li>
-                      <li
-                        id="menu-item-68"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-68"
-                      >
-                        <a href="index.html" data-title="About Us">ACERCA DE</a>
-                      </li>
-                      <li
-                        id="menu-item-69"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-69"
-                      >
-                        <a href="#" data-title="In The Media">BLOG</a>
-                      </li>
-                      <li
-                        id="menu-item-70"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"
-                      >
-                        <a
-                          href="../contact-us/index.html"
-                          data-title="Contact Us"
-                          >Contacto</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-
-              <div
-                class="mh-contact"
-                aria-hidden="true"
-                data-acsb-hidden="true"
-              >
-                <div class="textwidget custom-html-widget">
-                  <ul
-                    class="contact-list hidden"
-                    aria-hidden="true"
-                    data-acsb-hidden="true"
-                  >
-                    <li>
-                      <span class="ai-font-phone"></span>
-                      <ul>
-                        <li>
-                          <a
-                            href="tel:+1.305.722.5721"
-                            class="aios-ai-phone"
-                            aria-label="+1.305.722.5721"
-                            ><span>Coral Gables Office</span> 305.722.5721</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="tel:+1.305.341.7447"
-                            class="aios-ai-phone"
-                            aria-label="+1.305.341.7447"
-                            ><span>Miami Beach Office</span> 305.341.7447</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="ai-font-envelope"></span>
-                      <ul class="email-list">
-                        <li>
-                          <a
-                            class="asis-mailto-obfuscated-email-hidden asis-mailto-obfuscated-email"
-                            aria-label="cg(at)jillszeder(dotted)com"
-                            data-value="cg(at)jillszeder(dotted)com"
-                            ><span>Coral Gables Office</span>
-                            cg(at)jillszeder(dotted)com</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="asis-mailto-obfuscated-email-hidden asis-mailto-obfuscated-email"
-                            aria-label="mb(at)jillszeder(dotted)com"
-                            data-value="mb(at)jillszeder(dotted)com"
-                            ><span>Miami Beach Office</span>
-                            mb(at)jillszeder(dotted)com</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="header-sm blend-green"
-          aria-hidden="true"
-          data-acsb-hidden="true"
-        >
-          <div class="sm-wrapper">
-            <div class="textwidget custom-html-widget">
-              <ul class="sm-list">
-                <li>
-                  <a
-                    href="https://www.facebook.com/thejillszedergroup/"
-                    target="_blank"
-                    rel="noopener"
-                    data-acsb-tooltip="New Window"
-                    data-acsb-clickable="true"
-                    data-acsb-navigable="true"
-                    data-acsb-now-navigable="true"
-                  >
-                    <em class="ai-font-facebook"></em>
-                    <em class="hidden">Facebook</em>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.youtube.com/c/thejillsteam/featured"
-                    target="_blank"
-                    aria-label="Youtube"
-                    rel="noopener"
-                    data-acsb-tooltip="New Window"
-                    data-acsb-clickable="true"
-                    data-acsb-navigable="true"
-                    data-acsb-now-navigable="true"
-                  >
-                    <em class="ai-font-youtube"></em>
-                    <em class="hidden">Youtube</em>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/company/the-jills-at-coldwell-banker/"
-                    target="_blank"
-                    aria-label="Linkedin"
-                    rel="noopener"
-                    data-acsb-tooltip="New Window"
-                    data-acsb-clickable="true"
-                    data-acsb-navigable="true"
-                    data-acsb-now-navigable="true"
-                  >
-                    <em class="ai-font-linkedin"></em>
-                    <em class="hidden">Linkedin</em>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/jillszeder"
-                    target="_blank"
-                    aria-label="Twitter"
-                    rel="noopener"
-                    data-acsb-tooltip="New Window"
-                    data-acsb-clickable="true"
-                    data-acsb-navigable="true"
-                    data-acsb-now-navigable="true"
-                  >
-                    <em class="ai-font-twitter"></em>
-                    <em class="hidden">Twitter</em>
-                  </a>
-                </li>
-                <li class="fixed-instagram">
-                  <span>
-                    <em class="ai-font-instagram"></em>
-                  </span>
-                  <ul>
-                    <li>
-                      <a
-                        href="https://www.instagram.com/jillszedergables"
-                        target="_blank"
-                        aria-label="Instagram"
-                        rel="noopener"
-                        data-acsb-tooltip="New Window"
-                        data-acsb-clickable="true"
-                        data-acsb-navigable="true"
-                        data-acsb-now-navigable="true"
-                        ><em class="ai-font-instagram"></em> Coral Gables</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.instagram.com/jillszederbeach/"
-                        target="_blank"
-                        aria-label="Instagram"
-                        rel="noopener"
-                        data-acsb-tooltip="New Window"
-                        data-acsb-clickable="true"
-                        data-acsb-navigable="true"
-                        data-acsb-now-navigable="true"
-                        ><em class="ai-font-instagram"></em> Miami Beach</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="ip-mob-logo" aria-hidden="true" data-acsb-hidden="true">
-          <div class="logo">
-            <a
-              href="../index.html"
-              class="site-name"
-              data-acsb-clickable="true"
-              data-acsb-navigable="true"
-              data-acsb-now-navigable="true"
-              data-custom-button-processed="true"
-            >
-              <div class="textwidget custom-html-widget">
-                <!-- <img src="https://www.jillszeder.com/wp-content/themes/jillszeder.com/images/logo.png" alt="Jills Zeder Group" class="img-responsive" width="189" height="192" role="presentation"/> -->
-                <span
-                  class="acsb-sr-only"
-                  data-acsb-sr-only="true"
-                  data-acsb-force-visible="true"
-                  data-acsb-sr-only-position="after"
-                  aria-hidden="false"
-                  data-acsb-hidden="false"
-                  ><img
-                    src="../../wp-content/themes/jillszeder.com/images/logoblanco.webp"
-                    alt="Logo AMPI Riviera Nayarit"
-                    class="img-responsive"
-                    width="189"
-                    height="192"
-                /></span>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div
-          class="fixed-header acsb-bg-image"
-          role="navigation"
-          aria-hidden="true"
-          data-acsb-hidden="true"
-        >
-          <div
-            class="fh-wrapper"
-            role="navigation"
-            aria-hidden="true"
-            data-acsb-hidden="true"
-          >
-            <div class="fh-logo">
+    <header class="header">
+      <div class="main-header">
+        <div class="container">
+          <div class="mh-wrapper">
+            <div class="logo">
               <a
                 href="../index.html"
                 class="site-name"
@@ -3484,8 +3179,8 @@
                     aria-hidden="false"
                     data-acsb-hidden="false"
                     ><img
-                      src="../../wp-content/themes/jillszeder.com/images/logoblanco4x4.webp"
-                      alt="Logo AMPI RIVIERA NAYARIT"
+                      src="../../wp-content/themes/jillszeder.com/images/logoampi.png"
+                      alt="Logo AMPI Riviera Nayarit"
                       class="img-responsive"
                       width="189"
                       height="192"
@@ -3494,88 +3189,123 @@
               </a>
             </div>
 
-            <div
-              class="fh-nav"
-              role="navigation"
-              aria-hidden="true"
-              data-acsb-hidden="true"
-            >
+            <div class="mh-navs">
               <nav class="navigation">
                 <div class="menu-main-navigation-container">
-                  <ul id="fixednav" class="menu">
+                  <ul id="nav" class="menu">
                     <li
+                      id="menu-item-5009"
                       class="mobile-only menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-5009"
                     >
-                      <a href="../index.html" data-title="Home">Home</a>
+                      <a href="../../index.html" data-title="Home">INICIO</a>
                     </li>
                     <li
+                      id="menu-item-3371"
                       class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3371"
                     >
                       <a
-                        href="../../buy-with-us/index.html"
+                        href="#"
                         aria-current="page"
                         data-title="Buyers"
                         >GUÍAS Y RECURSOS</a
                       >
                       <ul class="sub-menu">
                         <li
+                          id="menu-item-1716"
                           class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item menu-item-1716"
                         >
                           <a
-                            href="../../buy-with-us/index.html"
+                            href="../../distinctive-sales/index.html"
                             aria-current="page"
                             data-title="Buy with us"
-                            >Guía para compradores</a
+                            >PREGUNTAS FRECUENTES</a
                           >
                         </li>
                         <li
+                          id="menu-item-1717"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"
                         >
                           <a
-                            href="../../neighborhood-guides/index.html"
+                            href="../../testimonials/index.html"
                             data-title="Neighborhood Guides"
-                            >Guía para Vendedores</a
+                            >EVENTOS</a
                           >
                         </li>
                         <li
+                          id="menu-item-3319"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319"
                         >
                           <a
-                            href="../../relocation/index.html"
+                            href="#"
                             data-title="Relocation"
-                            >Inversionistas y Retirados</a
+                            >CONVENIOS</a
                           >
                         </li>
                       </ul>
                     </li>
                     <li
+                      id="menu-item-3453"
                       class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3453"
                     >
                       <a
                         href="../../list-with-us/index.html"
                         data-title="Sellers"
-                        >CÓMO AFILIARSE</a
+                        >ÚNETE</a
                       >
                     </li>
                     <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-68"
+                    id="menu-item-3371"
+                    class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3371"
+                  >
+                    <a
+                      href="#"
+                      aria-current="page"
+                      data-title="Buyers"
+                      >NOSOTROS</a
                     >
-                      <a href="../../about-us/index.html" data-title="About Us"
-                        >ACERCA DE</a
+                    <ul class="sub-menu">
+                      <li
+                        id="menu-item-1716"
+                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item menu-item-1716"
                       >
-                    </li>
+                        <a
+                          href="../index.html"
+                          aria-current="page"
+                          data-title="Buy with us"
+                          >ACERCA DE</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-1717"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"
+                      >
+                        <a
+                          href="../../about-us/team/index.html"
+                          data-title="Neighborhood Guides"
+                          >COMITÉ</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-3319"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319"
+                      >
+                        <a
+                          href="../../sellers/global-connections/index.html"
+                          data-title="Relocation"
+                          >FLEX</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                   
                     <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-69"
-                    >
-                      <a href="#" data-title="In The Media">BLOG</a>
-                    </li>
-                    <li
+                      id="menu-item-70"
                       class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"
                     >
                       <a
                         href="../../contact-us/index.html"
                         data-title="Contact Us"
-                        >Contacto</a
+                        >CONTACTO</a
                       >
                     </li>
                   </ul>
@@ -3583,47 +3313,264 @@
               </nav>
             </div>
 
-            <div class="fh-contact" aria-hidden="true" data-acsb-hidden="true">
+            <div
+              class="mh-contact"
+              aria-hidden="true"
+              data-acsb-hidden="true"
+            >
               <div class="textwidget custom-html-widget">
-                <ul>
-                  <!--<li>
-		  [ai_phone href="+1.305.722.5721" unwrap_em="true"]<span>Coral Gables Office</span>305.722.5721[/ai_phone]
-		</li>
-		<li>
-		  [ai_phone href="+1.305.341.7447" unwrap_em="true"]<span>Miami Beach Office</span> 305.341.7447[/ai_phone]					
-		</li>-->
+                <ul
+                  class="contact-list hidden"
+                  aria-hidden="true"
+                  data-acsb-hidden="true"
+                >
                   <li>
-                    <div class="nav-trigger">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
+                    <span class="ai-font-phone"></span>
+                    <ul>
+                      <li>
+                        <a
+                          href="tel:+1.305.722.5721"
+                          class="aios-ai-phone"
+                          aria-label="+1.305.722.5721"
+                          ><span>Coral Gables Office</span> 305.722.5721</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="tel:+1.305.341.7447"
+                          class="aios-ai-phone"
+                          aria-label="+1.305.341.7447"
+                          ><span>Miami Beach Office</span> 305.341.7447</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="ai-font-envelope"></span>
+                    <ul class="email-list">
+                      <li>
+                        <a
+                          class="asis-mailto-obfuscated-email-hidden asis-mailto-obfuscated-email"
+                          aria-label="cg(at)jillszeder(dotted)com"
+                          data-value="cg(at)jillszeder(dotted)com"
+                          ><span>Coral Gables Office</span>
+                          cg(at)jillszeder(dotted)com</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="asis-mailto-obfuscated-email-hidden asis-mailto-obfuscated-email"
+                          aria-label="mb(at)jillszeder(dotted)com"
+                          data-value="mb(at)jillszeder(dotted)com"
+                          ><span>Miami Beach Office</span>
+                          mb(at)jillszeder(dotted)com</a
+                        >
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="mobile-nav" aria-hidden="true" data-acsb-hidden="true">
-          <div class="mobnav-close">
-            <span role="presentation" class="ai-font-close-b"></span>
+      <div
+        class="header-sm blend-green"
+        aria-hidden="true"
+        data-acsb-hidden="true"
+      >
+        <div class="sm-wrapper">
+          <div class="textwidget custom-html-widget">
+            <ul class="sm-list">
+              <li>
+                <a
+                  href="https://www.facebook.com/thejillszedergroup/"
+                  target="_blank"
+                  rel="noopener"
+                  data-acsb-tooltip="New Window"
+                  data-acsb-clickable="true"
+                  data-acsb-navigable="true"
+                  data-acsb-now-navigable="true"
+                >
+                  <em class="ai-font-facebook"></em>
+                  <em class="hidden">Facebook</em>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/c/thejillsteam/featured"
+                  target="_blank"
+                  aria-label="Youtube"
+                  rel="noopener"
+                  data-acsb-tooltip="New Window"
+                  data-acsb-clickable="true"
+                  data-acsb-navigable="true"
+                  data-acsb-now-navigable="true"
+                >
+                  <em class="ai-font-youtube"></em>
+                  <em class="hidden">Youtube</em>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/the-jills-at-coldwell-banker/"
+                  target="_blank"
+                  aria-label="Linkedin"
+                  rel="noopener"
+                  data-acsb-tooltip="New Window"
+                  data-acsb-clickable="true"
+                  data-acsb-navigable="true"
+                  data-acsb-now-navigable="true"
+                >
+                  <em class="ai-font-linkedin"></em>
+                  <em class="hidden">Linkedin</em>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/jillszeder"
+                  target="_blank"
+                  aria-label="Twitter"
+                  rel="noopener"
+                  data-acsb-tooltip="New Window"
+                  data-acsb-clickable="true"
+                  data-acsb-navigable="true"
+                  data-acsb-now-navigable="true"
+                >
+                  <em class="ai-font-twitter"></em>
+                  <em class="hidden">Twitter</em>
+                </a>
+              </li>
+              <li class="fixed-instagram">
+                <span>
+                  <em class="ai-font-instagram"></em>
+                </span>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/jillszedergables"
+                      target="_blank"
+                      aria-label="Instagram"
+                      rel="noopener"
+                      data-acsb-tooltip="New Window"
+                      data-acsb-clickable="true"
+                      data-acsb-navigable="true"
+                      data-acsb-now-navigable="true"
+                      ><em class="ai-font-instagram"></em> Coral Gables</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/jillszederbeach/"
+                      target="_blank"
+                      aria-label="Instagram"
+                      rel="noopener"
+                      data-acsb-tooltip="New Window"
+                      data-acsb-clickable="true"
+                      data-acsb-navigable="true"
+                      data-acsb-now-navigable="true"
+                      ><em class="ai-font-instagram"></em> Miami Beach</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="ip-mob-logo" aria-hidden="true" data-acsb-hidden="true">
+        <div class="logo">
+          <a
+            href="../index.html"
+            class="site-name"
+            data-acsb-clickable="true"
+            data-acsb-navigable="true"
+            data-acsb-now-navigable="true"
+            data-custom-button-processed="true"
+          >
+            <div class="textwidget custom-html-widget">
+              <!-- <img src="https://www.jillszeder.com/wp-content/themes/jillszeder.com/images/logo.png" alt="Jills Zeder Group" class="img-responsive" width="189" height="192" role="presentation"/> -->
+              <span
+                class="acsb-sr-only"
+                data-acsb-sr-only="true"
+                data-acsb-force-visible="true"
+                data-acsb-sr-only-position="after"
+                aria-hidden="false"
+                data-acsb-hidden="false"
+                ><img
+                  src="../../wp-content/themes/jillszeder.com/images/logoampi.png"
+                  alt="Logo AMPI Riviera Nayarit"
+                  class="img-responsive"
+                  width="189"
+                  height="192"
+              /></span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="fixed-header acsb-bg-image"
+        role="navigation"
+        aria-hidden="true"
+        data-acsb-hidden="true"
+      >
+        <div
+          class="fh-wrapper"
+          role="navigation"
+          aria-hidden="true"
+          data-acsb-hidden="true"
+        >
+          <div class="fh-logo">
+            <a
+              href="../index.html"
+              class="site-name"
+              data-acsb-clickable="true"
+              data-acsb-navigable="true"
+              data-acsb-now-navigable="true"
+              data-custom-button-processed="true"
+            >
+              <div class="textwidget custom-html-widget">
+                <!-- <img src="https://www.jillszeder.com/wp-content/themes/jillszeder.com/images/logo.png" alt="Jills Zeder Group" class="img-responsive" width="189" height="192" role="presentation"/> -->
+                <span
+                  class="acsb-sr-only"
+                  data-acsb-sr-only="true"
+                  data-acsb-force-visible="true"
+                  data-acsb-sr-only-position="after"
+                  aria-hidden="false"
+                  data-acsb-hidden="false"
+                  ><img
+                    src="../../wp-content/themes/jillszeder.com/images/logoampi.png"
+                    alt="Logo AMPI RIVIERA NAYARIT"
+                    class="img-responsive"
+                    width="189"
+                    height="192"
+                /></span>
+              </div>
+            </a>
           </div>
 
-          <div class="nav-wrapper">
+          <div
+            class="fh-nav"
+            role="navigation"
+            aria-hidden="true"
+            data-acsb-hidden="true"
+          >
             <nav class="navigation">
               <div class="menu-main-navigation-container">
-                <ul id="mobnav" class="menu">
+                <ul id="fixednav" class="menu">
                   <li
                     class="mobile-only menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-5009"
                   >
-                    <a href="../index.html" data-title="Home">Home</a>
+                    <a href="../../index.html" data-title="Home">INICIO</a>
                   </li>
                   <li
                     class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3371"
                   >
                     <a
-                      href="../../buy-with-us/index.html"
+                      href="#"
                       aria-current="page"
                       data-title="Buyers"
                       >GUÍAS Y RECURSOS</a
@@ -3633,28 +3580,28 @@
                         class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item menu-item-1716"
                       >
                         <a
-                          href="../../buy-with-us/index.html"
+                          href="../../distinctive-sales/index.html"
                           aria-current="page"
                           data-title="Buy with us"
-                          >GUÍA PARA COMPRADORES</a
+                          >PREGUNTAS FRECUENTES</a
                         >
                       </li>
                       <li
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"
                       >
                         <a
-                          href="../neighborhood-guides/index.html"
+                          href="../../testimonials/index.html"
                           data-title="Neighborhood Guides"
-                          >GUÍA PARA VENDEDORES</a
+                          >EVENTOS</a
                         >
                       </li>
                       <li
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319"
                       >
                         <a
-                          href="../relocation/index.html"
+                          href="#"
                           data-title="Relocation"
-                          >INVERSIONISTAS Y RETIRADOS</a
+                          >CONVENIOS</a
                         >
                       </li>
                     </ul>
@@ -3662,33 +3609,235 @@
                   <li
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3453"
                   >
-                    <a href="/list-with-us/index.html" data-title="Sellers"
-                      >CÓMO AFILIARSE</a
+                    <a
+                      href="../../list-with-us/index.html"
+                      data-title="Sellers"
+                      >ÚNETE</a
                     >
                   </li>
                   <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-68"
+                  class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3371"
+                >
+                  <a
+                    href="#"
+                    aria-current="page"
+                    data-title="Buyers"
+                    >NOSOTROS</a
                   >
-                    <a href="index.html" data-title="About Us">ACERCA DE</a>
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-69"
-                  >
-                    <a href="#" data-title="In The Media">BLOG</a>
-                  </li>
+                  <ul class="sub-menu">
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item menu-item-1716"
+                    >
+                      <a
+                        href="../index.html"
+                        aria-current="page"
+                        data-title="Buy with us"
+                        >ACERCA DE</a
+                      >
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"
+                    >
+                      <a
+                        href="../../about-us/team/index.html"
+                        data-title="Neighborhood Guides"
+                        >COMITÉ</a
+                      >
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319"
+                    >
+                      <a
+                        href="../../sellers/global-connections/index.html"
+                        data-title="Relocation"
+                        >FLEX</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                  
                   <li
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"
                   >
-                    <a href="../contact-us/index.html" data-title="Contact Us"
-                      >Contacto</a
+                    <a href="../../contact-us/index.html" data-title="Contact Us"
+                      >CONTACTO</a
                     >
                   </li>
                 </ul>
               </div>
             </nav>
           </div>
+
+          <div class="fh-contact" aria-hidden="true" data-acsb-hidden="true">
+            <div class="textwidget custom-html-widget">
+              <ul>
+                <!--<li>
+    [ai_phone href="+1.305.722.5721" unwrap_em="true"]<span>Coral Gables Office</span>305.722.5721[/ai_phone]
+  </li>
+  <li>
+    [ai_phone href="+1.305.341.7447" unwrap_em="true"]<span>Miami Beach Office</span> 305.341.7447[/ai_phone]					
+  </li>-->
+                <li>
+                  <div class="nav-trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </header>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const navTrigger = document.querySelector(".nav-trigger");
+          const mobileNav = document.querySelector(".mobile-nav");
+          const closeBtn = document.querySelector(".mobnav-close");
+      
+          if (navTrigger && mobileNav && closeBtn) {
+            navTrigger.addEventListener("click", function () {
+              mobileNav.classList.add("active");
+              document.body.classList.add("menu-open");
+              mobileNav.setAttribute("aria-hidden", "false");
+            });
+      
+            closeBtn.addEventListener("click", function () {
+              mobileNav.classList.remove("active");
+              document.body.classList.remove("menu-open");
+              mobileNav.setAttribute("aria-hidden", "true");
+            });
+      
+            // Cierre el menú al hacer clic en cualquier link
+            document.querySelectorAll("#mobnav a").forEach(link => {
+              link.addEventListener("click", () => {
+                mobileNav.classList.remove("active");
+                document.body.classList.remove("menu-open");
+                mobileNav.setAttribute("aria-hidden", "true");
+              });
+            });
+          }
+        });
+      </script>
+
+      <div class="mobile-nav" aria-hidden="true" data-acsb-hidden="true">
+        <div class="mobnav-close">
+          <span role="presentation" class="ai-font-close-b"></span>
+        </div>
+
+        <div class="nav-wrapper">
+          <nav class="navigation">
+            <div class="menu-main-navigation-container">
+              <ul id="mobnav" class="menu">
+                <li
+                  class="mobile-only menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-5009"
+                >
+                  <a href="../../index.html" data-title="Home">INICIO</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3371"
+                >
+                  <a
+                    href="#"
+                    aria-current="page"
+                    data-title="Buyers"
+                    >GUÍAS Y RECURSOS</a
+                  >
+                  <ul class="sub-menu">
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item menu-item-1716"
+                    >
+                      <a
+                        href="../../distinctive-sales/index.html"
+                        aria-current="page"
+                        data-title="Buy with us"
+                        >PREGUNTAS FRECUENTES</a
+                      >
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"
+                    >
+                      <a
+                        href="../../testimonials/index.html"
+                        data-title="Neighborhood Guides"
+                        >EVENTOS</a
+                      >
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319"
+                    >
+                      <a
+                        href="#"
+                        data-title="Relocation"
+                        >CONVENIOS</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3453"
+                >
+                  <a
+                    href="../../list-with-us/index.html"
+                    data-title="Sellers"
+                    >ÚNETE</a
+                  >
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3371"
+                >
+                  <a
+                    href="#"
+                    aria-current="page"
+                    data-title="Buyers"
+                    >NOSOTROS</a
+                  >
+                  <ul class="sub-menu">
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1714 current_page_item menu-item-1716"
+                    >
+                      <a
+                        href="../../index.html"
+                        aria-current="page"
+                        data-title="Buy with us"
+                        >ACERCA DE</a
+                      >
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"
+                    >
+                      <a
+                        href="../../about-us/team/index.html"
+                        data-title="Neighborhood Guides"
+                        >COMITÉ
+                        </a
+                      >
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319"
+                    >
+                      <a
+                        href="#"
+                        data-title="Relocation"
+                        >FLEX</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"
+                >
+                  <a href="../../contact-us/index.html" data-title="Contact Us"
+                    >CONTACTO</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
 
       <div id="scroll-down" aria-hidden="true" data-acsb-hidden="true">
         <ul
