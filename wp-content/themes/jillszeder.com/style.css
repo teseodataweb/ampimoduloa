@@ -918,7 +918,6 @@ body.page-id-0 > img, body.page-id-0 > iframe {
   width: 100%;
   opacity: 0;
   pointer-events: none;
-  background: url(images/fh-bg.jpg) center center no-repeat #014046;
   background-size: cover;
   padding: 10px 0;
   /*max-height: 100px;*/
@@ -3692,7 +3691,6 @@ li .cta-single a .cta-hover .cta-name span {
   font-weight: 700;
   letter-spacing: 0.025em;
   text-transform: uppercase;
-  background: url(images/palm-2-hp.png) 25px center no-repeat;
   background-size: 18px auto;
   padding: 7px 0 7px 22px;
   outline: 0;
@@ -4172,7 +4170,6 @@ li .cta-single a .cta-hover .cta-name span {
   font-weight: 700;
   letter-spacing: 0.025em;
   text-transform: uppercase;
-  background: url(images/palm-2-hp.png) 25px center no-repeat;
   background-size: 18px auto;
   padding: 7px 0 7px 22px;
   outline: 0;
@@ -4341,7 +4338,6 @@ span.join-network-verbiage {
   font-weight: 700;
   letter-spacing: 0.025em;
   text-transform: uppercase;
-  background: url(images/palm-2-hp.png) 25px center no-repeat;
   background-size: 18px auto;
   padding: 7px 0 7px 22px;
   outline: 0;

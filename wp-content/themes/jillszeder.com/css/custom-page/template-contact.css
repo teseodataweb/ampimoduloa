@@ -544,7 +544,7 @@ div#inner-page-wrapper > .container {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    width: 50%;
+    width: 100%;
 }
 
 .contact-map-col:first-child:after {
@@ -688,7 +688,6 @@ div.wpcf7 .ajax-loader {
     color: #fff;
     text-transform: uppercase;
     padding: 0 0 0 98px;
-    background: url(../../images/contact/ip-contact-title-logo.png) left center no-repeat;
     background-size: 88px auto;
 }
 
