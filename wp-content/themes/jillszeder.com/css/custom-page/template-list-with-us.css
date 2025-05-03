@@ -85,7 +85,6 @@
     color: #014046;
     text-transform: uppercase;
     padding: 0 0 0 98px;
-    background: url(../../images/palms-2.png) left center no-repeat;
     background-size: 88px auto;
 }
 .lwu-title span{
@@ -108,7 +107,7 @@
     top: 0;
     bottom: 0;
     margin: auto 0;
-    background: #f7c1b9;
+    background: #dac2a8
 }
 .lwu-container{
 	width:calc(100% - 30px);
@@ -174,7 +173,6 @@
     color: #014046;
     text-transform: uppercase;
     padding: 0 0 0 98px;
-    background: url(../../images/palms-2.png) left center no-repeat;
     background-size: 88px auto;
 }
 .brand-wrapper .brand-title span{
@@ -197,7 +195,7 @@
     top: 0;
     bottom: 0;
     margin: auto 0;
-    background: #f7c1b9;
+    background: #dac2a8
 }
 
 .brand-wrapper .brand-text{
@@ -282,7 +280,6 @@
     color: #fff;
     text-transform: uppercase;
     padding: 0 0 0 91px;
-    background: url(../../images/palms-1.png) left center no-repeat;
     background-size: 81px auto;
 }
 .lwu-team .team-title span{
@@ -305,7 +302,7 @@
     top: 0;
     bottom: 0;
     margin: auto 0;
-    background: #f7c1b9;
+    background: #dac2a8
 }
 .lwu-team .team-text{
 	font-size: 15px;
@@ -404,7 +401,6 @@
     color: #014046;
     text-transform: uppercase;
     padding: 0 0 0 98px;
-    background: url(../../images/palms-2.png) left center no-repeat;
     background-size: 88px auto;
 }
 .legacy-wrapper .legacy-title span{
@@ -427,7 +423,7 @@
     top: 0;
     bottom: 0;
     margin: auto 0;
-    background: #f7c1b9;
+    background: #dac2a8
 }
 
 .legacy-wrapper .legacy-text{
@@ -518,7 +514,6 @@
     color: #fff;
     text-transform: uppercase;
     padding: 0 0 0 91px;
-    background: url(../../images/palms-1.png) left center no-repeat;
     background-size: 81px auto;
 }
 .global-wrapper .global-title span{
@@ -541,7 +536,7 @@
     top: 0;
     bottom: 0;
     margin: auto 0;
-    background: #f7c1b9;
+    background: #dac2a8
 }
 .global-wrapper .global-text{
 	font-size: 18px;
@@ -647,7 +642,6 @@
     color: #014046;
     text-transform: uppercase;
     padding: 0 0 0 98px;
-    background: url(../../images/palms-2.png) left center no-repeat;
     background-size: 88px auto;
 }
 .marketing-wrapper .marketing-title span{
@@ -670,7 +664,7 @@
     top: 0;
     bottom: 0;
     margin: auto 0;
-    background: #f7c1b9;
+    background: #dac2a8
 }
 
 .marketing-wrapper .marketing-text{
@@ -745,7 +739,6 @@
     color: #fff;
     text-transform: uppercase;
     padding: 0 0 0 91px;
-    background: url(../../images/palms-1.png) left center no-repeat;
     background-size: 81px auto;
 }
 .lwu-exceptional .exceptional-title span{
@@ -768,7 +761,7 @@
     top: 0;
     bottom: 0;
     margin: auto 0;
-    background: #f7c1b9;
+    background: #dac2a8
 }
 .lwu-exceptional .exceptional-text{
     font-size: 15px;

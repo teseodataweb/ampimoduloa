@@ -464,7 +464,7 @@ div#inner-page-wrapper > .container {
     width: 253px;
     height: 253px;
     padding: 48px 0;
-    background-color: rgba(1, 64, 70, .95);
+    background-color: #00de81;
     text-align: center;
 }
 
@@ -528,7 +528,7 @@ div#inner-page-wrapper > .container {
 
 .contact-smi-wrap a span {
     font-size: 30px;
-    color: #014046;
+    color: #dac2a8;
 }
 
 .contact-smi-wrap a:hover {
@@ -610,7 +610,7 @@ div#inner-page-wrapper > .container {
     vertical-align: top;
     margin: 0 18px;
     font-size: 30px;
-    color: #014046;
+    color: #dac2a8;
     cursor: pointer;
 }
 
