@@ -920,6 +920,7 @@ body.page-id-0 > img, body.page-id-0 > iframe {
   pointer-events: none;
   background-size: cover;
   padding: 10px 0;
+  background: #164334;
   /*max-height: 100px;*/
   transition: all ease .4s;
   -moz-transition: all ease .4s;

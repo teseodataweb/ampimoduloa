@@ -136,6 +136,7 @@
 
 }
 
+
 .testi-title h2 strong {
 
     display: block;
@@ -177,6 +178,31 @@
 }
 
 .testi-title h2 span:after{
+
+	content: '';
+
+    display: block;
+
+    height: 3px;
+
+    width: 100vw;
+
+    position: absolute;
+
+    right: 105%;
+
+    top: 0;
+
+    bottom: 0;
+
+    margin: auto 0;
+
+    background: #f7c1b9;
+
+}
+
+
+.testi-title h3 span:after{
 
 	content: '';
 

@@ -838,17 +838,21 @@
         position: relative;
         left: 0;
       }
+
       .fixed-header {
-        position: fixed;
-        z-index: 2;
-        top: -100px;
-        left: 0;
-        width: 100%;
-        opacity: 0;
-        background: #114736;
-        background-size: cover;
-        padding: 10px 0;
-      }
+  position: fixed;
+  z-index: 2;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  background: url("https://www.jillszeder.com/wp-content/themes/jillszeder.com/images/fh-bg.jpg") center center no-repeat #014046;
+  background-size: cover;
+  padding: 10px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+
       .fh-wrapper {
         display: flex;
         flex-flow: row wrap;
@@ -1663,11 +1667,11 @@
         .header {
           position: relative;
         }
-        .fixed-header {
-          top: 0;
-          opacity: 1;
-          padding: 13px 0;
-        }
+        .fixed-header.visible {
+  top: 0;
+  opacity: 1;
+  padding: 13px 0;
+} 
         .fh-contact {
           width: 100%;
         }
@@ -2957,7 +2961,10 @@
         h.appendChild(s);
       })();
     </script>
-  </head>
+
+ 
+
+</head>
 
   <body
     class="home blog home-container post-post-former-and-current-celebrities-who-live-on-fisher-island"
@@ -3012,7 +3019,7 @@
                     >
                       <a
                         href="index.html"
-                        aria-current="page"data-title="Home">INICIO</a>
+                        aria-current="page"data-title="Homeeeeee">INICIOooooo</a>
                     </li>
                     <li
                       id="menu-item-3371"
@@ -3109,70 +3116,9 @@
                 </div>
               </nav>
             </div>
-
-            <div
-              class="mh-contact"
-              aria-hidden="true"
-              data-acsb-hidden="true"
-            >
-              <div class="textwidget custom-html-widget">
-                <ul
-                  class="contact-list hidden"
-                  aria-hidden="true"
-                  data-acsb-hidden="true"
-                >
-                  <li>
-                    <span class="ai-font-phone"></span>
-                    <ul>
-                      <li>
-                        <a
-                          href="tel:+1.305.722.5721"
-                          class="aios-ai-phone"
-                          aria-label="+1.305.722.5721"
-                          ><span>Coral Gables Office</span> 305.722.5721</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="tel:+1.305.341.7447"
-                          class="aios-ai-phone"
-                          aria-label="+1.305.341.7447"
-                          ><span>Miami Beach Office</span> 305.341.7447</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="ai-font-envelope"></span>
-                    <ul class="email-list">
-                      <li>
-                        <a
-                          class="asis-mailto-obfuscated-email-hidden asis-mailto-obfuscated-email"
-                          aria-label="cg(at)jillszeder(dotted)com"
-                          data-value="cg(at)jillszeder(dotted)com"
-                          ><span>Coral Gables Office</span>
-                          cg(at)jillszeder(dotted)com</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="asis-mailto-obfuscated-email-hidden asis-mailto-obfuscated-email"
-                          aria-label="mb(at)jillszeder(dotted)com"
-                          data-value="mb(at)jillszeder(dotted)com"
-                          ><span>Miami Beach Office</span>
-                          mb(at)jillszeder(dotted)com</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </div>
-
-
 
       <div
         class="fixed-header acsb-bg-image"
@@ -6581,6 +6527,23 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
     </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const fixedHeader = document.querySelector(".fixed-header");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 100) {
+        fixedHeader.style.top = "0";
+        fixedHeader.style.opacity = "1";
+      } else {
+        fixedHeader.style.top = "-100px";
+        fixedHeader.style.opacity = "0";
+      }
+    });
+  });
+</script>
+
   </body>
 
   <!-- Mirrored from www.jillszeder.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Apr 2025 21:20:24 GMT -->

@@ -127,6 +127,7 @@
 	left: 14.824%;
 }
 .le-homes .mag-1 canvas{
+	background:url(../../images/local-exposure/le-mag-1.jpg);
 	display: block;
 	width: 100%;
 	height: auto;
@@ -140,6 +141,7 @@
 	width: 100%;
 }
 .le-homes .mag-2 canvas{
+	background:url(../../images/local-exposure/le-mag-2.jpg);
 	display: block;
 	width: 100%;
 	height: auto;
@@ -1284,3 +1286,45 @@
 	    background: url(../../images/palm-2.png) 10px center no-repeat;
 	}
 }
+
+.compromiso-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .compromiso-image {
+    flex: 1 1 300px;
+    max-width: 400px;
+  }
+
+  .compromiso-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .compromiso-texto {
+    flex: 1 1 400px;
+    max-width: 600px;
+  }
+
+  .compromiso-texto h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .compromiso-texto p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .compromiso-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  }

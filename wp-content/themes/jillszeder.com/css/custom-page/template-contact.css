@@ -394,12 +394,11 @@ div#inner-page-wrapper > .container {
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.025em;
-    color: #fff;
+    color: #00de81;
     text-transform: uppercase;
     border: 0 none;
     display: inline-block;
     padding: 22px 10px 22px 40px;
-    background: url(../../images/contact/ip-contact-submit-icon.png) 10px center no-repeat;
     font-family: 'Termina';
     position: absolute;
     top: 50%;
