@@ -2864,6 +2864,9 @@
       name="msapplication-TileImage"
       content="https://www.jillszeder.com/wp-content/uploads/2020/06/favicon-400x400.png"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -3931,29 +3934,51 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="about-wrapper">
             <div class="textwidget custom-html-widget">
               <div
-                class="about-img"
-                data-aos-duration="0"
-                data-aos="fade-up"
-                data-aos-reveal="true"
-                data-aos-once="true"
-              >
-                <img
-                  src="wp-content/themes/jillszeder.com/images/team-photo.jpg"
-                  data-src="https://www.jillszeder.com/wp-content/themes/jillszeder.com/images/team-photo.jpg"
-                  alt="Jills Zeder Group"
-                  width="1600"
-                  height="789"
-                  class="hidden-sm hidden-xs img-opt"
-                />
-                <img
-                  src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                  data-src="https://imageproxy.agentimage.com/768x379/https://www.jillszeder.com/wp-content/themes/jillszeder.com/images/team-photo.jpg"
-                  alt="Jills Zeder Group"
-                  width="1600"
-                  height="789"
-                  class="lazyload hidden-lg hidden-md"
-                />
+              class="about-img"
+              data-aos-duration="0"
+              data-aos="fade-up"
+              data-aos-reveal="true"
+              data-aos-once="true"
+              style="position: relative;"
+            >
+              <!-- TEXTO ENCIMA DE LA IMAGEN -->
+              <div style="
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                background-color: rgba(0,0,0,0.5);
+                color: white;
+                padding: 10px 15px;
+                font-size: 18px;
+                font-weight: bold;
+                z-index: 2;
+                border-radius: 4px;
+                max-width: 90%;
+                text-align: right;">
+                Comité Ejecutivo 2025-2027
               </div>
+            
+              <!-- IMAGEN DESKTOP -->
+              <img
+                src="wp-content/themes/jillszeder.com/images/team-photo.jpg"
+                data-src="https://www.jillszeder.com/wp-content/themes/jillszeder.com/images/team-photo.jpg"
+                alt="Jills Zeder Group"
+                width="1600"
+                height="789"
+                class="hidden-sm hidden-xs img-opt"
+              />
+            
+              <!-- IMAGEN MÓVIL -->
+              <img
+                src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                data-src="wp-content/themes/jillszeder.com/images/team-photo.jpg"
+                alt="Jills Zeder Group"
+                width="1600"
+                height="789"
+                class="lazyload hidden-lg hidden-md"
+              />
+            </div>
+            
               <div
                 class="about-container"
                 data-aos-duration="4000"
@@ -3999,7 +4024,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         Impulsamos un sector inmobiliario ético y de alto valor en Riviera Nayarit
                       </div>
                       <div class="about-text">
-                        AMPI Riviera Nayarit ha sido el punto de encuentro de agentes, agencias y desarrolladores comprometidos con la excelencia, la transparencia y la innovación. Como organismo líder en la región, promovemos el desarrollo profesional a través de capacitación de clase mundial, acceso a la plataforma FLEX MLS, eventos estratégicos y asesoría especializada. 
+                        AMPI Riviera Nayarit ha sido el punto de encuentro de asesores, agencias y desarrolladores comprometidos con la excelencia, la transparencia y la innovación. Como organismo líder en la región, promovemos el desarrollo profesional a través de capacitación de clase mundial, acceso a la plataforma FLEX MLS, eventos estratégicos y asesoría especializada. 
                       </div>
                       <a href="about-us/index.html" role="button"
                         >Conoce más</a
@@ -4051,7 +4076,7 @@ document.addEventListener("DOMContentLoaded", function () {
                       FORTALEZA EN REDES PROFESIONALES
                     </div>
                     <div class="wwwu-desc">
-                      Afiliarte te conecta con una comunidad sólida de agentes, agencias y desarrolladores que comparten valores, oportunidades y conocimiento.
+                      Afiliarte te conecta con una comunidad sólida de asesores, agencias y desarrolladores que comparten valores, oportunidades y conocimiento.
                     </div>
                     <a href="about-us/team/index.html" role="button"
                       ><span>Conoce al comité</span></a
@@ -4155,7 +4180,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             AFILIADO AMPI
                           </div>
                           <div class="testi-text">
-                            Desde que me afilié a AMPI, mi reputación como agente ha crecido exponencialmente. La capacitación y el respaldo institucional me dieron las herramientas para ofrecer un servicio de primer nivel.
+                            Desde que me afilié a AMPI, mi reputación como asesor ha crecido exponencialmente. La capacitación y el respaldo institucional me dieron las herramientas para ofrecer un servicio de primer nivel.
                           </div>
                           <div class="testi-author">- Ana Valenzuela</div>
                         </div>
