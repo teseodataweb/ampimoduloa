@@ -3934,8 +3934,10 @@
                 dir="ltr"
               >
                   <form
-                  method="post"
+                  id="FormAfiliacion"
                   class="wpcf7-form init use-floating-validation-tip"
+                  method="POST"
+                  action="https://script.google.com/macros/s/AKfycbwpebXEf05PuFPMRotov19r-mmK4gS8McMd4ww2NqZ96YwJaV9V-wNU1GN7TkIEd-R6LA/exec"                
                   aria-label="Formulario de afiliación"
                   novalidate="novalidate"
                   data-status="init"
@@ -5354,47 +5356,40 @@
     </script>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector("form");
+      document.getElementById("FormAfiliacion").addEventListener("submit", function (event) {
+        event.preventDefault(); // Evita el envío normal
     
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-          const formData = new FormData(form);
+        const form = event.target;
+        const formData = new FormData(form);
     
-          const payload = new URLSearchParams();
-          for (const [key, value] of formData.entries()) {
-            // Solo enviar los campos que NO son archivos
-            const fileInputs = ["foto", "identificacion", "documento-migratorio", "rfc", "recomendacion", "conducta", "diploma-espanol"];
-            if (!fileInputs.includes(key)) {
-              payload.append(key, value);
-            }
-          }
-    
-          fetch("https://script.google.com/macros/s/AKfycbwpebXEf05PuFPMRotov19r-mmK4gS8McMd4ww2NqZ96YwJaV9V-wNU1GN7TkIEd-R6LA/exec", {
-            method: "POST",
-            body: payload
-          })
-            .then((res) => res.text())
-            .then((msg) => {
-              const banner = document.createElement("div");
-              banner.textContent = "¡Tu solicitud ha sido enviada correctamente!";
-              banner.style.backgroundColor = "#d4edda";
-              banner.style.color = "#155724";
-              banner.style.padding = "1em";
-              banner.style.margin = "1em 0";
-              banner.style.border = "1px solid #c3e6cb";
-              banner.style.borderRadius = "6px";
-              banner.style.textAlign = "center";
-              form.parentNode.insertBefore(banner, form);
-              form.reset();
-            })
-            .catch((err) => {
-              alert("Hubo un error al enviar el formulario. Intenta más tarde.");
-              console.error(err);
+        fetch(form.action, {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.text())
+          .then((text) => {
+            // Mostrar mensaje con SweetAlert
+            Swal.fire({
+              title: "¡Éxito!",
+              text: "Tu solicitud ha sido enviada correctamente.",
+              icon: "success",
+              confirmButtonText: "Aceptar",
             });
-        });
+    
+            form.reset();
+          })
+          .catch((error) => {
+            Swal.fire({
+              title: "Error",
+              text: "Hubo un problema al enviar tu solicitud. Intenta más tarde.",
+              icon: "error",
+              confirmButtonText: "Aceptar",
+            });
+            console.error("Error al enviar:", error);
+          });
       });
     </script>
+    
     
   </body>
 
