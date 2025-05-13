@@ -3146,6 +3146,9 @@
     ></script>
     <!-- End Setup Click - Just Links Firing Trigger -->
 
+    <!-- SweetAlert2 - CSS (opcional pero recomendado para diseño bonito) -->
+
+
     <script data-script-type="aios-defer" data-aios-type="text/javascript">
       (function () {
         var s = document.createElement("script");
@@ -5355,6 +5358,39 @@
       });
     </script>
 
+    <script>
+      document.getElementById("FormAfiliacion").addEventListener("submit", function (event) {
+        event.preventDefault();
+    
+        const form = event.target;
+        const formData = new FormData(form);
+    
+        fetch(form.action, {
+          method: "POST",
+          body: formData,
+        })
+        .then((response) => response.text())
+        .then((text) => {
+          Swal.fire({
+            title: "¡Éxito!",
+            text: "Tu solicitud ha sido enviada correctamente.",
+            icon: "success",
+            confirmButtonText: "Aceptar",
+          });
+          form.reset();
+        })
+        .catch((error) => {
+          Swal.fire({
+            title: "Error",
+            text: "Hubo un problema al enviar tu solicitud. Por favor, intenta nuevamente.",
+            icon: "error",
+            confirmButtonText: "Aceptar",
+          });
+          console.error("Error al enviar el formulario:", error);
+        });
+      });
+    </script>
+    
     
     
   </body>
