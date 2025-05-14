@@ -5363,38 +5363,36 @@
 
     <script>
       const form = document.getElementById("FormAfiliacion");
-
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  const formData = new URLSearchParams();
-  formData.append("nombre", form.nombre.value);
-  formData.append("apellido-paterno", form["apellido-paterno"].value);
-  formData.append("apellido-materno", form["apellido-materno"].value);
-  formData.append("correo", form.correo.value);
-  formData.append("nombre-asociado", form["nombre-asociado"].value);
-  formData.append("ensayo", form.ensayo.value);
-  formData.append("acepto", form.acepto.checked ? "on" : "off");
-
-  fetch(form.action, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded"
-    },
-    body: formData
-  })
-    .then((res) => res.text())
-    .then((text) => {
-      Swal.fire("¡Éxito!", text, "success");
-      form.reset();
-    })
-    .catch((err) => {
-      console.error(err);
-      Swal.fire("Error", "No se pudo enviar la solicitud.", "error");
-    });
-});
-
+    
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+    
+        const formData = new FormData();
+        formData.append("nombre", form.nombre.value);
+        formData.append("apellido-paterno", form["apellido-paterno"].value);
+        formData.append("apellido-materno", form["apellido-materno"].value);
+        formData.append("correo", form.correo.value);
+        formData.append("nombre-asociado", form["nombre-asociado"].value);
+        formData.append("ensayo", form.ensayo.value);
+        formData.append("acepto", form.acepto.checked ? "on" : "off");
+    
+        // Enviar a Google Apps Script SIN definir headers, deja que el navegador ponga los correctos
+        fetch(form.action, {
+          method: "POST",
+          body: formData
+        })
+          .then((res) => res.text())
+          .then((text) => {
+            Swal.fire("¡Éxito!", text, "success");
+            form.reset();
+          })
+          .catch((err) => {
+            console.error(err);
+            Swal.fire("Error", "No se pudo enviar la solicitud.", "error");
+          });
+      });
     </script>
+    
     
   </body>
 
