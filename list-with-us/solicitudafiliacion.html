@@ -5366,16 +5366,35 @@
     </script>
 
     <script>
+<<<<<<< HEAD
       document.getElementById("FormAfiliacion").addEventListener("submit", function (event) {
         event.preventDefault();
       
         const form = event.target;
         const formData = new FormData(form);
       
+=======
+      const form = document.getElementById("FormAfiliacion");
+    
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+    
+        const formData = new FormData();
+        formData.append("nombre", form.nombre.value);
+        formData.append("apellido-paterno", form["apellido-paterno"].value);
+        formData.append("apellido-materno", form["apellido-materno"].value);
+        formData.append("correo", form.correo.value);
+        formData.append("nombre-asociado", form["nombre-asociado"].value);
+        formData.append("ensayo", form.ensayo.value);
+        formData.append("acepto", form.acepto.checked ? "on" : "off");
+    
+        // Enviar a Google Apps Script SIN definir headers, deja que el navegador ponga los correctos
+>>>>>>> 5b8b7515fec7dbac3ac540247469d020e13ae1e5
         fetch(form.action, {
           method: "POST",
           body: formData
         })
+<<<<<<< HEAD
         .then(async res => {
           const text = await res.text();
           console.log("Respuesta del servidor:", text); // Te dirá si recibes HTML, JSON o error
@@ -5417,6 +5436,20 @@
       </script>
       
       
+=======
+          .then((res) => res.text())
+          .then((text) => {
+            Swal.fire("¡Éxito!", text, "success");
+            form.reset();
+          })
+          .catch((err) => {
+            console.error(err);
+            Swal.fire("Error", "No se pudo enviar la solicitud.", "error");
+          });
+      });
+    </script>
+>>>>>>> 5b8b7515fec7dbac3ac540247469d020e13ae1e5
+    
     
   </body>
 
