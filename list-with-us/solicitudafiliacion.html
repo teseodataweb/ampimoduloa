@@ -3087,13 +3087,16 @@
       content="https://www.jillszeder.com/wp-content/uploads/2020/06/favicon-400x400.png"
     />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      data-script-type="aios-defer"
-      data-aios-type="text/javascript"
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-PZJX20DZFF"
-    ></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="<https://www.googletagmanager.com/gtag/js?id=G-NFWFD8258D>"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NFWFD8258D');
+    </script>
+
     <script data-script-type="aios-defer" data-aios-type="text/javascript">
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -3943,10 +3946,11 @@
                   id="FormAfiliacion"
                   class="wpcf7-form init use-floating-validation-tip"
                   method="POST"
-                  action="https://script.google.com/macros/s/AKfycbwpebXEf05PuFPMRotov19r-mmK4gS8McMd4ww2NqZ96YwJaV9V-wNU1GN7TkIEd-R6LA/exec"                
+                  action="https://ampirivieranayarit.com/config/form-handler.php"                
                   aria-label="Formulario de afiliación"
                   novalidate="novalidate"
                   data-status="init"
+                  enctype="multipart/form-data"
                 >
                   <div class="git-form">
                     <!-- Nombre completo y correo -->
@@ -5362,39 +5366,57 @@
     </script>
 
     <script>
-      const form = document.getElementById("FormAfiliacion");
-
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  const formData = new URLSearchParams();
-  formData.append("nombre", form.nombre.value);
-  formData.append("apellido-paterno", form["apellido-paterno"].value);
-  formData.append("apellido-materno", form["apellido-materno"].value);
-  formData.append("correo", form.correo.value);
-  formData.append("nombre-asociado", form["nombre-asociado"].value);
-  formData.append("ensayo", form.ensayo.value);
-  formData.append("acepto", form.acepto.checked ? "on" : "off");
-
-  fetch(form.action, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded"
-    },
-    body: formData
-  })
-    .then((res) => res.text())
-    .then((text) => {
-      Swal.fire("¡Éxito!", text, "success");
-      form.reset();
-    })
-    .catch((err) => {
-      console.error(err);
-      Swal.fire("Error", "No se pudo enviar la solicitud.", "error");
-    });
-});
-
-    </script>
+      document.getElementById("FormAfiliacion").addEventListener("submit", function (event) {
+        event.preventDefault();
+      
+        const form = event.target;
+        const formData = new FormData(form);
+      
+        fetch(form.action, {
+          method: "POST",
+          body: formData
+        })
+        .then(async res => {
+          const text = await res.text();
+          console.log("Respuesta del servidor:", text); // Te dirá si recibes HTML, JSON o error
+      
+          try {
+            const json = JSON.parse(text);
+            if (json.success) {
+              Swal.fire({
+                icon: "success",
+                title: "¡Éxito!",
+                text: json.message
+              });
+              form.reset();
+            } else {
+              Swal.fire({
+                icon: "error",
+                title: "Error",
+                text: json.message
+              });
+            }
+          } catch (e) {
+            console.error("Error al interpretar JSON:", e, "Respuesta:", text);
+            Swal.fire({
+              icon: "error",
+              title: "Error inesperado",
+              text: "El servidor respondió algo inesperado (probablemente HTML en lugar de JSON)."
+            });
+          }
+        })
+        .catch(error => {
+          console.error("Error de red:", error);
+          Swal.fire({
+            icon: "error",
+            title: "Error de red",
+            text: "No se pudo enviar el formulario. Intenta más tarde."
+          });
+        });
+      });
+      </script>
+      
+      
     
   </body>
 
