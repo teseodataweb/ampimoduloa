@@ -5394,49 +5394,6 @@
           method: "POST",
           body: formData
         })
-<<<<<<< HEAD
-        .then(async res => {
-          const text = await res.text();
-          console.log("Respuesta del servidor:", text); // Te dirá si recibes HTML, JSON o error
-      
-          try {
-            const json = JSON.parse(text);
-            if (json.success) {
-              Swal.fire({
-                icon: "success",
-                title: "¡Éxito!",
-                text: json.message
-              });
-              form.reset();
-            } else {
-              Swal.fire({
-                icon: "error",
-                title: "Error",
-                text: json.message
-              });
-            }
-          } catch (e) {
-            console.error("Error al interpretar JSON:", e, "Respuesta:", text);
-            Swal.fire({
-              icon: "error",
-              title: "Error inesperado",
-              text: "El servidor respondió algo inesperado (probablemente HTML en lugar de JSON)."
-            });
-          }
-        })
-        .catch(error => {
-          console.error("Error de red:", error);
-          Swal.fire({
-            icon: "error",
-            title: "Error de red",
-            text: "No se pudo enviar el formulario. Intenta más tarde."
-          });
-        });
-      });
-      </script>
-      
-      
-=======
           .then((res) => res.text())
           .then((text) => {
             Swal.fire("¡Éxito!", text, "success");
@@ -5448,7 +5405,6 @@
           });
       });
     </script>
->>>>>>> 5b8b7515fec7dbac3ac540247469d020e13ae1e5
     
     
   </body>
