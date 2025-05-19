@@ -199,6 +199,23 @@ TABLE OF CONTENTS
 
 
 */
+
+@font-face {
+  font-family: 'Ventella';
+  src: url('/wp-content/themes/jillszeder.com/fonts/VentellaItalic.woff') format('woff');
+  font-style: italic;
+  font-weight: normal;
+}
+
+
+/* etiqueta eventos */
+.etiqueta-destacada {
+  font-family: 'Ventella', cursive;
+  font-style: italic;
+  color: #00de81;
+  font-size: 30px;
+}
+
 /* Sub Menu */
 #nav {
   display: none;
@@ -2138,7 +2155,7 @@ body.page-id-0 > img, body.page-id-0 > iframe {
   margin: 55px 0 0;
 }
 .wwwu-wrapper .wwwu-content .wwwu-single {
-  width: calc(100% / 3);
+  width: calc(100% / 2);
   text-align: center;
 }
 .wwwu-wrapper .wwwu-content .wwwu-title {

@@ -201,6 +201,7 @@
 	line-height: 25px;
 	margin: 0 0 46px;
 	padding: 0 40px 0 0;
+	text-align: justify;
 }
 .le-homes .homes-text strong{}
 .le-homes .homes-list{
@@ -291,6 +292,8 @@
     letter-spacing: 0.025em;
     line-height: 25px;
     padding: 0 55px 0 0;
+	text-align: justify;
+
 }
 .le-miami .miami-right{
 	width: 49.864%;
@@ -519,7 +522,7 @@
     padding: 115px 0 0;
     text-align: center;
     width: calc((100% / 3) - 135px);
-    font-size: 13px;
+    font-size: 15px;
     line-height: 22px;
     font-weight: 300;
 }
