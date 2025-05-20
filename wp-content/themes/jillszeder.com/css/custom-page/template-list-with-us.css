@@ -125,7 +125,7 @@
 	margin: 0 0 80px;
 }
 .lwu-brand{
-	padding: 0 0 196px;
+	padding: 0 0 100px;
 }
 .lwu-brand .brand-wrapper{
 	display: flex;
@@ -232,10 +232,11 @@
 }
 .lwu-team .team-photo canvas{
 	display: block;
-	width: 100%;
+	width: 80%;
 	height: auto;
 	background:url(../../images/list-with-us/lwu-team.jpg) center center no-repeat;
 	background-size: cover;
+	margin: auto;
 }
 .lwu-team .team-content{
 	position: relative;
@@ -588,7 +589,6 @@
 .lwu-bottom{
 	background:url(../../images/list-with-us/lwu-bottom-bg.jpg) center top no-repeat;
     background-size: 100% auto;
-    padding: 122px 0 0;
 }
 .lwu-marketing{
 	padding: 0 0 196px;
