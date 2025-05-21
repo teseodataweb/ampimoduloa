@@ -3045,6 +3045,23 @@
     }
 
     </style>
+    <style>
+  .submenu-toggle {
+  margin-left: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.menu-item .sub-menu {
+  display: none;
+}
+
+.menu-item.open > .sub-menu {
+  display: block;
+}
+
+
+    </style>
   </head>
 
   <body
@@ -3102,7 +3119,7 @@
                           href="index.html"
                           aria-current="page"
                           data-title="Homeeeeee"
-                          >INICIOooooo</a
+                          >INICIO</a
                         >
                       </li>
                       <li
@@ -3384,31 +3401,48 @@
             const navTrigger = document.querySelector(".nav-trigger");
             const mobileNav = document.querySelector(".mobile-nav");
             const closeBtn = document.querySelector(".mobnav-close");
-
+        
             if (navTrigger && mobileNav && closeBtn) {
+              // Abrir menú
               navTrigger.addEventListener("click", function () {
                 mobileNav.classList.add("active");
                 document.body.classList.add("menu-open");
                 mobileNav.setAttribute("aria-hidden", "false");
               });
-
+        
+              // Cerrar menú
               closeBtn.addEventListener("click", function () {
                 mobileNav.classList.remove("active");
                 document.body.classList.remove("menu-open");
                 mobileNav.setAttribute("aria-hidden", "true");
               });
-
-              // Cierre el menú al hacer clic en cualquier link
+        
+              // Cerrar menú al hacer clic en enlaces que NO tienen submenú
               document.querySelectorAll("#mobnav a").forEach((link) => {
-                link.addEventListener("click", () => {
-                  mobileNav.classList.remove("active");
-                  document.body.classList.remove("menu-open");
-                  mobileNav.setAttribute("aria-hidden", "true");
+                link.addEventListener("click", (e) => {
+                  const parent = link.parentElement;
+                  if (!parent.classList.contains("menu-item-has-children")) {
+                    mobileNav.classList.remove("active");
+                    document.body.classList.remove("menu-open");
+                    mobileNav.setAttribute("aria-hidden", "true");
+                  }
                 });
               });
             }
+        
+            // Mostrar u ocultar submenú con flecha ▼
+            document.querySelectorAll(".submenu-toggle").forEach((toggle) => {
+              toggle.addEventListener("click", function (e) {
+                e.stopPropagation(); // Evita conflicto con otros eventos
+                const parentLi = this.closest(".menu-item");
+                parentLi.classList.toggle("open");
+              });
+            });
           });
         </script>
+        
+        
+        
 
         <div class="mobile-nav" aria-hidden="true" data-acsb-hidden="true">
           <div class="mobnav-close">
@@ -3429,33 +3463,17 @@
                   <li
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3371"
                   >
-                    <a href="#" data-title="Buyers">GUÍAS Y RECURSOS</a>
-                    <ul class="sub-menu">
-                      <li
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1716"
-                      >
-                        <a
-                          href="distinctive-sales/index.html"
-                          data-title="Buy with us"
-                          >PREGUNTAS FRECUENTES</a
-                        >
-                      </li>
-                      <li
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"
-                      >
-                        <a
-                          href="testimonials/index.html"
-                          data-title="Neighborhood Guides"
-                          >EVENTOS</a
-                        >
-                      </li>
-                      <!-- <li
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319"
-                      >
-                        <a href="#" data-title="Relocation">CONVENIOS</a>
-                      </li> -->
-                    </ul>
+                    <a href="distinctive-sales/index.html" data-title="Buyers">FAQ</a>
                   </li>
+
+
+                  <li
+                  class="mobile-only menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-5009"
+                >
+                  <a href="testimonials/index.html" aria-current="page" data-title="Home"
+                    >EVENTOS</a
+                  >
+                </li>
                   <li
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3456"
                   >
@@ -3468,35 +3486,26 @@
                   <li
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3453"
                   >
-                    <a href="#" data-title="Sellers">NOSOTROS</a>
-                    <ul class="sub-menu">
-                      <li
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3454"
-                      >
-                        <a href="about-us/index.html" data-title="List with us"
-                          >ACERCA DE</a
-                        >
-                      </li>
-                      <li
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3456"
-                      >
-                        <a
-                          href="about-us/team/index.html"
-                          data-title="Marketing Masters"
-                          >COMITÉ</a
-                        >
-                      </li>
-                      <li
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3457"
-                      >
-                        <a
-                          href="sellers/global-connections/index.html"
-                          data-title="Global Connections"
-                          >FLEX</a
-                        >
-                      </li>
-                    </ul>
+                    <a href="about-us/index.html" data-title="Sellers">ACERCA DE</a>
                   </li>
+                <li
+                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3456"
+                >
+                  <a
+                    href="about-us/team/index.html"
+                    data-title="Marketing Masters"
+                    >COMITÉ</a
+                  >
+                </li>
+                <li
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3456"
+              >
+                <a
+                  href="../sellers/global-connections/index.html"
+                  data-title="Marketing Masters"
+                  >FLEX</a
+                >
+              </li>
                   <li
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"
                   >
