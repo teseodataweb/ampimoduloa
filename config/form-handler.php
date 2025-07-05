@@ -1,4 +1,22 @@
 <?php
+$secretKey = '6Ley2GgrAAAAALkgMsPLXVYAg8fJDWWrRRoG0jdJ';
+$recaptchaToken = $_POST['g-recaptcha-response'];
+
+$remoteIp = $_SERVER['REMOTE_ADDR'];
+
+$response = file_get_contents(
+  "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaToken&remoteip=$remoteIp"
+);
+
+$responseKeys = json_decode($response, true);
+
+if ($responseKeys["success"]) {
+    // ✅ CAPTCHA verificado, procesar el formulario
+} else {
+    // ❌ CAPTCHA falló
+    die("Error: no se pudo verificar el captcha.");
+}
+
 header("Content-Type: application/json");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -17,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Configuración general
     $destinatario = "afiliaciones@ampirivieranayarit.com";
-    $asunto = "Nueva solicitud de afiliación AMPI";
+    $asunto = "Nueva solicitud de afiliacion AMPI";
     $boundary = md5(uniqid(time()));
 
     $cabeceras = "From: $correo\r\n";
@@ -30,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje .= "Content-Type: text/plain; charset=UTF-8\r\n";
     $mensaje .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
 
-    $mensaje .= "Nueva solicitud de afiliación AMPI:\n\n";
+    $mensaje .= "Nueva solicitud de afiliacion AMPI:\n\n";
     $mensaje .= "Nombre completo: $nombre $apellido_paterno $apellido_materno\n";
     $mensaje .= "Correo electrónico: $correo\n";
     $mensaje .= "Asociado patrocinador: $asociado\n";
