@@ -1,21 +1,17 @@
 <?php
 $secretKey = '6Ley2GgrAAAAALkgMsPLXVYAg8fJDWWrRRoG0jdJ';
 $recaptchaToken = $_POST['g-recaptcha-response'];
-
 $remoteIp = $_SERVER['REMOTE_ADDR'];
 
 $response = file_get_contents(
   "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaToken&remoteip=$remoteIp"
 );
-
 $responseKeys = json_decode($response, true);
 
-if ($responseKeys["success"]) {
-    // ✅ CAPTCHA verificado, procesar el formulario
-} else {
-    // ❌ CAPTCHA falló
+if (!$responseKeys["success"]) {
     die("Error: no se pudo verificar el captcha.");
 }
+
 header("Content-Type: application/json");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -24,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $empresa = htmlspecialchars($_POST["empresa"] ?? "");
     $correo = filter_var($_POST["correo"], FILTER_SANITIZE_EMAIL);
     $telefono = htmlspecialchars($_POST["telefono"] ?? "");
+    $recomendado_por = htmlspecialchars($_POST["recomendado-por"] ?? ""); // 👈 nuevo campo
     $ensayo = htmlspecialchars($_POST["ensayo"] ?? "");
     $acepto = isset($_POST["acepto"]) ? "Sí" : "No";
 
@@ -34,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Configuración del correo
     $destinatario = "afiliaciones@ampirivieranayarit.com";
-    $asunto = "Nueva solicitud de asociacion AMPI";
+    $asunto = "Nueva solicitud de asociación AMPI";
     $boundary = md5(uniqid(time()));
 
     $cabeceras = "From: $correo\r\n";
@@ -47,11 +44,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje .= "Content-Type: text/plain; charset=UTF-8\r\n";
     $mensaje .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
 
-    $mensaje .= "Nueva solicitud de asociacion AMPI:\n\n";
+    $mensaje .= "Nueva solicitud de asociación AMPI:\n\n";
     $mensaje .= "Nombre del representante legal: $nombre\n";
     $mensaje .= "Empresa: $empresa\n";
     $mensaje .= "Correo electrónico: $correo\n";
     $mensaje .= "Teléfono: $telefono\n";
+    $mensaje .= "Recomendado por: $recomendado_por\n"; // 👈 añadido
     $mensaje .= "Ensayo:\n$ensayo\n\n";
     $mensaje .= "Aceptó términos: $acepto\n\n";
 
