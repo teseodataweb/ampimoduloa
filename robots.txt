@@ -1,0 +1,30 @@
+# Robots.txt para AMPI Riviera Nayarit
+# Generado: 2025-10-25
+
+User-agent: *
+Allow: /
+
+# Bloquear directorios de WordPress internos
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Allow: /wp-content/uploads/
+
+# Bloquear archivos y carpetas del sistema
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /*.inc$
+Disallow: /*.gz$
+
+# Permitir CSS y JS para renderizado correcto
+Allow: /*.css$
+Allow: /*.js$
+
+# Sitemaps
+Sitemap: https://ampirivieranayarit.com/sitemap_index.xml
+Sitemap: https://ampirivieranayarit.com/sitemap.xml
+Sitemap: https://ampirivieranayarit.com/modulob/sitemap.xml
+
+# Crawl delay (opcional, para servidores con limitaciones)
+# Crawl-delay: 1

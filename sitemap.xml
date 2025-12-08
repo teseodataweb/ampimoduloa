@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://ampirivieranayarit.com/</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Us -->
+  <url>
+    <loc>https://ampirivieranayarit.com/about-us/</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Team -->
+  <url>
+    <loc>https://ampirivieranayarit.com/about-us/team/</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Beneficios -->
+  <url>
+    <loc>https://ampirivieranayarit.com/beneficios/</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://ampirivieranayarit.com/contact-us/</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- List With Us -->
+  <url>
+    <loc>https://ampirivieranayarit.com/list-with-us/</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Solicitud Afiliacion -->
+  <url>
+    <loc>https://ampirivieranayarit.com/list-with-us/solicitudafiliacion.html</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Solicitud Asociacion -->
+  <url>
+    <loc>https://ampirivieranayarit.com/list-with-us/solicitudasociacion.html</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Flex MLS / Global Connections -->
+  <url>
+    <loc>https://ampirivieranayarit.com/sellers/global-connections/</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- FAQ / Distinctive Sales -->
+  <url>
+    <loc>https://ampirivieranayarit.com/distinctive-sales/</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Testimonials -->
+  <url>
+    <loc>https://ampirivieranayarit.com/testimonials/</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://ampirivieranayarit.com/copyright-policy/</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Convenios -->
+  <url>
+    <loc>https://ampirivieranayarit.com/convenios/</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
