@@ -1196,6 +1196,7 @@
         counter-reset: section;
         padding: 0 0 0 20px;
         opacity: 0;
+        pointer-events: none; /* IMPORTANTE: evitar que bloquee clicks */
       }
       #scroll-down ul {
         display: block;
@@ -1304,6 +1305,8 @@
         overflow: auto;
         height: 100vh;
         opacity: 0;
+        pointer-events: none; /* CRÍTICO: sin esto bloquea toda la página */
+        visibility: hidden; /* Ocultar completamente cuando no se usa */
       }
       .popup-content {
         padding: 30px 0;
@@ -3186,6 +3189,456 @@
                   background-color: #154b3c;
                 }
               </style>
+
+<!-- Estilos para índice lateral fijo y carrusel -->
+<style>
+  /* Scroll suave */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Índice lateral fijo */
+  .sidebar-nav {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    background: rgba(1, 64, 70, 0.95);
+    padding: 20px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    max-width: 200px;
+  }
+
+  .sidebar-nav h4 {
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    font-family: termina, sans-serif;
+  }
+
+  .sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar-nav li {
+    margin-bottom: 8px;
+  }
+
+  .sidebar-nav a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+  }
+
+  .sidebar-nav a:hover,
+  .sidebar-nav a.active {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    border-left-color: #009b68;
+  }
+
+  .sidebar-nav a .nav-icon {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+
+  /* Ajuste del contenido principal para el sidebar */
+  #ds-wrap {
+    margin-left: 240px;
+    transition: margin-left 0.3s ease;
+  }
+
+  /* Carrusel de logos */
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    overflow: hidden;
+    padding: 20px 0;
+  }
+
+  .carousel-track {
+    display: flex;
+    animation: scroll-carousel 30s linear infinite;
+  }
+
+  .carousel-track:hover {
+    animation-play-state: paused;
+  }
+
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 180px;
+    height: 120px;
+    margin: 0 15px;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .carousel-item:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .carousel-item .restaurant-name {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #014046;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .carousel-item:hover .restaurant-name {
+    opacity: 1;
+  }
+
+  @keyframes scroll-carousel {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Sección de contenido */
+  .content-section {
+    scroll-margin-top: 100px;
+    padding: 40px 0;
+  }
+
+  .section-divider {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #009b68, transparent);
+    margin: 40px 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 1200px) {
+    .sidebar-nav {
+      display: none;
+    }
+    #ds-wrap {
+      margin-left: 0;
+    }
+  }
+
+  /* Menú móvil flotante */
+  .mobile-section-nav {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: rgba(1, 64, 70, 0.95);
+    padding: 12px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  }
+
+  .mobile-section-nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobile-section-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px;
+    display: block;
+    transition: transform 0.2s ease;
+  }
+
+  .mobile-section-nav a:hover {
+    transform: scale(1.2);
+  }
+
+  @media (max-width: 1200px) {
+    .mobile-section-nav {
+      display: block;
+    }
+  }
+
+  /* Grid de logos para sección CANIRAC */
+  .canirac-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 50px 30px;
+    border-radius: 20px;
+    margin: 30px 0;
+  }
+
+  .canirac-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .canirac-header h3 {
+    font-family: termina, sans-serif;
+    font-size: 1.8rem;
+    color: #014046;
+    margin-bottom: 10px;
+  }
+
+  .canirac-header p {
+    color: #666;
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Sección de Otros Convenios */
+  .convenios-section {
+    padding: 50px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .convenios-section h3 {
+    font-family: termina, sans-serif;
+    font-size: 1.8rem;
+    color: #014046;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /* Grid de cards */
+  .convenios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  /* Acordeón HTML Nativo con <details> */
+  details.convenio-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+  }
+
+  details.convenio-card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+
+  details.convenio-card > summary {
+    display: flex !important;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer !important;
+    background: linear-gradient(135deg, #014046 0%, #026670 100%);
+    color: #fff;
+    transition: background 0.3s ease;
+    list-style: none !important;
+    border-radius: 12px;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  details.convenio-card > summary::-webkit-details-marker {
+    display: none !important;
+  }
+
+  details.convenio-card > summary::marker {
+    display: none !important;
+    content: "" !important;
+  }
+
+  details.convenio-card > summary:hover {
+    background: linear-gradient(135deg, #026670 0%, #038a7a 100%);
+  }
+
+  details.convenio-card[open] > summary {
+    background: linear-gradient(135deg, #026670 0%, #038a7a 100%);
+    border-radius: 12px 12px 0 0;
+  }
+
+  details.convenio-card[open] .convenio-toggle {
+    transform: rotate(180deg);
+  }
+
+  /* Asegurar que el contenido se muestre cuando está abierto */
+  details.convenio-card[open] .convenio-content {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    max-height: none !important;
+  }
+
+  .convenio-logo {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .convenio-logo img {
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: contain;
+  }
+
+  .convenio-logo .placeholder {
+    font-size: 24px;
+    color: #014046;
+  }
+
+  .convenio-info {
+    flex: 1;
+  }
+
+  .convenio-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .convenio-info span {
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
+
+  .convenio-toggle {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  /* Contenido del acordeón nativo */
+  .convenio-content {
+    background: #f8f9fa;
+    padding: 20px;
+  }
+
+  /* Asegurar que el contenido se muestre correctamente en el acordeón nativo */
+  details.convenio-card .convenio-content {
+    display: block;
+  }
+
+  .convenio-body {
+    padding: 20px;
+  }
+
+  .convenio-body p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .convenio-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+
+  .convenio-body li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #555;
+    font-size: 0.9rem;
+  }
+
+  .convenio-body li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #009b68;
+    font-weight: bold;
+  }
+
+  .convenio-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .btn-convenio {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .btn-pdf {
+    /* OCULTO TEMPORALMENTE - descomentar display para mostrar */
+    display: none !important;
+    background: #dc3545;
+    color: #fff;
+  }
+
+  .btn-pdf:hover {
+    background: #c82333;
+  }
+
+  .btn-info {
+    background: #014046;
+    color: #fff;
+  }
+
+  .btn-info:hover {
+    background: #026670;
+  }
+
+  @media (max-width: 768px) {
+    .convenios-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
               <!-- Meta Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -3210,6 +3663,39 @@
        async
        src="https://www.googletagmanager.com/gtag/js?id=G-NFWFD8258D"
      ></script>
+
+  <!-- CSS crítico para acordeones nativos - debe estar al final del head -->
+  <style>
+    /* Forzar funcionamiento de acordeones nativos */
+    details.convenio-card {
+      display: block !important;
+      position: relative;
+    }
+
+    details.convenio-card > summary {
+      display: flex !important;
+      cursor: pointer !important;
+      -webkit-tap-highlight-color: transparent;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Contenido visible cuando está abierto */
+    details.convenio-card[open] > .convenio-content {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      height: auto !important;
+      max-height: none !important;
+      overflow: visible !important;
+    }
+
+    /* Asegurar que el summary sea clickeable */
+    details.convenio-card > summary:focus {
+      outline: 2px solid #026670;
+      outline-offset: 2px;
+    }
+  </style>
   </head>
 
   <body
@@ -3917,6 +4403,31 @@ position: relative;
       </div>
 
       <main>
+        <!-- Índice lateral fijo -->
+        <nav class="sidebar-nav" id="sidebarNav">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#seccion-beneficios"><span class="nav-icon">★</span> Beneficios Nacionales</a></li>
+            <li><a href="#sector-educacion"><span class="nav-icon">🎓</span> Educación</a></li>
+            <li><a href="#sector-gastronomia"><span class="nav-icon">🍽</span> Gastronomía</a></li>
+            <li><a href="#sector-salud"><span class="nav-icon">🏥</span> Salud y Bienestar</a></li>
+            <li><a href="#sector-servicios"><span class="nav-icon">💼</span> Servicios Profesionales</a></li>
+            <li><a href="#sector-experiencias"><span class="nav-icon">⛵</span> Experiencias</a></li>
+          </ul>
+        </nav>
+
+        <!-- Menú móvil flotante -->
+        <nav class="mobile-section-nav" id="mobileNav">
+          <ul>
+            <li><a href="#seccion-beneficios" title="Beneficios Nacionales">★</a></li>
+            <li><a href="#sector-educacion" title="Educación">🎓</a></li>
+            <li><a href="#sector-gastronomia" title="Gastronomía">🍽</a></li>
+            <li><a href="#sector-salud" title="Salud">🏥</a></li>
+            <li><a href="#sector-servicios" title="Servicios">💼</a></li>
+            <li><a href="#sector-experiencias" title="Experiencias">⛵</a></li>
+          </ul>
+        </nav>
+
         <h2
           class="aios-starter-theme-hide-title"
           aria-hidden="true"
@@ -3967,7 +4478,7 @@ position: relative;
             </div>
           </div>
 
-          <div class="ds-wrapper">
+          <div id="seccion-beneficios" class="ds-wrapper content-section">
             <div
               class="ds-title"
               data-aios-reveal="true"
@@ -4239,23 +4750,448 @@ position: relative;
 
           </div>
 
-          <div class="ds-wrapper">
-            <div
-              class="ds-title"
-              data-aios-reveal="true"
-              data-aios-animation="fadeIn"
-              data-aios-animation-delay="0s"
-              data-aios-animation-reset="false"
-              data-aios-animation-offset="0.3"
-            >
-              <h1>
-                <strong class="font-term">NUESTROS</strong>
+          <!-- ========== SECTOR EDUCACIÓN ========== -->
+          <div id="sector-educacion" class="convenios-section content-section">
+            <h3>🎓 Educación y Capacitación</h3>
+            <p style="text-align: center; color: #666; max-width: 700px; margin: 0 auto 30px;">
+              Convenios para el desarrollo profesional y académico de los miembros AMPI.
+            </p>
 
-                <span>CONVENIOS</span>
-              </h1>
+            <div class="convenios-grid">
+              <!-- Card: UTBB -->
+              <details class="convenio-card" style="grid-column: 1 / -1;" open>
+                <summary class="convenio-header">
+                  <div class="convenio-logo">
+                    <img src="../wp-content/themes/jillszeder.com/images/distinctive-sales/utbb.jpeg" alt="UTBB" style="width:60px; height:60px; object-fit:cover; border-radius:8px;">
+                  </div>
+                  <div class="convenio-info">
+                    <h4>Universidad Tecnológica de Bahía de Banderas (UTBB)</h4>
+                    <span>Educación inmobiliaria con impacto</span>
+                  </div>
+                  <span class="convenio-toggle">▼</span>
+                </summary>
+                <div class="convenio-content">
+                  <div class="convenio-body">
+                    <p>Esta colaboración promueve foros, programas académicos y credenciales profesionales que se consolidan como referente nacional en desarrollo inmobiliario y educación aplicada.</p>
+                    <ul>
+                      <li>Foro Inmobiliario UTBB–AMPI: Encuentros anuales con empresarios y expertos del sector</li>
+                      <li>Microcredenciales y diplomado inmobiliario con validez académica</li>
+                      <li>Impulso a la Ley de Profesionalización Inmobiliaria en Nayarit</li>
+                      <li>Licenciatura en Negocios Inmobiliarios (en planeación)</li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
             </div>
+          </div>
+
+          <div class="section-divider"></div>
+
+          <!-- ========== SECTOR GASTRONOMÍA ========== -->
+          <div id="sector-gastronomia" class="canirac-section content-section">
+            <div class="canirac-header">
+              <h3>🍽 Gastronomía</h3>
+              <p>Disfruta descuentos exclusivos en los mejores restaurantes de Bahía de Banderas y Puerto Vallarta.</p>
+            </div>
+
+            <!-- Carrusel de logos -->
+            <div class="carousel-container">
+              <div class="carousel-track" id="carouselTrack">
+                <!-- Primera ronda de logos -->
+                <div class="carousel-item"><img src="../convenios/AZAFRAN%20(1).png" alt="Azafrán"><span class="restaurant-name">Azafrán</span></div>
+                <div class="carousel-item"><img src="../convenios/BAR%20ANDALE%20(3).jpg" alt="Bar Ándale"><span class="restaurant-name">Bar Ándale</span></div>
+                <div class="carousel-item"><img src="../convenios/BARCELONA%20TAPASS.jpg" alt="Barcelona Tapas"><span class="restaurant-name">Barcelona Tapas</span></div>
+                <div class="carousel-item"><img src="../convenios/CAFE%20DES%20ARTISTES%20(2).jpg" alt="Café des Artistes"><span class="restaurant-name">Café des Artistes</span></div>
+                <div class="carousel-item"><img src="../convenios/DOLCE%20VITA%20ROMANTICA%20(1).png" alt="Dolce Vita Romantica"><span class="restaurant-name">Dolce Vita Romantica</span></div>
+                <div class="carousel-item"><img src="../convenios/EL%20COLEGUITA.jpg" alt="El Coleguita"><span class="restaurant-name">El Coleguita</span></div>
+                <div class="carousel-item"><img src="../convenios/EL%20PATRON%20%20FERNANDO%20.jpg" alt="El Patrón"><span class="restaurant-name">El Patrón</span></div>
+                <div class="carousel-item"><img src="../convenios/FERCHIS.jpg" alt="Ferchis"><span class="restaurant-name">Ferchis</span></div>
+                <div class="carousel-item"><img src="../convenios/INDIE%20(1).png" alt="Indie"><span class="restaurant-name">Indie</span></div>
+                <div class="carousel-item"><img src="../convenios/LOS%20CHATOS%20(2).png" alt="Los Chatos"><span class="restaurant-name">Los Chatos</span></div>
+                <div class="carousel-item"><img src="../convenios/RESTAURANT%20LUKUMB%C3%89%20(1).png" alt="Restaurant Lukumbé"><span class="restaurant-name">Restaurant Lukumbé</span></div>
+                <div class="carousel-item"><img src="../convenios/RITMOS%20BEACH%20CAFE%20(4).png" alt="Ritmos Beach Café"><span class="restaurant-name">Ritmos Beach Café</span></div>
+                <div class="carousel-item"><img src="../convenios/RIVER%20CAFE%20(2).png" alt="River Café"><span class="restaurant-name">River Café</span></div>
+                <div class="carousel-item"><img src="../convenios/SAPPHIRE%20(2).jpg" alt="Sapphire"><span class="restaurant-name">Sapphire</span></div>
+                <div class="carousel-item"><img src="../convenios/SUKHA%20GRILL%20HOUSEE%20(1).jpg" alt="Sukha Grill House"><span class="restaurant-name">Sukha Grill House</span></div>
+                <div class="carousel-item"><img src="../convenios/TRIO%20(1).jpg" alt="Trio"><span class="restaurant-name">Trio</span></div>
+                <div class="carousel-item"><img src="../convenios/VITEA%20(1).jpg" alt="Vitea"><span class="restaurant-name">Vitea</span></div>
+                <div class="carousel-item"><img src="../convenios/LOGO%20LUPITA%20BUSTOS.png" alt="Lupita Bustos"><span class="restaurant-name">Lupita Bustos Pastelería</span></div>
+                <div class="carousel-item"><img src="../convenios/LOGOTIPO%20TAGLINE%20ROJO%20-%20AXEL%20ALEJANDRO%20SU%C3%81REZ%20MART%C3%8DNEZ%20(2).png" alt="Relicario"><span class="restaurant-name">Relicario Chef's Experience</span></div>
+                <div class="carousel-item"><img src="../convenios/d9c6b9f7-bb7b-4720-875a-d28d296bb9b8.jpg" alt="Restaurante Tucán"><span class="restaurant-name">Restaurante Tucán</span></div>
+
+                <!-- Duplicados para loop infinito -->
+                <div class="carousel-item"><img src="../convenios/AZAFRAN%20(1).png" alt="Azafrán"><span class="restaurant-name">Azafrán</span></div>
+                <div class="carousel-item"><img src="../convenios/BAR%20ANDALE%20(3).jpg" alt="Bar Ándale"><span class="restaurant-name">Bar Ándale</span></div>
+                <div class="carousel-item"><img src="../convenios/BARCELONA%20TAPASS.jpg" alt="Barcelona Tapas"><span class="restaurant-name">Barcelona Tapas</span></div>
+                <div class="carousel-item"><img src="../convenios/CAFE%20DES%20ARTISTES%20(2).jpg" alt="Café des Artistes"><span class="restaurant-name">Café des Artistes</span></div>
+                <div class="carousel-item"><img src="../convenios/DOLCE%20VITA%20ROMANTICA%20(1).png" alt="Dolce Vita Romantica"><span class="restaurant-name">Dolce Vita Romantica</span></div>
+                <div class="carousel-item"><img src="../convenios/EL%20COLEGUITA.jpg" alt="El Coleguita"><span class="restaurant-name">El Coleguita</span></div>
+                <div class="carousel-item"><img src="../convenios/EL%20PATRON%20%20FERNANDO%20.jpg" alt="El Patrón"><span class="restaurant-name">El Patrón</span></div>
+                <div class="carousel-item"><img src="../convenios/FERCHIS.jpg" alt="Ferchis"><span class="restaurant-name">Ferchis</span></div>
+                <div class="carousel-item"><img src="../convenios/INDIE%20(1).png" alt="Indie"><span class="restaurant-name">Indie</span></div>
+                <div class="carousel-item"><img src="../convenios/LOS%20CHATOS%20(2).png" alt="Los Chatos"><span class="restaurant-name">Los Chatos</span></div>
+                <div class="carousel-item"><img src="../convenios/RESTAURANT%20LUKUMB%C3%89%20(1).png" alt="Restaurant Lukumbé"><span class="restaurant-name">Restaurant Lukumbé</span></div>
+                <div class="carousel-item"><img src="../convenios/RITMOS%20BEACH%20CAFE%20(4).png" alt="Ritmos Beach Café"><span class="restaurant-name">Ritmos Beach Café</span></div>
+                <div class="carousel-item"><img src="../convenios/RIVER%20CAFE%20(2).png" alt="River Café"><span class="restaurant-name">River Café</span></div>
+                <div class="carousel-item"><img src="../convenios/SAPPHIRE%20(2).jpg" alt="Sapphire"><span class="restaurant-name">Sapphire</span></div>
+                <div class="carousel-item"><img src="../convenios/SUKHA%20GRILL%20HOUSEE%20(1).jpg" alt="Sukha Grill House"><span class="restaurant-name">Sukha Grill House</span></div>
+                <div class="carousel-item"><img src="../convenios/TRIO%20(1).jpg" alt="Trio"><span class="restaurant-name">Trio</span></div>
+                <div class="carousel-item"><img src="../convenios/VITEA%20(1).jpg" alt="Vitea"><span class="restaurant-name">Vitea</span></div>
+                <div class="carousel-item"><img src="../convenios/LOGO%20LUPITA%20BUSTOS.png" alt="Lupita Bustos"><span class="restaurant-name">Lupita Bustos Pastelería</span></div>
+                <div class="carousel-item"><img src="../convenios/LOGOTIPO%20TAGLINE%20ROJO%20-%20AXEL%20ALEJANDRO%20SU%C3%81REZ%20MART%C3%8DNEZ%20(2).png" alt="Relicario"><span class="restaurant-name">Relicario Chef's Experience</span></div>
+                <div class="carousel-item"><img src="../convenios/d9c6b9f7-bb7b-4720-875a-d28d296bb9b8.jpg" alt="Restaurante Tucán"><span class="restaurant-name">Restaurante Tucán</span></div>
+              </div>
+            </div>
+
+            <!-- Cards de restaurantes adicionales -->
+            <div class="convenios-grid" style="margin-top: 40px;">
+
+              <!-- Card: Alianza CANIRAC -->
+              <details class="convenio-card" style="grid-column: 1 / -1;">
+                <summary class="convenio-header">
+                  <div class="convenio-logo">
+                    <img src="../wp-content/themes/jillszeder.com/images/distinctive-sales/canirac.jpg" alt="CANIRAC" style="width:60px; height:60px; object-fit:cover; border-radius:8px;">
+                  </div>
+                  <div class="convenio-info">
+                    <h4>Alianza Estratégica AMPI – CANIRAC</h4>
+                    <span>Cámara Nacional de la Industria de Restaurantes y Alimentos</span>
+                  </div>
+                  <span class="convenio-toggle">▼</span>
+                </summary>
+                <div class="convenio-content">
+                  <div class="convenio-body">
+                    <p>Esta colaboración fortalece la vinculación entre el sector inmobiliario y restaurantero de la región, generando sinergias para promover el consumo local.</p>
+                    <ul>
+                      <li>Sabores AMPI: Encuentros mensuales en restaurantes de la región</li>
+                      <li>Café Inmobiliario: Desayunos de networking en sedes rotativas</li>
+                      <li>Promoción Cruzada: Marketing digital conjunto</li>
+                      <li>Desarrollo Económico Regional: Fortalecimiento de la economía local</li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+
+              <!-- Card: Marissimo -->
+              <details class="convenio-card">
+                <summary class="convenio-header">
+                  <div class="convenio-logo"><span class="placeholder">🦐</span></div>
+                  <div class="convenio-info">
+                    <h4>Marissimo</h4>
+                    <span>Restaurante de mariscos</span>
+                  </div>
+                  <span class="convenio-toggle">▼</span>
+                </summary>
+                <div class="convenio-content">
+                  <div class="convenio-body">
+                    <p>Restaurante especializado en mariscos frescos con beneficios exclusivos.</p>
+                    <ul>
+                      <li>Descuento en consumo presentando credencial AMPI</li>
+                      <li>Reservaciones preferenciales</li>
+                    </ul>
+                    <div class="convenio-actions">
+                      <a href="../convenios/AMPI%20-%20Marissimo%20(1).pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+              <!-- Card: Samurai -->
+              <details class="convenio-card">
+                <summary class="convenio-header">
+                  <div class="convenio-logo"><span class="placeholder">🍣</span></div>
+                  <div class="convenio-info">
+                    <h4>Samurai</h4>
+                    <span>Restaurante japonés</span>
+                  </div>
+                  <span class="convenio-toggle">▼</span>
+                </summary>
+                <div class="convenio-content">
+                  <div class="convenio-body">
+                    <p>Gastronomía japonesa de alta calidad con precios especiales.</p>
+                    <ul>
+                      <li>Descuentos en consumo en restaurante</li>
+                      <li>Menús especiales para eventos</li>
+                    </ul>
+                    <div class="convenio-actions">
+                      <a href="../convenios/AMPI%20-%20Samurai%20(1).pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+              <!-- Card: Samurai Bowl -->
+              <details class="convenio-card">
+                <summary class="convenio-header">
+                  <div class="convenio-logo"><span class="placeholder">🥢</span></div>
+                  <div class="convenio-info">
+                    <h4>Samurai Bowl</h4>
+                    <span>Comida japonesa a domicilio</span>
+                  </div>
+                  <span class="convenio-toggle">▼</span>
+                </summary>
+                <div class="convenio-content">
+                  <div class="convenio-body">
+                    <p>Servicio de comida japonesa a domicilio con beneficios para asociados.</p>
+                    <ul>
+                      <li>Descuentos en pedidos a domicilio</li>
+                      <li>Envío preferencial</li>
+                    </ul>
+                    <div class="convenio-actions">
+                      <a href="../convenios/AMPI%20-%20Samurai%20Bowl%20(a%20domicilio)%20(2).pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+              <!-- Card: Al Grano Café -->
+              <details class="convenio-card">
+                <summary class="convenio-header">
+                  <div class="convenio-logo"><span class="placeholder">☕</span></div>
+                  <div class="convenio-info">
+                    <h4>Al Grano Café</h4>
+                    <span>Cafetería de especialidad</span>
+                  </div>
+                  <span class="convenio-toggle">▼</span>
+                </summary>
+                <div class="convenio-content">
+                  <div class="convenio-body">
+                    <p>Café de especialidad con descuentos exclusivos para miembros.</p>
+                    <ul>
+                      <li>Descuentos en consumo para asociados</li>
+                      <li>Sede para reuniones de networking</li>
+                    </ul>
+                    <div class="convenio-actions">
+                      <a href="../convenios/Convenio%20AMPI_Riviera_Nayarit%20-%20AL%20GRANO%20CAFE.docx%20(1).pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+            </div>
+          </div>
+
+          <div class="section-divider"></div>
+
+          <!-- ========== SECTOR SALUD ========== -->
+          <div id="sector-salud" class="convenios-section content-section">
+            <h3>🏥 Salud y Bienestar</h3>
+            <p style="text-align: center; color: #666; max-width: 700px; margin: 0 auto 30px;">
+              Convenios para el cuidado de la salud de los miembros AMPI y sus familias.
+            </p>
+
+            <div class="convenios-grid">
+
+              <!-- Card: Diagnosti-K -->
+              <details class="convenio-card" style="grid-column: 1 / -1;">
+                <summary class="convenio-header">
+                  <div class="convenio-logo">
+                    <img src="../wp-content/themes/jillszeder.com/images/distinctive-sales/diagnostik.jpg" alt="Diagnosti-K" style="width:60px; height:60px; object-fit:cover; border-radius:8px;">
+                  </div>
+                  <div class="convenio-info">
+                    <h4>Grupo Diagnosti-K</h4>
+                    <span>Servicios médicos y de laboratorio</span>
+                  </div>
+                  <span class="convenio-toggle">▼</span>
+                </summary>
+                <div class="convenio-content">
+                  <div class="convenio-body">
+                    <p>Acceso preferencial a servicios médicos, estudios de laboratorio e imagenología para la comunidad AMPI.</p>
+                    <ul>
+                      <li>Descuentos del 10% al 20% en estudios de imagen y laboratorio</li>
+                      <li>Acceso en hospitales aliados: Joya Nuevo Vallarta, Hospitén, MedAssist</li>
+                      <li>Tarjeta Digital AMPI con QR institucional</li>
+                      <li>App Diagnosti-K para consulta de resultados y citas</li>
+                      <li>Tecnología médica avanzada con inteligencia artificial</li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+
+              <!-- Card: Barbero -->
+              <details class="convenio-card">
+                <summary class="convenio-header">
+                  <div class="convenio-logo"><span class="placeholder">💈</span></div>
+                  <div class="convenio-info">
+                    <h4>Barbero</h4>
+                    <span>Barbería y estética</span>
+                  </div>
+                  <span class="convenio-toggle">▼</span>
+                </summary>
+                <div class="convenio-content">
+                  <div class="convenio-body">
+                    <p>Servicios de barbería profesional con precios preferenciales.</p>
+                    <ul>
+                      <li>Descuentos en cortes y servicios de barbería</li>
+                      <li>Atención preferencial con cita</li>
+                    </ul>
+                    <div class="convenio-actions">
+                      <a href="../convenios/AMPI%20-%20Barbero%20(1).pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+            </div>
+          </div>
+
+          <div class="section-divider"></div>
+
+          <!-- ========== SECTOR SERVICIOS PROFESIONALES ========== -->
+          <div id="sector-servicios" class="convenios-section content-section">
+            <h3>💼 Servicios Profesionales</h3>
+            <p style="text-align: center; color: #666; max-width: 700px; margin: 0 auto 30px;">
+              Convenios con proveedores de servicios para potenciar tu negocio inmobiliario.
+            </p>
+
+            <div class="convenios-grid">
+
+              <!-- Card: Alambardos Navarro -->
+              <details class="convenio-card">
+                <summary class="convenio-header">
+                  <div class="convenio-logo"><span class="placeholder">⚖️</span></div>
+                  <div class="convenio-info">
+                    <h4>Alambardos Navarro</h4>
+                    <span>Servicios legales inmobiliarios</span>
+                  </div>
+                  <span class="convenio-toggle">▼</span>
+                </summary>
+                <div class="convenio-content">
+                  <div class="convenio-body">
+                    <p>Asesoría legal especializada en el sector inmobiliario.</p>
+                    <ul>
+                      <li>Consultoría legal inmobiliaria</li>
+                      <li>Revisión de contratos</li>
+                      <li>Asesoría en trámites y regulaciones</li>
+                    </ul>
+                    <div class="convenio-actions">
+                      <a href="../convenios/Convenio%20Alambardos%20Navarro%20Firmado%20Ambas%20Partes.pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+              <!-- Card: Impresiones Mexicanas -->
+              <details class="convenio-card">
+                <summary class="convenio-header">
+                  <div class="convenio-logo"><span class="placeholder">🖨️</span></div>
+                  <div class="convenio-info">
+                    <h4>Impresiones Mexicanas</h4>
+                    <span>Servicios de impresión</span>
+                  </div>
+                  <span class="convenio-toggle">▼</span>
+                </summary>
+                <div class="convenio-content">
+                  <div class="convenio-body">
+                    <p>Impresión profesional para materiales inmobiliarios y promocionales.</p>
+                    <ul>
+                      <li>Flyers, brochures y tarjetas de presentación</li>
+                      <li>Lonas y materiales publicitarios</li>
+                      <li>Precios preferenciales para miembros</li>
+                    </ul>
+                    <div class="convenio-actions">
+                      <a href="../convenios/Convenio%20AMPI%20-%20Impresiones%20Mexicanas.pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+              <!-- Card: SAMER -->
+              <details class="convenio-card">
+                <summary class="convenio-header">
+                  <div class="convenio-logo"><span class="placeholder">🏢</span></div>
+                  <div class="convenio-info">
+                    <h4>SAMER</h4>
+                    <span>Servicios empresariales</span>
+                  </div>
+                  <span class="convenio-toggle">▼</span>
+                </summary>
+                <div class="convenio-content">
+                  <div class="convenio-body">
+                    <p>Alianza estratégica para servicios empresariales.</p>
+                    <ul>
+                      <li>Servicios administrativos</li>
+                      <li>Apoyo en gestión empresarial</li>
+                      <li>Networking empresarial</li>
+                    </ul>
+                    <div class="convenio-actions">
+                      <a href="../convenios/Convenio%20SAMER%20-%20AMPI%20Riviera%20Nayarit%20(1)%20(1).pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+              <!-- Card: Servicios en Ingeniería Eléctrica -->
+              <details class="convenio-card">
+                <summary class="convenio-header">
+                  <div class="convenio-logo"><span class="placeholder">⚡</span></div>
+                  <div class="convenio-info">
+                    <h4>Servicios en Ingeniería Eléctrica</h4>
+                    <span>Instalaciones eléctricas</span>
+                  </div>
+                  <span class="convenio-toggle">▼</span>
+                </summary>
+                <div class="convenio-content">
+                  <div class="convenio-body">
+                    <p>Servicios profesionales de instalaciones eléctricas en media y baja tensión.</p>
+                    <ul>
+                      <li>Instalaciones eléctricas residenciales y comerciales</li>
+                      <li>Media y baja tensión</li>
+                      <li>Beneficios exclusivos para miembros AMPI</li>
+                    </ul>
+                    <div class="convenio-actions">
+                      <a href="../convenios/Convenio%20Firmado%20Ambas%20Partes%20(1).pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+            </div>
+          </div>
+
+          <div class="section-divider"></div>
+
+          <!-- ========== SECTOR EXPERIENCIAS ========== -->
+          <div id="sector-experiencias" class="convenios-section content-section">
+            <h3>⛵ Experiencias y Turismo</h3>
+            <p style="text-align: center; color: #666; max-width: 700px; margin: 0 auto 30px;">
+              Convenios para disfrutar experiencias únicas en la Bahía de Banderas.
+            </p>
+
+            <div class="convenios-grid">
+
+              <!-- Card: ADA Sailing -->
+              <details class="convenio-card">
+                <summary class="convenio-header">
+                  <div class="convenio-logo"><span class="placeholder">⛵</span></div>
+                  <div class="convenio-info">
+                    <h4>ADA Sailing</h4>
+                    <span>Experiencias náuticas</span>
+                  </div>
+                  <span class="convenio-toggle">▼</span>
+                </summary>
+                <div class="convenio-content">
+                  <div class="convenio-body">
+                    <p>Experiencias de navegación exclusivas para miembros AMPI.</p>
+                    <ul>
+                      <li>Tarifas preferenciales en tours de velero</li>
+                      <li>Experiencias exclusivas en Bahía de Banderas</li>
+                      <li>Eventos de networking en el mar</li>
+                    </ul>
+                    <div class="convenio-actions">
+                      <a href="../convenios/AMPI%20-%20Convenio%20ADA%20Sailing.pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+            </div>
+          </div>
+
+<!-- FIN DE TODOS LOS SECTORES DE CONVENIOS -->
+
+          <div style="display:none;"><!-- Bloque oculto temporal para cerrar estructura -->
             <div
-            class="ds-subtext"
+            class="ds-subtext-hidden"
             data-aios-reveal="true"
             data-aios-animation="fadeIn"
             data-aios-animation-delay="0s"
@@ -4387,9 +5323,265 @@ position: relative;
 
 </div>
 
+<!-- SECCIÓN OTROS CONVENIOS -->
+<div class="section-divider"></div>
+
+<div id="seccion-otros-convenios" class="convenios-section content-section">
+  <h3>Otros Convenios AMPI Riviera Nayarit</h3>
+  <p style="text-align: center; color: #666; max-width: 700px; margin: 0 auto 30px;">
+    Descubre todos los convenios que AMPI Riviera Nayarit ha establecido para beneficio de sus asociados y afiliados.
+  </p>
+
+  <div class="convenios-grid">
+
+    <!-- Card: ADA Sailing -->
+    <details class="convenio-card">
+      <summary class="convenio-header">
+        <div class="convenio-logo">
+          <span class="placeholder">⛵</span>
+        </div>
+        <div class="convenio-info">
+          <h4>ADA Sailing</h4>
+          <span>Experiencias náuticas</span>
+        </div>
+        <span class="convenio-toggle">▼</span>
+      </summary>
+      <div class="convenio-content">
+        <div class="convenio-body">
+          <p>Convenio de colaboración para experiencias de navegación y actividades náuticas exclusivas para miembros AMPI.</p>
+          <ul>
+            <li>Tarifas preferenciales en tours de velero</li>
+            <li>Experiencias exclusivas en Bahía de Banderas</li>
+            <li>Eventos de networking en el mar</li>
+          </ul>
+          <div class="convenio-actions">
+            <a href="../convenios/AMPI%20-%20Convenio%20ADA%20Sailing.pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Card: Al Grano Café -->
+    <details class="convenio-card">
+      <summary class="convenio-header">
+        <div class="convenio-logo">
+          <span class="placeholder">☕</span>
+        </div>
+        <div class="convenio-info">
+          <h4>Al Grano Café</h4>
+          <span>Cafetería</span>
+        </div>
+        <span class="convenio-toggle">▼</span>
+      </summary>
+      <div class="convenio-content">
+        <div class="convenio-body">
+          <p>Disfruta de café de especialidad y productos de cafetería con descuentos exclusivos.</p>
+          <ul>
+            <li>Descuentos en consumo para asociados</li>
+            <li>Sede para reuniones de networking</li>
+            <li>Promociones especiales en eventos AMPI</li>
+          </ul>
+          <div class="convenio-actions">
+            <a href="../convenios/Convenio%20AMPI_Riviera_Nayarit%20-%20AL%20GRANO%20CAFE.docx%20(1).pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Card: Barbero -->
+    <details class="convenio-card">
+      <summary class="convenio-header">
+        <div class="convenio-logo">
+          <span class="placeholder">💈</span>
+        </div>
+        <div class="convenio-info">
+          <h4>Barbero</h4>
+          <span>Barbería y estética</span>
+        </div>
+        <span class="convenio-toggle">▼</span>
+      </summary>
+      <div class="convenio-content">
+        <div class="convenio-body">
+          <p>Servicios de barbería profesional con precios preferenciales para miembros AMPI.</p>
+          <ul>
+            <li>Descuentos en cortes y servicios de barbería</li>
+            <li>Atención preferencial con cita</li>
+            <li>Productos de cuidado personal</li>
+          </ul>
+          <div class="convenio-actions">
+            <a href="../convenios/AMPI%20-%20Barbero%20(1).pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Card: Marissimo -->
+    <details class="convenio-card">
+      <summary class="convenio-header">
+        <div class="convenio-logo">
+          <span class="placeholder">🦐</span>
+        </div>
+        <div class="convenio-info">
+          <h4>Marissimo</h4>
+          <span>Restaurante de mariscos</span>
+        </div>
+        <span class="convenio-toggle">▼</span>
+      </summary>
+      <div class="convenio-content">
+        <div class="convenio-body">
+          <p>Restaurante especializado en mariscos frescos con beneficios exclusivos para la comunidad AMPI.</p>
+          <ul>
+            <li>Descuento en consumo presentando credencial AMPI</li>
+            <li>Reservaciones preferenciales</li>
+            <li>Eventos privados para networking</li>
+          </ul>
+          <div class="convenio-actions">
+            <a href="../convenios/AMPI%20-%20Marissimo%20(1).pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Card: Samurai -->
+    <details class="convenio-card">
+      <summary class="convenio-header">
+        <div class="convenio-logo">
+          <span class="placeholder">🍣</span>
+        </div>
+        <div class="convenio-info">
+          <h4>Samurai</h4>
+          <span>Restaurante japonés</span>
+        </div>
+        <span class="convenio-toggle">▼</span>
+      </summary>
+      <div class="convenio-content">
+        <div class="convenio-body">
+          <p>Gastronomía japonesa de alta calidad con precios especiales para miembros AMPI.</p>
+          <ul>
+            <li>Descuentos en consumo en restaurante</li>
+            <li>Menús especiales para eventos</li>
+            <li>Promociones exclusivas</li>
+          </ul>
+          <div class="convenio-actions">
+            <a href="../convenios/AMPI%20-%20Samurai%20(1).pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Card: Samurai Bowl -->
+    <details class="convenio-card">
+      <summary class="convenio-header">
+        <div class="convenio-logo">
+          <span class="placeholder">🥢</span>
+        </div>
+        <div class="convenio-info">
+          <h4>Samurai Bowl</h4>
+          <span>Comida japonesa a domicilio</span>
+        </div>
+        <span class="convenio-toggle">▼</span>
+      </summary>
+      <div class="convenio-content">
+        <div class="convenio-body">
+          <p>Servicio de comida japonesa a domicilio con beneficios para asociados AMPI.</p>
+          <ul>
+            <li>Descuentos en pedidos a domicilio</li>
+            <li>Envío preferencial</li>
+            <li>Promociones especiales</li>
+          </ul>
+          <div class="convenio-actions">
+            <a href="../convenios/AMPI%20-%20Samurai%20Bowl%20(a%20domicilio)%20(2).pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Card: Alambardos Navarro -->
+    <details class="convenio-card">
+      <summary class="convenio-header">
+        <div class="convenio-logo">
+          <span class="placeholder">⚖️</span>
+        </div>
+        <div class="convenio-info">
+          <h4>Alambardos Navarro</h4>
+          <span>Servicios legales</span>
+        </div>
+        <span class="convenio-toggle">▼</span>
+      </summary>
+      <div class="convenio-content">
+        <div class="convenio-body">
+          <p>Asesoría legal especializada en el sector inmobiliario con tarifas preferenciales.</p>
+          <ul>
+            <li>Consultoría legal inmobiliaria</li>
+            <li>Revisión de contratos</li>
+            <li>Asesoría en trámites y regulaciones</li>
+          </ul>
+          <div class="convenio-actions">
+            <a href="../convenios/Convenio%20Alambardos%20Navarro%20Firmado%20Ambas%20Partes.pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Card: Impresiones Mexicanas -->
+    <details class="convenio-card">
+      <summary class="convenio-header">
+        <div class="convenio-logo">
+          <span class="placeholder">🖨️</span>
+        </div>
+        <div class="convenio-info">
+          <h4>Impresiones Mexicanas</h4>
+          <span>Servicios de impresión</span>
+        </div>
+        <span class="convenio-toggle">▼</span>
+      </summary>
+      <div class="convenio-content">
+        <div class="convenio-body">
+          <p>Servicios de impresión profesional para materiales inmobiliarios y promocionales.</p>
+          <ul>
+            <li>Impresión de flyers y brochures</li>
+            <li>Lonas y materiales publicitarios</li>
+            <li>Tarjetas de presentación</li>
+            <li>Precios preferenciales para miembros</li>
+          </ul>
+          <div class="convenio-actions">
+            <a href="../convenios/Convenio%20AMPI%20-%20Impresiones%20Mexicanas.pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Card: SAMER -->
+    <details class="convenio-card">
+      <summary class="convenio-header">
+        <div class="convenio-logo">
+          <span class="placeholder">🏢</span>
+        </div>
+        <div class="convenio-info">
+          <h4>SAMER</h4>
+          <span>Servicios empresariales</span>
+        </div>
+        <span class="convenio-toggle">▼</span>
+      </summary>
+      <div class="convenio-content">
+        <div class="convenio-body">
+          <p>Alianza estratégica para servicios empresariales y apoyo al sector inmobiliario.</p>
+          <ul>
+            <li>Servicios administrativos</li>
+            <li>Apoyo en gestión empresarial</li>
+            <li>Networking empresarial</li>
+          </ul>
+          <div class="convenio-actions">
+            <a href="../convenios/Convenio%20SAMER%20-%20AMPI%20Riviera%20Nayarit%20(1)%20(1).pdf" target="_blank" class="btn-convenio btn-pdf">📄 Ver PDF</a>
+          </div>
+        </div>
+      </div>
+    </details>
+
+  </div>
+</div>
 
 
-        
 
           </div>
         </div>
@@ -5503,6 +6695,61 @@ position: relative;
             e.preventDefault();
           }
         });
+      });
+    </script>
+
+    <!-- Script para navegación activa y scroll -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Elementos de navegación
+        const navLinks = document.querySelectorAll('.sidebar-nav a, .mobile-section-nav a');
+        const sections = document.querySelectorAll('.content-section');
+
+        // Función para actualizar link activo
+        function updateActiveLink() {
+          let current = '';
+
+          sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= sectionTop - 200) {
+              current = section.getAttribute('id');
+            }
+          });
+
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+              link.classList.add('active');
+            }
+          });
+        }
+
+        // Escuchar scroll
+        window.addEventListener('scroll', updateActiveLink);
+
+        // Mostrar/ocultar sidebar según scroll
+        const sidebar = document.getElementById('sidebarNav');
+        if (sidebar) {
+          window.addEventListener('scroll', function() {
+            if (window.scrollY > 500) {
+              sidebar.style.opacity = '1';
+              sidebar.style.visibility = 'visible';
+            } else {
+              sidebar.style.opacity = '0';
+              sidebar.style.visibility = 'hidden';
+            }
+          });
+          // Oculto inicialmente
+          sidebar.style.opacity = '0';
+          sidebar.style.visibility = 'hidden';
+          sidebar.style.transition = 'opacity 0.3s ease, visibility 0.3s ease';
+        }
+
+        // Inicializar estado activo
+        updateActiveLink();
+
+        // Los acordeones ahora usan <details>/<summary> HTML nativos - no requieren JavaScript
       });
     </script>
   </body>
